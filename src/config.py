@@ -18,7 +18,6 @@ DATABASE_PATH = ROOT_DIR / "iptv_cache.db"
 IPTV_SOURCES = [
     "https://raw.githubusercontent.com/iptv-org/iptv/gh-pages/countries/cn.m3u",
     "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/cn.m3u",
-    "https://raw.githubusercontent.com/suxuang/myIPTV/main/ipv4.m3u",
     "https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.txt",
     "https://raw.githubusercontent.com/zzgpy1/Collect-IPTV/main/best_sorted.m3u",
     "https://raw.githubusercontent.com/dogwalkerg/IPTV-collect-tv-txt/main/others_output.txt",
