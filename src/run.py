@@ -60,6 +60,31 @@ async def save_to_cache(db, channels):
         await db.set_speed_result(key, ch)
     print(f"💾 已保存 {len(channels)} 个频道源到数据库缓存")
 
+async def load_merged_from_db(db) -> list:
+    """从数据库加载合并后的频道列表（直接返回合并结果）"""
+    if not db._conn:
+        return []
+    table = f"{DATABASE_TABLE}_speed"
+    cursor = await db._conn.execute(f"SELECT name, url, latency, video_codec, ip_info FROM {table}")
+    rows = await cursor.fetchall()
+    await cursor.close()
+    if not rows:
+        return []
+    valid_channels = []
+    for row in rows:
+        name, url, latency, video_codec, ip_info_json = row
+        ch = {
+            "name": name,
+            "url": url,
+            "latency": latency,
+            "video_codec": video_codec,
+            "ip_info": json.loads(ip_info_json) if ip_info_json else None
+        }
+        valid_channels.append(ch)
+    merged = merge_channels_by_name(valid_channels)
+    print(f"📂 从数据库加载并合并，得到 {len(merged)} 个频道")
+    return merged
+
 async def main():
     print("🚀 IPTV智能整理平台启动")
     print(f"📡 配置：超时={os.getenv('TIMEOUT','10')}s, 并发={os.getenv('MAX_WORKERS','10')}, ffmpeg={os.getenv('FFMPEG_ENABLE','true')}")
@@ -80,38 +105,18 @@ async def main():
     channels_dict = parse_and_dedupe(raw_contents)
     if not channels_dict:
         print("❌ 未获取到任何频道，尝试使用数据库缓存")
-        # 从数据库加载历史测速结果
-        if DATABASE_ENABLE and db._conn:
-            table = f"{DATABASE_TABLE}_speed"
-            cursor = await db._conn.execute(f"SELECT name, url, latency, video_codec, ip_info FROM {table}")
-            rows = await cursor.fetchall()
-            await cursor.close()
-            if rows:
-                valid_channels = []
-                for row in rows:
-                    name, url, latency, video_codec, ip_info_json = row
-                    ch = {
-                        "name": name,
-                        "url": url,
-                        "latency": latency,
-                        "video_codec": video_codec,
-                        "ip_info": json.loads(ip_info_json) if ip_info_json else None
-                    }
-                    valid_channels.append(ch)
-                print(f"📂 从数据库加载了 {len(valid_channels)} 个历史频道")
-            else:
-                print("❌ 无任何频道数据，退出")
-                return 1
-        else:
+        merged_channels = await load_merged_from_db(db)
+        if not merged_channels:
+            print("❌ 无任何频道数据，退出")
             return 1
     else:
         print(f"📊 原始频道数（去重后）: {len(channels_dict)}")
 
-        # 测速（带缓存）
+        # 测速（内部有缓存）
         valid_channels = await test_channels_concurrent(channels_dict)
         print(f"📊 通过HTTP测速的频道数: {len(valid_channels)}")
 
-        # 深度验证
+        # 深度验证（内部有缓存）
         valid_channels = await validate_batch(valid_channels)
         print(f"📊 通过ffmpeg深度验证的频道数: {len(valid_channels)}")
 
@@ -120,23 +125,21 @@ async def main():
             await save_to_cache(db, valid_channels)
             await db.set_last_update_time()
 
-    # 合并
-    merged_channels = merge_channels_by_name(valid_channels)
-    print(f"📊 合并后的频道数: {len(merged_channels)}")
+        # 合并
+        merged_channels = merge_channels_by_name(valid_channels)
+        print(f"📊 合并后的频道数: {len(merged_channels)}")
 
-    # 黑名单过滤
+    # 后续统一过滤
     if ENABLE_BLACKLIST:
         blacklist_filter = get_blacklist_filter()
         before = len(merged_channels)
         merged_channels = blacklist_filter.filter_channels(merged_channels)
         print(f"📊 黑名单过滤后: {len(merged_channels)} (减少 {before - len(merged_channels)})")
 
-    # Demo 筛选（核心）
     if ENABLE_DEMO_FILTER:
         before = len(merged_channels)
         ordered_channels, unmatched_channels = filter_and_order_by_demo(merged_channels)
         print(f"📊 Demo筛选后: {len(ordered_channels)} (减少 {before - len(ordered_channels)})")
-        # 输出未匹配的频道到 shai.txt
         if unmatched_channels:
             write_shai_file(unmatched_channels, len(ordered_channels), before)
         if not ordered_channels:
@@ -145,13 +148,11 @@ async def main():
     else:
         ordered_channels = merged_channels
 
-    # 地域筛选
     ordered_channels = filter_by_region(ordered_channels)
     if not ordered_channels:
         print("❌ 过滤后无有效频道")
         return 1
 
-    # 输出
     generate_outputs_from_demo(ordered_channels)
 
     total = len(ordered_channels)
