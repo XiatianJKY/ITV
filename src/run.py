@@ -82,6 +82,13 @@ async def load_merged_from_db(db) -> list:
         }
         valid_channels.append(ch)
     merged = merge_channels_by_name(valid_channels)
+        # 调试：检查 CCTV-1 和 CCTV-17 的 URL
+    cctv1 = [ch for ch in merged_channels if ch["name"] == "CCTV-1"]
+    cctv17 = [ch for ch in merged_channels if ch["name"] == "CCTV-17"]
+    if cctv1:
+        print(f"🔍 DEBUG: CCTV-1 URL: {cctv1[0]['url']}")
+    if cctv17:
+        print(f"🔍 DEBUG: CCTV-17 URL: {cctv17[0]['url']}")
     print(f"📂 从数据库加载并合并，得到 {len(merged)} 个频道")
     return merged
 
