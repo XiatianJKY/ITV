@@ -1,5 +1,5 @@
 # src/ffmpeg_validator.py
-# ffmpeg/ffprobe 深度验证模块，支持缓存
+# ffmpeg/ffprobe 深度验证模块，必须包含视频流才有效
 
 import asyncio
 import subprocess
@@ -35,7 +35,7 @@ def validate_with_ffprobe_sync(url: str, timeout: int) -> dict:
     try:
         result = subprocess.run(cmd, capture_output=True, timeout=timeout, text=True)
         if result.returncode != 0:
-            return {"valid": not FFMPEG_STRICT, "has_video": False, "video_codec": "", "has_audio": False}
+            return {"valid": False, "has_video": False, "video_codec": ""}
         data = json.loads(result.stdout)
         streams = data.get("streams", [])
         has_video = False
@@ -45,22 +45,11 @@ def validate_with_ffprobe_sync(url: str, timeout: int) -> dict:
                 has_video = True
                 video_codec = s.get("codec_name", "").lower()
                 break
-        has_audio = any(s.get("codec_type") == "audio" for s in streams)
-        valid = has_video or has_audio
-        if not valid and not FFMPEG_STRICT:
-            valid = True
-        return {"valid": valid, "has_video": has_video, "video_codec": video_codec, "has_audio": has_audio}
+        # 必须有视频流才算有效
+        valid = has_video
+        return {"valid": valid, "has_video": has_video, "video_codec": video_codec}
     except Exception:
-        return {"valid": not FFMPEG_STRICT, "has_video": False, "video_codec": "", "has_audio": False}
-
-async def validate_with_ffprobe(channel: dict) -> dict:
-    if not FFMPEG_ENABLE:
-        return {"valid": True, "video_codec": "unknown"}
-    if not await check_ffprobe():
-        return {"valid": True, "video_codec": "unknown"}
-    loop = asyncio.get_event_loop()
-    result = await loop.run_in_executor(get_thread_pool(), validate_with_ffprobe_sync, channel["url"], TIMEOUT)
-    return result
+        return {"valid": False, "has_video": False, "video_codec": ""}
 
 async def validate_batch(channels: list) -> list:
     if not FFMPEG_ENABLE:
@@ -88,7 +77,9 @@ async def validate_batch(channels: list) -> list:
         semaphore = asyncio.Semaphore(3)
         async def validate_one(ch):
             async with semaphore:
-                result = await validate_with_ffprobe(ch)
+                result = await asyncio.get_event_loop().run_in_executor(
+                    get_thread_pool(), validate_with_ffprobe_sync, ch["url"], TIMEOUT
+                )
                 if result.get("valid"):
                     ch["video_codec"] = result.get("video_codec", "")
                     key = channel_key(ch["name"], ch["url"])
