@@ -14,8 +14,8 @@ android {
         versionCode 1
         versionName "1.0"
 
-        // 关键修改：硬编码您的M3U8播放列表地址
-        buildConfigField "String", "BASE_URL", "\"https://itv.19860519.xyz/output/tv.m3u\""
+        // 修改为您的域名
+        buildConfigField "String", "BASE_URL", "\"https://itv.19860519.xyz/\""
     }
 
     buildTypes {
