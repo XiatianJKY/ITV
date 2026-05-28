@@ -2,11 +2,11 @@ name: Build and Release APK
 
 on:
   schedule:
-    - cron: '0 */6 * * *'      # 每6小时自动构建
-  workflow_dispatch:            # 支持手动触发
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
 
 permissions:
-  contents: write               # 必须：允许创建 Release
+  contents: write
 
 jobs:
   build:
@@ -24,28 +24,23 @@ jobs:
       - name: 设置 Android SDK
         uses: android-actions/setup-android@v3
 
-      - name: 准备 Gradle Wrapper（如果缺失）
+      - name: 准备 Gradle Wrapper
         run: |
-          cd app
-          # 如果 gradle-wrapper.jar 不存在，则下载
+          # 如果 gradle-wrapper.jar 缺失，则下载
           if [ ! -f gradle/wrapper/gradle-wrapper.jar ]; then
             mkdir -p gradle/wrapper
             curl -L -o gradle/wrapper/gradle-wrapper.jar \
-              https://repo1.maven.org/maven2/org/gradle/gradle-wrapper/8.5/gradle-wrapper-8.5.jar
+              https://repo1.maven.org/maven2/org/gradle/gradle-wrapper/8.7/gradle-wrapper-8.7.jar
           fi
           chmod +x gradlew
 
       - name: 构建 Release APK
-        run: |
-          cd app
-          ./gradlew assembleRelease
+        run: ./gradlew assembleRelease
 
       - name: 查找生成的 APK 文件
         id: find_apk
         run: |
-          cd app
-          # 搜索所有 apk 文件，取第一个
-          APK_PATH=$(find . -name "*.apk" -type f | head -n 1)
+          APK_PATH=$(find app/build/outputs/apk -name "*.apk" -type f | head -n 1)
           if [ -z "$APK_PATH" ]; then
             echo "❌ 未找到 APK 文件！"
             exit 1
@@ -60,8 +55,8 @@ jobs:
           path: ${{ steps.find_apk.outputs.apk_path }}
           if-no-files-found: error
 
-      - name: 创建 GitHub Release
-        if: github.event_name == 'workflow_dispatch'   # 仅手动触发时创建 Release
+      - name: 创建 GitHub Release（仅手动触发）
+        if: github.event_name == 'workflow_dispatch'
         uses: softprops/action-gh-release@v1
         with:
           tag_name: "v1.0.${{ github.run_number }}"
