@@ -1,6 +1,7 @@
 package com.iptv.player
 
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ProgressBar
@@ -32,6 +33,10 @@ class MainActivity : AppCompatActivity() {
         .readTimeout(15, TimeUnit.SECONDS)
         .build()
 
+    companion object {
+        private const val TAG = "IPTVPlayer"
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -43,12 +48,19 @@ class MainActivity : AppCompatActivity() {
 
         channelList.layoutManager = LinearLayoutManager(this)
 
+        // 获取 BASE_URL（确保以 / 结尾）
         val baseUrl = BuildConfig.BASE_URL
-        val m3uUrl = if (baseUrl.endsWith("/")) baseUrl + "tv.m3u" else baseUrl + "/tv.m3u"
-        val txtUrl = if (baseUrl.endsWith("/")) baseUrl + "tv.txt" else baseUrl + "/tv.txt"
-        
+        val normalizedBase = if (baseUrl.endsWith("/")) baseUrl else "$baseUrl/"
+        val m3uUrl = "${normalizedBase}tv.m3u"
+        val txtUrl = "${normalizedBase}tv.txt"
+
+        Log.d(TAG, "尝试加载 M3U: $m3uUrl")
+        Log.d(TAG, "备用 TXT: $txtUrl")
+
+        // 优先加载 M3U，失败后尝试 TXT
         loadPlaylist(m3uUrl, true) { success ->
             if (!success) {
+                Log.w(TAG, "M3U 加载失败，尝试 TXT")
                 loadPlaylist(txtUrl, false) { txtSuccess ->
                     if (!txtSuccess) {
                         runOnUiThread {
@@ -70,17 +82,21 @@ class MainActivity : AppCompatActivity() {
 
         Thread {
             try {
+                Log.d(TAG, "开始请求: $url")
                 val request = Request.Builder().url(url).build()
                 val response = client.newCall(request).execute()
-                
+                Log.d(TAG, "HTTP 响应码: ${response.code}")
+
                 if (!response.isSuccessful) {
                     callback(false)
                     return@Thread
                 }
-                
+
                 val content = response.body?.string() ?: ""
+                Log.d(TAG, "下载内容长度: ${content.length} 字符")
                 val channels = if (isM3u) parseM3u(content) else parseTxt(content)
-                
+                Log.d(TAG, "解析到频道数量: ${channels.size}")
+
                 runOnUiThread {
                     loadingSpinner.visibility = View.GONE
                     if (channels.isEmpty()) {
@@ -94,7 +110,7 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
             } catch (e: Exception) {
-                e.printStackTrace()
+                Log.e(TAG, "加载失败", e)
                 runOnUiThread {
                     loadingSpinner.visibility = View.GONE
                     errorText.text = "加载失败: ${e.message}"
@@ -108,7 +124,7 @@ class MainActivity : AppCompatActivity() {
     private fun parseM3u(content: String): List<Channel> {
         val channels = mutableListOf<Channel>()
         var currentName = ""
-        
+
         content.lines().forEach { line ->
             val trimmed = line.trim()
             when {
@@ -184,7 +200,7 @@ class MainActivity : AppCompatActivity() {
         exoPlayer?.setMediaSource(mediaSource)
         exoPlayer?.prepare()
         exoPlayer?.playWhenReady = true
-        
+
         Toast.makeText(this, "正在播放: ${url.substringAfterLast("/")}", Toast.LENGTH_SHORT).show()
     }
 
