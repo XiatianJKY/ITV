@@ -1,50 +1,39 @@
 package com.iptv.player
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.iptv.player.databinding.ItemChannelBinding
 
 class ChannelAdapter(
     private val channels: List<MainActivity.Channel>,
-    private val onItemClick: (MainActivity.Channel, Int) -> Unit
+    private val onItemClick: (MainActivity.Channel) -> Unit
 ) : RecyclerView.Adapter<ChannelAdapter.ViewHolder>() {
 
-    private var selectedPosition = -1
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.item_channel, parent, false)
-        return ViewHolder(view)
+        val binding = ItemChannelBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        return ViewHolder(binding)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val channel = channels[position]
-        holder.channelName.text = channel.name
-        if (selectedPosition == position) {
-            holder.playingIndicator.visibility = View.VISIBLE
-            holder.itemView.setBackgroundColor(0x3300FF00)
-        } else {
-            holder.playingIndicator.visibility = View.GONE
-            holder.itemView.setBackgroundColor(0x00000000)
-        }
-        holder.itemView.setOnClickListener {
-            onItemClick(channel, position)
+        holder.binding.channelName.text = channel.name
+        holder.itemView.setOnClickListener { onItemClick(channel) }
+        // 焦点效果
+        holder.itemView.setOnFocusChangeListener { _, hasFocus ->
+            if (hasFocus) {
+                holder.binding.root.cardBackgroundColor = 
+                    android.content.res.ColorStateList.valueOf(holder.itemView.resources.getColor(R.color.channel_focused, null))
+                holder.itemView.elevation = 8f
+            } else {
+                holder.binding.root.cardBackgroundColor = 
+                    android.content.res.ColorStateList.valueOf(holder.itemView.resources.getColor(R.color.channel_normal, null))
+                holder.itemView.elevation = 2f
+            }
         }
     }
 
     override fun getItemCount() = channels.size
 
-    fun setSelectedPosition(position: Int) {
-        val old = selectedPosition
-        selectedPosition = position
-        if (old != -1) notifyItemChanged(old)
-        notifyItemChanged(selectedPosition)
-    }
-
-    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val channelName: TextView = itemView.findViewById(R.id.channel_name)
-        val playingIndicator: View = itemView.findViewById(R.id.playing_indicator)
-    }
+    class ViewHolder(val binding: ItemChannelBinding) : RecyclerView.ViewHolder(binding.root)
 }
