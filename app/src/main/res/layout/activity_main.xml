@@ -37,6 +37,4 @@
         android:layout_weight="0.8"
         android:background="#1E1E1E" />
 
-</LinearLayout>        android:background="#1E1E1E" />
-
 </LinearLayout>
