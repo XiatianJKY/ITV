@@ -31,22 +31,16 @@ class MainActivity : AppCompatActivity() {
     private lateinit var fullscreenButton: ImageButton
     private var exoPlayer: SimpleExoPlayer? = null
     private var currentChannelUrl: String? = null
-    private var currentPosition: Long = 0
     private var isFullscreen = false
     private val client = OkHttpClient.Builder()
         .connectTimeout(15, TimeUnit.SECONDS)
         .readTimeout(15, TimeUnit.SECONDS)
         .build()
 
-    companion object {
-        private const val TAG = "IPTVPlayer"
-    }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // 保持屏幕常亮
         window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
 
         playerView = findViewById(R.id.player_view)
@@ -57,7 +51,6 @@ class MainActivity : AppCompatActivity() {
 
         channelList.layoutManager = LinearLayoutManager(this)
 
-        // 全屏按钮点击事件
         fullscreenButton.setOnClickListener { toggleFullscreen() }
 
         val baseUrl = BuildConfig.BASE_URL
@@ -83,15 +76,12 @@ class MainActivity : AppCompatActivity() {
             try {
                 val request = Request.Builder().url(url).build()
                 val response = client.newCall(request).execute()
-
                 if (!response.isSuccessful) {
                     callback(false)
                     return@Thread
                 }
-
                 val content = response.body?.string() ?: ""
                 val channels = if (isM3u) parseM3u(content) else parseTxt(content)
-
                 runOnUiThread {
                     if (channels.isEmpty()) {
                         Toast.makeText(this, "未找到任何频道", Toast.LENGTH_SHORT).show()
@@ -104,7 +94,7 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
             } catch (e: Exception) {
-                Log.e(TAG, "加载失败", e)
+                Log.e("IPTVPlayer", "加载失败", e)
                 callback(false)
             }
         }.start()
@@ -113,7 +103,6 @@ class MainActivity : AppCompatActivity() {
     private fun parseM3u(content: String): List<Channel> {
         val channels = mutableListOf<Channel>()
         var currentName = ""
-
         content.lines().forEach { line ->
             val trimmed = line.trim()
             when {
@@ -151,7 +140,6 @@ class MainActivity : AppCompatActivity() {
     private fun setupChannelList(channels: List<Channel>) {
         val adapter = ChannelAdapter(channels) { channel, position ->
             playChannel(channel.url, channel.name)
-            // 高亮当前选中的频道
             (channelList.adapter as? ChannelAdapter)?.setSelectedPosition(position)
         }
         channelList.adapter = adapter
@@ -183,14 +171,14 @@ class MainActivity : AppCompatActivity() {
 
     private fun toggleFullscreen() {
         if (isFullscreen) {
-            // 退出全屏
-            supportRequestWindowFeature(android.view.Window.FEATURE_NO_TITLE)
+            supportActionBar?.show()
             window.clearFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN)
             window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_VISIBLE
             requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED
+            fullscreenButton.setImageResource(R.drawable.ic_fullscreen)
             isFullscreen = false
         } else {
-            // 进入全屏
+            supportActionBar?.hide()
             window.setFlags(
                 WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN
@@ -202,20 +190,17 @@ class MainActivity : AppCompatActivity() {
                 View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
             )
             requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
+            fullscreenButton.setImageResource(R.drawable.ic_fullscreen_exit)
             isFullscreen = true
         }
     }
 
     override fun onConfigurationChanged(newConfig: Configuration) {
         super.onConfigurationChanged(newConfig)
-        // 屏幕方向改变时调整布局
-        when (newConfig.orientation) {
-            Configuration.ORIENTATION_LANDSCAPE -> {
-                supportActionBar?.hide()
-            }
-            Configuration.ORIENTATION_PORTRAIT -> {
-                supportActionBar?.show()
-            }
+        if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
+            supportActionBar?.hide()
+        } else {
+            supportActionBar?.show()
         }
     }
 
