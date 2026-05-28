@@ -1,10 +1,12 @@
 package com.iptv.player
 
+import android.content.pm.ActivityInfo
+import android.content.res.Configuration
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import android.view.ViewGroup
-import android.widget.ProgressBar
+import android.view.WindowManager
+import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -23,11 +25,14 @@ import java.util.concurrent.TimeUnit
 class MainActivity : AppCompatActivity() {
 
     private lateinit var playerView: PlayerView
-    private lateinit var loadingSpinner: ProgressBar
-    private lateinit var errorText: TextView
     private lateinit var channelList: RecyclerView
+    private lateinit var currentChannelName: TextView
+    private lateinit var channelCount: TextView
+    private lateinit var fullscreenButton: ImageButton
     private var exoPlayer: SimpleExoPlayer? = null
     private var currentChannelUrl: String? = null
+    private var currentPosition: Long = 0
+    private var isFullscreen = false
     private val client = OkHttpClient.Builder()
         .connectTimeout(15, TimeUnit.SECONDS)
         .readTimeout(15, TimeUnit.SECONDS)
@@ -41,32 +46,31 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // 保持屏幕常亮
+        window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
+
         playerView = findViewById(R.id.player_view)
-        loadingSpinner = findViewById(R.id.loading_spinner)
-        errorText = findViewById(R.id.error_text)
         channelList = findViewById(R.id.channel_list)
+        currentChannelName = findViewById(R.id.current_channel_name)
+        channelCount = findViewById(R.id.channel_count)
+        fullscreenButton = findViewById(R.id.fullscreen_button)
 
         channelList.layoutManager = LinearLayoutManager(this)
 
-        // 获取 BASE_URL（确保以 / 结尾）
+        // 全屏按钮点击事件
+        fullscreenButton.setOnClickListener { toggleFullscreen() }
+
         val baseUrl = BuildConfig.BASE_URL
         val normalizedBase = if (baseUrl.endsWith("/")) baseUrl else "$baseUrl/"
         val m3uUrl = "${normalizedBase}tv.m3u"
         val txtUrl = "${normalizedBase}tv.txt"
 
-        Log.d(TAG, "尝试加载 M3U: $m3uUrl")
-        Log.d(TAG, "备用 TXT: $txtUrl")
-
-        // 优先加载 M3U，失败后尝试 TXT
         loadPlaylist(m3uUrl, true) { success ->
             if (!success) {
-                Log.w(TAG, "M3U 加载失败，尝试 TXT")
                 loadPlaylist(txtUrl, false) { txtSuccess ->
                     if (!txtSuccess) {
                         runOnUiThread {
-                            loadingSpinner.visibility = View.GONE
-                            errorText.text = "无法加载播放列表\n请检查网络或源地址\n\n尝试加载的地址:\n$m3uUrl\n$txtUrl"
-                            errorText.visibility = View.VISIBLE
+                            Toast.makeText(this, "无法加载播放列表\n请检查网络或源地址", Toast.LENGTH_LONG).show()
                         }
                     }
                 }
@@ -75,17 +79,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun loadPlaylist(url: String, isM3u: Boolean, callback: (Boolean) -> Unit) {
-        runOnUiThread {
-            loadingSpinner.visibility = View.VISIBLE
-            errorText.visibility = View.GONE
-        }
-
         Thread {
             try {
-                Log.d(TAG, "开始请求: $url")
                 val request = Request.Builder().url(url).build()
                 val response = client.newCall(request).execute()
-                Log.d(TAG, "HTTP 响应码: ${response.code}")
 
                 if (!response.isSuccessful) {
                     callback(false)
@@ -93,29 +90,21 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 val content = response.body?.string() ?: ""
-                Log.d(TAG, "下载内容长度: ${content.length} 字符")
                 val channels = if (isM3u) parseM3u(content) else parseTxt(content)
-                Log.d(TAG, "解析到频道数量: ${channels.size}")
 
                 runOnUiThread {
-                    loadingSpinner.visibility = View.GONE
                     if (channels.isEmpty()) {
-                        errorText.text = "未找到任何频道"
-                        errorText.visibility = View.VISIBLE
+                        Toast.makeText(this, "未找到任何频道", Toast.LENGTH_SHORT).show()
                         callback(false)
                     } else {
                         setupChannelList(channels)
-                        playChannel(channels[0].url)
+                        channelCount.text = "${channels.size}个频道"
+                        playChannel(channels[0].url, channels[0].name)
                         callback(true)
                     }
                 }
             } catch (e: Exception) {
                 Log.e(TAG, "加载失败", e)
-                runOnUiThread {
-                    loadingSpinner.visibility = View.GONE
-                    errorText.text = "加载失败: ${e.message}"
-                    errorText.visibility = View.VISIBLE
-                }
                 callback(false)
             }
         }.start()
@@ -160,34 +149,18 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupChannelList(channels: List<Channel>) {
-        val adapter = object : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
-            override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-                val tv = TextView(parent.context).apply {
-                    layoutParams = ViewGroup.LayoutParams(
-                        ViewGroup.LayoutParams.MATCH_PARENT,
-                        ViewGroup.LayoutParams.WRAP_CONTENT
-                    )
-                    setPadding(50, 30, 50, 30)
-                    textSize = 16f
-                    setTextColor(0xFFFFFFFF.toInt())
-                }
-                return object : RecyclerView.ViewHolder(tv) {}
-            }
-
-            override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-                val channel = channels[position]
-                (holder.itemView as TextView).text = channel.name
-                holder.itemView.setOnClickListener { playChannel(channel.url) }
-            }
-
-            override fun getItemCount() = channels.size
+        val adapter = ChannelAdapter(channels) { channel, position ->
+            playChannel(channel.url, channel.name)
+            // 高亮当前选中的频道
+            (channelList.adapter as? ChannelAdapter)?.setSelectedPosition(position)
         }
         channelList.adapter = adapter
     }
 
-    private fun playChannel(url: String) {
+    private fun playChannel(url: String, name: String) {
         if (currentChannelUrl == url && exoPlayer?.isPlaying == true) return
         currentChannelUrl = url
+        currentChannelName.text = "▶ $name"
 
         releasePlayer()
         val trackSelector = DefaultTrackSelector(this)
@@ -200,14 +173,50 @@ class MainActivity : AppCompatActivity() {
         exoPlayer?.setMediaSource(mediaSource)
         exoPlayer?.prepare()
         exoPlayer?.playWhenReady = true
-
-        Toast.makeText(this, "正在播放: ${url.substringAfterLast("/")}", Toast.LENGTH_SHORT).show()
     }
 
     private fun releasePlayer() {
         exoPlayer?.release()
         exoPlayer = null
         playerView.player = null
+    }
+
+    private fun toggleFullscreen() {
+        if (isFullscreen) {
+            // 退出全屏
+            supportRequestWindowFeature(android.view.Window.FEATURE_NO_TITLE)
+            window.clearFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN)
+            window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_VISIBLE
+            requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED
+            isFullscreen = false
+        } else {
+            // 进入全屏
+            window.setFlags(
+                WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN
+            )
+            window.decorView.systemUiVisibility = (
+                View.SYSTEM_UI_FLAG_HIDE_NAVIGATION or
+                View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY or
+                View.SYSTEM_UI_FLAG_LAYOUT_STABLE or
+                View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+            )
+            requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
+            isFullscreen = true
+        }
+    }
+
+    override fun onConfigurationChanged(newConfig: Configuration) {
+        super.onConfigurationChanged(newConfig)
+        // 屏幕方向改变时调整布局
+        when (newConfig.orientation) {
+            Configuration.ORIENTATION_LANDSCAPE -> {
+                supportActionBar?.hide()
+            }
+            Configuration.ORIENTATION_PORTRAIT -> {
+                supportActionBar?.show()
+            }
+        }
     }
 
     override fun onDestroy() {
