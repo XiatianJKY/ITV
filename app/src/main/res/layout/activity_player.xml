@@ -1,72 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:keepScreenOn="true">
-    
+    android:layout_height="match_parent">
+
     <com.google.android.exoplayer2.ui.PlayerView
-        android:id="@+id/player_view"
+        android:id="@+id/playerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:use_controller="false"
-        app:resize_mode="fit" />
-    
-    <LinearLayout
-        android:id="@+id/top_bar"
-        android:layout_width="match_parent"
+        android:keepScreenOn="true" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="@drawable/control_bg"
-        android:padding="10dp"
-        android:gravity="center_vertical">
-        
-        <TextView
-            android:id="@+id/channel_name"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="频道名称"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:shadowColor="#000000"
-            android:shadowRadius="3" />
-        
-        <ImageButton
-            android:id="@+id/btn_prev"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:src="@android:drawable/ic_media_previous"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            android:tint="#FFFFFF"
-            android:contentDescription="上一个" />
-        
-        <ImageButton
-            android:id="@+id/btn_next"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:src="@android:drawable/ic_media_next"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            android:tint="#FFFFFF"
-            android:contentDescription="下一个" />
-        
-        <ImageButton
-            android:id="@+id/btn_list"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:src="@android:drawable/ic_menu_edit"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            android:tint="#FFFFFF"
-            android:contentDescription="节目列表" />
-            
-    </LinearLayout>
-    
-    <FrameLayout
-        android:id="@+id/channel_list_container"
-        android:layout_width="280dp"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        android:translationZ="10dp" />
-        
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/errorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#CC000000"
+        android:padding="16dp"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
 </FrameLayout>
