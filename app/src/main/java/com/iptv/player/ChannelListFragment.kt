@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.iptv.player.model.Channel
 import com.iptv.player.model.ChannelGroup
+import android.graphics.Color
 
 class ChannelListFragment : Fragment() {
 
