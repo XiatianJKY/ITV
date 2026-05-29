@@ -7,6 +7,7 @@ import android.util.Log
 import android.view.KeyEvent
 import android.view.MotionEvent
 import android.view.View
+import android.view.WindowManager
 import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
@@ -50,6 +51,17 @@ class PlayerActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_player)
 
+        // 全屏设置：隐藏状态栏和导航栏
+        window.addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN)
+        window.decorView.systemUiVisibility = (
+            View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+            or View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+            or View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+            or View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+            or View.SYSTEM_UI_FLAG_FULLSCREEN
+            or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
+        )
+
         try {
             initViews()
             initChannelList()
@@ -57,7 +69,6 @@ class PlayerActivity : AppCompatActivity() {
             setupTouchListener()
             initPlayer()
 
-            // 等待播放器就绪后再播放
             Handler(Looper.getMainLooper()).postDelayed({
                 if (DataManager.allChannels.isNotEmpty()) {
                     currentPosition = 0
@@ -98,13 +109,8 @@ class PlayerActivity : AppCompatActivity() {
                 override fun onPlaybackStateChanged(playbackState: Int) {
                     Log.d(TAG, "Playback state: $playbackState")
                     when (playbackState) {
-                        Player.STATE_READY -> {
-                            // 播放器准备就绪
-                        }
-                        Player.STATE_ENDED -> {
-                            // 自动播放下一个
-                            nextChannel()
-                        }
+                        Player.STATE_READY -> {}
+                        Player.STATE_ENDED -> nextChannel()
                     }
                 }
 
@@ -129,10 +135,7 @@ class PlayerActivity : AppCompatActivity() {
         supportFragmentManager.beginTransaction()
             .add(R.id.channel_list_container, channelListFragment)
             .commit()
-        // 延迟隐藏，确保 fragment 视图已创建
-        playerView.post {
-            channelListFragment.hide()
-        }
+        playerView.post { channelListFragment.hide() }
     }
 
     private fun setupControls() {
@@ -148,9 +151,7 @@ class PlayerActivity : AppCompatActivity() {
             toggleChannelList()
             resetControlsHideTimer()
         }
-        playerView.setOnClickListener {
-            toggleControls()
-        }
+        playerView.setOnClickListener { toggleControls() }
     }
 
     private fun setupTouchListener() {
