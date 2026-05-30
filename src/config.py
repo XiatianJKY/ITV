@@ -24,7 +24,7 @@ IPTV_SOURCES = [
     "https://raw.githubusercontent.com/zzgpy1/Collect-IPTV/main/best_sorted.m3u",
     "https://raw.githubusercontent.com/zzgpy1/UniIPTV/gh-pages/tv.m3u",
     "https://live.hacks.tools/tv/ipv4/categories/地方频道.m3u",
-    "https://live.hacks.tools/tv/ipv4/categories/卫视频道.m3u“，
+    "https://live.hacks.tools/tv/ipv4/categories/卫视频道.m3u",
     ”https://live.hacks.tools/tv/ipv4/categories/央视频道.m3u“，
     "https://tv.19860519.xyz/abc123",
 ]
