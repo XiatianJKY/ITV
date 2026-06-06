@@ -26,7 +26,8 @@ from src.demo_filter import filter_and_order_by_demo, write_shai_file
 from src.alias_matcher import get_alias_matcher
 from src.database import get_db_cache, channel_key
 from src.logger import logger
-from src.classifier import classify_channel  # 添加这一行用于调试打印
+from src.classifier import classify_channel
+from collections import Counter
 
 async def init_ip_resolver():
     if not ENABLE_IP_RESOLVE:
@@ -143,7 +144,6 @@ async def main():
         ordered_channels, unmatched_channels = filter_and_order_by_demo(merged_channels)
         logger.info(f"📊 Demo筛选后: {len(ordered_channels)} (减少 {before - len(ordered_channels)})")
         
-        # 调试：打印未匹配频道的前20个，帮助分析地方台缺失原因
         if unmatched_channels:
             logger.info("📝 未匹配频道示例（前20个，用于调试）：")
             for idx, ch in enumerate(unmatched_channels[:20]):
@@ -163,6 +163,15 @@ async def main():
         logger.error("❌ 过滤后无有效频道")
         return 1
 
+    # 最终分类统计
+    cat_counter = Counter()
+    for ch in ordered_channels:
+        cat = classify_channel(ch)
+        cat_counter[cat] += 1
+    logger.info("\n🎉 最终有效频道分类统计：")
+    for cat, cnt in cat_counter.items():
+        logger.info(f"  {cat}: {cnt} 个频道")
+
     generate_outputs_from_demo(ordered_channels)
 
     total = len(ordered_channels)
@@ -171,6 +180,7 @@ async def main():
     stats = {
         "total_channels": total,
         "timestamp": datetime.datetime.now().isoformat(),
+        "category_stats": dict(cat_counter),
         "config": {
             "max_workers": MAX_WORKERS,
             "timeout": TIMEOUT,
