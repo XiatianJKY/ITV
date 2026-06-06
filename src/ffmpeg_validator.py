@@ -1,10 +1,12 @@
 # src/ffmpeg_validator.py
 # ffmpeg/ffprobe 深度验证模块，必须包含视频流才有效
+# 增加 tqdm 进度条
 
 import asyncio
 import subprocess
 import json
 from concurrent.futures import ThreadPoolExecutor
+from tqdm.asyncio import tqdm
 from src.config import FFMPEG_ENABLE, TIMEOUT, MAX_WORKERS, FFMPEG_STRICT, FFMPEG_WORKERS
 from src.database import get_db_cache, channel_key
 from src.logger import logger
@@ -86,8 +88,12 @@ async def validate_batch(channels: list) -> list:
                     await db.set_speed_result(key, ch)
                     return ch
                 return None
+        # 使用 tqdm 进度条
         tasks = [validate_one(ch) for ch in need_validate]
-        results = await asyncio.gather(*tasks)
+        results = []
+        for coro in tqdm.as_completed(tasks, desc="🎬 ffmpeg深度验证", unit="频道", total=len(tasks), leave=True):
+            res = await coro
+            results.append(res)
         valid_need = [r for r in results if r is not None]
         valid_channels.extend(valid_need)
     
