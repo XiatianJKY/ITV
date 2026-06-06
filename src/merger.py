@@ -1,0 +1,44 @@
+# src/merger.py
+# 频道合并模块：严格按标准化名称分组，保留数字和连字符的差异
+
+import re
+from collections import defaultdict
+from src.config import MAX_SOURCES_PER_CHANNEL
+
+def normalize_channel_name(name: str) -> str:
+    name = re.sub(r'\s*(?:1080[pi]|720[pi]|4K|8K|HD|高清|超清|标清|流畅|付费|备\d*)\s*', '', name, flags=re.IGNORECASE)
+    name = re.sub(r'[（(][^）)]*[）)]', '', name)
+    name = re.sub(r'\s+', ' ', name).strip()
+    return name
+
+def merge_channels_by_name(valid_channels: list) -> list:
+    groups = defaultdict(list)
+    for ch in valid_channels:
+        norm_name = normalize_channel_name(ch["name"])
+        groups[norm_name].append(ch)
+
+    merged = []
+    for norm_name, ch_list in groups.items():
+        def sort_key(ch):
+            codec = ch.get("video_codec", "")
+            codec_priority = 0 if codec == "h264" else 1 if codec == "hevc" else 2
+            latency = ch.get("latency", 9999)
+            return (codec_priority, latency)
+        ch_list.sort(key=sort_key)
+        top = ch_list[:MAX_SOURCES_PER_CHANNEL]
+        primary = top[0]
+        merged_ch = {
+            "name": primary["name"],
+            "urls": [c["url"] for c in top],
+            "url": primary["url"],
+            "latency": primary["latency"],
+            "video_codec": primary["video_codec"],
+            "group_title": primary.get("group_title", ""),
+            "id": primary.get("tvg_id", ""),
+            "logo": primary.get("tvg_logo", ""),
+            "ip_info": primary.get("ip_info")
+        }
+        merged.append(merged_ch)
+
+    print(f"🔄 频道合并完成：{len(valid_channels)} 个源 -> {len(merged)} 个频道")
+    return merged
