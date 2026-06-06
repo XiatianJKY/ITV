@@ -75,7 +75,7 @@ jobs:
       - name: 执行 IPTV 更新脚本
         run: python -m src.run
         env:
-          MAX_WORKERS: 10
+          MAX_WORKERS: 5
           TIMEOUT: 10
           FFMPEG_ENABLE: true
           ENABLE_RETRY: true
