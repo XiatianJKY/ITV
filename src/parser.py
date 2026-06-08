@@ -1,5 +1,5 @@
 # src/parser.py
-# M3U/TXT 解析，解析后立即应用别名标准化
+# M3U/TXT 解析，解析后立即应用别名标准化，并保留 logo 信息
 
 import re
 from src.alias_matcher import get_alias_matcher
@@ -32,7 +32,7 @@ def parse_m3u(content: str) -> list:
                         "url": url,
                         "group_title": group_title,
                         "tvg_id": tvg_id,
-                        "tvg_logo": tvg_logo
+                        "tvg_logo": tvg_logo  # 保留原始 logo
                     })
             i += 2
         else:
@@ -58,7 +58,7 @@ def parse_txt(content: str) -> list:
                 "url": line,
                 "group_title": "",
                 "tvg_id": "",
-                "tvg_logo": ""
+                "tvg_logo": ""  # TXT 源无 logo
             })
             current_name = None
     return channels
