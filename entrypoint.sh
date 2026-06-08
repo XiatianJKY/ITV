@@ -6,16 +6,15 @@ echo "IPTV 智能整理平台 Docker 容器启动"
 echo "=========================================="
 
 mkdir -p /app/data /app/output
-
 cd /app
 
-# 启动 HTTP 文件服务器（后台运行，提供 /app/output 目录下的文件）
+# 启动 HTTP 文件服务器（后台运行，提供 /app/output 目录）
 echo "启动 HTTP 服务器，监听 0.0.0.0:8080，服务目录 /app/output"
 python -m http.server 8080 --directory /app/output &
 HTTP_PID=$!
 echo "HTTP 服务器进程 PID: $HTTP_PID"
 
-# 更新 IP 数据库（首次或文件不存在时）
+# 更新 IP 数据库（首次或文件无效时）
 if [ ! -f /app/qqwry.dat ] || [ "$(stat -c %s /app/qqwry.dat 2>/dev/null || echo 0)" -lt 1048576 ]; then
     echo "正在更新 IP 数据库..."
     python -m src.update_ipdb || echo "⚠️ IP 数据库更新失败，将使用已有文件（如有）"
@@ -27,7 +26,7 @@ if [ "$RUN_MODE" = "once" ]; then
     echo "执行一次性采集任务..."
     python -m src.run
     echo "任务完成，HTTP 服务器继续运行。按 Ctrl+C 停止容器。"
-    # 保持前台运行，让 HTTP 服务器持续
+    # 保持前台，让 HTTP 服务器持续
     wait $HTTP_PID
 elif [ "$RUN_MODE" = "schedule" ]; then
     INTERVAL=${SCHEDULE_INTERVAL:-21600}
