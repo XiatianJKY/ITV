@@ -15,15 +15,25 @@ if [ ! -f /app/qqwry.dat ] || [ "$(stat -c %s /app/qqwry.dat 2>/dev/null || echo
     python -m src.update_ipdb || echo "⚠️ IP 数据库更新失败，将使用已有文件（如有）"
 fi
 
-# 启动 HTTP 文件服务器（后台）
+# 启动 HTTP 文件服务器（后台运行，并将输出重定向到 stdout）
 echo "启动 HTTP 服务器，监听 0.0.0.0:8000，目录 /app/output"
-python -m src.server &
+python -m src.server >> /app/output/http.log 2>&1 &
 HTTP_PID=$!
+echo "HTTP 服务器进程 PID: $HTTP_PID"
+
+# 等待 2 秒确保服务器启动
+sleep 2
+if ! kill -0 $HTTP_PID 2>/dev/null; then
+    echo "❌ HTTP 服务器启动失败，查看 /app/output/http.log"
+    cat /app/output/http.log
+    exit 1
+fi
+echo "✅ HTTP 服务器已启动"
 
 RUN_MODE=${RUN_MODE:-once}
 INTERVAL=${SCHEDULE_INTERVAL:-21600}
 
-# 采集任务函数
+# 采集任务函数（前台运行）
 run_collector() {
     if [ "$RUN_MODE" = "once" ]; then
         echo "执行一次性采集任务..."
