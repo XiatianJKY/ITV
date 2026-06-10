@@ -1,6 +1,6 @@
 # Demo筛选丢弃的频道
-# 原始频道总数: 515
-# Demo匹配成功: 398
+# 原始频道总数: 510
+# Demo匹配成功: 393
 # 丢弃数量: 117
 # 格式: 频道名,URL
 
@@ -92,10 +92,10 @@ RT Doc-Русский,https://rt-doc.rttv.com/dvr/rtdru/rtdru1080.m3u8
 RT DE,https://rt-ger.rttv.com/dvr/rtdeutsch/playlist_4500Kb.m3u8
 Harbin Movie Channel,https://stream.hrbtv.net/yspd/playlist.m3u8
 飞碟之谜01,https://hls.cntv.lxdns.com/asp/hls/2000/0303000a/3/default/f0a47e155d32450daa1d36a04fd7d262/2000.m3u8
+武进新闻 [Not 24/7],https://live.wjyanghu.com/live/CH1.m3u8
 泰山望人松,https://gcalic.v.myalicdn.com/gc/taishan02_1/index.m3u8
 赣州新闻,https://pili-live-hls-sjxgz2024.sobeylive.com/jxgz2024/396_q_live172526329228525.m3u8
 Harbin Comprehensive News Channel,https://stream.hrbtv.net/xwzh/playlist.m3u8?_upt=ef41dd531755913594
-CGNT 新闻频道,https://english-livebkali.cgtn.com/live/encgtn_0.m3u8
 Tonghua TV,http://lsfb.avap.jilintv.cn/zqvk7vpj/channel/43ea5771aa44421591f9dfd2b71f1b9b/index.m3u8
 泰山大观峰,https://gcalic.v.myalicdn.com/gc/taishan03_1/index.m3u8
 春晚2026,https://v.lzcdn28.com/20260217/8616_1de9f6e5/index.m3u8
