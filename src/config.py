@@ -2,6 +2,7 @@
 # 配置文件：源地址、分类关键词、全局参数
 
 import os
+import sys
 from pathlib import Path
 
 ROOT_DIR = Path(__file__).parent.parent
@@ -12,28 +13,72 @@ ALIAS_FILE = ROOT_DIR / "alias.txt"
 BLACKLIST_FILE = ROOT_DIR / "blacklist.txt"
 DATABASE_PATH = ROOT_DIR / "iptv_cache.db"
 
-# CDN 加速前缀
-GH_PROXY = "https://gh-proxy.19860519.xyz/"
 
-# IPTV 源地址
-# 注意：部分源需要 CDN 加速，部分源可直接访问
-IPTV_SOURCES = [
-    # 需要 CDN 加速的源（GitHub 源）
-    GH_PROXY + "https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/cn.m3u",
-    GH_PROXY + "https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.txt",
-    GH_PROXY + "https://raw.githubusercontent.com/zzgpy1/iptv-api/master/output/result.txt",
-    GH_PROXY + "https://raw.githubusercontent.com/dogwalkerg/IPTV-collect-tv-txt/main/live.txt",
-    GH_PROXY + "https://raw.githubusercontent.com/zzgpy1/Collect-IPTV/main/best_sorted.m3u",
-    GH_PROXY + "https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u",
-    GH_PROXY + "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u",
-    GH_PROXY + "https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
-    # 不需要 CDN 加速的源（直接访问）
+def is_github_actions() -> bool:
+    """检测是否在 GitHub Actions 环境中运行"""
+    return os.getenv("GITHUB_ACTIONS") == "true" or os.getenv("CI") == "true"
+
+
+def is_docker() -> bool:
+    """检测是否在 Docker 容器中运行"""
+    return os.path.exists("/.dockerenv") or os.path.exists("/run/.containerenv")
+
+
+def get_cdn_proxy() -> str:
+    """
+    根据运行环境决定是否使用 CDN 代理
+    - GitHub Actions: 不使用代理（直接访问）
+    - Docker/本地: 使用代理（加速 GitHub 源下载）
+    """
+    if is_github_actions():
+        return ""  # GitHub Actions 环境直接访问
+    return "https://gh-proxy.19860519.xyz/"
+
+
+# IPTV 源地址（原始 GitHub 链接）
+RAW_SOURCES = [
+    "https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/cn.m3u",
+    "https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.txt",
+    "https://raw.githubusercontent.com/zzgpy1/iptv-api/master/output/result.txt",
+    "https://raw.githubusercontent.com/dogwalkerg/IPTV-collect-tv-txt/main/live.txt",
+    "https://raw.githubusercontent.com/zzgpy1/Collect-IPTV/main/best_sorted.m3u",
+    "https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u",
+    "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u",
+    "https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
+]
+
+# 不需要代理的源
+DIRECT_SOURCES = [
     "https://tv.19860519.xyz/abc123",
 ]
 
+# 根据环境决定是否添加代理前缀
+PROXY = get_cdn_proxy()
+IPTV_SOURCES = []
+
+# 添加 GitHub 源（环境决定是否加代理）
+for src in RAW_SOURCES:
+    if PROXY:
+        IPTV_SOURCES.append(PROXY + src)
+    else:
+        IPTV_SOURCES.append(src)
+
+# 添加直接访问的源（始终不加代理）
+IPTV_SOURCES.extend(DIRECT_SOURCES)
+
+# 打印环境信息
+if is_github_actions():
+    print("🏃 检测到 GitHub Actions 环境，使用直接访问模式")
+elif is_docker():
+    print("🐳 检测到 Docker 环境，启用 CDN 加速")
+else:
+    print("💻 检测到本地环境，启用 CDN 加速")
+
+print(f"📡 共配置 {len(IPTV_SOURCES)} 个源")
+
 # 性能配置
 MAX_WORKERS = int(os.getenv("MAX_WORKERS", 20))
-TIMEOUT = int(os.getenv("TIMEOUT", 8))
+TIMEOUT = int(os.getenv("TIMEOUT", 10))
 
 # ffmpeg 配置
 FFMPEG_ENABLE = os.getenv("FFMPEG_ENABLE", "true").lower() == "true"
@@ -70,7 +115,7 @@ TXT_FILE = "tv.txt"
 # 缓存时长（小时）
 CACHE_HOURS = int(os.getenv("CACHE_HOURS", 24))
 
-# 每个频道保留的源数量（用于自动切换）
+# 每个频道保留的源数量
 MAX_SOURCES_PER_CHANNEL = int(os.getenv("MAX_SOURCES_PER_CHANNEL", 3))
 
 # 功能开关
