@@ -66,7 +66,7 @@ async def validate_batch(channels: list) -> list:
     valid_channels = []
     for ch in channels:
         key = channel_key(ch["name"], ch["url"])
-        cached = await db.get_speed_result(key, max_age_hours=24*7)
+        cached = await db.get_speed_result(key)  # 移除 max_age_hours 参数
         if cached and cached.get("video_codec"):
             ch["video_codec"] = cached["video_codec"]
             valid_channels.append(ch)
