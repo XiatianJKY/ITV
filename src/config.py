@@ -15,8 +15,10 @@ DATABASE_PATH = ROOT_DIR / "iptv_cache.db"
 # CDN 加速前缀
 GH_PROXY = "https://gh-proxy.19860519.xyz/"
 
-# IPTV 源地址（使用 CDN 加速）
+# IPTV 源地址
+# 注意：部分源需要 CDN 加速，部分源可直接访问
 IPTV_SOURCES = [
+    # 需要 CDN 加速的源（GitHub 源）
     GH_PROXY + "https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/cn.m3u",
     GH_PROXY + "https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.txt",
     GH_PROXY + "https://raw.githubusercontent.com/zzgpy1/iptv-api/master/output/result.txt",
@@ -25,6 +27,8 @@ IPTV_SOURCES = [
     GH_PROXY + "https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u",
     GH_PROXY + "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u",
     GH_PROXY + "https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
+    # 不需要 CDN 加速的源（直接访问）
+    "https://tv.19860519.xyz/abc123",
 ]
 
 # 性能配置
