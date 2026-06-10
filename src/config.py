@@ -1,5 +1,5 @@
 # src/config.py
-# 配置文件：源地址、分类关键词、全局参数、数据库配置
+# 配置文件：源地址、分类关键词、全局参数
 
 import os
 from pathlib import Path
@@ -10,29 +10,30 @@ OUTPUT_DIR = ROOT_DIR / "output"
 DEMO_FILE = ROOT_DIR / "demo.txt"
 ALIAS_FILE = ROOT_DIR / "alias.txt"
 BLACKLIST_FILE = ROOT_DIR / "blacklist.txt"
-IP_DATABASE_FILE = ROOT_DIR / "qqwry.dat"
 DATABASE_PATH = ROOT_DIR / "iptv_cache.db"
 
+# CDN 加速前缀
+GH_PROXY = "https://gh-proxy.19860519.xyz/"
+
+# IPTV 源地址（使用 CDN 加速）
 IPTV_SOURCES = [
-    "https://raw.githubusercontent.com/iptv-org/iptv/gh-pages/countries/cn.m3u",
-    "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/cn.m3u",
-    "https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.txt",
-    "https://raw.githubusercontent.com/zzgpy1/iptv-api/master/output/result.txt",
-    "https://raw.githubusercontent.com/zzgpy1/IPTV-collect-tv-txt/main/live.txt",
-    "https://raw.githubusercontent.com/zzgpy1/Collect-IPTV/main/best_sorted.m3u",
-    "https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u",
-    "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u",
-    "https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
-    "https://tv.19860519.xyz/abc123",
+    GH_PROXY + "https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/cn.m3u",
+    GH_PROXY + "https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.txt",
+    GH_PROXY + "https://raw.githubusercontent.com/zzgpy1/iptv-api/master/output/result.txt",
+    GH_PROXY + "https://raw.githubusercontent.com/zzgpy1/IPTV-collect-tv-txt/main/live.txt",
+    GH_PROXY + "https://raw.githubusercontent.com/zzgpy1/Collect-IPTV/main/best_sorted.m3u",
+    GH_PROXY + "https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u",
+    GH_PROXY + "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u",
+    GH_PROXY + "https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
+    GH_PROXY + "https://raw.githubusercontent.com/zhanghanyun/backup/main/tv.m3u",
+    GH_PROXY + "https://raw.githubusercontent.com/WeiZuoXu/IPTV/main/ipv6.m3u",
 ]
 
-MAX_WORKERS = int(os.getenv("MAX_WORKERS", 10))
-TIMEOUT = int(os.getenv("TIMEOUT", 10))
+MAX_WORKERS = int(os.getenv("MAX_WORKERS", 20))
+TIMEOUT = int(os.getenv("TIMEOUT", 8))
 
 FFMPEG_ENABLE = os.getenv("FFMPEG_ENABLE", "true").lower() == "true"
-FFMPEG_STRICT = os.getenv("FFMPEG_STRICT", "false").lower() == "true"
-ENABLE_RETRY = os.getenv("ENABLE_RETRY", "true").lower() == "true"
-FFMPEG_WORKERS = min(MAX_WORKERS, 3)
+FFMPEG_WORKERS = min(MAX_WORKERS, 5)
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
@@ -52,52 +53,25 @@ CCTV_ORDER = [
 M3U_FILE = "tv.m3u"
 TXT_FILE = "tv.txt"
 
-RETRY_MAX_ATTEMPTS = 3
-RETRY_BACKOFF_FACTOR = 2
-RETRY_MAX_WAIT = 60
+# 缓存时长（小时）
+CACHE_HOURS = int(os.getenv("CACHE_HOURS", 24))
 
-ENABLE_IP_RESOLVE = os.getenv("ENABLE_IP_RESOLVE", "true").lower() == "true"
-ENABLE_REGION_FILTER = os.getenv("ENABLE_REGION_FILTER", "false").lower() == "true"
-PREFERRED_LOCATION = os.getenv("PREFERRED_LOCATION", "")
-PREFERRED_ISP = os.getenv("PREFERRED_ISP", "")
+# 每个频道保留的源数量（用于自动切换）
+MAX_SOURCES_PER_CHANNEL = int(os.getenv("MAX_SOURCES_PER_CHANNEL", 3))
 
-DATABASE_ENABLE = os.getenv("DATABASE_ENABLE", "true").lower() == "true"
-DATABASE_TABLE = "channel_cache"
-CACHE_RAW_HOURS = int(os.getenv("CACHE_RAW_HOURS", 24))
-CACHE_SPEED_HOURS = int(os.getenv("CACHE_SPEED_HOURS", 24))
-
-MAX_SOURCES_PER_CHANNEL = int(os.getenv("MAX_SOURCES_PER_CHANNEL", 5))
-PREFER_H264 = os.getenv("PREFER_H264", "true").lower() == "true"
-PREFER_LOCAL_ISP = True
-
+# 功能开关
 ENABLE_DEMO_FILTER = os.getenv("ENABLE_DEMO_FILTER", "true").lower() == "true"
 ENABLE_ALIAS = os.getenv("ENABLE_ALIAS", "true").lower() == "true"
 ENABLE_BLACKLIST = os.getenv("ENABLE_BLACKLIST", "true").lower() == "true"
+DATABASE_ENABLE = os.getenv("DATABASE_ENABLE", "true").lower() == "true"
 
 DEMO_MATCH_MODE = os.getenv("DEMO_MATCH_MODE", "contains")
+PREFER_H264 = True
 
-# ==================== HTTP 服务配置 ====================
-WEB_SERVER_HOST = os.getenv("WEB_SERVER_HOST", "0.0.0.0")
+# HTTP 服务配置
 WEB_SERVER_PORT = int(os.getenv("WEB_SERVER_PORT", 8080))
-OUTPUT_DIR = ROOT_DIR / "output"   # 容器内为 /app/output
+WEB_SERVER_HOST = os.getenv("WEB_SERVER_HOST", "0.0.0.0")
 
-# ==================== CDN 加速配置 ====================
-CDN_PROXY_ENABLE = os.getenv("CDN_PROXY_ENABLE", "true").lower() == "true"
-CDN_PROXY_URL = os.getenv("CDN_PROXY_URL", "https://gh-proxy.19860519.xyz/")
-CDN_PROXY_DOMAINS_RAW = os.getenv("CDN_PROXY_DOMAINS", "raw.githubusercontent.com,github.com")
-CDN_PROXY_DOMAINS = [d.strip() for d in CDN_PROXY_DOMAINS_RAW.split(",") if d.strip()]
-
-# src/config.py (在现有配置末尾添加以下内容)
-
-# ==================== 播放卡顿优化配置 ====================
-# 测速延迟阈值（毫秒），超过此值的源将被过滤（0 表示不过滤）
-MIN_LATENCY_THRESHOLD = int(os.getenv("MIN_LATENCY_THRESHOLD", 3000))  # 默认 3 秒
-
-# 每个频道保留的最佳源数量
-KEEP_BEST_SOURCES = int(os.getenv("KEEP_BEST_SOURCES", 3))
-
-# M3U 输出时是否按延迟排序（播放器会按顺序尝试）
-SORT_M3U_BY_LATENCY = os.getenv("SORT_M3U_BY_LATENCY", "true").lower() == "true"
-
-# 是否启用多源备用（在 M3U 中列出所有可用源）
-ENABLE_MULTI_SOURCE = os.getenv("ENABLE_MULTI_SOURCE", "true").lower() == "true"
+# 运行模式
+RUN_MODE = os.getenv("RUN_MODE", "once")
+SCHEDULE_INTERVAL = int(os.getenv("SCHEDULE_INTERVAL", 21600))
