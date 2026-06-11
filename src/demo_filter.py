@@ -15,7 +15,7 @@ def parse_demo_order_with_categories(demo_file: Path = DEMO_FILE) -> List[Tuple[
         logger.warning(f"⚠️ Demo 文件不存在: {demo_file}")
         return []
     
-    matcher = get_alias_matcher()
+    # 重要：不对 demo 名称应用别名，保持原始名称
     order = []
     current_category = None
     
@@ -27,6 +27,7 @@ def parse_demo_order_with_categories(demo_file: Path = DEMO_FILE) -> List[Tuple[
             
             # 检测分类行（格式：分类名,#genre# 或 分类名, #genre#）
             if line.endswith(",#genre#") or line.endswith(", #genre#"):
+                # 去除分类标记
                 current_category = line.replace(", #genre#", "").replace(", #genre#", "").strip()
                 continue
             
@@ -34,12 +35,9 @@ def parse_demo_order_with_categories(demo_file: Path = DEMO_FILE) -> List[Tuple[
             if line.startswith('#'):
                 continue
             
-            # 处理频道行
+            # 处理频道行 - 保持原始名称，不应用别名标准化
             if current_category is not None:
-                demo_name = line
-                # 应用别名标准化
-                if matcher:
-                    demo_name = matcher.normalize(demo_name)
+                demo_name = line  # 保持原样
                 order.append((current_category, demo_name))
             else:
                 order.append(("其他", line))
@@ -118,7 +116,7 @@ def find_matching_demo_category(channel_name: str, demo_order: List[Tuple[str, s
                 if prov in category and ("频道" in category or "☘️" in category):
                     return category
 
-    # 3. 地级市 -> 省份 映射（大幅提升地方台匹配率）
+    # 3. 地级市 -> 省份 映射
     city_to_province = {
         # 浙江
         "杭州": "浙江", "宁波": "浙江", "温州": "浙江", "绍兴": "浙江", "嘉兴": "浙江",
