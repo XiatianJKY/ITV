@@ -24,6 +24,7 @@ CGTN纪录,https://english-livebkali.cgtn.com/live/doccgtn_0.m3u8
 中央电视塔东,https://gcalic.v.myalicdn.com/gc/ztd_1/index.m3u8
 中央电视塔南,https://gcalic.v.myalicdn.com/gc/ztn_1/index.m3u8
 📡卫视频道,#genre#
+广东卫视,http://112.27.235.94:8000/hls/30/index.m3u8
 浙江卫视,http://112.27.235.94:8000/hls/29/index.m3u8
 湖南卫视,http://112.27.235.94:8000/hls/31/index.m3u8
 北京卫视,http://112.27.235.94:8000/hls/27/index.m3u8
@@ -35,8 +36,10 @@ CGTN纪录,https://english-livebkali.cgtn.com/live/doccgtn_0.m3u8
 东南卫视,http://112.27.235.94:8000/hls/38/index.m3u8
 甘肃卫视,http://cssbyd.imwork.net:8082/hls/48/index.m3u8
 广西卫视,http://36.32.174.67:60080/newlive/live/hls/38/live.m3u8
-河北,https://event.pull.hebtv.com:443/live/live101.m3u8
+贵州卫视,http://112.27.235.94:8000/hls/46/index.m3u8
+河北卫视,http://112.27.235.94:8000/hls/39/index.m3u8
 河南卫视,http://112.27.235.94:8000/hls/37/index.m3u8
+吉林卫视,http://cssbyd.imwork.net:8082/hls/41/index.m3u8
 江苏卫视,http://112.27.235.94:8000/hls/32/index.m3u8
 江西卫视,http://112.27.235.94:8000/hls/44/index.m3u8
 辽宁卫视,http://112.27.235.94:8000/hls/47/index.m3u8
@@ -47,6 +50,7 @@ CGTN纪录,https://english-livebkali.cgtn.com/live/doccgtn_0.m3u8
 陕西卫视,http://112.27.235.94:8000/hls/43/index.m3u8
 四川卫视,http://112.27.235.94:8000/hls/35/index.m3u8
 深圳卫视,http://112.27.235.94:8000/hls/33/index.m3u8
+天津卫视,http://112.27.235.94:8000/hls/42/index.m3u8
 西藏卫视,http://36.32.174.67:60080/newlive/live/hls/48/live.m3u8
 新疆卫视,http://36.32.174.67:60080/newlive/live/hls/47/live.m3u8
 云南卫视,http://112.27.235.94:8000/hls/40/index.m3u8
@@ -72,6 +76,7 @@ Bread TV面包台,https://video.bread-tv.com:8091/hls-live24/online/index.m3u8
 新纪实,http://bp-resource-dfl.bestv.cn/155/3/video.m3u8
 普陀山,https://gcalic.v.myalicdn.com/gc/pts01_1/index.m3u8
 ☘️天津频道,#genre#
+天津卫视,http://112.27.235.94:8000/hls/42/index.m3u8
 津南一套,http://play.jinnantv.top/live/JNTV1.m3u8?ztianjd
 滨海新闻综合,http://traffic.jbh.tjbh.com/live/bhtv10/playlist.m3u8
 ☘️重庆频道,#genre#
@@ -84,6 +89,7 @@ Bread TV面包台,https://video.bread-tv.com:8091/hls-live24/online/index.m3u8
 东莞新闻综合,https://stream.sun0769.com/dgrtv1/mp4tv1_800/index.m3u8
 东莞生活资讯,https://stream.sun0769.com/dgrtv1/mp4tv2_800/index.m3u8
 南国都市,http://tencentplay.gztv.com/live/nanguodushi.m3u8?txSecret=140110ae3d6c936a77f94c4f4d85b0d3&txTime=18d57929bd4
+广东卫视,http://112.27.235.94:8000/hls/30/index.m3u8
 广东大湾区,http://222.128.55.152:9080/live/dwq.m3u8
 广州新闻,http://tencentplay.gztv.com/live/xinwen.m3u8?txSecret=d2c2db0b598c02ec1b5623728434d367&txTime=18d57929bd3
 广州竞赛,http://8.138.7.223/tv/gzjs.m3u8
@@ -131,10 +137,12 @@ Bread TV面包台,https://video.bread-tv.com:8091/hls-live24/online/index.m3u8
 普陀电视台,https://l.cztvcloud.com/channels/lantian/SXputuo1/720p.m3u8
 普陀新闻综合,http://l.cztvcloud.com/channels/lantian/SXputuo1/720p.m3u8
 新昌生活,http://l.cztvcloud.com/channels/lantian/SXxinchang2/720p.m3u8
+新昌新闻综合,https://l.cztvcloud.com/channels/lantian/SXxinchang1/720p.m3u8
 文成综合,http://l.cztvcloud.com/channels/lantian/SXwencheng1/720p.m3u8?zzhed
 文成新闻综合,http://l.cztvcloud.com/channels/lantian/SXwencheng1/720p.m3u8
 开化新闻综合,http://l.cztvcloud.com/channels/lantian/SXkaihua1/720p.m3u8?zzhed
 开化国家公园,http://l.cztvcloud.com/channels/lantian/SXkaihua2/720p.m3u8
+庆元综合,http://l.cztvcloud.com/channels/lantian/SXqingyuan1/720p.m3u8
 庆元新闻综合,http://l.cztvcloud.com/channels/lantian/SXqingyuan1/720p.m3u8?fbl=
 平湖民生休闲,http://l.cztvcloud.com/channels/lantian/SXpinghu2/720p.m3u8
 平湖新闻综合,http://l.cztvcloud.com/channels/lantian/SXpinghu1/720p.m3u8?zzhed
@@ -249,6 +257,7 @@ RT News,https://rt-glb.rttv.com/dvr/rtnews/playlist_4500Kb.m3u8
 河综合,http://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8
 ☘️贵州频道,#genre#
 安顺新闻,https://ls.qingting.fm/live/5022203/64k.m3u8
+贵州卫视,http://112.27.235.94:8000/hls/46/index.m3u8
 ☘️云南频道,#genre#
 云南白沙远眺玉龙雪山,https://gcalic.v.myalicdn.com/gc/hkylxs03_1/index.m3u8
 云南丽江玉龙雪山草甸,https://gcalic.v.myalicdn.com/gc/hkylxs06_1/index.m3u8
@@ -282,6 +291,7 @@ RT News,https://rt-glb.rttv.com/dvr/rtnews/playlist_4500Kb.m3u8
 伊犁经济法制,http://110.153.180.106:55555/out_4/index.m3u8
 伊犁维吾尔,http://110.153.180.106:55555/out_2/index.m3u8
 兵团五师双河新闻综合,http://liveout.btzx.com.cn/62ds9e/4nxdih.m3u8?fbl=
+可克达拉综合,http://file.loulannews.cn/nmip-media/channellive/channel103824/playlist.m3u8
 奎屯哈萨克语,http://218.84.12.186:8002/hls/main/playlist.m3u8?zxinjd
 奎屯汉语,http://218.84.12.186:8001/hls/main/playlist.m3u8?zxinjd
 新疆卫视,http://36.32.174.67:60080/newlive/live/hls/47/live.m3u8
@@ -351,9 +361,10 @@ RT News,https://rt-glb.rttv.com/dvr/rtnews/playlist_4500Kb.m3u8
 任丘综合,https://jwcdnqx.hebyun.com.cn/live/rqtv1/1500k/tzwj_video.m3u8
 平泉综合,https://jwcdnqx.hebyun.com.cn/live/pqzh/1500k/tzwj_video.m3u8
 昌黎综合,https://jwcdnqx.hebyun.com.cn/live/clzhpd/1500k/tzwj_video.m3u8
+河北,https://event.pull.hebtv.com:443/live/live101.m3u8
 河北公共,http://1.94.31.214/php/hebei.php?id=hbgg
 河北农民,https://jwcdnqx.hebyun.com.cn/live/clzhpd/1500k/tzwj_video.m3u8?zhebd
-河北,https://event.pull.hebtv.com:443/live/live101.m3u8
+河北卫视,http://112.27.235.94:8000/hls/39/index.m3u8
 河北少儿,http://1.94.31.214/php/hebei.php?id=sekj
 河北影视,http://1.94.31.214/php/hebei.php?id=hbys
 河北经济,http://1.94.31.214/php/hebei.php?id=jjsh
