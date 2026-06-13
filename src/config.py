@@ -50,7 +50,6 @@ RAW_SOURCES = [
 # 不需要代理的源
 DIRECT_SOURCES = [
     "https://tv.19860519.xyz/abc123",
-    "https://iptv-org.github.io/iptv/index.m3u",
 ]
 
 # 根据环境决定是否添加代理前缀
