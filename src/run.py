@@ -160,13 +160,11 @@ async def main():
     for cat, cnt in cat_counter.items():
         logger.info(f"  {cat}: {cnt} 个频道")
 
-    # ========== 增强版输出生成 ==========
-    output_gen = EnhancedOutputGenerator()
-    
-    # 生成标准输出（保持原有兼容性）
+    # ========== 生成标准输出（保持原有兼容性） ==========
     generate_outputs_from_demo(ordered_channels, demo_order)
-    
-    # 生成增强版输出（新增功能）
+
+    # ========== 生成增强版输出（新增功能） ==========
+    output_gen = EnhancedOutputGenerator()
     output_gen.generate_all_outputs(
         ordered_channels, 
         demo_order,
