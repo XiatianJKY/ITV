@@ -1,5 +1,5 @@
 # src/special_categories.py
-"""特殊分类采集模块 - 从指定源提取特色分类内容"""
+"""特殊分类采集模块 - 根据频道名精确分类"""
 
 import re
 from typing import List, Dict, Tuple
@@ -7,77 +7,136 @@ from pathlib import Path
 
 from src.logger import logger
 
-# 需要采集的特殊分类关键词
-SPECIAL_CATEGORIES = [
-    "每日电影",
-    "经典电影", 
-    "热门歌曲",
-    "韩国女团",
-    "动感舞曲",
-    "戏曲频道",
-    "网络电台"
+# ========== 基于频道名的精确分类规则 ==========
+
+# 电影类关键词
+MOVIE_KEYWORDS = [
+    "电影", "影院", "影片", "CHC", "动作电影", "家庭影院", "影迷电影",
+    "经典电影", "华语影院", "峨眉电影", "第一剧场", "怀旧剧场", "风云剧场",
+    "家庭剧场", "动作电影", "惊悚悬疑", "超级电影", "黑莓电影"
 ]
 
-# 分类的中文显示名称映射
-CATEGORY_DISPLAY_NAME = {
-    "每日电影": "🎬 每日电影",
-    "经典电影": "🎬 经典电影",
-    "热门歌曲": "🎵 热门歌曲",
-    "韩国女团": "🎤 韩国女团",
-    "动感舞曲": "🎧 动感舞曲",
-    "戏曲频道": "🎭 戏曲频道",
-    "网络电台": "📻 网络电台",
-}
+# 音乐类关键词（歌曲、音乐）
+MUSIC_KEYWORDS = [
+    "音乐", "歌曲", "老歌", "金曲", "流行", "经典", "香香音乐",
+    "好听", "DJ", "舞曲", "动感", "节奏", "MV", "音悦"
+]
+
+# 韩国女团关键词
+KOREAN_GIRL_KEYWORDS = [
+    "韩国女团", "女团", "kpop", "K-pop", "少女时代", "BLACKPINK", "TWICE",
+    "IVE", "NewJeans", "LESSERAFIM", "aespa", "Red Velvet", "ITZY"
+]
+
+# 戏曲类关键词
+OPERA_KEYWORDS = [
+    "戏曲", "京剧", "越剧", "黄梅戏", "豫剧", "评剧", "秦腔", "昆曲",
+    "粤剧", "河北梆子", "梨园", "戏曲频道"
+]
+
+# 电台类关键词（纯音频）
+RADIO_KEYWORDS = [
+    "电台", "广播", "FM", "AM", "网络电台", "音频", "听书", "有声"
+]
+
+# 需要排除的关键词（内容不纯正）
+EXCLUDE_KEYWORDS = [
+    "广场舞", "健身", "教学", "讲座", "访谈", "新闻", "天气预报",
+    "CCTV", "卫视", "电视台", "综合", "频道", "体育", "财经", "少儿"
+]
 
 
-def parse_special_categories(content: str) -> Dict[str, List[Tuple[str, str]]]:
+def classify_channel_by_name(channel_name: str) -> str:
+    """根据频道名精确分类"""
+    name_lower = channel_name.lower()
+    
+    # 先排除不纯正的内容
+    for exclude in EXCLUDE_KEYWORDS:
+        if exclude.lower() in name_lower:
+            return "跳过"
+    
+    # 韩国女团（优先级最高）
+    for kw in KOREAN_GIRL_KEYWORDS:
+        if kw.lower() in name_lower:
+            return "韩国女团"
+    
+    # 电影类
+    for kw in MOVIE_KEYWORDS:
+        if kw.lower() in name_lower:
+            return "每日电影/经典电影"
+    
+    # 戏曲类
+    for kw in OPERA_KEYWORDS:
+        if kw.lower() in name_lower:
+            return "戏曲频道"
+    
+    # 电台类
+    for kw in RADIO_KEYWORDS:
+        if kw.lower() in name_lower:
+            return "网络电台"
+    
+    # 音乐类
+    for kw in MUSIC_KEYWORDS:
+        if kw.lower() in name_lower:
+            return "热门歌曲/动感舞曲"
+    
+    return "其他"
+
+
+def parse_and_classify_special_categories(content: str) -> Dict[str, List[Tuple[str, str]]]:
     """
-    从源内容中解析特殊分类
+    从源内容中解析并精确分类
     返回: {分类名: [(频道名, URL), ...]}
     """
     if not content:
         return {}
     
-    result = {cat: [] for cat in SPECIAL_CATEGORIES}
-    lines = content.splitlines()
+    # 初始化结果
+    result = {
+        "每日电影/经典电影": [],
+        "热门歌曲/动感舞曲": [],
+        "韩国女团": [],
+        "戏曲频道": [],
+        "网络电台": []
+    }
     
-    current_category = None
+    lines = content.splitlines()
+    current_genre = None
     
     for line in lines:
         line = line.strip()
         if not line:
             continue
         
-        # 检测分类行（格式：分类名,#genre#）
+        # 检测分类行
         if line.endswith(",#genre#"):
-            cat_name = line.replace(",#genre#", "").strip()
-            # 检查是否是我们要采集的分类
-            for special_cat in SPECIAL_CATEGORIES:
-                if special_cat in cat_name:
-                    current_category = special_cat
-                    break
-                # 也检查常见的变体
-                if cat_name in ["抖音直播", "music", "音乐"] and special_cat in ["热门歌曲", "韩国女团", "动感舞曲"]:
-                    current_category = special_cat
+            current_genre = line.replace(",#genre#", "").strip()
             continue
         
-        # 跳过注释行
+        # 跳过注释
         if line.startswith('#'):
             continue
         
-        # 解析频道行（格式：频道名,URL）
-        if ',' in line and current_category and current_category in result:
+        # 解析频道行
+        if ',' in line:
             parts = line.split(',', 1)
             if len(parts) == 2:
                 name = parts[0].strip()
                 url = parts[1].strip()
-                if url.startswith(('http://', 'https://')):
-                    result[current_category].append((name, url))
+                
+                if not url.startswith(('http://', 'https://')):
+                    continue
+                
+                # 根据频道名精确分类
+                category = classify_channel_by_name(name)
+                
+                if category != "跳过" and category in result:
+                    result[category].append((name, url))
+                    logger.debug(f"分类: {category} -> {name}")
     
-    # 过滤空分类并去重
+    # 去重并统计
     for cat in result:
         if result[cat]:
-            # 去重（基于URL）
             seen_urls = set()
             unique = []
             for name, url in result[cat]:
@@ -85,15 +144,13 @@ def parse_special_categories(content: str) -> Dict[str, List[Tuple[str, str]]]:
                     seen_urls.add(url)
                     unique.append((name, url))
             result[cat] = unique
-            logger.info(f"📁 解析到 {cat}: {len(result[cat])} 个频道")
+            logger.info(f"📁 {cat}: {len(result[cat])} 个频道")
     
     return {k: v for k, v in result.items() if v}
 
 
 async def fetch_special_categories_source(db=None) -> Dict[str, List[Tuple[str, str]]]:
-    """
-    获取特殊分类源并解析
-    """
+    """获取特殊分类源并解析"""
     from src.fetcher import fetch_url_with_metadata
     import aiohttp
     
@@ -101,10 +158,9 @@ async def fetch_special_categories_source(db=None) -> Dict[str, List[Tuple[str, 
     
     try:
         async with aiohttp.ClientSession() as session:
-            db_for_fetch = db
-            content = await fetch_url_with_metadata(session, source_url, db_for_fetch)
+            content = await fetch_url_with_metadata(session, source_url, db)
             if content:
-                return parse_special_categories(content)
+                return parse_and_classify_special_categories(content)
             else:
                 logger.warning(f"⚠️ 无法获取特殊分类源: {source_url}")
                 return {}
@@ -113,12 +169,21 @@ async def fetch_special_categories_source(db=None) -> Dict[str, List[Tuple[str, 
         return {}
 
 
+# 分类显示名称映射
+CATEGORY_DISPLAY_NAME = {
+    "每日电影/经典电影": "🎬 每日电影/经典电影",
+    "热门歌曲/动感舞曲": "🎵 热门歌曲/动感舞曲",
+    "韩国女团": "🎤 韩国女团",
+    "戏曲频道": "🎭 戏曲频道",
+    "网络电台": "📻 网络电台",
+}
+
+
 def append_special_categories_to_m3u(
     special_data: Dict[str, List[Tuple[str, str]]],
-    output_path: Path,
-    existing_count: int = 0
+    output_path: Path
 ) -> int:
-    """将特殊分类追加到现有的 M3U 文件末尾"""
+    """将特殊分类追加到 M3U 文件末尾"""
     if not special_data:
         return 0
     
@@ -126,9 +191,9 @@ def append_special_categories_to_m3u(
     
     with open(output_path, 'a', encoding='utf-8') as f:
         f.write(f"\n# ========== 特色分类内容（共 {sum(len(v) for v in special_data.values())} 个频道） ==========\n")
+        f.write(f"# 注意：以下内容根据频道名自动分类，可能与原分类标签不同\n")
         
-        for cat in SPECIAL_CATEGORIES:
-            channels = special_data.get(cat, [])
+        for cat, channels in special_data.items():
             if not channels:
                 continue
             
@@ -147,7 +212,7 @@ def append_special_categories_to_txt(
     special_data: Dict[str, List[Tuple[str, str]]],
     output_path: Path
 ) -> int:
-    """将特殊分类追加到现有的 TXT 文件末尾"""
+    """将特殊分类追加到 TXT 文件末尾"""
     if not special_data:
         return 0
     
@@ -155,9 +220,9 @@ def append_special_categories_to_txt(
     
     with open(output_path, 'a', encoding='utf-8') as f:
         f.write(f"\n# ========== 特色分类内容 ==========\n")
+        f.write(f"# 注意：以下内容根据频道名自动分类，可能与原分类标签不同\n")
         
-        for cat in SPECIAL_CATEGORIES:
-            channels = special_data.get(cat, [])
+        for cat, channels in special_data.items():
             if not channels:
                 continue
             
@@ -173,25 +238,24 @@ def append_special_categories_to_txt(
 
 
 async def collect_and_append_special_categories(output_dir: Path, db=None) -> Dict[str, int]:
-    """
-    主函数：采集特殊分类并追加到输出文件
-    返回统计信息
-    """
-    logger.info("🎬 开始采集特色分类内容...")
+    """主函数：采集特殊分类并追加到输出文件"""
+    logger.info("🎬 开始采集特色分类内容（基于频道名精确分类）...")
     
-    # 获取数据
     special_data = await fetch_special_categories_source(db)
     
     if not special_data:
         logger.warning("⚠️ 未获取到任何特色分类内容")
         return {}
     
-    # 统计
     stats = {cat: len(channels) for cat, channels in special_data.items()}
     total = sum(stats.values())
-    logger.info(f"📊 特色分类统计: 共 {total} 个频道")
+    logger.info(f"📊 特色分类统计: 共 {total} 个有效频道")
     for cat, count in stats.items():
-        logger.info(f"   {cat}: {count}")
+        logger.info(f"   {CATEGORY_DISPLAY_NAME.get(cat, cat)}: {count}")
+    
+    if total == 0:
+        logger.warning("⚠️ 没有符合分类规则的频道")
+        return {}
     
     # 追加到输出文件
     m3u_path = output_dir / "tv.m3u"
@@ -200,12 +264,12 @@ async def collect_and_append_special_categories(output_dir: Path, db=None) -> Di
     m3u_count = append_special_categories_to_m3u(special_data, m3u_path)
     txt_count = append_special_categories_to_txt(special_data, txt_path)
     
-    # 也追加到 EPG 版本（如果存在）
+    # 追加到 EPG 版本
     epg_path = output_dir / "tv_epg.m3u"
     if epg_path.exists():
         append_special_categories_to_m3u(special_data, epg_path)
     
-    # 也追加到精简版（如果存在）
+    # 追加到精简版
     lite_path = output_dir / "tv_lite.m3u"
     if lite_path.exists():
         append_special_categories_to_m3u(special_data, lite_path)
