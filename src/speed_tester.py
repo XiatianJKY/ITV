@@ -1,10 +1,9 @@
-# src/speed_tester.py - 增强版，更准确的测速和过滤，单行进度条
+# src/speed_tester.py - 增强版，更准确的测速和过滤
 
 import asyncio
 import aiohttp
 import time
 import re
-import sys
 from tqdm.asyncio import tqdm
 from src.config import HEADERS, TIMEOUT, MAX_WORKERS
 from src.database import get_db_cache, channel_key
@@ -63,6 +62,7 @@ async def probe_channel_advanced(session: aiohttp.ClientSession, channel: dict) 
     
     # 快速URL过滤
     if is_suspicious_url(url):
+        logger.debug(f"🚫 广告URL过滤: {url[:100]}")
         return channel, 0, False, 0
     
     try:
@@ -106,10 +106,10 @@ async def probe_channel_advanced(session: aiohttp.ClientSession, channel: dict) 
                 else:
                     # 检查视频文件头
                     video_signatures = [
-                        b'\x00\x00\x00\x18ftyp', b'\x00\x00\x00\x1cftyp',  # MP4
-                        b'\x1a\x45\xdf\xa3',      # MKV
-                        b'\x47\x40\x00',          # TS
-                        b'FLV',                   # FLV
+                        b'\x00\x00\x00\x18ftyp', b'\x00\x00\x00\x1cftyp',
+                        b'\x1a\x45\xdf\xa3',
+                        b'\x47\x40\x00',
+                        b'FLV',
                     ]
                     for sig in video_signatures:
                         if data.startswith(sig):
@@ -119,11 +119,10 @@ async def probe_channel_advanced(session: aiohttp.ClientSession, channel: dict) 
                 if not is_valid:
                     return channel, head_latency, False, 0
                 
-                # 计算下载速度 (KB/s)
+                # 计算下载速度
                 download_time = time.time() - start_download
                 speed = downloaded / download_time / 1024 if download_time > 0 else 0
                 
-                # 最终延迟 = HEAD延迟 + 下载延迟的一部分
                 final_latency = head_latency + int(download_time * 1000)
                 
                 return channel, final_latency, True, speed
@@ -139,31 +138,8 @@ async def probe_channel_advanced(session: aiohttp.ClientSession, channel: dict) 
         return channel, 0, False, 0
 
 
-def format_progress(current: int, total: int, valid: int, elapsed: float) -> str:
-    """格式化单行进度条"""
-    percent = current / total * 100
-    eta = (elapsed / current) * (total - current) if current > 0 else 0
-    
-    # 计算速度
-    speed = current / elapsed if elapsed > 0 else 0
-    
-    # 格式化时间
-    if eta > 3600:
-        eta_str = f"{eta/3600:.1f}h"
-    elif eta > 60:
-        eta_str = f"{eta/60:.1f}m"
-    else:
-        eta_str = f"{eta:.0f}s"
-    
-    # 进度条（20格）
-    filled = int(20 * current / total)
-    bar = '█' * filled + '░' * (20 - filled)
-    
-    return f"\r🔍 测速+过滤 [有效:{valid}] |{bar}| {current}/{total} | {speed:.1f}频道/s | 剩余:{eta_str}    "
-
-
-async def test_channels_concurrent(channels_dict: dict) -> list:
-    """并发测速，返回有效的频道列表（单行进度条）"""
+async def test_channels_concurrent(channels_dict: dict, pbar: tqdm = None) -> list:
+    """并发测速，返回有效的频道列表（按延迟和质量排序）"""
     channels = list(channels_dict.values())
     db = await get_db_cache()
     
@@ -178,6 +154,8 @@ async def test_channels_concurrent(channels_dict: dict) -> list:
             ch["video_codec"] = cached.get("video_codec", "")
             ch["speed"] = cached.get("speed", 0)
             cached_results.append(ch)
+            if pbar:
+                pbar.update(1)
         else:
             to_probe.append(ch)
     
@@ -198,38 +176,18 @@ async def test_channels_concurrent(channels_dict: dict) -> list:
         async with aiohttp.ClientSession(connector=connector, timeout=timeout_config) as session:
             tasks = [bounded_probe(session, ch) for ch in to_probe]
             
-            # 手动实现进度条，避免每次换行
-            total = len(tasks)
-            completed = 0
-            start_time = time.time()
-            valid_count = len(valid)
-            
-            # 打印初始进度
-            sys.stdout.write(format_progress(0, total, valid_count, 0))
-            sys.stdout.flush()
-            
-            # 逐个等待完成并更新进度
-            for coro in asyncio.as_completed(tasks):
+            for coro in tqdm.as_completed(tasks, desc="🔍 测速+过滤", unit="频道", total=len(tasks), leave=False, position=0):
                 ch, latency, ok, speed = await coro
-                completed += 1
                 if ok:
                     ch["latency"] = latency
                     ch["speed"] = speed
                     valid.append(ch)
-                    valid_count += 1
                     key = channel_key(ch["name"], ch["url"])
                     await db.set_speed_result(key, ch)
-                
-                # 更新进度条（每完成一个刷新一次）
-                if completed % 5 == 0 or completed == total:
-                    elapsed = time.time() - start_time
-                    sys.stdout.write(format_progress(completed, total, valid_count, elapsed))
-                    sys.stdout.flush()
-            
-            # 打印换行
-            print()
+                if pbar:
+                    pbar.update(1)
     
-    # 按质量排序：延迟优先，速度次之
+    # 按质量排序
     def sort_key(ch):
         latency = ch.get("latency", 9999)
         speed = ch.get("speed", 0)
@@ -237,11 +195,9 @@ async def test_channels_concurrent(channels_dict: dict) -> list:
     
     valid.sort(key=sort_key)
     
-    # 统计过滤效果
     total = len(channels)
     filtered = total - len(valid)
     
-    # 输出延迟统计
     if valid:
         latencies = [ch.get("latency", 9999) for ch in valid[:100]]
         avg_latency = sum(latencies) / len(latencies)
