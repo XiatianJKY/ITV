@@ -80,14 +80,12 @@ async def main():
     
     if is_fresh and ENABLE_INCREMENTAL_FETCH:
         logger.info("⚡ 启用增量更新模式（缓存有效，跳过重复拉取）")
-        # 从缓存加载已有内容
         for url in IPTV_SOURCES:
             cached = await db.get_raw_source(url)
             if cached:
                 raw_contents[url] = cached
                 logger.debug(f"📦 从缓存加载: {url}")
             else:
-                # 缓存未命中才拉取
                 logger.info(f"🔄 缓存未命中，拉取: {url}")
                 fetched = await fetch_all_sources_incremental([url], db)
                 raw_contents.update(fetched)
@@ -122,7 +120,7 @@ async def main():
         await db.save_speed_results(valid_channels)
         await db.set_last_update_time()
 
-    # 合并频道（H.264 优先 + 延迟排序，固定源优先）
+    # 合并频道
     merged_channels = merge_channels_by_name(valid_channels)
     logger.info(f"📊 合并后的频道数: {len(merged_channels)}")
 
@@ -133,7 +131,7 @@ async def main():
         merged_channels = blacklist_filter.filter_channels(merged_channels)
         logger.info(f"📊 黑名单过滤后: {len(merged_channels)} (减少 {before - len(merged_channels)})")
 
-    # Demo 筛选（按 demo.txt 顺序匹配和归类）
+    # Demo 筛选
     unmatched_channels = []
     if ENABLE_DEMO_FILTER:
         before = len(merged_channels)
@@ -153,7 +151,7 @@ async def main():
         logger.error("❌ 过滤后无有效频道")
         return 1
 
-    # ========== 全球频道扩展 ==========
+    # 全球频道扩展
     if ENABLE_GLOBAL_CHANNELS:
         logger.info("🌍 正在合并全球频道...")
         global_selector = get_global_selector()
@@ -165,10 +163,10 @@ async def main():
     for cat, cnt in cat_counter.items():
         logger.info(f"  {cat}: {cnt} 个频道")
 
-    # ========== 生成标准输出（保持原有兼容性） ==========
+    # 生成输出文件
     generate_outputs_from_demo(ordered_channels, demo_order)
 
-    # ========== 生成增强版输出（新增功能） ==========
+    # 增强版输出
     output_gen = EnhancedOutputGenerator()
     output_gen.generate_all_outputs(
         ordered_channels, 
@@ -178,14 +176,12 @@ async def main():
         enable_epg=ENABLE_EPG_OUTPUT
     )
 
-    # ========== 处理国外频道（从未匹配的频道中筛选） ==========
+    # 处理国外频道
     if ENABLE_DEMO_FILTER and unmatched_channels:
-        logger.info(f"🌍 正在处理 {len(unmatched_channels)} 个未匹配频道（国外频道）...")
+        logger.info(f"🌍 正在处理 {len(unmatched_channels)} 个未匹配频道...")
         process_overseas_channels(unmatched_channels, OUTPUT_DIR)
-    else:
-        logger.info("⏭️ 未启用 demo 筛选或无未匹配频道，跳过国外频道处理")
 
-    # ========== 采集特色分类内容并追加到输出文件 ==========
+    # 采集特色分类内容
     try:
         special_stats = await collect_and_append_special_categories(OUTPUT_DIR, db)
         if special_stats:
@@ -210,7 +206,6 @@ async def main():
         }
     }
     
-    # 添加特色分类统计
     if special_stats:
         stats["special_categories"] = special_stats
     
