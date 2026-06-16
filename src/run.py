@@ -5,6 +5,7 @@ import asyncio
 import sys
 import json
 import datetime
+import os
 from pathlib import Path
 from collections import Counter
 
@@ -51,8 +52,16 @@ from src.overseas_filter import process_overseas_channels
 from src.special_categories import collect_and_append_special_categories
 
 
-async def main():
-    logger.info("🚀 IPTV 智能整理平台启动")
+# ========== 自治模式导入（新增） ==========
+AUTONOMOUS_MODE = os.getenv("AUTONOMOUS_MODE", "false").lower() == "true"
+
+
+async def run_legacy_mode():
+    """
+    原有模式 - 完整的采集、测速、验证、输出流程
+    保持与原 run.py 完全一致
+    """
+    logger.info("🚀 IPTV 智能整理平台启动 (传统模式)")
     logger.info(f"📡 配置：超时={TIMEOUT}s, 并发={MAX_WORKERS}, ffmpeg={FFMPEG_ENABLE}")
     logger.info(
         f"📋 增强过滤: demo={ENABLE_DEMO_FILTER}, alias={ENABLE_ALIAS}, blacklist={ENABLE_BLACKLIST}"
@@ -182,6 +191,7 @@ async def main():
         process_overseas_channels(unmatched_channels, OUTPUT_DIR)
 
     # 采集特色分类内容
+    special_stats = {}
     try:
         special_stats = await collect_and_append_special_categories(OUTPUT_DIR, db)
         if special_stats:
@@ -217,6 +227,59 @@ async def main():
     ffmpeg_cleanup()
     await db.close()
     return 0
+
+
+async def run_autonomous_mode():
+    """
+    自治模式 - 使用新架构：源池 → 候选版 → 稳定版 → 质量回路
+    
+    特点：
+    - 自动发现新源
+    - 候选源观察验证
+    - 自动提升稳定源
+    - 持续质量监控
+    - 自动替换失效源
+    - 固定源保护
+    """
+    logger.info("🤖 IPTV 自治系统启动")
+    logger.info("=" * 60)
+    
+    try:
+        from src.orchestrator import IPTVOrchestrator
+        
+        orchestrator = IPTVOrchestrator()
+        stats = await orchestrator.run_once()
+        
+        logger.info("=" * 60)
+        logger.info("✅ 自治模式运行完成")
+        return 0
+        
+    except ImportError as e:
+        logger.error(f"❌ 自治模式模块未找到: {e}")
+        logger.info("💡 请确保所有自治模式文件已创建:")
+        logger.info("   - src/source_pool/")
+        logger.info("   - src/candidate/")
+        logger.info("   - src/stable/")
+        logger.info("   - src/quality/")
+        logger.info("   - src/orchestrator.py")
+        return 1
+    except Exception as e:
+        logger.exception(f"❌ 自治模式运行失败: {e}")
+        return 1
+
+
+async def main():
+    """
+    主入口 - 根据 AUTONOMOUS_MODE 环境变量选择运行模式
+    
+    环境变量：
+    - AUTONOMOUS_MODE=false (默认): 传统模式
+    - AUTONOMOUS_MODE=true: 自治模式
+    """
+    if AUTONOMOUS_MODE:
+        return await run_autonomous_mode()
+    else:
+        return await run_legacy_mode()
 
 
 if __name__ == "__main__":
