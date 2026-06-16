@@ -12,7 +12,14 @@ from src.source_pool import SourceDiscoverer
 from src.candidate import CandidateObserver
 from src.stable import StableManager
 from src.quality import QualityMonitor
-from src.config import ENABLE_DEMO_FILTER
+from src.config import (
+    ENABLE_DEMO_FILTER, 
+    OUTPUT_DIR,
+    CANDIDATE_OBSERVATION_HOURS,
+    CANDIDATE_MIN_SUCCESS,
+    CANDIDATE_MIN_SUCCESS_RATE,
+    CANDIDATE_MAX_LATENCY
+)
 from src.demo_filter import parse_demo_order_with_categories
 from src.generator import generate_outputs_from_demo
 
@@ -23,11 +30,16 @@ class IPTVOrchestrator:
     
     工作流程:
     1. 发现新源 -> 源池
-    2. 新源进入候选版观察
+    2. 新源进入候选版观察（分批处理）
     3. 候选源稳定后提升到稳定版
     4. 持续监控稳定版质量
     5. 质量下降时自动从候选池找替代
     """
+    
+    # 每次运行的处理限制
+    MAX_NEW_SOURCES_PER_RUN = 500      # 每次最多处理500个新源
+    MAX_OBSERVE_PER_RUN = 100          # 每次最多观察100个候选源
+    MAX_PROMOTE_PER_RUN = 50           # 每次最多提升50个稳定源
     
     def __init__(self, data_dir: Path = None):
         self.data_dir = data_dir or Path("data")
@@ -45,8 +57,16 @@ class IPTVOrchestrator:
             "last_observe": None,
             "last_quality_check": None,
             "total_promoted": 0,
-            "total_replaced": 0
+            "total_replaced": 0,
+            "new_sources_count": 0,
+            "observed_count": 0
         }
+        
+        # 更新候选观察器配置
+        CandidateObserver.OBSERVATION_HOURS = CANDIDATE_OBSERVATION_HOURS
+        CandidateObserver.MIN_SUCCESS_COUNT = CANDIDATE_MIN_SUCCESS
+        CandidateObserver.MIN_SUCCESS_RATE = CANDIDATE_MIN_SUCCESS_RATE
+        CandidateObserver.MAX_AVG_LATENCY = CANDIDATE_MAX_LATENCY
     
     async def discover_phase(self) -> Dict:
         """阶段1: 发现新源"""
@@ -57,29 +77,57 @@ class IPTVOrchestrator:
         db = await get_db_cache()
         new_sources = await self.discoverer.discover(db)
         
-        # 将新源加入候选池
+        # 统计新源数量
+        total_new = sum(len(s) for s in new_sources.values())
+        self.stats["new_sources_count"] = total_new
+        self.stats["last_discover"] = datetime.now()
+        
+        if total_new == 0:
+            logger.info("✅ 没有发现新源")
+            return {}
+        
+        # 限制新源数量，避免候选池爆炸
+        if total_new > self.MAX_NEW_SOURCES_PER_RUN:
+            logger.warning(f"⚠️ 新源数量 {total_new} 超过限制 {self.MAX_NEW_SOURCES_PER_RUN}，只取前 {self.MAX_NEW_SOURCES_PER_RUN} 个")
+        
+        # 批量添加到候选池
+        added_sources = []
+        count = 0
         for channel_name, sources in new_sources.items():
             for src in sources:
-                self.candidate_observer.add_candidate(
-                    src.get_key(), channel_name, src.url
-                )
+                if count >= self.MAX_NEW_SOURCES_PER_RUN:
+                    break
+                added_sources.append((src.get_key(), channel_name, src.url))
+                count += 1
+            if count >= self.MAX_NEW_SOURCES_PER_RUN:
+                break
         
-        self.stats["last_discover"] = datetime.now()
-        self.stats["new_sources_count"] = sum(len(s) for s in new_sources.values())
+        self.candidate_observer.add_candidates_batch(added_sources)
         
-        logger.info(f"✅ 发现阶段完成: {self.stats['new_sources_count']} 个新源进入候选池")
+        logger.info(f"✅ 发现阶段完成: {len(added_sources)} 个新源进入候选池")
         return new_sources
     
     async def observe_phase(self) -> List:
-        """阶段2: 观察候选源"""
+        """阶段2: 分批观察候选源"""
         logger.info("=" * 50)
-        logger.info("阶段2: 观察候选源")
+        logger.info("阶段2: 分批观察候选源")
         logger.info("=" * 50)
         
-        stable_candidates = await self.candidate_observer.observe_all()
+        observing_count = self.candidate_observer.get_observing_count()
+        if observing_count == 0:
+            logger.info("📭 没有候选源需要观察")
+            return []
+        
+        logger.info(f"📊 候选池状态: {observing_count} 个正在观察，{len(self.candidate_observer.get_stable_candidates())} 个已稳定")
+        
+        # 分批观察
+        stable_candidates = await self.candidate_observer.observe_batch(
+            batch_size=self.MAX_OBSERVE_PER_RUN,
+            concurrency=10
+        )
         
         self.stats["last_observe"] = datetime.now()
-        self.stats["stable_candidates_count"] = len(stable_candidates)
+        self.stats["observed_count"] = len(stable_candidates)
         
         logger.info(f"✅ 观察阶段完成: {len(stable_candidates)} 个源达到稳定标准")
         return stable_candidates
@@ -93,8 +141,15 @@ class IPTVOrchestrator:
         if stable_candidates is None:
             stable_candidates = self.candidate_observer.get_stable_candidates()
         
+        if not stable_candidates:
+            logger.info("📭 没有稳定的候选源需要提升")
+            return 0
+        
+        # 只提升前 MAX_PROMOTE_PER_RUN 个
+        to_promote = stable_candidates[:self.MAX_PROMOTE_PER_RUN]
+        
         promoted_count = 0
-        for obs in stable_candidates:
+        for obs in to_promote:
             # 检查稳定版是否已有该频道
             existing = self.stable_manager.stable_sources.get(obs.channel_name)
             
@@ -120,12 +175,19 @@ class IPTVOrchestrator:
         return promoted_count
     
     async def quality_phase(self) -> List:
-        """阶段4: 质量监控"""
+        """阶段4: 质量监控（只检查活跃源）"""
         logger.info("=" * 50)
         logger.info("阶段4: 质量监控")
         logger.info("=" * 50)
         
-        reports = await self.quality_monitor.check_all_active_sources()
+        active_sources = self.stable_manager.get_active_sources()
+        if not active_sources:
+            logger.info("📭 没有活跃的稳定源需要检查")
+            return []
+        
+        logger.info(f"📊 检查 {len(active_sources)} 个活跃源的质量...")
+        
+        reports = await self.quality_monitor.check_all_active_sources(concurrency=10)
         
         self.stats["last_quality_check"] = datetime.now()
         
@@ -168,7 +230,7 @@ class IPTVOrchestrator:
             generate_outputs_from_demo(channels, demo_order)
         else:
             # 简单输出
-            from src.generator import M3U_FILE, TXT_FILE, OUTPUT_DIR
+            from src.generator import M3U_FILE, TXT_FILE
             from src.generator_enhanced import EnhancedOutputGenerator
             output_gen = EnhancedOutputGenerator()
             output_gen.generate_all_outputs(channels, [], enable_json=True, enable_lite=True, enable_epg=True)
@@ -178,18 +240,19 @@ class IPTVOrchestrator:
     async def run_once(self) -> Dict:
         """完整执行一次自治流程"""
         logger.info("🚀 IPTV 自治系统启动")
+        logger.info(f"📊 配置: 每批观察 {self.MAX_OBSERVE_PER_RUN} 个，最多提升 {self.MAX_PROMOTE_PER_RUN} 个")
         
         try:
             # 1. 发现新源
             await self.discover_phase()
             
-            # 2. 观察候选源
+            # 2. 观察候选源（分批）
             stable_candidates = await self.observe_phase()
             
             # 3. 提升稳定源
             await self.promote_phase(stable_candidates)
             
-            # 4. 质量监控
+            # 4. 质量监控（只检查活跃源）
             await self.quality_phase()
             
             # 5. 生成输出
@@ -201,6 +264,7 @@ class IPTVOrchestrator:
             logger.info("=" * 50)
             logger.info(f"  源池总数: {self.discoverer.get_statistics()['total']}")
             logger.info(f"  候选池总数: {self.candidate_observer.get_statistics()['total']}")
+            logger.info(f"  候选池观察中: {self.candidate_observer.get_statistics()['observing']}")
             logger.info(f"  稳定源数量: {len(self.stable_manager.get_active_sources())}")
             logger.info(f"  固定源数量: {sum(1 for s in self.stable_manager.stable_sources.values() if s.is_fixed)}")
             logger.info(f"  累计提升: {self.stats['total_promoted']}")
@@ -224,6 +288,6 @@ def get_orchestrator() -> IPTVOrchestrator:
 
 
 async def run_autonomous_mode():
-    """运行自治模式（替代原有 run.py）"""
+    """运行自治模式"""
     orchestrator = get_orchestrator()
     return await orchestrator.run_once()
