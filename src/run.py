@@ -226,23 +226,20 @@ async def run_legacy_mode():
     return 0
 
 
-# ========== 自治模式（新架构） ==========
+# ========== 自治模式 ==========
 async def run_autonomous_mode():
     """
-    自治模式 - 使用新架构：源池 → 候选版 → 稳定版 → 质量回路
-    
-    如果自治模式没有产生稳定源，自动回退到传统模式
+    自治模式 - 如果无稳定源或失败，返回 False 表示需要回退
     """
     logger.info("=" * 60)
     logger.info("🤖 IPTV 自治系统启动")
     logger.info("=" * 60)
     
-    stable_count_before = 0
     try:
         # 尝试导入自治模式模块
         from src.orchestrator import IPTVOrchestrator
         
-        # 先检查现有稳定源数量
+        # 检查现有稳定源数量
         from src.stable import StableManager
         temp_manager = StableManager()
         stable_count_before = len(temp_manager.get_active_sources())
@@ -252,30 +249,26 @@ async def run_autonomous_mode():
         stats = await orchestrator.run_once()
         
         # 检查运行后是否有稳定源
-        from src.stable import StableManager
         after_manager = StableManager()
         stable_count_after = len(after_manager.get_active_sources())
         
         logger.info("=" * 60)
         
-        # 如果稳定源没有增加，或者仍然为0，回退到传统模式
+        # 如果稳定源没有增加，或者仍然为0，需要回退
         if stable_count_after == 0:
-            logger.warning("⚠️ 自治模式未产生稳定源，回退到传统模式...")
-            logger.info("=" * 60)
-            return await run_legacy_mode()
+            logger.warning("⚠️ 自治模式未产生稳定源，需要回退到传统模式")
+            return False  # 返回 False 表示需要回退
         else:
             logger.info(f"✅ 自治模式运行完成，稳定源: {stable_count_after} 个")
             logger.info(f"📊 运行统计: {stats}")
-            return 0
-        
+            return True  # 返回 True 表示成功
+            
     except ImportError as e:
         logger.warning(f"⚠️ 自治模式模块未找到: {e}")
-        logger.info("💡 回退到传统模式...")
-        return await run_legacy_mode()
+        return False
     except Exception as e:
         logger.warning(f"⚠️ 自治模式运行失败: {e}")
-        logger.info("💡 回退到传统模式...")
-        return await run_legacy_mode()
+        return False
 
 
 # ========== 主入口 ==========
@@ -289,7 +282,19 @@ async def main():
     """
     if AUTONOMOUS_MODE:
         logger.info("🔀 根据 AUTONOMOUS_MODE=true 切换到自治模式")
-        return await run_autonomous_mode()
+        
+        # 运行自治模式
+        success = await run_autonomous_mode()
+        
+        # 如果自治模式返回 False，回退到传统模式
+        if not success:
+            logger.info("=" * 60)
+            logger.info("🔄 自治模式未产生稳定源，回退到传统模式...")
+            logger.info("=" * 60)
+            return await run_legacy_mode()
+        else:
+            logger.info("✅ 自治模式成功完成")
+            return 0
     else:
         logger.info("🔀 根据 AUTONOMOUS_MODE=false 使用传统模式")
         return await run_legacy_mode()
