@@ -36,7 +36,9 @@ def get_cdn_proxy() -> str:
 
 
 # ========== IPTV 源地址配置 ==========
-# 先定义 RAW_SOURCES 和 DIRECT_SOURCES，然后构建 IPTV_SOURCES
+# 先定义各种源列表
+
+# GitHub 源（可能需要代理）
 RAW_SOURCES = [
     "https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/cn.m3u",
     "https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.txt",
@@ -48,9 +50,13 @@ RAW_SOURCES = [
     "https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
 ]
 
-# 不需要代理的源
+# 不需要代理的源（直接访问）
 DIRECT_SOURCES = [
     "https://tv.19860519.xyz/abc123",
+]
+
+# ===== 港澳台日源（单独列出，便于管理） =====
+HMTJ_SOURCES = [
     "https://live.hacks.tools/tv/ipv4/categories/hong_kong.m3u",  # 香港
     "https://live.hacks.tools/tv/ipv4/categories/macau.m3u",      # 澳门
     "https://live.hacks.tools/tv/ipv4/categories/taiwan.m3u",     # 台湾
@@ -60,11 +66,11 @@ DIRECT_SOURCES = [
 # 是否启用港澳台日源
 ENABLE_HMTJ_SOURCES = os.getenv("ENABLE_HMTJ_SOURCES", "true").lower() == "true"
 
-# 构建最终的 IPTV_SOURCES 列表
+# ========== 构建最终 IPTV_SOURCES 列表 ==========
 PROXY = get_cdn_proxy()
 IPTV_SOURCES = []
 
-# 添加 GitHub 源（环境决定是否加代理）
+# 添加 GitHub 源（根据环境决定是否加代理）
 for src in RAW_SOURCES:
     if PROXY:
         IPTV_SOURCES.append(PROXY + src)
@@ -89,7 +95,7 @@ else:
 
 print(f"📡 共配置 {len(IPTV_SOURCES)} 个源")
 
-# 性能配置
+# ========== 性能配置 ==========
 MAX_WORKERS = int(os.getenv("MAX_WORKERS", 20))
 TIMEOUT = int(os.getenv("TIMEOUT", 10))
 
