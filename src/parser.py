@@ -1,27 +1,10 @@
 # src/parser.py
 # M3U/TXT 解析，解析后立即应用别名标准化，并保留 logo 信息
-# 支持港澳台日源的自动分类
 
 import re
 from src.alias_matcher import get_alias_matcher
 
-
-def infer_category_from_name(name: str) -> str:
-    """根据频道名推断分类（用于港澳台日源）"""
-    name_lower = name.lower()
-    if any(kw in name_lower for kw in ["tvb", "翡翠", "明珠", "无线", "rthk", "hoy", "viu", "香港"]):
-        return "香港频道"
-    if any(kw in name_lower for kw in ["澳视", "澳门", "macau", "tdm"]):
-        return "澳门频道"
-    if any(kw in name_lower for kw in ["东森", "民视", "台视", "华视", "中视", "三立", "纬来", "tvbs", "年代", "壹电视", "台湾"]):
-        return "台湾频道"
-    if any(kw in name_lower for kw in ["nhk", "japan", "tokyo", "fuji", "tbs", "tv asahi", "ntv", "japanese", "日本"]):
-        return "日本频道"
-    return "港澳台日"
-
-
 def parse_m3u(content: str) -> list:
-    """解析 M3U 内容，返回频道列表"""
     channels = []
     lines = content.splitlines()
     i = 0
@@ -40,33 +23,23 @@ def parse_m3u(content: str) -> list:
             match = re.search(r'tvg-logo="([^"]+)"', line)
             if match:
                 tvg_logo = match.group(1)
-            # 提取频道名（逗号之后）
-            parts = line.split(",")
-            if len(parts) >= 2:
-                name = ",".join(parts[1:]).strip()
-            else:
-                name = line
-            # 如果 group_title 为空，尝试推断
-            if not group_title:
-                group_title = infer_category_from_name(name)
-            if i + 1 < len(lines) and not lines[i + 1].startswith("#"):
-                url = lines[i + 1].strip()
+            name = line.split(",")[-1].strip()
+            if i+1 < len(lines) and not lines[i+1].startswith("#"):
+                url = lines[i+1].strip()
                 if url.startswith(("http://", "https://", "rtmp://", "rtsp://")):
                     channels.append({
                         "name": name,
                         "url": url,
                         "group_title": group_title,
                         "tvg_id": tvg_id,
-                        "tvg_logo": tvg_logo
+                        "tvg_logo": tvg_logo  # 保留原始 logo
                     })
             i += 2
         else:
             i += 1
     return channels
 
-
 def parse_txt(content: str) -> list:
-    """解析 TXT 内容，返回频道列表"""
     channels = []
     lines = content.splitlines()
     current_name = None
@@ -85,14 +58,12 @@ def parse_txt(content: str) -> list:
                 "url": line,
                 "group_title": "",
                 "tvg_id": "",
-                "tvg_logo": ""
+                "tvg_logo": ""  # TXT 源无 logo
             })
             current_name = None
     return channels
 
-
 def apply_alias_to_channels(channels: list) -> list:
-    """应用别名标准化"""
     matcher = get_alias_matcher()
     if not matcher:
         return channels
@@ -103,9 +74,7 @@ def apply_alias_to_channels(channels: list) -> list:
             ch["name"] = normalized
     return channels
 
-
 def parse_and_dedupe(raw_contents: dict) -> dict:
-    """解析并去重所有源"""
     all_channels = {}
     for url, content in raw_contents.items():
         if not content:
