@@ -36,16 +36,29 @@ async def fetch_url_with_metadata(session: aiohttp.ClientSession, url: str, db):
             logger.warning(f"  重试 {url} ({attempt}/{RETRY_MAX_ATTEMPTS})，等待 {wait_time}s")
             await asyncio.sleep(wait_time)
 
-async def fetch_all_sources_incremental(sources: list, db) -> dict:
+async def fetch_all_sources_incremental(sources: list, db, force_refresh: bool = False) -> dict:
+    """
+    拉取所有源，支持强制刷新
+    
+    Args:
+        sources: 源URL列表
+        db: 数据库连接
+        force_refresh: 是否强制重新拉取（忽略缓存）
+    """
     async with aiohttp.ClientSession() as session:
-        tasks = [fetch_url_with_metadata(session, url, db) for url in sources]
+        tasks = []
+        for url in sources:
+            if force_refresh:
+                # 强制拉取，传入 None 禁用缓存
+                tasks.append(fetch_url_with_metadata(session, url, None))
+            else:
+                tasks.append(fetch_url_with_metadata(session, url, db))
         results = await asyncio.gather(*tasks, return_exceptions=True)
         output = {}
         for url, res in zip(sources, results):
             if isinstance(res, Exception):
                 logger.warning(f"⚠️ 拉取失败 {url}: {res}")
-                # 尝试从缓存获取旧内容
-                if db:
+                if not force_refresh and db:
                     cached = await db.get_raw_source(url)
                     if cached:
                         output[url] = cached
@@ -57,3 +70,4 @@ async def fetch_all_sources_incremental(sources: list, db) -> dict:
             else:
                 output[url] = res
         return output
+
