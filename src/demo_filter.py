@@ -1,11 +1,20 @@
 # src/demo_filter.py
-# Demo 频道筛选与排序模块
+# Demo 频道筛选与排序模块，支持拼音匹配和省份自动归类
 
+import re
 from pathlib import Path
 from typing import List, Tuple
 from src.config import DEMO_FILE, OUTPUT_DIR, DEMO_MATCH_MODE
 from src.classifier import PROVINCES, classify_channel
 from src.logger import logger
+
+# 尝试导入拼音库，若失败则回退到简单匹配
+try:
+    from pypinyin import lazy_pinyin, pinyin
+    HAS_PYPINYIN = True
+except ImportError:
+    HAS_PYPINYIN = False
+    logger.warning("⚠️ pypinyin 未安装，拼音匹配功能将不可用。建议安装: pip install pypinyin")
 
 
 def parse_demo_order_with_categories(demo_file: Path = DEMO_FILE) -> List[Tuple[str, str]]:
@@ -36,40 +45,97 @@ def parse_demo_order_with_categories(demo_file: Path = DEMO_FILE) -> List[Tuple[
                 order.append(("其他", line))
     
     logger.info(f"📋 从 demo.txt 解析到 {len(order)} 个有序频道")
-    
-    # 打印前30项
-    logger.info("📋 Demo 顺序预览（前30项）：")
-    for i, (cat, name) in enumerate(order[:30]):
-        marker = " ← CCTV-5+" if name == "CCTV-5+" else ""
-        if name == "CCTV-5":
-            marker = " ← CCTV-5"
-        logger.info(f"   {i+1}. [{cat}] {name}{marker}")
-    
     return order
 
 
+def to_pinyin(text: str) -> str:
+    """将中文转换为拼音（小写，无空格）"""
+    if not HAS_PYPINYIN:
+        return text.lower()
+    try:
+        return ''.join(lazy_pinyin(text)).lower()
+    except:
+        return text.lower()
+
+
 def match_channel_name(channel_name: str, demo_name: str) -> bool:
-    """匹配频道名"""
+    """
+    增强匹配：支持中文/拼音/子串匹配
+    """
     if DEMO_MATCH_MODE == "exact":
         return channel_name == demo_name
     
     cn_lower = channel_name.lower()
     dn_lower = demo_name.lower()
     
-    # CCTV-5+ 匹配
-    if dn_lower == "cctv-5+":
-        return 'cctv-5+' in cn_lower or 'cctv5+' in cn_lower or 'cctv-5＋' in cn_lower
+    # 1. 直接包含匹配
+    if dn_lower in cn_lower or cn_lower in dn_lower:
+        return True
     
-    # CCTV-5 匹配
-    if dn_lower == "cctv-5":
-        return 'cctv-5' in cn_lower or 'cctv5' in cn_lower or '央视5' in channel_name
+    # 2. 拼音匹配（将中文 demo 名转为拼音，检查是否在频道名中）
+    if HAS_PYPINYIN:
+        demo_pinyin = to_pinyin(demo_name)
+        channel_pinyin = to_pinyin(channel_name)
+        # 检查拼音是否包含
+        if demo_pinyin in channel_pinyin or channel_pinyin in demo_pinyin:
+            return True
+        # 检查 demo 中文是否包含在频道名拼音中（例如 demo="浙江", 频道名="zhejiang"）
+        # 也检查频道名中文是否包含 demo 拼音
+        # 已经通过包含检查，但有些频道名是纯拼音，demo 是中文，需要双向检查
     
-    # 普通匹配
-    return dn_lower in cn_lower or cn_lower in dn_lower
+    # 3. 去除特殊字符后的匹配
+    def clean(s):
+        return re.sub(r'[^a-zA-Z\u4e00-\u9fa5]', '', s).lower()
+    if clean(demo_name) in clean(channel_name) or clean(channel_name) in clean(demo_name):
+        return True
+    
+    return False
+
+
+def detect_province(channel_name: str) -> str:
+    """
+    检测频道名中的省份/城市，返回省份名（如"北京"）
+    """
+    name = channel_name
+    # 优先匹配省份名
+    for prov in PROVINCES:
+        if prov in name:
+            return prov
+    # 匹配直辖市简称
+    if "京" in name: return "北京"
+    if "沪" in name: return "上海"
+    if "津" in name: return "天津"
+    if "渝" in name: return "重庆"
+    return None
+
+
+def get_demo_category_for_province(province: str, demo_order: List[Tuple[str, str]]) -> str:
+    """
+    根据省份名生成对应的 demo 分类名
+    若 demo 中有 "☘️北京频道,#genre#" 则返回 "☘️北京频道"
+    否则返回 "北京频道"
+    """
+    # 尝试多种格式
+    candidates = [
+        f"☘️{province}频道",
+        f"{province}频道",
+        f"☘️{province}",
+        f"{province}"
+    ]
+    for cat, _ in demo_order:
+        for cand in candidates:
+            if cat.startswith(cand) or cat == cand:
+                return cat
+    # 若没有，返回默认格式
+    return f"☘️{province}频道"
 
 
 def filter_and_order_by_demo(channels: list) -> tuple:
-    """根据 demo.txt 筛选和排序频道"""
+    """
+    增强筛选：
+    1. 匹配 demo 中的频道（支持拼音）
+    2. 未匹配的根据省份自动归类
+    """
     demo_order = parse_demo_order_with_categories()
     if not demo_order:
         logger.warning("⚠️ demo.txt 为空，跳过筛选")
@@ -80,10 +146,7 @@ def filter_and_order_by_demo(channels: list) -> tuple:
     unmatched = list(channels)
     matched_names = set()
     
-    cctv5_matched = False
-    cctv5plus_matched = False
-
-    # 第一遍：匹配 demo 中的频道名
+    # 第一遍：匹配 demo 中的频道名（支持拼音）
     for category, demo_name in demo_order:
         # 精确匹配
         if demo_name in name_to_channel:
@@ -94,13 +157,9 @@ def filter_and_order_by_demo(channels: list) -> tuple:
                 matched.append(ch)
                 matched_names.add(ch["name"])
                 unmatched = [c for c in unmatched if c["name"] != ch["name"]]
-                if demo_name == "CCTV-5":
-                    cctv5_matched = True
-                if demo_name == "CCTV-5+":
-                    cctv5plus_matched = True
                 continue
         
-        # 模糊匹配
+        # 模糊/拼音匹配
         found = False
         for i, ch in enumerate(unmatched[:]):
             if ch["name"] in matched_names:
@@ -113,38 +172,33 @@ def filter_and_order_by_demo(channels: list) -> tuple:
                 matched_names.add(ch["name"])
                 unmatched.pop(i)
                 found = True
-                if demo_name == "CCTV-5":
-                    cctv5_matched = True
-                    logger.info(f"🎯 匹配到 CCTV-5: {ch['name']}")
-                if demo_name == "CCTV-5+":
-                    cctv5plus_matched = True
-                    logger.info(f"🎯 匹配到 CCTV-5+: {ch['name']}")
+                logger.debug(f"🎯 匹配: {ch['name']} -> {category}/{demo_name}")
                 break
 
-    logger.info(f"📊 CCTV-5 匹配: {'成功' if cctv5_matched else '失败'}")
-    logger.info(f"📊 CCTV-5+ 匹配: {'成功' if cctv5plus_matched else '失败'}")
-
-    # 第二遍：自动归类
+    # 第二遍：未匹配频道自动归类到省份分类
     remaining = []
+    province_appended = {}
+    
     for ch in unmatched:
-        cat = classify_channel(ch)
-        if cat in ["地方", "港澳台"]:
-            # 简单归类逻辑
-            for category, demo_name in demo_order:
-                if "地方" in category and "新闻" in ch["name"]:
-                    ch_copy = ch.copy()
-                    ch_copy["demo_category"] = category
-                    ch_copy["demo_name"] = ch["name"]
-                    matched.append(ch_copy)
-                    matched_names.add(ch["name"])
-                    break
-            else:
-                remaining.append(ch)
+        # 检测省份
+        province = detect_province(ch["name"])
+        if province:
+            # 获取对应的 demo 分类
+            cat = get_demo_category_for_province(province, demo_order)
+            ch_copy = ch.copy()
+            ch_copy["demo_category"] = cat
+            ch_copy["demo_name"] = ch["name"]
+            matched.append(ch_copy)
+            matched_names.add(ch["name"])
+            province_appended[province] = province_appended.get(province, 0) + 1
+            logger.info(f"🌏 自动归类: {ch['name']} -> {cat}")
         else:
             remaining.append(ch)
-
-    logger.info(f"🎯 Demo 筛选：原始 {len(channels)} -> 匹配 {len(matched)}，未匹配 {len(remaining)}")
     
+    if province_appended:
+        logger.info(f"📊 自动归类统计: {dict(province_appended)}")
+    
+    logger.info(f"🎯 Demo 筛选：原始 {len(channels)} -> 匹配 {len(matched)}，未匹配 {len(remaining)}")
     return matched, remaining
 
 
