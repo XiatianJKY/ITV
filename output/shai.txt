@@ -1,7 +1,7 @@
 # Demo筛选丢弃的频道
-# 原始频道总数: 422
+# 原始频道总数: 423
 # Demo匹配成功: 312
-# 丢弃数量: 110
+# 丢弃数量: 111
 
 NOW NEWS,http://cdn.163189.xyz/163189/now
 八度空间,https://cdn6.163189.xyz/163189/8tv
@@ -112,4 +112,5 @@ FZTV3,http://live.zohi.tv:80/video/s10001-fztv-3/index.m3u8
 NewTV武搏世界,http://1.94.31.214/php/hntv.php?id=wspd
 文物宝库,http://1.94.31.214/php/hntv.php?id=wwbk
 兵团五师双河影,https://liveout.btzx.com.cn/62ds9e/6o77s4.m3u8?zxinjd
+蕭山生活頻道 [Not 24/7],https://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8
 余杭未来E频道,http://l.cztvcloud.com/channels/lantian/SXyuhang3/720p.m3u8?zzhed
