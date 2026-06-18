@@ -59,7 +59,7 @@ async def run_legacy_mode():
         f"📋 增强过滤: demo={ENABLE_DEMO_FILTER}, alias={ENABLE_ALIAS}, blacklist={ENABLE_BLACKLIST}"
     )
 
-    # 获取 demo 顺序
+    # 获取 demo 顺序（用于输出排序和智能分类）
     demo_order = parse_demo_order_with_categories() if ENABLE_DEMO_FILTER else []
     logger.info(f"📋 Demo 顺序: {len(demo_order)} 个频道")
 
