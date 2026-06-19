@@ -1,7 +1,7 @@
 # Demo筛选丢弃的频道
-# 原始频道总数: 598
-# Demo匹配成功: 442
-# 丢弃数量: 156
+# 原始频道总数: 596
+# Demo匹配成功: 441
+# 丢弃数量: 155
 
 新加坡国际,https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_4.m3u8
 东森美洲卫视,http://38.64.72.148:80/hls/modn/list/2015/chunklist0.m3u8
@@ -149,13 +149,12 @@ NewTV武搏世界,http://1.94.31.214/php/hntv.php?id=wspd
 电影_成龙,https://lbds.us.ci/11342386
 解说_亮哥讲电影,https://lbds.us.ci/16144175
 电影_洪金宝,https://lbds.us.ci/11279251
-电影_强森,https://lbds.us.ci/21059581
-电影_黄渤,https://lbds.us.ci/11352876
-电影_星爷,https://lbds.us.ci/11342412
-电影_黑帮片,https://lbds.us.ci/11336719
-电影_搞笑喜剧,https://lbds.us.ci/11342423
-电影_战争片,https://lbds.us.ci/21059574
-电影_喜剧专场,https://lbds.us.ci/11602044
-电影_罪犯,https://lbds.us.ci/11352962
-电影_玄幻,https://lbds.us.ci/11342414
 解说_阿良说剧,https://lbds.us.ci/20488841
+电影_喜剧专场,https://lbds.us.ci/11602044
+电影_星爷,https://lbds.us.ci/11342412
+电影_黄渤,https://lbds.us.ci/11352876
+电影_玄幻,https://lbds.us.ci/11342414
+电影_罪犯,https://lbds.us.ci/11352962
+电影_强森,https://lbds.us.ci/21059581
+电影_战争片,https://lbds.us.ci/21059574
+解说_越哥说电影,https://lbds.us.ci/15894162

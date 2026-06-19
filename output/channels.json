@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 442,
-  "generated": "2026-06-19T15:38:07.564537",
+  "total": 441,
+  "generated": "2026-06-19T20:01:11.833756",
   "channels": [
     {
       "name": "CCTV-1",
@@ -774,9 +774,10 @@
     {
       "name": "都市剧场",
       "urls": [
+        "https://live.264788.xyz/channel/dushijuchang?streamid=fd36352c039198fe0978687774e97e59&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk",
         "https://live.264788.xyz/channel/dushijuchang?streamid=087bbd865ae84d7fe5c566127ffad8ee&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk"
       ],
-      "latency": 2546,
+      "latency": 935,
       "codec": "h264",
       "category": "☘️上海频道,#genre#"
     },
@@ -1326,6 +1327,7 @@
       "name": "海宁新闻综合",
       "urls": [
         "http://p2hs.vzan.com/slowlive/317913155078575177/live.m3u8",
+        "https://p2hs.vzan.com/slowlive/317913155078575177/live.m3u8?zbid=293304&tpid=1708007815",
         "https://p2hs.vzan.com/slowlive/317913155078575177/live.m3u8"
       ],
       "latency": 1356,
@@ -1964,9 +1966,7 @@
     {
       "name": "福建文体",
       "urls": [
-        "https://live.264788.xyz/channel/fujianwenti?streamid=5b085b708bf8a4e62daa5ed392f810ce&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk",
-        "https://live.264788.xyz/channel/fujianwenti?streamid=6374cbc5f2d95cc57cd0e9ef03792b12&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk",
-        "https://live.264788.xyz/channel/fujianwenti?streamid=54c2018d31ad7d7907e394cea5c188e2&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk"
+        "https://live.264788.xyz/channel/fujianwenti?streamid=5b085b708bf8a4e62daa5ed392f810ce&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk"
       ],
       "latency": 4397,
       "codec": "h264",
@@ -1978,27 +1978,6 @@
         "https://live.264788.xyz/channel/fujianxinwen?streamid=1d7a4e8614e13d43791f381297047a1a&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk"
       ],
       "latency": 4281,
-      "codec": "h264",
-      "category": "☘️福建频道,#genre#"
-    },
-    {
-      "name": "福建电视剧",
-      "urls": [
-        "https://live.264788.xyz/channel/fujiandianshiju?streamid=a179dae6ca1718f987dd24134561ac27&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk",
-        "https://live.264788.xyz/channel/fujiandianshiju?streamid=71f9763d50865c64951321e69e83c6f8&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk",
-        "https://live.264788.xyz/channel/fujiandianshiju?streamid=c26b66c59ee4773061c78154e5877244&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk"
-      ],
-      "latency": 6623,
-      "codec": "h264",
-      "category": "☘️福建频道,#genre#"
-    },
-    {
-      "name": "福建综合",
-      "urls": [
-        "https://live.264788.xyz/channel/fujianzonghe?streamid=f614d92b7259456dde72c14924c6323a&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk",
-        "https://live.264788.xyz/channel/fujianzonghe?streamid=a8df03a67061b34e40ecb8863060a8fa&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk"
-      ],
-      "latency": 7083,
       "codec": "h264",
       "category": "☘️福建频道,#genre#"
     },
@@ -2302,6 +2281,15 @@
         "https://gcalic.v.myalicdn.com/gc/tyhjtys_1/index.m3u8"
       ],
       "latency": 867,
+      "codec": "h264",
+      "category": "☘️海南频道,#genre#"
+    },
+    {
+      "name": "海南少儿",
+      "urls": [
+        "http://vapi.91kds.cc/live1/hitv.m3u8?id=hiqs&apiKey=2079b631b519ec17da0bc09844eb8419"
+      ],
+      "latency": 4425,
       "codec": "h264",
       "category": "☘️海南频道,#genre#"
     },
