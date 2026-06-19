@@ -1,21 +1,28 @@
 # src/special_categories.py
-"""特定分类采集模块 - 仅从 abc123 源采集指定类别：音乐、广播、歌团、电影、电视剧、动漫、体育竞赛"""
+"""特定分类采集模块 - 从 abc123 源采集指定类别：音乐、广播、韩国女团、电影、电视剧、动漫、体育竞赛"""
 
 import re
 from typing import List, Dict, Tuple
 from pathlib import Path
 from src.logger import logger
 
-# 需要采集的分类关键词（小写），只采集这些
+# ========== 需要采集的分类关键词 ==========
+# 注意：关键词用于匹配源中的分类名（如"歌团★"匹配"歌团"）
 TARGET_CATEGORIES = [
-    "音乐", "广播", "歌团", "电影", "电视剧", "动漫", "体育竞赛"
+    "音乐",
+    "广播", 
+    "韩国女团",      # 新增：匹配源中的"歌团★"
+    "电影",
+    "电视剧",
+    "动漫",
+    "体育竞赛"
 ]
 
-# 分类显示名称映射
+# ========== 分类显示名称映射 ==========
 CATEGORY_DISPLAY_NAME = {
     "音乐": "🎵 音乐频道",
     "广播": "📻 网络电台",
-    "歌团": "🎤 歌团频道",
+    "韩国女团": "🎤 韩国女团",     # 新增显示名称
     "电影": "🎬 电影频道",
     "电视剧": "📺 电视剧频道",
     "动漫": "🎬 动漫频道",
@@ -26,7 +33,8 @@ CATEGORY_DISPLAY_NAME = {
 def parse_abc123_for_targets(content: str) -> Dict[str, List[Tuple[str, str]]]:
     """
     解析 abc123 源内容，只提取目标分类下的频道
-    返回: {分类名: [(频道名, URL), ...]}
+    
+    特殊处理：源中"歌团★"分类归入"韩国女团"
     """
     if not content:
         return {}
@@ -43,13 +51,18 @@ def parse_abc123_for_targets(content: str) -> Dict[str, List[Tuple[str, str]]]:
         # 检测分类行（格式：分类名,#genre#）
         if line.endswith(",#genre#") or line.endswith(", #genre#"):
             cat_name = line.replace(",#genre#", "").replace(", #genre#", "").strip()
+            current_category = None
+            
             # 检查是否为目标分类
             for target in TARGET_CATEGORIES:
-                if target in cat_name:
+                # 特殊处理：源中的"歌团★"归入"韩国女团"
+                if target == "韩国女团" and ("歌团" in cat_name or "女团" in cat_name):
                     current_category = target
                     break
-            else:
-                current_category = None
+                # 普通匹配：目标关键词在分类名中
+                elif target in cat_name:
+                    current_category = target
+                    break
             continue
 
         # 跳过注释
@@ -81,10 +94,7 @@ def parse_abc123_for_targets(content: str) -> Dict[str, List[Tuple[str, str]]]:
 
 
 async def fetch_abc123_source() -> Dict[str, List[Tuple[str, str]]]:
-    """
-    直接拉取 abc123 源内容并解析目标分类
-    不依赖 fetcher.py 的缓存逻辑，避免参数问题
-    """
+    """直接拉取 abc123 源内容并解析目标分类"""
     import aiohttp
     source_url = "https://tv.19860519.xyz/abc123"
     headers = {
@@ -108,10 +118,7 @@ def append_special_to_output(
     special_data: Dict[str, List[Tuple[str, str]]],
     output_dir: Path
 ) -> int:
-    """
-    将特殊分类追加到输出文件（仅追加到 tv.m3u 和 tv.txt）
-    返回追加的总频道数
-    """
+    """将特殊分类追加到输出文件（仅追加到 tv.m3u 和 tv.txt）"""
     if not special_data:
         return 0
 
@@ -146,10 +153,7 @@ def append_special_to_output(
 
 
 async def collect_and_append_special_categories(output_dir: Path, db=None) -> Dict[str, int]:
-    """
-    主函数：采集指定分类并追加到输出文件
-    只接受两个参数：output_dir 和 db（可选，实际未使用）
-    """
+    """主函数：采集指定分类并追加到输出文件"""
     logger.info("🧠 开始智能补充采集（从 abc123 源）...")
 
     special_data = await fetch_abc123_source()
@@ -168,7 +172,6 @@ async def collect_and_append_special_categories(output_dir: Path, db=None) -> Di
         logger.warning("⚠️ 没有符合分类规则的频道")
         return {}
 
-    # 追加到输出文件
     appended = append_special_to_output(special_data, output_dir)
     logger.info(f"✅ 已将 {appended} 个智能补充频道追加到输出文件")
 
