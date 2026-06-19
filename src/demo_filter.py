@@ -1,226 +1,283 @@
-# src/demo_filter.py
-# Demo 频道筛选与排序模块，支持拼音匹配和省份自动归类
-# 港澳台统一归入 🌊港·澳·台 分类
+# src/special_categories.py
+"""特殊分类采集模块 - 根据频道名精确分类"""
 
 import re
+from typing import List, Dict, Tuple
 from pathlib import Path
-from typing import List, Tuple
-from src.config import DEMO_FILE, OUTPUT_DIR, DEMO_MATCH_MODE
-from src.classifier import PROVINCES, classify_channel
+
 from src.logger import logger
 
-try:
-    from pypinyin import lazy_pinyin
-    HAS_PYPINYIN = True
-except ImportError:
-    HAS_PYPINYIN = False
-    logger.warning("⚠️ pypinyin 未安装，拼音匹配功能将不可用。建议安装: pip install pypinyin")
+# ========== 分类关键词（优先级从高到低）==========
+
+# 韩国女团关键词（最高优先级）
+KOREAN_GIRL_KEYWORDS = [
+    "韩国女团", "女团", "kpop", "K-pop", "KPOP",
+    "BLACKPINK", "TWICE", "IVE", "NewJeans", "LESSERAFIM", 
+    "aespa", "Red Velvet", "ITZY", "(G)I-DLE", "少女时代",
+    "歌团★"  # 从实际数据中发现的
+]
+
+# 电影类关键词
+MOVIE_KEYWORDS = [
+    "电影", "影院", "影片", "CHC", "动作电影", "家庭影院", "影迷电影",
+    "经典电影", "华语影院", "峨眉电影", "第一剧场", "怀旧剧场", "风云剧场",
+    "家庭剧场", "惊悚悬疑", "超级电影", "黑莓电影", "新片放映厅",
+    "抗战经典影片", "经典香港电影", "CHC影迷电影", "CHC动作电影", "CHC家庭影院"
+]
+
+# 戏曲类关键词（必须明确是戏曲内容）
+OPERA_KEYWORDS = [
+    "戏曲", "京剧", "越剧", "黄梅戏", "豫剧", "评剧", "秦腔", "昆曲",
+    "粤剧", "河北梆子", "梨园", "梨园春", "移动戏曲", "岭南戏曲",
+    "陕西戏曲", "河南戏曲", "安徽戏曲", "戏曲广播"
+]
+
+# 音乐类关键词（歌曲、音乐、舞曲）
+MUSIC_KEYWORDS = [
+    "音乐", "歌曲", "老歌", "金曲", "流行", "经典老歌", "香香音乐",
+    "好听", "DJ", "舞曲", "动感", "节奏", "音悦", "经典歌曲",
+    "热门歌曲", "动感舞曲"
+]
+
+# 电台类关键词（纯音频）
+RADIO_KEYWORDS = [
+    "电台", "广播", "FM", "AM", "网络电台", "音频", "听书", "有声"
+]
+
+# ========== 需要排除的关键词（内容不纯正或不适合分类）==========
+EXCLUDE_KEYWORDS = [
+    "广场舞", "健身", "教学", "讲座", "访谈", "天气预报",
+    "CCTV", "卫视", "电视台", "新闻", "财经", "体育", "少儿", "卡通",
+    "直播", "回放", "全场", "世界杯", "NBA", "英超", "中超", "村超"
+]
 
 
-def parse_demo_order_with_categories(demo_file: Path = DEMO_FILE) -> List[Tuple[str, str]]:
-    """解析 demo.txt，返回 [(分类, 频道名), ...]"""
-    if not demo_file.exists():
-        logger.warning(f"⚠️ Demo 文件不存在: {demo_file}")
-        return []
+def classify_channel_by_name(channel_name: str) -> str:
+    """根据频道名精确分类（优先级从高到低）"""
+    name_lower = channel_name.lower()
     
-    order = []
-    current_category = None
+    # 1. 先排除不相关的内容
+    for exclude in EXCLUDE_KEYWORDS:
+        if exclude.lower() in name_lower:
+            return "跳过"
     
-    with open(demo_file, 'r', encoding='utf-8') as f:
-        for line in f:
-            line = line.strip()
-            if not line:
-                continue
-            
-            if line.endswith(",#genre#") or line.endswith(", #genre#"):
-                current_category = line.replace(", #genre#", "").replace(", #genre#", "").strip()
-                continue
-            
-            if line.startswith('#'):
-                continue
-            
-            if current_category is not None:
-                order.append((current_category, line))
-            else:
-                order.append(("其他", line))
+    # 2. 韩国女团（最高优先级）
+    for kw in KOREAN_GIRL_KEYWORDS:
+        if kw.lower() in name_lower:
+            return "韩国女团"
     
-    logger.info(f"📋 从 demo.txt 解析到 {len(order)} 个有序频道")
-    return order
+    # 3. 戏曲类
+    for kw in OPERA_KEYWORDS:
+        if kw.lower() in name_lower:
+            return "戏曲频道"
+    
+    # 4. 电影类
+    for kw in MOVIE_KEYWORDS:
+        if kw.lower() in name_lower:
+            return "每日电影/经典电影"
+    
+    # 5. 音乐类
+    for kw in MUSIC_KEYWORDS:
+        if kw.lower() in name_lower:
+            return "热门歌曲/动感舞曲"
+    
+    # 6. 电台类
+    for kw in RADIO_KEYWORDS:
+        if kw.lower() in name_lower:
+            return "网络电台"
+    
+    return "其他"
 
 
-def to_pinyin(text: str) -> str:
-    """将中文转换为拼音（小写，无空格）"""
-    if not HAS_PYPINYIN:
-        return text.lower()
+def parse_and_classify_special_categories(content: str) -> Dict[str, List[Tuple[str, str]]]:
+    """
+    从源内容中解析并精确分类
+    返回: {分类名: [(频道名, URL), ...]}
+    """
+    if not content:
+        return {}
+    
+    # 初始化结果
+    result = {
+        "韩国女团": [],
+        "戏曲频道": [],
+        "每日电影/经典电影": [],
+        "热门歌曲/动感舞曲": [],
+        "网络电台": []
+    }
+    
+    lines = content.splitlines()
+    
+    for line in lines:
+        line = line.strip()
+        if not line:
+            continue
+        
+        # 跳过注释和分类行（不依赖源的分类标签）
+        if line.startswith('#') or line.endswith(',#genre#'):
+            continue
+        
+        # 解析频道行（格式：频道名,URL）
+        if ',' in line:
+            parts = line.split(',', 1)
+            if len(parts) == 2:
+                name = parts[0].strip()
+                url = parts[1].strip()
+                
+                # 验证URL有效性
+                if not url.startswith(('http://', 'https://')):
+                    continue
+                
+                # 根据频道名精确分类
+                category = classify_channel_by_name(name)
+                
+                if category != "跳过" and category in result:
+                    # 去重检查（基于URL）
+                    existing_urls = [u for _, u in result[category]]
+                    if url not in existing_urls:
+                        result[category].append((name, url))
+                        logger.debug(f"分类: {category} -> {name}")
+    
+    # 统计结果
+    for cat in result:
+        if result[cat]:
+            logger.info(f"📁 {cat}: {len(result[cat])} 个频道")
+            # 打印前3个样例
+            for name, url in result[cat][:3]:
+                logger.debug(f"    - {name}")
+    
+    return {k: v for k, v in result.items() if v}
+
+
+async def fetch_special_categories_source(db=None) -> Dict[str, List[Tuple[str, str]]]:
+    """获取特殊分类源并解析"""
+    from src.fetcher import fetch_url_with_metadata
+    import aiohttp
+    
+    source_url = "https://tv.19860519.xyz/abc123"
+    
     try:
-        return ''.join(lazy_pinyin(text)).lower()
-    except:
-        return text.lower()
+        async with aiohttp.ClientSession() as session:
+            content = await fetch_url_with_metadata(session, source_url, db)
+            if content:
+                return parse_and_classify_special_categories(content)
+            else:
+                logger.warning(f"⚠️ 无法获取特殊分类源: {source_url}")
+                return {}
+    except Exception as e:
+        logger.error(f"❌ 获取特殊分类源失败: {e}")
+        return {}
 
 
-def match_channel_name(channel_name: str, demo_name: str) -> bool:
-    """
-    增强匹配：支持中文/拼音/子串匹配
-    """
-    if DEMO_MATCH_MODE == "exact":
-        return channel_name == demo_name
+# 分类显示名称映射
+CATEGORY_DISPLAY_NAME = {
+    "韩国女团": "🎤 韩国女团",
+    "戏曲频道": "🎭 戏曲频道",
+    "每日电影/经典电影": "🎬 每日电影/经典电影",
+    "热门歌曲/动感舞曲": "🎵 热门歌曲/动感舞曲",
+    "网络电台": "📻 网络电台",
+}
+
+
+def append_special_categories_to_m3u(
+    special_data: Dict[str, List[Tuple[str, str]]],
+    output_path: Path
+) -> int:
+    """将特殊分类追加到 M3U 文件末尾"""
+    if not special_data:
+        return 0
     
-    cn_lower = channel_name.lower()
-    dn_lower = demo_name.lower()
+    total_appended = 0
     
-    # 1. 直接包含匹配
-    if dn_lower in cn_lower or cn_lower in dn_lower:
-        return True
-    
-    # 2. 拼音匹配
-    if HAS_PYPINYIN:
-        demo_pinyin = to_pinyin(demo_name)
-        channel_pinyin = to_pinyin(channel_name)
-        if demo_pinyin in channel_pinyin or channel_pinyin in demo_pinyin:
-            return True
-    
-    # 3. 去除特殊字符后的匹配
-    def clean(s):
-        return re.sub(r'[^a-zA-Z\u4e00-\u9fa5]', '', s).lower()
-    if clean(demo_name) in clean(channel_name) or clean(channel_name) in clean(demo_name):
-        return True
-    
-    return False
-
-
-def detect_province(channel_name: str) -> str:
-    """
-    检测频道名中的省份/城市，返回省份名（如"北京"）
-    港澳台返回 "港澳台" 以便统一归类
-    """
-    name = channel_name
-    # 先检测港澳台
-    hmtj_keywords = ["香港", "澳门", "台湾", "港", "澳", "台"]
-    for kw in hmtj_keywords:
-        if kw in name:
-            return "港澳台"
-    
-    # 检测省份
-    for prov in PROVINCES:
-        if prov in name:
-            return prov
-    # 直辖市简称
-    if "京" in name: return "北京"
-    if "沪" in name: return "上海"
-    if "津" in name: return "天津"
-    if "渝" in name: return "重庆"
-    return None
-
-
-def get_demo_category_for_province(province: str, demo_order: List[Tuple[str, str]]) -> str:
-    """
-    根据省份名生成对应的 demo 分类名
-    若 demo 中有 "☘️北京频道,#genre#" 则返回 "☘️北京频道"
-    否则返回 "☘️北京频道"
-    港澳台统一返回 "🌊港·澳·台"
-    """
-    # 港澳台特殊处理
-    if province == "港澳台":
-        return "🌊港·澳·台"
-    
-    # 尝试多种格式
-    candidates = [
-        f"☘️{province}频道",
-        f"{province}频道",
-        f"☘️{province}",
-        f"{province}"
-    ]
-    for cat, _ in demo_order:
-        for cand in candidates:
-            if cat.startswith(cand) or cat == cand:
-                return cat
-    # 若没有，返回默认格式
-    return f"☘️{province}频道"
-
-
-def filter_and_order_by_demo(channels: list) -> tuple:
-    """
-    增强筛选：
-    1. 匹配 demo 中的频道（支持拼音）
-    2. 未匹配的根据省份自动归类（港澳台统一归入 🌊港·澳·台）
-    """
-    demo_order = parse_demo_order_with_categories()
-    if not demo_order:
-        logger.warning("⚠️ demo.txt 为空，跳过筛选")
-        return channels, []
-
-    name_to_channel = {ch["name"]: ch for ch in channels}
-    matched = []
-    unmatched = list(channels)
-    matched_names = set()
-    
-    # 第一遍：匹配 demo 中的频道名（支持拼音）
-    for category, demo_name in demo_order:
-        # 精确匹配
-        if demo_name in name_to_channel:
-            ch = name_to_channel[demo_name].copy()
-            ch["demo_category"] = category
-            ch["demo_name"] = demo_name
-            if ch["name"] not in matched_names:
-                matched.append(ch)
-                matched_names.add(ch["name"])
-                unmatched = [c for c in unmatched if c["name"] != ch["name"]]
-                continue
+    with open(output_path, 'a', encoding='utf-8') as f:
+        f.write(f"\n# ========== 特色分类内容 ==========\n")
         
-        # 模糊/拼音匹配
-        found = False
-        for i, ch in enumerate(unmatched[:]):
-            if ch["name"] in matched_names:
-                continue
-            if match_channel_name(ch["name"], demo_name):
-                ch_copy = ch.copy()
-                ch_copy["demo_category"] = category
-                ch_copy["demo_name"] = demo_name
-                matched.append(ch_copy)
-                matched_names.add(ch["name"])
-                unmatched.pop(i)
-                found = True
-                logger.debug(f"🎯 匹配: {ch['name']} -> {category}/{demo_name}")
-                break
-
-    # 第二遍：未匹配频道自动归类到省份分类（港澳台统一归入 🌊港·澳·台）
-    remaining = []
-    province_appended = {}
-    
-    for ch in unmatched:
-        province = detect_province(ch["name"])
-        if province:
-            cat = get_demo_category_for_province(province, demo_order)
-            ch_copy = ch.copy()
-            ch_copy["demo_category"] = cat
-            ch_copy["demo_name"] = ch["name"]
-            matched.append(ch_copy)
-            matched_names.add(ch["name"])
-            province_appended[province] = province_appended.get(province, 0) + 1
-            logger.info(f"🌏 自动归类: {ch['name']} -> {cat}")
-        else:
-            remaining.append(ch)
-    
-    if province_appended:
-        logger.info(f"📊 自动归类统计: {dict(province_appended)}")
-    
-    logger.info(f"🎯 Demo 筛选：原始 {len(channels)} -> 匹配 {len(matched)}，未匹配 {len(remaining)}")
-    return matched, remaining
-
-
-def write_shai_file(unmatched_channels: list, matched_count: int, total_raw: int):
-    """保存未匹配的频道列表"""
-    shai_path = OUTPUT_DIR / "shai.txt"
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    
-    with open(shai_path, "w", encoding="utf-8") as f:
-        f.write("# Demo筛选丢弃的频道\n")
-        f.write(f"# 原始频道总数: {total_raw}\n")
-        f.write(f"# Demo匹配成功: {matched_count}\n")
-        f.write(f"# 丢弃数量: {len(unmatched_channels)}\n\n")
+        # 按照固定顺序输出
+        order = ["韩国女团", "戏曲频道", "每日电影/经典电影", "热门歌曲/动感舞曲", "网络电台"]
         
-        for ch in unmatched_channels:
-            url = ch["urls"][0] if ch.get("urls") else ch["url"]
-            f.write(f"{ch['name']},{url}\n")
+        for cat in order:
+            channels = special_data.get(cat, [])
+            if not channels:
+                continue
+            
+            display_name = CATEGORY_DISPLAY_NAME.get(cat, cat)
+            f.write(f"\n# ----- {display_name} ({len(channels)}个频道) -----\n")
+            
+            for name, url in channels:
+                f.write(f'#EXTINF:-1 group-title="{display_name}",{name}\n{url}\n')
+                total_appended += 1
     
-    logger.info(f"📄 未匹配频道列表已保存: {shai_path}")
+    logger.info(f"✅ 已将 {total_appended} 个特色频道追加到 M3U: {output_path}")
+    return total_appended
+
+
+def append_special_categories_to_txt(
+    special_data: Dict[str, List[Tuple[str, str]]],
+    output_path: Path
+) -> int:
+    """将特殊分类追加到 TXT 文件末尾"""
+    if not special_data:
+        return 0
+    
+    total_appended = 0
+    
+    with open(output_path, 'a', encoding='utf-8') as f:
+        f.write(f"\n# ========== 特色分类内容 ==========\n")
+        
+        # 按照固定顺序输出
+        order = ["韩国女团", "戏曲频道", "每日电影/经典电影", "热门歌曲/动感舞曲", "网络电台"]
+        
+        for cat in order:
+            channels = special_data.get(cat, [])
+            if not channels:
+                continue
+            
+            display_name = CATEGORY_DISPLAY_NAME.get(cat, cat)
+            f.write(f"\n{display_name},#genre#\n")
+            
+            for name, url in channels:
+                f.write(f"{name},{url}\n")
+                total_appended += 1
+    
+    logger.info(f"✅ 已将 {total_appended} 个特色频道追加到 TXT: {output_path}")
+    return total_appended
+
+
+async def collect_and_append_special_categories(output_dir: Path, db=None) -> Dict[str, int]:
+    """主函数：采集特殊分类并追加到输出文件"""
+    logger.info("🎬 开始采集特色分类内容...")
+    
+    special_data = await fetch_special_categories_source(db)
+    
+    if not special_data:
+        logger.warning("⚠️ 未获取到任何特色分类内容")
+        return {}
+    
+    stats = {cat: len(channels) for cat, channels in special_data.items()}
+    total = sum(stats.values())
+    logger.info(f"📊 特色分类统计: 共 {total} 个有效频道")
+    for cat, count in stats.items():
+        logger.info(f"   {CATEGORY_DISPLAY_NAME.get(cat, cat)}: {count}")
+    
+    if total == 0:
+        logger.warning("⚠️ 没有符合分类规则的频道")
+        return {}
+    
+    # 追加到输出文件
+    m3u_path = output_dir / "tv.m3u"
+    txt_path = output_dir / "tv.txt"
+    
+    append_special_categories_to_m3u(special_data, m3u_path)
+    append_special_categories_to_txt(special_data, txt_path)
+    
+    # 追加到 EPG 版本
+    epg_path = output_dir / "tv_epg.m3u"
+    if epg_path.exists():
+        append_special_categories_to_m3u(special_data, epg_path)
+    
+    # 追加到精简版
+    lite_path = output_dir / "tv_lite.m3u"
+    if lite_path.exists():
+        append_special_categories_to_m3u(special_data, lite_path)
+    
+    return stats
