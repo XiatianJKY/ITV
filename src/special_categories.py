@@ -11,7 +11,7 @@ from src.logger import logger
 TARGET_CATEGORIES = [
     "音乐",
     "广播", 
-    "韩国女团",      # 新增：匹配源中的"歌团★"
+    "韩国女团",      # 匹配源中的"歌团★"
     "电影",
     "电视剧",
     "动漫",
@@ -22,7 +22,7 @@ TARGET_CATEGORIES = [
 CATEGORY_DISPLAY_NAME = {
     "音乐": "🎵 音乐频道",
     "广播": "📻 网络电台",
-    "韩国女团": "🎤 韩国女团",     # 新增显示名称
+    "韩国女团": "🎤 韩国女团",
     "电影": "🎬 电影频道",
     "电视剧": "📺 电视剧频道",
     "动漫": "🎬 动漫频道",
@@ -94,7 +94,7 @@ def parse_abc123_for_targets(content: str) -> Dict[str, List[Tuple[str, str]]]:
 
 
 async def fetch_abc123_source() -> Dict[str, List[Tuple[str, str]]]:
-    """直接拉取 abc123 源内容并解析目标分类"""
+    """直接拉取 abc123 源内容并解析目标分类，忽略系统代理"""
     import aiohttp
     source_url = "https://tv.19860519.xyz/abc123"
     headers = {
@@ -102,7 +102,8 @@ async def fetch_abc123_source() -> Dict[str, List[Tuple[str, str]]]:
     }
 
     try:
-        async with aiohttp.ClientSession() as session:
+        # 关键：trust_env=False 忽略系统代理
+        async with aiohttp.ClientSession(trust_env=False) as session:
             async with session.get(source_url, timeout=10, headers=headers) as resp:
                 if resp.status != 200:
                     logger.warning(f"⚠️ abc123 源返回 HTTP {resp.status}")
