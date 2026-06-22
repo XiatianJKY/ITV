@@ -1,6 +1,6 @@
 # Demo筛选丢弃的频道
-# 原始频道总数: 431
-# Demo匹配成功: 336
+# 原始频道总数: 432
+# Demo匹配成功: 337
 # 丢弃数量: 95
 
 八度空间,https://cdn6.163189.xyz/163189/8tv
@@ -40,8 +40,8 @@ CNA,https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index
 Xinjiang TV 3,http://110.153.180.106:55555/out_2/index.m3u8
 WionNews,https://d7x8z4yuq42qn.cloudfront.net/index_7.m3u8
 黄花城水长城01,https://gcalic.v.myalicdn.com/gc/wgw01_1/index.m3u8
-Dali TV,http://www.dalitv.com.tw:4568/live/dali/index.m3u8
 蕭山生活頻道 [Not 24/7],https://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8
+Dali TV,http://www.dalitv.com.tw:4568/live/dali/index.m3u8
 Xinjiang TV 2,http://110.153.180.106:55555/out_3/index.m3u8
 玛纳斯,http://218.84.127.245:1026/hls/main1/playlist.m3u8?zxinjd
 泰山望人松,https://gcalic.v.myalicdn.com/gc/taishan02_1/index.m3u8
