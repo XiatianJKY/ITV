@@ -79,6 +79,9 @@ DIRECT_SOURCES = [
     "https://tv.19860519.xyz/abc123",
 ]
 
+# ========== 代理配置 ==========
+ENABLE_GITHUB_PROXY = False   # 强制禁用代理
+
 # ========== 构建最终 IPTV_SOURCES 列表 ==========
 PROXY = get_cdn_proxy()
 IPTV_SOURCES = []
