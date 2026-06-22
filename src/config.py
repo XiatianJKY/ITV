@@ -24,10 +24,49 @@ def is_docker() -> bool:
     return os.path.exists("/.dockerenv") or os.path.exists("/run/.containerenv")
 
 
+# ========== CDN 代理配置 ==========
+# 默认代理地址
+DEFAULT_PROXY = "https://mirror.ghproxy.com/"
+# 备用代理列表（按优先级）
+PROXY_LIST = [
+    "https://mirror.ghproxy.com/",
+    "https://ghproxy.net/",
+    "https://gh-proxy.19860519.xyz/",
+    "https://gh.api.99988866.xyz/",
+]
+# 允许用户通过环境变量自定义代理
+CUSTOM_PROXY = os.getenv("GITHUB_PROXY_URL", "").strip()
+
+
 def get_cdn_proxy() -> str:
+    """
+    根据运行环境决定是否使用 CDN 代理
+    - GitHub Actions: 不使用代理
+    - Docker/本地: 使用代理（可自定义）
+    """
     if is_github_actions():
-        return ""
-    return "https://gh-proxy.19860519.xyz/"
+        return ""  # GitHub Actions 直接访问
+    if CUSTOM_PROXY:
+        return CUSTOM_PROXY
+    return DEFAULT_PROXY
+
+
+def get_proxy_list() -> list:
+    """获取可用的代理列表（用于重试）"""
+    if is_github_actions():
+        return []
+    proxies = []
+    if CUSTOM_PROXY:
+        proxies.append(CUSTOM_PROXY)
+    proxies.extend(PROXY_LIST)
+    # 去重
+    seen = set()
+    unique = []
+    for p in proxies:
+        if p not in seen:
+            seen.add(p)
+            unique.append(p)
+    return unique
 
 
 # ========== IPTV 源地址配置 ==========
@@ -40,25 +79,28 @@ RAW_SOURCES = [
     "https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u",
     "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u",
     "https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
-    "https://raw.githubusercontent.com/Meroser/IPTV/main/IPTV-demo.m3u",
-    "https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/live.m3u",
 ]
 
+# 不需要代理的源
 DIRECT_SOURCES = [
     "https://tv.19860519.xyz/abc123",
 ]
 
+# ========== 构建最终 IPTV_SOURCES 列表 ==========
 PROXY = get_cdn_proxy()
 IPTV_SOURCES = []
 
+# 添加 GitHub 源（根据环境决定是否加代理）
 for src in RAW_SOURCES:
     if PROXY:
         IPTV_SOURCES.append(PROXY + src)
     else:
         IPTV_SOURCES.append(src)
 
+# 添加直接访问的源（始终不加代理）
 IPTV_SOURCES.extend(DIRECT_SOURCES)
 
+# 打印环境信息
 if is_github_actions():
     print("🏃 检测到 GitHub Actions 环境，使用直接访问模式")
 elif is_docker():
@@ -68,7 +110,7 @@ else:
 
 print(f"📡 共配置 {len(IPTV_SOURCES)} 个源")
 
-# 性能配置
+# ========== 性能配置 ==========
 MAX_WORKERS = int(os.getenv("MAX_WORKERS", 20))
 TIMEOUT = int(os.getenv("TIMEOUT", 10))
 
@@ -77,9 +119,9 @@ FFMPEG_ENABLE = os.getenv("FFMPEG_ENABLE", "true").lower() == "true"
 FFMPEG_STRICT = os.getenv("FFMPEG_STRICT", "false").lower() == "true"
 FFMPEG_WORKERS = min(MAX_WORKERS, 5)
 
-# ========== 新增：ffmpeg 模式配置 ==========
+# ffmpeg 模式
 FFMPEG_MODE = os.getenv("FFMPEG_MODE", "deep")  # deep / quick / off
-FFPROBE_CACHE_HOURS = int(os.getenv("FFPROBE_CACHE_HOURS", 168))  # 默认缓存7天
+FFPROBE_CACHE_HOURS = int(os.getenv("FFPROBE_CACHE_HOURS", 168))
 
 # 重试配置
 ENABLE_RETRY = os.getenv("ENABLE_RETRY", "true").lower() == "true"
@@ -96,9 +138,10 @@ OUTPUT_CATEGORY_ORDER = ["央视", "卫视", "地方", "港澳台"]
 
 # 央视频道排序
 CCTV_ORDER = [
-    "CCTV-1", "CCTV-2", "CCTV-3", "CCTV-4", "CCTV-5", "CCTV-5+", "CCTV-6",
-    "CCTV-7", "CCTV-8", "CCTV-9", "CCTV-10", "CCTV-11", "CCTV-12", "CCTV-13",
-    "CCTV-14", "CCTV-15", "CCTV-16", "CCTV-17", "CCTV-4K", "CCTV-8K",
+    "CCTV-1", "CCTV-2", "CCTV-3", "CCTV-4", "CCTV-5", 
+    "CCTV-5+", "CCTV-6", "CCTV-7", "CCTV-8", "CCTV-9", 
+    "CCTV-10", "CCTV-11", "CCTV-12", "CCTV-13", "CCTV-14", 
+    "CCTV-15", "CCTV-16", "CCTV-17", "CCTV-4K", "CCTV-8K",
     "CCTV世界地理", "CCTV央视台球", "CCTV女性时尚", "CCTV怀旧剧场",
     "CCTV第一剧场", "CCTV风云足球", "CCTV老故事", "CGTN", "CGTN俄语",
     "CGTN法语", "CGTN纪录", "CGTN西语", "CGTN阿语"
