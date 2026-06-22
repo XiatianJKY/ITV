@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 336,
-  "generated": "2026-06-22T09:04:16.222924",
+  "total": 337,
+  "generated": "2026-06-22T09:19:23.688226",
   "channels": [
     {
       "name": "CCTV-1",
@@ -1294,6 +1294,15 @@
         "https://live.wjyanghu.com/live/CH2.m3u8"
       ],
       "latency": 1260,
+      "codec": "h264",
+      "category": "☘️江苏频道,#genre#"
+    },
+    {
+      "name": "泗阳综合",
+      "urls": [
+        "http://3739115337.cloudvdn.com/a.m3u8?domain=siyang-tv-hls.cm.jstv.com&player=nwEAAKHdjSKP_58X&secondToken=secondToken%3A5FUijZmDyNMxtCDdne0YzSAwjuw&streamid=siyang-tv%3Asiyang-tv%2Fsiyangzh&v3=1"
+      ],
+      "latency": 826,
       "codec": "h264",
       "category": "☘️江苏频道,#genre#"
     },
