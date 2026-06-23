@@ -8,16 +8,18 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     gcc \
     && rm -rf /var/lib/apt/lists/*
 
+# 复制并简化 requirements.txt（移除哈希值）
 COPY requirements.txt .
 
-# 升级 pip 并使用国内镜像源（清华/阿里云）加速安装
+# 升级 pip、清除缓存并使用国内镜像源安装
 RUN pip install --upgrade pip && \
-    pip install --no-cache-dir -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple/
+    pip cache purge && \
+    pip install --no-cache-dir -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple/
 
 # 最终镜像
 FROM python:3.11-slim-bookworm
 
-# 安装 ffmpeg 和运行时依赖
+# 安装 ffmpeg 和 curl
 RUN apt-get update && apt-get install -y --no-install-recommends \
     ffmpeg \
     curl \
@@ -37,10 +39,10 @@ COPY alias.txt blacklist.txt demo.txt ./
 # 创建必要目录
 RUN mkdir -p /app/data /app/output
 
-# 暴露 HTTP 服务端口
+# 暴露端口
 EXPOSE 8080
 
-# 健康检查（需要 curl）
+# 健康检查
 HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
     CMD curl -f http://localhost:8080/api/status || exit 1
 
