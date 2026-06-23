@@ -1,7 +1,7 @@
 # Demo筛选丢弃的频道
-# 原始频道总数: 423
-# Demo匹配成功: 328
-# 丢弃数量: 95
+# 原始频道总数: 428
+# Demo匹配成功: 332
+# 丢弃数量: 96
 
 Supreme Master TV,https://lbs-us1.suprememastertv.com/720p.m3u8
 八度空间,https://cdn6.163189.xyz/163189/8tv
@@ -97,4 +97,5 @@ FZTV3,http://live.zohi.tv:80/video/s10001-fztv-3/index.m3u8
 象山新闻综合,http://l.cztvcloud.com/channels/lantian/SXxiangshan1/720p.m3u8
 文物宝库,http://1.94.31.214/php/hntv.php?id=wwbk
 Xizang TV Tibetan [Not 24/7],http://php.jdshipin.com:8880/xztv.php?id=zy
+上虞1新闻综合 [Not 24/7],https://l.cztvcloud.com/channels/lantian/SXshangyu1/720p.m3u8
 RT Documentary,https://rt-rtd.rttv.com/dvr/rtdoc/playlist_4500Kb.m3u8

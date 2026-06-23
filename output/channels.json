@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 328,
-  "generated": "2026-06-23T15:00:08.126597",
+  "total": 332,
+  "generated": "2026-06-23T20:16:05.918469",
   "channels": [
     {
       "name": "CCTV-1",
@@ -644,6 +644,15 @@
       "category": "☘️重庆频道,#genre#"
     },
     {
+      "name": "东莞生活资讯",
+      "urls": [
+        "https://stream.sun0769.com/dgrtv1/mp4tv2_800/index.m3u8"
+      ],
+      "latency": 2937,
+      "codec": "h264",
+      "category": "☘️广东频道,#genre#"
+    },
+    {
       "name": "南国都市",
       "urls": [
         "https://tencentplay.gztv.com/live/nanguodushi.m3u8?txSecret=550af55c0ea34ce492748481415b6dfa&txTime=1903e7b17de",
@@ -1082,6 +1091,15 @@
       "category": "☘️浙江频道,#genre#"
     },
     {
+      "name": "餘姚姚江文化 [Not 24/7]",
+      "urls": [
+        "https://l.cztvcloud.com/channels/lantian/SXyuyao2/720p.m3u8"
+      ],
+      "latency": 1281,
+      "codec": "h264",
+      "category": "☘️浙江频道,#genre#"
+    },
+    {
       "name": "云和新闻综合",
       "urls": [
         "http://l.cztvcloud.com/channels/lantian/SXyunhe1/720p.m3u8"
@@ -1114,6 +1132,15 @@
         "http://l.cztvcloud.com/channels/lantian/SXshangyu1/720p.m3u8?zzhed"
       ],
       "latency": 1220,
+      "codec": "h264",
+      "category": "☘️浙江频道,#genre#"
+    },
+    {
+      "name": "上虞3新商都 [Not 24/7]",
+      "urls": [
+        "https://l.cztvcloud.com/channels/lantian/SXshangyu3/720p.m3u8"
+      ],
+      "latency": 2259,
       "codec": "h264",
       "category": "☘️浙江频道,#genre#"
     },
@@ -1437,7 +1464,7 @@
       "urls": [
         "https://live.264788.xyz/channel/fujianlvyou?streamid=221239fcf3c7edb274f2f0760fe47f96&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk"
       ],
-      "latency": 5673,
+      "latency": 6879,
       "codec": "h264",
       "category": "☘️福建频道,#genre#"
     },
@@ -1518,7 +1545,7 @@
       "urls": [
         "http://stream.jmtv.com.cn/xwzh/sd/live.m3u8"
       ],
-      "latency": 5018,
+      "latency": 1315,
       "codec": "h264",
       "category": "☘️湖北频道,#genre#"
     },
@@ -1818,6 +1845,15 @@
         "https://gcalic.v.myalicdn.com/gc/hlzycc_1/index.m3u8"
       ],
       "latency": 458,
+      "codec": "h264",
+      "category": "☘️陕西频道,#genre#"
+    },
+    {
+      "name": "新昌休闲影视 [Not 24/7]",
+      "urls": [
+        "https://l.cztvcloud.com/channels/lantian/SXxinchang2/720p.m3u8"
+      ],
+      "latency": 1985,
       "codec": "h264",
       "category": "☘️陕西频道,#genre#"
     },
