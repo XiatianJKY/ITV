@@ -204,7 +204,8 @@ ENABLE_BLOOM_FILTER = os.getenv("ENABLE_BLOOM_FILTER", "true").lower() == "true"
 BLOOM_FILTER_CAPACITY = int(os.getenv("BLOOM_FILTER_CAPACITY", 100000))
 
 # ========== Web 管理界面配置 ==========
-ENABLE_WEB_MANAGER = os.getenv("ENABLE_WEB_MANAGER", "true").lower() == "true"
+WEB_UI_ENABLE = os.getenv("WEB_UI_ENABLE", "true").lower() == "true"
+WEB_UI_TITLE = os.getenv("WEB_UI_TITLE", "IPTV 智能管理面板")
 
 # 打印自治模式状态
 if AUTONOMOUS_MODE:
