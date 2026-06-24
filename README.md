@@ -106,21 +106,32 @@ https://你的用户名.github.io/ITV/tv.m3u
 https://你的用户名.github.io/ITV/tv.txt
 
 ⚙️ 配置说明
+
 项目通过 环境变量（.env 文件或 Docker 环境）灵活配置。所有配置项见 .env.example。
 
 核心配置项
 
 
 变量	默认值	说明
+
 RUN_MODE	schedule	运行模式：once（一次性）或 schedule（定时）
+
 SCHEDULE_INTERVAL	21600	定时模式间隔（秒），默认 6 小时
+
 MAX_WORKERS	20	并发测速线程数
+
 TIMEOUT	8	HTTP 超时（秒）
+
 FFMPEG_ENABLE	true	是否启用 ffmpeg 深度验证
+
 FFMPEG_MODE	deep	deep（深度）/ quick（快速）/ off（关闭）
+
 AUTONOMOUS_MODE	false	是否启用自治模式（源池→候选→稳定）
+
 ENABLE_DEMO_FILTER	true	是否按 demo.txt 筛选频道
+
 CACHE_RAW_HOURS	48	原始源缓存时长（小时）
+
 WEB_SERVER_PORT	8080	Web 管理界面端口
 
 固定源配置
@@ -134,9 +145,11 @@ CCTV_FIXED_SOURCES = {
 }
 
 📺 Web 管理界面
+
 访问 http://你的IP:8080 进入管理面板：
 
 1. 仪表盘
+
 显示稳定源、固定源、源池总量、候选观察中数量
 
 系统状态与最后运行时间
@@ -174,19 +187,31 @@ CCTV_FIXED_SOURCES = {
 📂 输出文件说明
 
 文件	说明
+
 output/tv.m3u	标准 M3U 播放列表（按 demo.txt 顺序）
+
 output/tv.txt	标准 TXT 格式（频道名,URL）
+
 output/tv_multi.m3u	多源 M3U（每个频道多个备源，用 # 分隔）
+
 output/channels.json	JSON API（供第三方调用）
+
 output/shai.txt	demo 未匹配的频道列表
+
 output/stats.json	采集统计信息
+
 output/stable_sources.json	稳定源列表（含固定标记）
+
 data/source_pool.json	源池（所有发现过的源）
+
 data/candidate_pool.json	候选池（观察中的源）
+
 data/trend.db	质量趋势数据库（SQLite）
 
 🔧 高级特性
+
 自治模式工作流程
+
 发现阶段：拉取所有源，新源进入候选池
 
 观察阶段：候选源经多次验证（成功率≥80%、延迟≤2000ms）后稳定
@@ -198,6 +223,7 @@ data/trend.db	质量趋势数据库（SQLite）
 回滚机制：质量严重下降时自动从候选池找替代源
 
 智能分类匹配
+
 支持拼音匹配（如 zhejiang → 浙江卫视）
 
 自动归类：全国省份、直辖市、港澳台
@@ -205,6 +231,7 @@ data/trend.db	质量趋势数据库（SQLite）
 未匹配频道按省份关键词自动归类
 
 固定源保护
+
 用户指定的固定源不会被自动替换
 
 可在 Web 界面或 fixed_sources.py 中管理
