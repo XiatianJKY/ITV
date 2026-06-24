@@ -2,10 +2,9 @@
 """质量趋势数据存储"""
 
 import sqlite3
-import json
 from datetime import datetime
 from pathlib import Path
-from typing import List, Dict, Optional
+from typing import List, Dict
 
 DB_PATH = Path("data/trend.db")
 
@@ -17,7 +16,6 @@ def get_db():
     return conn
 
 def init_db():
-    """初始化数据库表"""
     conn = get_db()
     conn.execute('''
         CREATE TABLE IF NOT EXISTS quality_trend (
@@ -37,7 +35,6 @@ def init_db():
     conn.close()
 
 def record_quality(channel_name: str, latency: int, success: bool):
-    """记录单条质量数据"""
     conn = get_db()
     now = datetime.now().isoformat()
     conn.execute(
@@ -48,7 +45,6 @@ def record_quality(channel_name: str, latency: int, success: bool):
     conn.close()
 
 def get_quality_history(channel_name: str, days: int = 7) -> List[Dict]:
-    """获取频道最近 N 天的质量历史"""
     conn = get_db()
     cursor = conn.execute(
         '''
@@ -65,7 +61,6 @@ def get_quality_history(channel_name: str, days: int = 7) -> List[Dict]:
     return [dict(row) for row in rows]
 
 def get_all_channels_with_history(days: int = 7) -> Dict[str, List[Dict]]:
-    """获取所有频道的历史数据"""
     conn = get_db()
     cursor = conn.execute(
         '''
