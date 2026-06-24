@@ -2,272 +2,290 @@
 
 > 全自动 IPTV 源采集、测速、验证、分类与输出系统
 
-[![GitHub Actions](https://img.shields.io/github/actions/workflow/status/zzgpy1/ITV/update_iptv.yml?branch=main&label=Auto%20Update)](https://github.com/zzgpy1/ITV/actions)
-[![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-
 ---
 
 ## 📖 项目简介
 
-本项目是一个**全自动 IPTV 源采集、测速、验证、分类与输出系统**。它从多个公开源聚合 IPTV 播放链接，通过 HTTP 探测 + ffmpeg 深度验证过滤无效链接，并自动将频道归类到「央视、卫视、地方、港澳台」等分类，输出标准 M3U/TXT/JSON 格式播放列表。
+IPTV 智能整理平台 是一个全自动的 IPTV 直播源采集与维护系统。它能够从多个公开源自动抓取直播链接，通过多级验证（HTTP 测速 + ffmpeg 深度验证）过滤无效源，并按照央视、卫视、地方、港澳台等分类智能整理输出，解决公共直播源频繁失效、卡顿的痛点。
 
-**核心能力**：
+**核心特点**：
 
-- ✅ **多源聚合**：同时拉取 10+ 公开 IPTV 源，自动去重
-- ✅ **双重验证**：HTTP 快速测速 + ffmpeg 深度验证（地理封锁/DRM/纯音频检测）
-- ✅ **智能分类**：基于频道名、group-title 和拼音匹配自动归类
-- ✅ **自治模式**：源池 → 候选版 → 稳定版 → 质量回路，系统自动维护可用源
-- ✅ **固定源支持**：用户明确指定的源不被自动替换
-- ✅ **多格式输出**：M3U / TXT / JSON / 多源切换版 / EPG兼容版 / 精简版
-- ✅ **全自动化**：GitHub Actions 每 6 小时运行，缓存依赖大幅减少构建时间
+🔍 多源采集：自动聚合 10+ 公开 IPTV 源，支持 M3U/TXT 格式解析
+
+⚡ 双重验证：HTTP 并发测速 + ffmpeg 深度验证（支持缓存复用）
+
+🧠 自治维护：源池 → 候选版 → 稳定版 → 质量回路，系统自动维护源列表
+
+📊 Web 管理面板：美观的暗色主题仪表盘，可视化查看和管理频道
+
+🏷️ 智能分类：基于 Demo 模板匹配 + 省份自动归类 + 拼音匹配
+
+📌 固定源保护：用户指定的优质源不会被自动替换
+
+🎬 特色分类补充：从 abc123 源采集音乐、电影、动漫等特色频道
+
+📦 多格式输出：支持 M3U、TXT、多源 M3U、JSON API 四种输出格式
+
+🐳 简单部署：支持 Docker 一键部署和 GitHub Actions 自动化
 
 ---
 
 ## 🎯 功能特性
 
-### 采集与验证
-- 从 10+ 公开 IPTV 源并发拉取（支持 CDN 代理加速）
-- 自动去重（基于频道名 + URL）
-- HTTP 快速测速（HEAD + 少量数据验证）
-- ffmpeg 深度验证（检测视频流、编码格式）
+1. 智能采集与验证
+多源聚合：自动拉取 10+ 公开 IPTV 源（iptv-org、GitHub 等）
 
-### 智能分类
-- **央视**：CCTV-1 ~ CCTV-17、CCTV-4K/8K、CGTN 系列等
-- **卫视**：全国各省卫视
-- **地方**：按省份/城市自动归类（如「☘️浙江频道」）
-- **港澳台**：统一归入「🌊港·澳·台」
-- **特色分类**：韩国女团、戏曲频道、每日电影/经典电影、热门歌曲/动感舞曲、网络电台
+HTTP 测速：并发探测每个频道的响应速度（HEAD + 分段下载）
 
-### 自治模式（推荐）
-- **源池**：自动发现新源，仅保留国内频道
-- **候选版**：新源进入观察期，从缓存复用测速结果
-- **稳定版**：验证通过的源自动提升为稳定源
-- **质量回路**：持续监控稳定源质量，自动替换失效源
-- **固定源保护**：用户指定的源不会被自动替换
+ffmpeg 深度验证：通过 ffprobe 检测视频流有效性，过滤纯音频/DRM/失效源
 
-### 输出格式
-| 文件 | 说明 |
-|------|------|
-| `tv.m3u` | 标准 M3U 播放列表（按 demo.txt 顺序） |
-| `tv.txt` | 标准 TXT 格式（频道名,URL） |
-| `tv_multi.m3u` | 多源切换版（同一频道多个备源，用 `#` 分隔） |
-| `tv_epg.m3u` | EPG 兼容版（保留 tvg-id 占位） |
-| `tv_lite.m3u` | 精简版（仅保留最低延迟源，适合移动设备） |
-| `channels.json` | JSON API 格式（供其他程序调用） |
-| `shai.txt` | 未匹配频道列表（便于人工复核） |
+分级验证策略：缓存复用 + HTTP 初筛 + ffprobe 深度验证，减少 50%-70% 的 ffmpeg 调用
 
-### 性能优化
-- **动态并发控制**：根据网络状况自适应调整并发数
-- **连接池复用**：TCP 连接复用，减少握手开销
-- **ffmpeg 缓存**：验证结果缓存 7 天，避免重复调用
-- **分级验证**：HTTP 初筛 → ffmpeg 深度验证（减少 50-70% 调用）
-- **轻量级模式**：支持 `quick`/`deep`/`off` 三种 ffmpeg 模式
-- **预编译正则**：加速分类匹配
-- **布隆过滤器**：高效去重，降低内存占用
+国内频道过滤：自动识别并过滤国外频道，聚焦国内直播源
 
+2. 自治维护体系
+源池管理：自动发现新源，存入源池数据库
+
+候选版观察：新源进入候选池，经过持续验证（成功率 > 80%，延迟 < 2000ms）后才提升
+
+稳定版管理：只保留经过验证的稳定源用于输出
+
+质量回路：持续监控稳定版质量，自动替换失效源
+
+固定源保护：用户指定的源不会被自动替换
+
+3. Web 管理面板
+仪表盘：展示稳定源数量、固定源数量、源池总量、候选观察中数量
+
+频道列表：展示所有稳定源，支持搜索和分类筛选
+
+固定源管理：在线添加/删除固定源，实时生效
+
+配置管理：在线调整并发数、超时时间、匹配模式等参数（需重启生效）
+
+质量趋势：查看每个频道的延迟变化曲线，绿色/红色点表示成功/失败
+
+4. 智能分类与匹配
+Demo 模板匹配：基于 demo.txt 定义频道顺序和分类
+
+拼音匹配：支持中文频道名与拼音的相互匹配
+
+省份自动归类：未匹配频道根据名称中的省份/城市自动分配到对应分类
+
+动态分类追加：新分类自动追加到输出文件末尾
+
+5. 固定源保护机制
+用户通过 Web 界面或 fixed_sources.py 指定的源，标记为 is_fixed=True
+
+自治模式不会自动替换固定源
+
+Web 界面可随时添加/删除固定源
+
+6. 多格式输出
+tv.m3u：标准 M3U 播放列表
+
+tv.txt：标准 TXT 格式（频道名,URL）
+
+tv_multi.m3u：多源切换 M3U（同一频道多个备源）
+
+channels.json：JSON API 格式，供其他程序调用
 ---
 
-
----
-
-
-```markdown
-## 🏗️ 架构概览
-
-**触发源**
-└── GitHub Actions（每 6 小时自动运行）
-
-**核心流程**
-├── 1. 多源采集（源池）
-│   └── 从 10+ 公开源拉取，自动去重
-├── 2. 候选版观察（验证）
-│   ├── HTTP 快速测速
-│   └── ffmpeg 深度验证
-└── 3. 稳定版管理（输出）
-    └── 生成 M3U / TXT / JSON 等格式
-
-**质量回路**
-└── 持续监控所有源，自动替换失效源
-
-**输出文件**
-├── tv.m3u / tv.txt
-├── tv_multi.m3u / tv_epg.m3u
-└── channels.json
-
-## 效果预览
-
-在 GitHub 上会渲染成一个清晰的流程图，而不是乱码的 ASCII 图。
-
----
-
-## 完整的 README.md 架构部分（可直接复制替换）
-
-```markdown
-## 🏗️ 架构概览
-
-```mermaid
-flowchart TD
-    A[GitHub Actions<br>每6小时自动运行] --> B[IPTV 智能整理平台]
-    
-    B --> C[多源采集<br>源池]
-    B --> D[候选版观察<br>验证]
-    B --> E[稳定版管理<br>输出]
-    
-    C --> D
-    D --> E
-    
-    F[质量回路<br>持续监控] --> C
-    F --> D
-    F --> E
-    
-    E --> G[输出文件]
-    
-    G --> H[tv.m3u]
-    G --> I[tv.txt]
-    G --> J[tv_multi.m3u]
-    G --> K[tv_epg.m3u]
-    G --> L[channels.json]
-
----
-
-## 如果 Mermaid 也不支持，用纯文本替代（无框线）
-
-```markdown
-## 🏗️ 架构概览
-
-**触发**：GitHub Actions（每 6 小时自动运行）
-
-**核心流程**：
-1. 多源采集（源池）→ 2. 候选版观察（验证）→ 3. 稳定版管理（输出）
-
-**质量回路**：持续监控所有源，自动替换失效源
-
-**输出文件**：
-- tv.m3u / tv.txt / tv_multi.m3u / tv_epg.m3u / channels.json
-
-## 🚀 部署方式
-
-### 方式一：GitHub Actions（推荐）
-1. **Fork 本仓库** 到你的 GitHub 账号
-2. **启用 GitHub Actions**：仓库 → Actions → 允许工作流
-3. **手动触发首次运行**：Actions → `IPTV 源智能更新与整理` → Run workflow
-4. 等待约 10-20 分钟，访问以下地址获取播放列表：
-   - `https://你的用户名.github.io/ITV/tv.m3u`
-   - `https://你的用户名.github.io/ITV/tv.txt`
-
-### 方式二：本地运行
-```bash
-# 克隆项目
-git clone https://github.com/你的用户名/ITV.git
+🚀 部署方法
+方式一：Docker 部署（推荐）
+# 1. 克隆项目
+git clone https://github.com/zzgpy1/ITV.git
 cd ITV
 
-# 安装依赖
-pip install -r requirements.txt
+# 2. 配置环境变量（可选）
+cp .env.example .env
+# 编辑 .env 调整配置
 
-# 安装 ffmpeg (可选，深度验证需要)
-# Ubuntu/Debian: sudo apt install ffmpeg
-# macOS: brew install ffmpeg
-
-# 运行（传统模式）
-python -m src.run
-
-# 运行（自治模式）
-AUTONOMOUS_MODE=true python -m src.run
+# 3. 启动容器
 docker-compose up -d
 
-⚙️ 配置说明
-环境变量（.env）
-变量	说明	默认值
-AUTONOMOUS_MODE	启用自治模式	false
-MAX_WORKERS	HTTP 并发数	20
-TIMEOUT	HTTP 超时（秒）	8
-FFMPEG_MODE	ffmpeg 模式 (deep/quick/off)	deep
-FFPROBE_CACHE_HOURS	ffmpeg 结果缓存时长（小时）	168
-CACHE_RAW_HOURS	原始源缓存时长（小时）	48
-ENABLE_INCREMENTAL_FETCH	启用增量更新	true
-DYNAMIC_CONCURRENCY	动态并发控制	true
-ENABLE_BLOOM_FILTER	启用布隆过滤器去重	true
+# 4. 查看日志
+docker logs -f iptv-collector
 
-自定义源
-编辑 src/config.py 中的 RAW_SOURCES 和 DIRECT_SOURCES 列表。
+访问 http://你的设备IP:8080 打开 Web 管理面板。
 
-固定源
-编辑 src/fixed_sources.py，添加你明确想保留的频道和 URL（如 CCTV-1 的稳定源）。
-📂 输出文件说明
-运行后，output/ 目录将包含：
+方式二：GitHub Actions 自动化（Fork 使用）
+Fork 本仓库 到你的 GitHub 账号
 
-tv.m3u — 标准 M3U
+启用 GitHub Actions：仓库 → Actions → 允许工作流
 
-tv.txt — 标准 TXT
+手动触发首次运行：Actions → IPTV 源智能更新与整理 → Run workflow
 
-tv_multi.m3u — 多源切换版
+等待 10-20 分钟后访问：
 
-tv_epg.m3u — EPG 兼容版
+https://你的用户名.github.io/ITV/tv.m3u
 
-tv_lite.m3u — 精简版（移动端优化）
+https://你的用户名.github.io/ITV/tv.txt
 
-channels.json — JSON API
+方式三：本地运行
+# 1. 安装依赖
+pip install -r requirements.txt
 
-stats.json — 运行统计
+# 2. 配置环境变量
+cp .env.example .env
 
-shai.txt — 未匹配频道列表
+# 3. 运行采集
+python -m src.run
 
-🧩 依赖说明
-Python 依赖
-aiohttp>=3.9.0        # 异步 HTTP 请求
-aiosqlite>=0.19.0     # SQLite 异步支持
-tqdm>=4.66.0          # 进度条
-pypinyin>=0.49.0      # 拼音匹配（可选）
+# 4. 启动 Web 服务
+python -m src.server
 
-系统依赖（可选）
-ffmpeg：用于深度验证（推荐安装，可大幅提高过滤准确性）
+⚙️ 环境变量配置
 
-❓ 常见问题
-1. 为什么自治模式没有产生稳定源？
-首次运行需要积累测速缓存，建议先运行几次传统模式后再启用自治模式。
+分类	变量	默认值	说明
+运行模式	RUN_MODE	schedule	once 或 schedule
+SCHEDULE_INTERVAL	21600	定时任务间隔（秒）
+性能配置	MAX_WORKERS	20	最大并发数
+TIMEOUT	8	请求超时（秒）
+DYNAMIC_CONCURRENCY	true	是否启用动态并发
+MIN_WORKERS	5	最小并发数
+验证配置	FFMPEG_ENABLE	true	是否启用 ffmpeg 验证
+FFMPEG_MODE	deep	deep/quick/off
+FFPROBE_CACHE_HOURS	168	ffprobe 缓存时长（小时）
+缓存配置	CACHE_RAW_HOURS	48	原始源缓存时长
+CACHE_SPEED_HOURS	24	测速结果缓存时长
+ENABLE_INCREMENTAL_FETCH	true	启用增量更新
+功能开关	ENABLE_DEMO_FILTER	true	启用 Demo 筛选
+ENABLE_ALIAS	true	启用别名标准化
+ENABLE_BLACKLIST	true	启用 URL 黑名单
+DATABASE_ENABLE	true	启用数据库缓存
+自治模式	AUTONOMOUS_MODE	false	启用自治模式
+AUTO_UPDATE_STABLE	true	自动更新稳定版
+AUTO_REPLACE_FAILED	true	自动替换失效源
+QUALITY_CHECK_INTERVAL	24	质量检查间隔（小时）
+CANDIDATE_MIN_SUCCESS	10	候选稳定最少成功次数
+CANDIDATE_MIN_SUCCESS_RATE	0.8	候选最低成功率
+CANDIDATE_MAX_LATENCY	2000	候选最大延迟（ms）
+Web 界面	WEB_SERVER_PORT	8080	Web 服务端口
+WEB_SERVER_HOST	0.0.0.0	监听地址
+输出配置	ENABLE_JSON_OUTPUT	true	生成 JSON API
+ENABLE_LITE_VERSION	false	生成精简版
+ENABLE_EPG_OUTPUT	false	生成 EPG 版本
+MAX_SOURCES_PER_CHANNEL	3	每个频道保留源数
 
-2. 播放列表中的频道无法播放？
-可能是源已失效，系统会在下次运行时自动替换（自治模式）或您可手动更新固定源。
+📁 数据文件说明
+文件	说明
+output/tv.m3u	标准 M3U 播放列表
+output/tv.txt	TXT 格式播放列表
+output/tv_multi.m3u	多源切换 M3U
+output/channels.json	JSON API 格式
+output/stable_sources.json	稳定源配置
+output/stats.json	运行统计信息
+data/source_pool.json	源池数据库
+data/candidate_pool.json	候选池数据库
+data/trend.db	质量趋势数据库（SQLite）
 
-3. 如何增加新的分类？
-在 demo.txt 中添加新分类行（格式：分类名,#genre#），然后在该分类下列出频道名即可。
+🎯 使用说明
+Web 管理面板
+页面	功能
+仪表盘	查看系统状态（稳定源、固定源、源池、候选观察中数量，最后运行时间）
+频道列表	查看所有稳定源，支持搜索和分类筛选（央视/卫视/地方/港澳台/其他）
+固定源管理	添加/删除固定源，添加后该源不会被自动替换
+配置管理	调整并发数、超时时间、匹配模式等参数（需重启生效）
+质量趋势	输入频道名查看延迟变化曲线，绿色/红色点表示成功/失败
+固定源管理
+在 Web 界面「固定源管理」页面输入频道名和 URL
 
-4. 港澳台频道如何归类？
-所有香港、澳门、台湾频道会自动合并到 🌊港·澳·台 分类中（已在 demo_filter.py 中硬编码）。
+点击「添加」即可将指定源设为固定源
 
-5. 拼音匹配需要额外安装什么？
-安装 pypinyin 即可：pip install pypinyin
+固定源会显示在列表中，点击回收站图标可移除
 
-6. 能否关闭 ffmpeg 深度验证？
-设置 FFMPEG_MODE=off 或 FFMPEG_ENABLE=false。
+固定源不会被自治模式的自动替换机制覆盖
 
-📝 自定义 demo.txt 示例
+质量趋势查看
+在 Web 界面「质量趋势」页面输入稳定源频道名（如 CCTV-1）
+
+选择时间范围（最近7/14/30天）
+
+点击「查看趋势」即可显示延迟变化曲线
+
+🔧 自定义配置
+添加自定义 IPTV 源
+编辑 src/config.py，在 IPTV_SOURCES 列表中添加 URL：
+IPTV_SOURCES = [
+    # ... 现有源 ...
+    "https://your-custom-source.com/playlist.m3u",
+]
+
+修改分类匹配规则
+编辑 demo.txt 定义频道顺序和分类，格式：
 📺央视频道,#genre#
 CCTV-1
 CCTV-2
-CCTV-3
 ...
 
-📡卫视频道,#genre#
-广东卫视
-浙江卫视
-...
+预置固定源
+编辑 src/fixed_sources.py：
+CCTV_FIXED_SOURCES = {
+    "CCTV-1": "http://45.192.97.170:8880/play/1.m3u8",
+    "CCTV-2": "http://45.192.97.170:8880/play/2.m3u8",
+    # ...
+}
 
-☘️北京频道,#genre#
-北京卫视
-北京科教
-...
+配置黑名单
+编辑 blacklist.txt，每行一个关键词或正则表达式，匹配到的 URL 将被过滤。
 
-🌊港·澳·台,#genre#
-翡翠台
-明珠台
-...
+📊 预期效果
+指标	自治模式关闭	自治模式开启
+采集源数量	10 个	10 个 + 自动发现
+输出频道数	200-400 个	300-600 个
+源维护	手动	自动
+失效源处理	下次采集可能仍存在	自动替换
+Web 管理	无	完整面板
 
-📜 免责声明
-本项目仅用于个人学习和研究，所有节目源均来自互联网公开可访问链接，项目本身不存储、不修改任何媒体内容。严禁将本项目用于商业传播或非法用途。因违规使用产生的任何法律责任由使用者自行承担。
+📝 更新日志
+v2.0 (2026-06)
+🚀 新增自治模式（源池→候选版→稳定版→质量回路）
 
-📄 许可证
-MIT License © 2026
+🌐 新增 Web 管理面板（仪表盘、频道列表、固定源管理、配置管理、质量趋势）
 
-🎉 感谢使用 IPTV 智能整理平台！如果觉得有用，欢迎 Star ⭐
+🧠 新增智能分类匹配（拼音匹配 + 省份自动归类 + 地级市映射）
+
+📌 新增固定源保护机制
+
+📈 新增质量趋势监控（延迟变化曲线）
+
+⚡ 优化 ffmpeg 验证（缓存复用 + 分级验证 + 轻量级模式）
+
+🔧 优化并发控制（动态并发 + 连接池复用）
+
+🐳 优化 Docker 部署（国内镜像源加速）
+
+v1.0 (2026-05)
+初始版本：多源采集、HTTP 测速、ffmpeg 验证、Demo 筛选、多格式输出
+
+⚖️ 免责声明
+本项目仅用于个人学习与测试用途，不用于任何商业、盈利及违规用途。
+
+所有节目源均来自互联网公开可访问链接
+
+项目本身不生产、不存储、不篡改任何媒体内容
+
+严禁将本项目及生成的播放列表用于商业传播、二次分发、公开分享等行为
+
+所有频道版权均归原版权方所有，使用前请确保符合当地法律法规
+
+因违规使用本项目产生的任何法律责任、版权纠纷，均归使用者自行承担
+
+🙏 致谢
+iptv-org/iptv - 全球 IPTV 频道集合
+
+Guovin/iptv-api - IPTV API 服务
+
+zilong7728/Collect-IPTV - IPTV 源采集
+
+fanmingming/live - 国内直播源
+
+📞 反馈与贡献
+欢迎提交 Issue 和 Pull Request！
+
+Issue: GitHub Issues
+
+讨论: GitHub Discussions
+
+⭐ 如果本项目对您有帮助，请给一个 Star 支持一下！
