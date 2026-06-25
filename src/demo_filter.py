@@ -7,7 +7,7 @@ import re
 from pathlib import Path
 from typing import List, Tuple
 from src.config import DEMO_FILE, OUTPUT_DIR, DEMO_MATCH_MODE
-from src.classifier import PROVINCES, classify_channel
+from src.classifier import PROVINCES, classify_channel, classify_and_filter
 from src.logger import logger
 
 try:
@@ -34,7 +34,7 @@ def parse_demo_order_with_categories(demo_file: Path = DEMO_FILE) -> List[Tuple[
                 continue
             
             if line.endswith(",#genre#") or line.endswith(", #genre#"):
-                current_category = line.replace(", #genre#", "").replace(", #genre#", "").strip()
+                current_category = line.replace(",#genre#", "").replace(", #genre#", "").strip()
                 continue
             
             if line.startswith('#'):
@@ -105,7 +105,6 @@ def detect_province(channel_name: str) -> str:
     for prov in PROVINCES:
         if prov in name:
             return prov
-    
     # 直辖市简称
     if "京" in name: return "北京"
     if "沪" in name: return "上海"
@@ -260,11 +259,26 @@ def filter_and_order_by_demo(channels: list) -> tuple:
     1. 匹配 demo 中的频道（支持拼音）
     2. 未匹配的根据省份/城市自动归类到对应省份分类（包括地级市映射）
     3. 港澳台统一归入 🌊港·澳·台
+    4. 如果 demo_order 为空，则使用 classify_and_filter 按分类输出所有频道（仅保留四大类）
     """
     demo_order = parse_demo_order_with_categories()
     if not demo_order:
-        logger.warning("⚠️ demo.txt 为空，跳过筛选")
-        return channels, []
+        logger.warning("⚠️ demo.txt 为空，按分类筛选所有频道（仅保留央视/卫视/地方/港澳台）")
+        # 使用 classifier 分类并只保留主要分类
+        classified = classify_and_filter(channels)
+        # 保留的类别
+        keep_cats = ["央视", "卫视", "地方", "港澳台"]
+        matched = []
+        for cat in keep_cats:
+            for ch in classified.get(cat, []):
+                ch_copy = ch.copy()
+                ch_copy["demo_category"] = cat
+                ch_copy["demo_name"] = ch["name"]
+                matched.append(ch_copy)
+        # 按分类顺序排序：央视、卫视、地方、港澳台
+        # 每个分类内频道已由 classify_and_filter 排序
+        logger.info(f"📊 按分类筛选后，保留 {len(matched)} 个频道")
+        return matched, []
 
     name_to_channel = {ch["name"]: ch for ch in channels}
     matched = []
