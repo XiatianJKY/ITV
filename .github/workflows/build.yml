@@ -30,10 +30,14 @@ jobs:
         pip install -r requirements.txt
         pip install pyinstaller
     
-    - name: 创建资源目录
+    - name: 创建资源目录和 __init__.py
       run: |
         mkdir resources -Force
         echo "No icon" > resources/placeholder.txt
+        # 确保 __init__.py 存在
+        echo "# src package" > src\__init__.py
+        echo "# gui package" > src\gui\__init__.py
+        echo "# utils package" > src\utils\__init__.py
     
     - name: 打包成 exe
       run: |
