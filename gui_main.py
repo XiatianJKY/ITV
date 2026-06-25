@@ -2,13 +2,35 @@
 # gui_main.py
 """IPTV 管理桌面应用 (PyQt5)"""
 
+import os
 import sys
 import threading
 import random
 from pathlib import Path
 
+# ========== 设置环境变量（启用自治模式） ==========
+os.environ["AUTONOMOUS_MODE"] = "true"
+os.environ["ENABLE_DEMO_FILTER"] = "true"
+os.environ["ENABLE_ALIAS"] = "true"
+os.environ["ENABLE_BLACKLIST"] = "true"
+os.environ["DATABASE_ENABLE"] = "true"
+os.environ["FFMPEG_ENABLE"] = "true"
+os.environ["MAX_WORKERS"] = "20"
+os.environ["TIMEOUT"] = "8"
+
+# ========== 切换工作目录到 exe 所在目录 ==========
+if getattr(sys, 'frozen', False):
+    # 打包环境，exe 所在路径
+    base_dir = Path(sys.executable).parent
+    os.chdir(base_dir)
+    print(f"📁 工作目录已切换至: {base_dir}")
+else:
+    base_dir = Path(__file__).parent
+    os.chdir(base_dir)
+    print(f"📁 开发环境工作目录: {base_dir}")
+
 # 添加项目根目录到 sys.path
-sys.path.insert(0, str(Path(__file__).parent))
+sys.path.insert(0, str(base_dir))
 
 from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox
 from PyQt5.QtCore import QUrl, QTimer
@@ -55,7 +77,7 @@ class MainWindow(QMainWindow):
 
 def main():
     app = QApplication(sys.argv)
-    # 设置 Web 引擎参数（启用跨域）
+    # 设置 Web 引擎参数
     profile = QWebEngineProfile.defaultProfile()
     profile.setHttpCacheType(QWebEngineProfile.NoCache)
     settings = QWebEngineSettings.defaultSettings()
