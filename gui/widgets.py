@@ -9,7 +9,10 @@ from PySide6.QtGui import *
 
 from src.core.config import OUTPUT_DIR
 from src.core.stable.manager import StableManager
-
+from src.config import OUTPUT_DIR
+from src.stable.manager import StableManager
+from src.source_pool.discoverer import SourceDiscoverer
+from src.candidate.observer import CandidateObserver
 
 class LogTextEdit(QTextEdit):
     """日志输出控件"""
