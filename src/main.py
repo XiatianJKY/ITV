@@ -2,12 +2,15 @@
 """IPTV 智能管理 GUI 工具 - 程序入口"""
 
 import sys
+import os
 import traceback
 from pathlib import Path
 
-# 将项目根目录添加到 sys.path
-sys.path.insert(0, str(Path(__file__).parent.parent))
-
+# 确保当前目录在 sys.path 中（打包后会被解压到临时目录，但我们需要当前 exe 所在目录）
+# 如果运行的是打包后的 exe，sys.executable 是 exe 路径，其父目录是程序所在目录
+base_dir = Path(sys.executable).parent if getattr(sys, 'frozen', False) else Path(__file__).parent.parent
+sys.path.insert(0, str(base_dir))
+sys.path.insert(0, str(base_dir / 'src'))  # 确保 src 可导入
 
 def main():
     try:
@@ -31,15 +34,12 @@ def main():
         sys.exit(app.exec())
     
     except Exception as e:
-        # 将错误写入 error.log 文件
         error_msg = traceback.format_exc()
         try:
             with open("error.log", "w", encoding="utf-8") as f:
                 f.write(error_msg)
         except:
             pass
-        
-        # 在控制台输出错误并等待用户按键
         print("=" * 60)
         print("程序启动失败！")
         print("错误信息已写入 error.log")
@@ -47,7 +47,6 @@ def main():
         print(error_msg)
         input("按 Enter 键退出...")
         sys.exit(1)
-
 
 if __name__ == "__main__":
     main()
