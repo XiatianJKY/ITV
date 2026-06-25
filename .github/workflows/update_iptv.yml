@@ -27,6 +27,16 @@ jobs:
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
 
+    - name: 删除冲突的 main 标签
+      run: |
+        if git tag | grep -q "^main$"; then
+          echo "发现冲突的 'main' 标签，正在删除..."
+          git tag -d main
+          echo "✅ 冲突标签已删除。"
+        else
+          echo "✅ 未发现冲突的 'main' 标签。"
+        fi
+        
     - name: 设置 Python
       uses: actions/setup-python@v5
       with:
