@@ -177,6 +177,15 @@ BLOOM_FILTER_CAPACITY = int(os.getenv("BLOOM_FILTER_CAPACITY", 100000))
 WEB_UI_ENABLE = os.getenv("WEB_UI_ENABLE", "true").lower() == "true"
 WEB_UI_TITLE = os.getenv("WEB_UI_TITLE", "IPTV 智能管理面板")
 
+# ========== GitHub 代理配置（用于 proxy_utils.py） ==========
+ENABLE_GITHUB_PROXY = os.getenv("ENABLE_GITHUB_PROXY", "true").lower() == "true"
+GITHUB_PROXY_TIMEOUT = int(os.getenv("GITHUB_PROXY_TIMEOUT", 15))
+GITHUB_RAW_PROXIES = [
+    "https://ghproxy.net/",
+    "https://gh.api.99988866.xyz/",
+    "https://raw.kkgithub.com/",
+]
+
 # 打印自治模式状态
 if AUTONOMOUS_MODE:
     print("🤖 自治模式已启用")
