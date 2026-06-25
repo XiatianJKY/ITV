@@ -26,8 +26,6 @@ jobs:
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
-        git config pull.rebase true
-        git config rebase.autostash true
 
     - name: 设置 Python
       uses: actions/setup-python@v5
@@ -53,112 +51,68 @@ jobs:
         ENABLE_BLACKLIST: true
         DATABASE_ENABLE: true
         RUN_MODE: once
-        CACHE_RAW_HOURS: 48
-        CACHE_SPEED_HOURS: 24
-        ENABLE_INCREMENTAL_FETCH: true
         IPTV_ORG_ENABLE: true
-        IPTV_ORG_CDN: https://raw.githubusercontent.com/iptv-org/iptv/master/resources
-        IPTV_ORG_ADD_MAIN_LIST: true
-        IPTV_ORG_CACHE_HOURS: 72
-        ENABLE_GLOBAL_CHANNELS: falseIMIT: 
-        GLOBAL_CHANNELS_LIMIT: 200
-        ENABLE_200
-        ENABLE_EPEPG_INJECTG_INJECTION: true
-ION: true
-        EPG_CACHE_DAYS        EPG_CACHE_DAYS: 7
-: 7
-        ENABLE_JSON_OUTPUT        ENABLE_JSON_OUTPUT: true
-       : true
-        ENABLE_LITE_VERSION: true ENABLE_LITE_VERSION: true
-        ENA
-        ENABLE_EPG_OUTPUT: true
-        AUTONOMBLE_EPG_OUTPUT: true
-        AUTONOMOUS_MODE:OUS_MODE: true
-        AUTO true
-        AUTO_UPDATE_ST_UPDATE_STABLE: true
-ABLE: true
-        AUTO_REPL        AUTO_REPLACE_FAILED:ACE_FAILED: true
-        QUALITY_CHECK_INTERVAL: 24 true
-        QUALITY_CHECK_INTER
-        CANDVAL: 24
-        CANDIDIDATE_OBSATE_OBSERVATION_HOURERVATION_HOURS: 24S: 24
-        CAND
-        CANDIDATE_MINIDATE_MIN_SUCCESS: _SUCCESS: 33
-        CAND
-        CANDIDATE_MIN_SUCCESS_RATE: IDATE_MIN_SUCCESS_RATE: 0.5
-0.5
-        CANDIDATE_MAX_LAT        CANDIDATE_MAX_LATENCY: 300ENCY: 3000
+        ENABLE_GLOBAL_CHANNELS: false
+        ENABLE_JSON_OUTPUT: true
+        ENABLE_LITE_VERSION: false
+        ENABLE_EPG_OUTPUT: false
+        AUTONOMOUS_MODE: true
+        AUTO_UPDATE_STABLE: true
+        AUTO_REPLACE_FAILED: true
+        QUALITY_CHECK_INTERVAL: 24
+        CANDIDATE_OBSERVATION_HOURS: 24
+        CANDIDATE_MIN_SUCCESS: 3
+        CANDIDATE_MIN_SUCCESS_RATE: 0.5
+        CANDIDATE_MAX_LATENCY: 3000
 
-    -0
+    - name: 提交并推送更改
+      run: |
+        # 强制刷新远程引用，避免 stale info
+        echo "🔄 获取远程最新引用..."
+        git fetch origin main --force
 
-    - name: 提交 name: 提交并推送更改到并推送更改到 main 分支
- main 分支
-      run: |
-      run: |
-        # 确保        # 确保本地 main本地 main 与 与远程同步远程同步
-        git fetch
-        git fetch origin main
-        origin main
-        git reset git reset --hard origin/main --hard origin/main || true
-        
-        echo " || true
-        
-        echo "📝 📝 添加更改添加更改..."
-        git add..."
+        echo "📝 检查并添加更改..."
         git add -A
-        
-        -A
-        
-        if git diff -- if git diff --cached --quietcached --quiet; then
-         ; then
-          echo "✅  echo "✅ 没有检测到新没有检测到新更改"
-          exit更改"
+
+        if git diff --cached --quiet; then
+          echo "✅ 没有检测到新更改"
           exit 0
-        0
         fi
-        
-        echo "📦  fi
-        
+
         echo "📦 提交更改..."
-       提交更改..."
-        git git commit -m "自动更新 IPTV 列表 commit -m "自动更新 IPTV 列表 - $(date '+ - $(date '+%Y-%m%Y-%m-%d %H-%d %H:%:%M:%S')"
-        
-        echo "🚀 推送到M:%S')"
-        
-        echo "🚀 推送到 main main  分支..."
-        if git push origin main; then
-分支..."
-        if git push origin main; then
-          echo "✅ 推送成功          echo "✅ 推送成功"
-        else
-          echo "⚠️ 推送失败，尝试强制"
-        else
-          echo "⚠️ 推送失败，尝试强制推送..."
-          git推送..."
-          git push --force origin push --force origin main
-          main
-          echo "✅  echo "✅ 强制推送完成"
-强制推送完成"
-        fi
+        git commit -m "自动更新 IPTV 列表 - $(date '+%Y-%m-%d %H:%M:%S')"
 
-        fi
+        echo "🚀 推送到 main 分支（带重试）..."
+        for i in 1 2 3; do
+          echo "尝试第 $i 次推送..."
+          if git push origin main; then
+            echo "✅ 推送成功"
+            exit 0
+          else
+            echo "⚠️ 推送失败，拉取最新更改后重试..."
+            git pull origin main --rebase --autostash
+            # 再次尝试推送
+            if git push origin main; then
+              echo "✅ Rebase 后推送成功"
+              exit 0
+            fi
+            sleep 2
+          fi
+        done
 
-    - name: 上传输出文件作为 artifacts
-         - name: 上传输出文件 uses: actions/作为 artifacts
-      uses: actions/upload-artifact@upload-artifact@v4
-     v4
+        echo "⚠️ 重试后仍失败，尝试安全强制推送..."
+        # 先刷新远程引用再强制推送
+        git fetch origin main --force
+        git push --force-with-lease origin main
+        echo "✅ 安全强制推送成功"
+
+    - name: 上传输出文件作为 artifacts（可选）
+      uses: actions/upload-artifact@v4
       with:
-        name with:
-        name: iptv: iptv-output-output
-        path
+        name: iptv-output
         path: |
-          output: |
-          output/*.m/*.m3u
-         3u
+          output/*.m3u
           output/*.txt
-          output/* output/*.txt
-          output/*..json
-         json
-          output/*.log output/*.log
-       
-        retention-d retention-days: 7ays: 7
+          output/*.json
+          output/*.log
+        retention-days: 7
