@@ -28,12 +28,16 @@ jobs:
           pip install -r requirements.txt
           pip install pyinstaller
 
-      - name: Create necessary directories
+      - name: Create necessary directories (Windows)
         run: |
-          mkdir -p gui/resources
-          mkdir -p gui/styles
-          echo "# placeholder" > gui/resources/__init__.py
-          echo "/* placeholder */" > gui/styles/dark_theme.qss
+          New-Item -ItemType Directory -Force -Path gui/resources
+          New-Item -ItemType Directory -Force -Path gui/styles
+          if (-not (Test-Path gui/resources/__init__.py)) {
+            "# placeholder" | Out-File -FilePath gui/resources/__init__.py -Encoding utf8
+          }
+          if (-not (Test-Path gui/styles/dark_theme.qss)) {
+            "/* placeholder */" | Out-File -FilePath gui/styles/dark_theme.qss -Encoding utf8
+          }
 
       - name: Build with PyInstaller
         run: |
@@ -69,6 +73,8 @@ jobs:
             --hidden-import src.source_pool.discoverer `
             --hidden-import src.candidate.observer `
             --hidden-import src.quality.monitor `
+            --hidden-import src.adaptive_worker `
+            --hidden-import src.deduplicator `
             --name "IPTV_Collector" `
             gui/main.py
 
