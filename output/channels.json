@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "total": 339,
-  "generated": "2026-06-26T09:02:47.308794",
+  "total": 338,
+  "generated": "2026-06-26T14:21:36.253135",
   "channels": [
     {
       "name": "CCTV-1",
@@ -495,7 +495,7 @@
       "urls": [
         "https://video.bread-tv.com:8091/hls-live24/online/index.m3u8"
       ],
-      "latency": 1092,
+      "latency": 1048,
       "codec": "h264",
       "category": "📡卫视频道"
     },
@@ -808,7 +808,7 @@
       "urls": [
         "https://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8"
       ],
-      "latency": 1002,
+      "latency": 415,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -845,15 +845,6 @@
         "http://l.cztvcloud.com/channels/lantian/SXsuichang1/720p.m3u8"
       ],
       "latency": 485,
-      "codec": "h264",
-      "category": "☘️浙江频道"
-    },
-    {
-      "name": "嘉兴新闻综合",
-      "urls": [
-        "http://tvfile.jyrmt.cn:80/nmip-media/channellive/channel104452/playlist.m3u8"
-      ],
-      "latency": 883,
       "codec": "h264",
       "category": "☘️浙江频道"
     },
@@ -1882,7 +1873,7 @@
       "urls": [
         "http://liveout.btzx.com.cn/62ds9e/4nxdih.m3u8?fbl="
       ],
-      "latency": 3167,
+      "latency": 1751,
       "codec": "h264",
       "category": "☘️新疆频道"
     },
