@@ -6,12 +6,12 @@ import logging
 from PyQt5.QtCore import QThread, pyqtSignal
 
 class CollectionWorker(QThread):
+    # 在类级别定义信号（必须在 __init__ 之前）
     log_signal = pyqtSignal(str)
     finished_signal = pyqtSignal(bool)
 
     def __init__(self):
         super().__init__()
-        # 在 exe 所在目录创建日志文件
         self.log_file = os.path.join(os.path.dirname(sys.executable), "worker_debug.log")
         self.write_log("=== Worker 初始化 ===")
 
@@ -23,7 +23,7 @@ class CollectionWorker(QThread):
             pass
 
     def run(self):
-        # 将标准输出和错误重定向到日志文件（便于调试）
+        # 重定向标准输出到日志
         sys.stdout = open(os.path.join(os.path.dirname(sys.executable), "stdout.log"), "w", encoding="utf-8")
         sys.stderr = open(os.path.join(os.path.dirname(sys.executable), "stderr.log"), "w", encoding="utf-8")
 
@@ -35,13 +35,13 @@ class CollectionWorker(QThread):
             self.write_log(f"工作目录: {base_dir}")
             self.log_signal.emit(f"📂 工作目录: {base_dir}")
 
-            # 确保 _internal 在 sys.path 中（PyInstaller onedir 模式）
+            # 确保 _internal 路径存在
             internal_dir = os.path.join(base_dir, '_internal')
             if os.path.exists(internal_dir) and internal_dir not in sys.path:
                 sys.path.insert(0, internal_dir)
                 self.write_log(f"已添加 _internal 路径: {internal_dir}")
 
-            # 尝试导入 src
+            # 导入 src 模块
             try:
                 import src
                 self.write_log("src 导入成功")
@@ -63,7 +63,7 @@ class CollectionWorker(QThread):
                 self.finished_signal.emit(False)
                 return
 
-            # 设置日志捕获
+            # 日志捕获
             from src.logger import logger
             self.write_log("日志模块加载成功")
 
