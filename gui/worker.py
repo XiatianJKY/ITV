@@ -15,29 +15,26 @@ class CollectionWorker(QThread):
     def run(self):
         try:
             self.log_signal.emit("🚀 开始 IPTV 采集任务...")
-            
-            # 获取 exe 所在目录
+
             exe_dir = os.path.dirname(sys.executable)
             os.chdir(exe_dir)
             sys.path.insert(0, exe_dir)
-            
-            # ===== 关键：在导入 src 之前设置环境变量 =====
+
             os.environ["AUTONOMOUS_MODE"] = "true"
             os.environ["FFMPEG_ENABLE"] = "true"
             os.environ["ENABLE_DEMO_FILTER"] = "true"
             os.environ["ENABLE_ALIAS"] = "true"
             os.environ["ENABLE_BLACKLIST"] = "true"
-            # 打印确认
             self.log_signal.emit(f"🔧 环境变量已设置: AUTONOMOUS_MODE={os.environ.get('AUTONOMOUS_MODE')}")
 
             from src.run import main as run_main
             from src.logger import logger
 
-            # 自定义日志处理器
             class GuiLogHandler(logging.Handler):
                 def __init__(self, signal):
                     super().__init__()
                     self.signal = signal
+
                 def emit(self, record):
                     msg = self.format(record)
                     self.signal.emit(msg)
