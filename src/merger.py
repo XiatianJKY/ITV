@@ -80,31 +80,25 @@ def get_cctv_standard_name(name: str) -> str:
 
 
 def get_channel_quality_score(channel: dict) -> tuple:
-    """获取频道质量评分（固定源优先级最高）"""
     if channel.get("is_fixed"):
-        return (0, 0, 0)
-    
-    codec = channel.get("video_codec", "").lower()
-    if codec == "h264":
-        codec_priority = 1
-    elif codec in ["hevc", "h265"]:
-        codec_priority = 2
-    else:
-        codec_priority = 3
-    
+        return (0, 0, 0, 0)
     latency = channel.get("latency", 9999)
-    
-    url = channel.get("url", "").lower()
-    url_bonus = 0
-    if ".m3u8" in url:
-        url_bonus = 0
-    elif ".ts" in url:
-        url_bonus = 1
+    speed = channel.get("speed", 0)  # KB/s
+    # 将速度离散化（0-100, 100-500, 500+），以便排序时兼顾
+    if speed > 500:
+        speed_score = 0
+    elif speed > 100:
+        speed_score = 1
     else:
-        url_bonus = 2
-    
-    return (codec_priority, latency, url_bonus)
-
+        speed_score = 2
+    # 延迟分组：0-500 ms 最佳，500-2000 次之，>2000 较差
+    if latency < 500:
+        latency_score = 0
+    elif latency < 2000:
+        latency_score = 1
+    else:
+        latency_score = 2
+    return (latency_score, speed_score)
 
 def merge_channels_by_name(valid_channels: list) -> list:
     """合并频道，确保固定源被保留"""
