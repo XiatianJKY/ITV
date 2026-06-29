@@ -169,3 +169,7 @@ if AUTONOMOUS_MODE:
     print(f"   - 慢速阈值: {SLOW_SPEED_THRESHOLD}ms")
     print(f"   - 黑名单阈值: {MAX_RETRY_BEFORE_BLACKLIST}次失败")
     print(f"   - 健康度预测阈值: {PREDICT_THRESHOLD}")
+
+# ========== GitHub 代理配置（兼容旧模块） ==========
+ENABLE_GITHUB_PROXY = False
+GITHUB_RAW_PROXIES = []
