@@ -26,6 +26,17 @@ def is_suspicious_url(url: str) -> bool:
             return True
     return False
 
+def get_channel_quality_score(channel: dict) -> tuple:
+    # 固定源优先级最高
+    if channel.get("is_fixed"):
+        return (0, 0, 0, 0)
+    
+    latency = channel.get("latency", 9999)
+    speed = channel.get("speed", 0)  # KB/s
+    # 速度越高越好，但延迟更重要，所以组合: 延迟优先，速度次之
+    # 将速度转换为负数，使得高速度排在前面
+    return (1 if latency < 2000 else 2, latency, -speed)
+    
 async def probe_channel_advanced(session: aiohttp.ClientSession, channel: dict, db) -> tuple:
     """
     返回 (channel, latency, is_valid, speed, is_slow)
