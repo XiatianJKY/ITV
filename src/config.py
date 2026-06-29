@@ -44,6 +44,7 @@ RAW_SOURCES = [
 
 DIRECT_SOURCES = [
     "https://tv.19860519.xyz/abc123",
+    "https://iptv-org.github.io/iptv/index.m3u",
 ]
 
 PROXY = get_cdn_proxy()
