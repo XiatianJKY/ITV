@@ -1,6 +1,6 @@
 # src/orchestrator.py
 import asyncio
-from datetime import datetime, timedelta
+from datetime import datetime
 from pathlib import Path
 from typing import Dict, List
 
@@ -20,20 +20,21 @@ from src.config import (
 from src.demo_filter import parse_demo_order_with_categories
 from src.generator import generate_outputs_from_demo
 
+
 class IPTVOrchestrator:
     MAX_NEW_SOURCES_PER_RUN = 5000
     MAX_OBSERVE_PER_RUN = 3000
-    
+
     def __init__(self, data_dir: Path = None):
         self.data_dir = data_dir or Path("data")
         self.data_dir.mkdir(parents=True, exist_ok=True)
-        self.db = None  # 将在 run_once 中初始化
-        
+        self.db = None
+
         self.discoverer = SourceDiscoverer(self.data_dir / "source_pool.json")
         self.candidate_observer = CandidateObserver(self.data_dir / "candidate_pool.json")
         self.stable_manager = StableManager()
         self.quality_monitor = QualityMonitor(self.stable_manager)
-        
+
         self.stats = {
             "last_discover": None,
             "last_observe": None,
@@ -43,11 +44,11 @@ class IPTVOrchestrator:
             "stable_count_after": 0,
             "new_stable_count": 0
         }
-        
+
         CandidateObserver.MIN_SUCCESS_COUNT = min(CANDIDATE_MIN_SUCCESS, 3)
         CandidateObserver.MIN_SUCCESS_RATE = CANDIDATE_MIN_SUCCESS_RATE
         CandidateObserver.MAX_AVG_LATENCY = CANDIDATE_MAX_LATENCY
-    
+
     async def predict_failure_probability(self, channel_key: str) -> float:
         """基于历史速度数据预测未来7天失效概率"""
         if not self.db:
@@ -64,7 +65,7 @@ class IPTVOrchestrator:
             prob = (1 - success_rate) * 0.6 + min(1, max(0, trend)) * 0.4
             return min(1, prob)
         return 0.0
-    
+
     async def auto_replace_if_risky(self):
         """检查所有稳定源，如果预测失效概率高于阈值，则从候选池提拔替补"""
         if not self.db:
@@ -86,7 +87,7 @@ class IPTVOrchestrator:
                         replaced += 1
                         break
         return replaced
-    
+
     async def discover_phase(self) -> Dict:
         logger.info("=" * 50)
         logger.info("阶段1: 发现新源（国内频道）")
@@ -95,7 +96,7 @@ class IPTVOrchestrator:
             if not self.db:
                 self.db = await get_db_cache()
             new_sources = await asyncio.wait_for(
-                self.discoverer.discover(self.db, filter_domestic=True, force_refresh=True), 
+                self.discoverer.discover(self.db, filter_domestic=True, force_refresh=True),
                 timeout=120
             )
             total_new = sum(len(s) for s in new_sources.values())
@@ -122,36 +123,35 @@ class IPTVOrchestrator:
         except Exception as e:
             logger.error(f"❌ 发现新源阶段失败: {e}")
             return {}
-    
-   async def observe_phase(self) -> List:
-    logger.info("=" * 50)
-    logger.info("阶段2: 从缓存观察候选源")
-    logger.info("=" * 50)
-    try:
-        observing_count = self.candidate_observer.get_observing_count()
-        if observing_count == 0:
-            logger.info("📭 没有候选源需要观察")
+
+    async def observe_phase(self) -> List:
+        logger.info("=" * 50)
+        logger.info("阶段2: 从缓存观察候选源")
+        logger.info("=" * 50)
+        try:
+            observing_count = self.candidate_observer.get_observing_count()
+            if observing_count == 0:
+                logger.info("📭 没有候选源需要观察")
+                return []
+            stable_count = len(self.candidate_observer.get_stable_candidates())
+            logger.info(f"📊 候选池状态: {observing_count} 个正在观察，{stable_count} 个已稳定")
+            stable_candidates = await asyncio.wait_for(
+                self.candidate_observer.observe_batch_from_cache(
+                    batch_size=self.MAX_OBSERVE_PER_RUN
+                ),
+                timeout=150
+            )
+            self.stats["last_observe"] = datetime.now()
+            self.stats["observed_count"] = len(stable_candidates)
+            logger.info(f"✅ 观察阶段完成: {len(stable_candidates)} 个源达到稳定标准")
+            return stable_candidates
+        except asyncio.TimeoutError:
+            logger.warning("⚠️ 观察候选源阶段整体超时")
             return []
-        stable_count = len(self.candidate_observer.get_stable_candidates())
-        logger.info(f"📊 候选池状态: {observing_count} 个正在观察，{stable_count} 个已稳定")
-        # 使用整体超时
-        stable_candidates = await asyncio.wait_for(
-            self.candidate_observer.observe_batch_from_cache(
-                batch_size=self.MAX_OBSERVE_PER_RUN
-            ),
-            timeout=150  # 比内部超时稍长
-        )
-        self.stats["last_observe"] = datetime.now()
-        self.stats["observed_count"] = len(stable_candidates)
-        logger.info(f"✅ 观察阶段完成: {len(stable_candidates)} 个源达到稳定标准")
-        return stable_candidates
-    except asyncio.TimeoutError:
-        logger.warning("⚠️ 观察候选源阶段整体超时")
-        return []
-    except Exception as e:
-        logger.error(f"❌ 观察候选源阶段失败: {e}")
-        return []
-    
+        except Exception as e:
+            logger.error(f"❌ 观察候选源阶段失败: {e}")
+            return []
+
     async def promote_phase(self, stable_candidates: List = None) -> int:
         logger.info("=" * 50)
         logger.info("阶段3: 提升稳定源")
@@ -186,7 +186,7 @@ class IPTVOrchestrator:
         except Exception as e:
             logger.error(f"❌ 提升稳定源阶段失败: {e}")
             return 0
-    
+
     async def run_once(self) -> Dict:
         logger.info("🚀 IPTV 自治系统启动")
         logger.info(f"📊 配置: 每批发现 {self.MAX_NEW_SOURCES_PER_RUN} 个，每批观察 {self.MAX_OBSERVE_PER_RUN} 个")
@@ -197,7 +197,6 @@ class IPTVOrchestrator:
             await self.discover_phase()
             stable_candidates = await self.observe_phase()
             await self.promote_phase(stable_candidates)
-            # 健康度预测与自动替换
             replaced = await self.auto_replace_if_risky()
             if replaced:
                 logger.info(f"🔄 已预替换 {replaced} 个高风险源")
