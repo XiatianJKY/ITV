@@ -1,24 +1,17 @@
 # src/special_categories.py
-"""特定分类采集模块 - 从 abc123 源采集指定类别：音乐、广播、韩国女团、电影、电视剧、动漫、体育竞赛"""
+"""特定分类采集模块 - 从 abc123 和 iptv-org 源采集指定类别：音乐、广播、韩国女团、电影、电视剧、动漫、体育竞赛"""
 
 import re
 from typing import List, Dict, Tuple
 from pathlib import Path
 from src.logger import logger
 
-# ========== 需要采集的分类关键词 ==========
-# 注意：关键词用于匹配源中的分类名（如"歌团★"匹配"歌团"）
+# 需要采集的分类关键词（小写）
 TARGET_CATEGORIES = [
-    "音乐",
-    "广播", 
-    "韩国女团",      # 匹配源中的"歌团★"
-    "电影",
-    "电视剧",
-    "动漫",
-    "体育竞赛"       # 新增，匹配体育类
+    "音乐", "广播", "韩国女团", "电影", "电视剧", "动漫", "体育竞赛"
 ]
 
-# ========== 分类显示名称映射 ==========
+# 分类显示名称映射
 CATEGORY_DISPLAY_NAME = {
     "音乐": "🎵 音乐频道",
     "广播": "📻 网络电台",
@@ -29,18 +22,9 @@ CATEGORY_DISPLAY_NAME = {
     "体育竞赛": "🏀 体育竞赛频道",
 }
 
-# ========== 体育类关键词（用于分类名匹配） ==========
-SPORTS_KEYWORDS = ["体育", "竞赛", "赛事", "运动", "体育竞赛", "体育频道", "赛事频道"]
-
 
 def parse_abc123_for_targets(content: str) -> Dict[str, List[Tuple[str, str]]]:
-    """
-    解析 abc123 源内容，只提取目标分类下的频道
-    
-    特殊处理：
-    - 源中"歌团★"分类归入"韩国女团"
-    - 包含体育关键词的分类归入"体育竞赛"
-    """
+    """解析 abc123 源内容，提取目标分类下的频道"""
     if not content:
         return {}
     
@@ -53,46 +37,64 @@ def parse_abc123_for_targets(content: str) -> Dict[str, List[Tuple[str, str]]]:
         if not line:
             continue
 
-        # 检测分类行（格式：分类名,#genre#）
         if line.endswith(",#genre#") or line.endswith(", #genre#"):
             cat_name = line.replace(",#genre#", "").replace(", #genre#", "").strip()
             current_category = None
-            
-            # 检查是否为目标分类
             for target in TARGET_CATEGORIES:
-                # 特殊处理：源中的"歌团★"归入"韩国女团"
                 if target == "韩国女团" and ("歌团" in cat_name or "女团" in cat_name):
                     current_category = target
                     break
-                # 特殊处理：体育类匹配
-                elif target == "体育竞赛":
-                    if any(kw in cat_name for kw in SPORTS_KEYWORDS):
-                        current_category = target
-                        break
-                # 普通匹配：目标关键词在分类名中
                 elif target in cat_name:
                     current_category = target
                     break
             continue
 
-        # 跳过注释
         if line.startswith('#'):
             continue
 
-        # 解析频道行（格式：频道名,URL）
         if ',' in line and current_category in result:
             parts = line.split(',', 1)
             if len(parts) == 2:
                 name = parts[0].strip()
                 url = parts[1].strip()
                 if url.startswith(('http://', 'https://')):
-                    # 去重（基于URL）
                     existing_urls = [u for _, u in result[current_category]]
                     if url not in existing_urls:
                         result[current_category].append((name, url))
 
-    # 只返回非空分类
     return {k: v for k, v in result.items() if v}
+
+
+def parse_iptvorg_for_sports(content: str) -> List[Tuple[str, str]]:
+    """
+    解析 iptv-org M3U 内容，提取体育类频道（group-title 含 Sport/Sports/体育）
+    返回 [(频道名, URL), ...]
+    """
+    if not content:
+        return []
+    sports_channels = []
+    lines = content.splitlines()
+    i = 0
+    while i < len(lines):
+        line = lines[i].strip()
+        if line.startswith("#EXTINF"):
+            # 提取 group-title
+            group_title = ""
+            match = re.search(r'group-title="([^"]+)"', line)
+            if match:
+                group_title = match.group(1)
+            # 提取频道名
+            name = line.split(",")[-1].strip()
+            # 判断是否为体育类
+            if group_title and re.search(r'(?i)sport|体育', group_title):
+                if i + 1 < len(lines) and not lines[i + 1].startswith("#"):
+                    url = lines[i + 1].strip()
+                    if url.startswith(('http://', 'https://')):
+                        sports_channels.append((name, url))
+            i += 2
+        else:
+            i += 1
+    return sports_channels
 
 
 async def fetch_abc123_source() -> Dict[str, List[Tuple[str, str]]]:
@@ -100,19 +102,12 @@ async def fetch_abc123_source() -> Dict[str, List[Tuple[str, str]]]:
     import aiohttp
     source_url = "https://tv.19860519.xyz/abc123"
     headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
-        "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
-        "Accept-Encoding": "gzip, deflate",
-        "Connection": "keep-alive",
-        "Cache-Control": "no-cache",
-        "Pragma": "no-cache",
-        "Referer": "https://tv.19860519.xyz/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
     }
 
     try:
         async with aiohttp.ClientSession() as session:
-            async with session.get(source_url, timeout=15, headers=headers) as resp:
+            async with session.get(source_url, timeout=10, headers=headers) as resp:
                 if resp.status != 200:
                     logger.warning(f"⚠️ abc123 源返回 HTTP {resp.status}")
                     return {}
@@ -121,6 +116,27 @@ async def fetch_abc123_source() -> Dict[str, List[Tuple[str, str]]]:
     except Exception as e:
         logger.error(f"❌ 获取 abc123 源失败: {e}")
         return {}
+
+
+async def fetch_iptvorg_sports() -> List[Tuple[str, str]]:
+    """直接拉取 iptv-org 主列表并提取体育频道"""
+    import aiohttp
+    source_url = "https://iptv-org.github.io/iptv/index.m3u"
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+    }
+
+    try:
+        async with aiohttp.ClientSession() as session:
+            async with session.get(source_url, timeout=15, headers=headers) as resp:
+                if resp.status != 200:
+                    logger.warning(f"⚠️ iptv-org 源返回 HTTP {resp.status}")
+                    return []
+                content = await resp.text()
+                return parse_iptvorg_for_sports(content)
+    except Exception as e:
+        logger.error(f"❌ 获取 iptv-org 体育频道失败: {e}")
+        return []
 
 
 def append_special_to_output(
@@ -162,25 +178,57 @@ def append_special_to_output(
 
 
 async def collect_and_append_special_categories(output_dir: Path, db=None) -> Dict[str, int]:
-    """主函数：采集指定分类并追加到输出文件"""
-    logger.info("🧠 开始智能补充采集（从 abc123 源）...")
+    """
+    主函数：从 abc123 和 iptv-org 采集指定分类并追加到输出文件
+    """
+    logger.info("🧠 开始智能补充采集（从 abc123 + iptv-org 源）...")
 
-    special_data = await fetch_abc123_source()
+    # 1. 从 abc123 获取所有目标分类
+    abc123_data = await fetch_abc123_source()
+    
+    # 2. 从 iptv-org 获取体育频道
+    iptv_sports = await fetch_iptvorg_sports()
+    
+    # 3. 合并到 sports_channels
+    combined_data = abc123_data.copy()  # 包含所有分类
+    if "体育竞赛" not in combined_data:
+        combined_data["体育竞赛"] = []
+    # 合并 iptv-org 的体育频道（去重）
+    existing_urls = {url for _, url in combined_data["体育竞赛"]}
+    for name, url in iptv_sports:
+        if url not in existing_urls:
+            combined_data["体育竞赛"].append((name, url))
+            existing_urls.add(url)
 
-    if not special_data:
+    # 去重（其他分类已在 parse_abc123 中处理）
+    for cat in combined_data:
+        if combined_data[cat]:
+            seen = set()
+            unique = []
+            for name, url in combined_data[cat]:
+                if url not in seen:
+                    seen.add(url)
+                    unique.append((name, url))
+            combined_data[cat] = unique
+
+    # 统计
+    stats = {}
+    total = 0
+    for cat, channels in combined_data.items():
+        if channels:
+            stats[cat] = len(channels)
+            total += len(channels)
+
+    if total == 0:
         logger.warning("⚠️ 未获取到任何智能补充分类内容")
         return {}
 
-    stats = {cat: len(channels) for cat, channels in special_data.items()}
-    total = sum(stats.values())
     logger.info(f"📊 智能补充统计: 共 {total} 个频道")
     for cat, count in stats.items():
         logger.info(f"   {CATEGORY_DISPLAY_NAME.get(cat, cat)}: {count} 个频道")
 
-    if total == 0:
-        return {}
-
-    appended = append_special_to_output(special_data, output_dir)
+    # 追加到输出文件
+    appended = append_special_to_output(combined_data, output_dir)
     logger.info(f"✅ 已将 {appended} 个智能补充频道追加到输出文件")
 
     return stats
