@@ -1,5 +1,5 @@
 # src/merger.py
-# 频道合并模块，H.264优先 + 延迟排序 + 固定源优先（支持多个固定源）
+# 频道合并模块，H.264优先 + 延迟排序 + 固定源保护
 
 import re
 import copy
@@ -7,7 +7,7 @@ from collections import defaultdict
 from src.config import MAX_SOURCES_PER_CHANNEL
 from src.logo_matcher import get_logo_matcher
 from src.logger import logger
-from src.fixed_sources import CCTV_FIXED_SOURCES, ENABLE_FIXED_SOURCES, FIXED_SOURCE_LATENCY, FIXED_SOURCE_CODEC
+from src.fixed_sources import CCTV_FIXED_SOURCES
 
 
 def normalize_channel_name(name: str) -> str:
@@ -20,8 +20,9 @@ def normalize_channel_name(name: str) -> str:
 
 
 def is_cctv5plus(name: str) -> bool:
-    """判断是否为 CCTV-5+ 频道"""
+    """判断是否为 CCTV-5+ 频道（必须包含加号或 plus）"""
     name_lower = name.lower()
+    # 必须包含加号或 plus
     if '+' in name or '＋' in name:
         return True
     if '5plus' in name_lower or '5+' in name_lower:
@@ -34,6 +35,7 @@ def is_cctv5plus(name: str) -> bool:
 def is_cctv5(name: str) -> bool:
     """判断是否为 CCTV-5 频道（排除 CCTV-5+）"""
     name_lower = name.lower()
+    # 排除加号和 plus
     if '+' in name or '＋' in name:
         return False
     if '5plus' in name_lower:
@@ -46,50 +48,36 @@ def is_cctv5(name: str) -> bool:
 
 
 def get_cctv_standard_name(name: str) -> str:
-    """将央视频道名转换为标准格式"""
-    if is_cctv5plus(name):
+    """
+    将央视频道名转换为标准格式
+    优先匹配 CCTV-5+，然后 CCTV-5，最后其他数字
+    """
+    name_clean = re.sub(r'\s*\([^)]*\)', '', name)
+    name_lower = name_clean.lower()
+    
+    # 1. CCTV-5+（必须含加号或 plus）
+    if is_cctv5plus(name_clean):
         return "CCTV-5+"
-    if is_cctv5(name):
+    
+    # 2. CCTV-5（不含加号或 plus）
+    if is_cctv5(name_clean):
         return "CCTV-5"
     
-    match = re.search(r'cctv[-\s]*(\d+)', name.lower())
+    # 3. 其他 CCTV-数字
+    match = re.search(r'cctv[-\s]*(\d+)', name_lower)
     if match:
-        num = match.group(1)
-        return f"CCTV-{num}"
+        num = int(match.group(1))
+        if 1 <= num <= 17:
+            return f"CCTV-{num}"
     
-    match = re.search(r'央视[-\s]*(\d+)', name)
+    # 4. 央视+数字
+    match = re.search(r'央视[-\s]*(\d+)', name_clean)
     if match:
-        num = match.group(1)
-        return f"CCTV-{num}"
+        num = int(match.group(1))
+        if 1 <= num <= 17:
+            return f"CCTV-{num}"
     
     return None
-
-
-def get_fixed_sources(channel_name: str) -> list:
-    """获取固定源列表"""
-    if not ENABLE_FIXED_SOURCES:
-        return []
-    
-    std_name = get_cctv_standard_name(channel_name)
-    if not std_name:
-        return []
-    
-    urls = CCTV_FIXED_SOURCES.get(std_name, [])
-    if not urls:
-        return []
-    
-    # 为每个 URL 构造固定源字典
-    fixed_sources = []
-    for url in urls:
-        if url:
-            fixed_sources.append({
-                "name": std_name,
-                "url": url,
-                "latency": FIXED_SOURCE_LATENCY,
-                "video_codec": FIXED_SOURCE_CODEC,
-                "is_fixed": True
-            })
-    return fixed_sources
 
 
 def get_channel_quality_score(channel: dict) -> tuple:
@@ -120,11 +108,10 @@ def get_channel_quality_score(channel: dict) -> tuple:
 
 
 def merge_channels_by_name(valid_channels: list) -> list:
-    """合并频道，固定源优先（支持每个频道多个固定源）"""
+    """合并频道，确保固定源被保留，CCTV-5 和 CCTV-5+ 严格分离"""
     groups = defaultdict(list)
     
-    # 首先添加固定源
-    fixed_sources_added = set()
+    # 分组
     for ch in valid_channels:
         raw_name = ch["name"]
         std_name = get_cctv_standard_name(raw_name)
@@ -135,59 +122,62 @@ def merge_channels_by_name(valid_channels: list) -> list:
             if not norm_name or len(norm_name) < 2:
                 norm_name = raw_name
         groups[norm_name].append(ch)
-        
-        # 检查是否有固定源
-        if std_name and std_name not in fixed_sources_added:
-            fixed_list = get_fixed_sources(raw_name)
-            if fixed_list:
-                # 将固定源插入到最前面（倒序插入，保持顺序）
-                for fixed in reversed(fixed_list):
-                    groups[std_name].insert(0, fixed)
-                fixed_sources_added.add(std_name)
-                logger.info(f"📌 已添加 {len(fixed_list)} 个固定源: {std_name} -> {[f['url'] for f in fixed_list]}")
     
     logo_matcher = get_logo_matcher()
     merged = []
     
     for norm_name, ch_list in groups.items():
-        # 去重（基于URL）
-        seen_urls = set()
-        unique_list = []
-        for ch in ch_list:
-            if ch["url"] not in seen_urls:
-                seen_urls.add(ch["url"])
-                unique_list.append(ch)
-        
         # 按质量评分排序
-        unique_list.sort(key=get_channel_quality_score)
+        ch_list.sort(key=get_channel_quality_score)
         
         # 取前 MAX_SOURCES_PER_CHANNEL 个
-        top = unique_list[:MAX_SOURCES_PER_CHANNEL]
+        top = ch_list[:MAX_SOURCES_PER_CHANNEL]
         primary = top[0] if top else None
         
         if not primary:
+            logger.warning(f"⚠️ {norm_name} 没有有效源")
             continue
         
-        logo_url = primary.get("tvg_logo", "")
-        if not logo_url:
-            logo_url = logo_matcher.get_logo_url(norm_name)
-        
+        # 构建频道数据
         merged.append({
             "name": norm_name,
             "urls": [c["url"] for c in top],
             "url": primary["url"],
             "latency": primary.get("latency", 9999),
             "video_codec": primary.get("video_codec", ""),
-            "is_fixed": primary.get("is_fixed", False),
-            "group_title": primary.get("group_title", "央视"),
+            "group_title": primary.get("group_title", ""),
             "id": primary.get("tvg_id", ""),
-            "logo": logo_url,
+            "logo": logo_matcher.get_logo_url(norm_name) if not primary.get("tvg_logo") else primary.get("tvg_logo"),
+            "is_fixed": primary.get("is_fixed", False),
         })
+    
+    # ========== 确保所有固定源都存在于 merged 中 ==========
+    for name, url in CCTV_FIXED_SOURCES.items():
+        if not url:
+            continue
+        # 检查是否已在 merged 中
+        exists = any(ch["name"] == name for ch in merged)
+        if not exists:
+            logger.info(f"📌 补充缺失的固定源: {name}")
+            merged.append({
+                "name": name,
+                "urls": [url],
+                "url": url,
+                "latency": 50,
+                "video_codec": "h264",
+                "group_title": "央视",
+                "id": "",
+                "logo": logo_matcher.get_logo_url(name),
+                "is_fixed": True,
+            })
     
     # 统计固定源使用情况
     fixed_count = sum(1 for ch in merged if ch.get("is_fixed"))
     if fixed_count > 0:
         logger.info(f"📌 已使用 {fixed_count} 个固定优质源")
     
-    logger.info(f"🔄 频道合并完成：{len(merged)} 个频道")
+    # 统计结果
+    cctv_channels = [ch for ch in merged if ch["name"].startswith("CCTV-")]
+    logger.info(f"📊 合并完成: 共 {len(merged)} 个频道，其中央视 {len(cctv_channels)} 个")
+    
     return merged
