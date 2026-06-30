@@ -42,11 +42,8 @@ jobs:
 
     - name: 清理未跟踪文件（避免冲突）
       run: |
-        # 删除所有未跟踪的文件和目录（包括 data/ output/ *.db __pycache__/ 等）
         git clean -fd
-        # 同时删除 .gitignore 中定义的缓存文件（如果有）
         rm -rf data/ output/ *.db *.log 2>/dev/null || true
-        # 确保关键目录存在
         mkdir -p data output
 
     - name: 运行采集程序
@@ -77,14 +74,11 @@ jobs:
 
     - name: 提交并推送更改到 main 分支
       run: |
-        # 拉取最新远程更改（使用 rebase 避免冲突）
         echo "🔄 拉取远程最新更改..."
         git pull origin main --rebase --autostash || echo "拉取失败或无更新，继续..."
         
-        # 添加所有更改（只添加必要的文件）
-        echo "📝 检查并添加更改（仅添加必要的文件）..."
-        git add output/*.m3u output/*.txt output/*.json data/*.db 2>/dev/null || true
-        git add -A  # 如果上述通配符不匹配，则添加所有变更（但已被 .gitignore 过滤）
+        echo "📝 检查并添加更改..."
+        git add -A
         
         if git diff --cached --quiet; then
           echo "✅ 没有检测到新更改"
@@ -97,7 +91,7 @@ jobs:
         echo "🚀 推送到 main 分支（带重试）..."
         for i in 1 2 3; do
           echo "尝试第 $i 次推送..."
-          if git push origin main; then
+          if git push origin HEAD:main; then
             echo "✅ 推送成功"
             exit 0
           else
@@ -108,7 +102,7 @@ jobs:
         done
         
         echo "⚠️ 重试后仍失败，尝试安全强制推送..."
-        git push --force-with-lease origin main
+        git push --force-with-lease origin HEAD:main
         echo "✅ 安全强制推送成功"
 
     - name: 部署到 GitHub Pages
