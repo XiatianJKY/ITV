@@ -7,7 +7,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:53.709384",
+    "last_check": "2026-06-30T19:51:23.170567",
     "status": "observing",
     "promoted_at": null
   },
@@ -19,7 +19,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:53.717469",
+    "last_check": "2026-06-30T19:51:23.179371",
     "status": "observing",
     "promoted_at": null
   },
@@ -31,7 +31,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.272027",
+    "last_check": "2026-06-30T19:51:23.188015",
     "status": "observing",
     "promoted_at": null
   },
@@ -43,7 +43,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.280674",
+    "last_check": "2026-06-30T19:51:23.198059",
     "status": "observing",
     "promoted_at": null
   },
@@ -55,7 +55,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.288784",
+    "last_check": "2026-06-30T19:51:23.207217",
     "status": "observing",
     "promoted_at": null
   },
@@ -67,7 +67,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.297030",
+    "last_check": "2026-06-30T19:51:23.215766",
     "status": "observing",
     "promoted_at": null
   },
@@ -79,7 +79,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.305177",
+    "last_check": "2026-06-30T19:51:23.224437",
     "status": "observing",
     "promoted_at": null
   },
@@ -91,7 +91,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.313198",
+    "last_check": "2026-06-30T19:51:23.232898",
     "status": "observing",
     "promoted_at": null
   },
@@ -103,7 +103,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.321501",
+    "last_check": "2026-06-30T19:51:23.241569",
     "status": "observing",
     "promoted_at": null
   },
@@ -115,7 +115,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.329848",
+    "last_check": "2026-06-30T19:51:23.250425",
     "status": "observing",
     "promoted_at": null
   },
@@ -127,7 +127,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.338145",
+    "last_check": "2026-06-30T19:51:23.259241",
     "status": "observing",
     "promoted_at": null
   },
@@ -139,7 +139,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.347109",
+    "last_check": "2026-06-30T19:51:23.268059",
     "status": "observing",
     "promoted_at": null
   },
@@ -151,7 +151,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.355527",
+    "last_check": "2026-06-30T19:51:23.276618",
     "status": "observing",
     "promoted_at": null
   },
@@ -163,7 +163,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.363924",
+    "last_check": "2026-06-30T19:51:23.285317",
     "status": "observing",
     "promoted_at": null
   },
@@ -175,7 +175,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.372204",
+    "last_check": "2026-06-30T19:51:23.294149",
     "status": "observing",
     "promoted_at": null
   },
@@ -187,7 +187,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.380481",
+    "last_check": "2026-06-30T19:51:23.303066",
     "status": "observing",
     "promoted_at": null
   },
@@ -199,7 +199,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.388554",
+    "last_check": "2026-06-30T19:51:23.311644",
     "status": "observing",
     "promoted_at": null
   },
@@ -211,7 +211,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.396810",
+    "last_check": "2026-06-30T19:51:23.320428",
     "status": "observing",
     "promoted_at": null
   },
@@ -223,19 +223,31 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.404955",
+    "last_check": "2026-06-30T19:51:23.329388",
     "status": "observing",
     "promoted_at": null
   },
-  "eb9ff44aa0f87aa726b1d53f74c1476c": {
-    "source_key": "eb9ff44aa0f87aa726b1d53f74c1476c",
+  "8b1ecd5f2aebbf75adbc609140d18bf6": {
+    "source_key": "8b1ecd5f2aebbf75adbc609140d18bf6",
     "channel_name": "CCTV-4",
-    "url": "https://global.cgtn.cicc.media.caton.cloud/master/cgtn-america.m3u8",
+    "url": "http://112.27.235.94:8000/hls/4/index.m3u8",
     "check_count": 1,
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.413094",
+    "last_check": "2026-06-30T19:51:23.338290",
+    "status": "observing",
+    "promoted_at": null
+  },
+  "bd5d2e9bfb42584a7ff9c999000ccd92": {
+    "source_key": "bd5d2e9bfb42584a7ff9c999000ccd92",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1782892800-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-f3a6180ce0ec2b3b883534c5f3af54fb&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 1,
+    "success_count": 0,
+    "fail_count": 1,
+    "total_latency": 0,
+    "last_check": "2026-06-30T19:51:23.347011",
     "status": "observing",
     "promoted_at": null
   },
@@ -247,7 +259,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.421306",
+    "last_check": "2026-06-30T19:51:23.355456",
     "status": "observing",
     "promoted_at": null
   },
@@ -259,19 +271,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.429411",
-    "status": "observing",
-    "promoted_at": null
-  },
-  "101fc8d34ea5c97ae0d6275aa15db318": {
-    "source_key": "101fc8d34ea5c97ae0d6275aa15db318",
-    "channel_name": "CCTV-4K",
-    "url": "http://vip1.xinketongxun.fun:8082/tsfile/live/1026_1.m3u8",
-    "check_count": 1,
-    "success_count": 0,
-    "fail_count": 1,
-    "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.437517",
+    "last_check": "2026-06-30T19:51:23.364047",
     "status": "observing",
     "promoted_at": null
   },
@@ -283,7 +283,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.445567",
+    "last_check": "2026-06-30T19:51:23.372609",
     "status": "observing",
     "promoted_at": null
   },
@@ -295,7 +295,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.453769",
+    "last_check": "2026-06-30T19:51:23.381135",
     "status": "observing",
     "promoted_at": null
   },
@@ -307,7 +307,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.462190",
+    "last_check": "2026-06-30T19:51:23.389965",
     "status": "observing",
     "promoted_at": null
   },
@@ -319,19 +319,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.470385",
-    "status": "observing",
-    "promoted_at": null
-  },
-  "c969fd69370d7616a5c6c5a6263197a5": {
-    "source_key": "c969fd69370d7616a5c6c5a6263197a5",
-    "channel_name": "CCTV-6",
-    "url": "https://piccpndks.v.kcdnvip.com/audio/cctv6_2/index.m3u8",
-    "check_count": 1,
-    "success_count": 0,
-    "fail_count": 1,
-    "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.478417",
+    "last_check": "2026-06-30T19:51:23.398728",
     "status": "observing",
     "promoted_at": null
   },
@@ -343,7 +331,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.486377",
+    "last_check": "2026-06-30T19:51:23.407526",
     "status": "observing",
     "promoted_at": null
   },
@@ -355,7 +343,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.494375",
+    "last_check": "2026-06-30T19:51:23.416560",
     "status": "observing",
     "promoted_at": null
   },
@@ -367,7 +355,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.502275",
+    "last_check": "2026-06-30T19:51:23.425491",
     "status": "observing",
     "promoted_at": null
   },
@@ -379,7 +367,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.510444",
+    "last_check": "2026-06-30T19:51:23.434372",
     "status": "observing",
     "promoted_at": null
   },
@@ -391,7 +379,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.518457",
+    "last_check": "2026-06-30T19:51:23.443243",
     "status": "observing",
     "promoted_at": null
   },
@@ -403,7 +391,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.526539",
+    "last_check": "2026-06-30T19:51:23.452089",
     "status": "observing",
     "promoted_at": null
   },
@@ -415,7 +403,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.534627",
+    "last_check": "2026-06-30T19:51:23.460905",
     "status": "observing",
     "promoted_at": null
   },
@@ -427,7 +415,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.543332",
+    "last_check": "2026-06-30T19:51:23.469694",
     "status": "observing",
     "promoted_at": null
   },
@@ -439,7 +427,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.552024",
+    "last_check": "2026-06-30T19:51:23.478096",
     "status": "observing",
     "promoted_at": null
   },
@@ -451,7 +439,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.560773",
+    "last_check": "2026-06-30T19:51:23.486940",
     "status": "observing",
     "promoted_at": null
   },
@@ -463,7 +451,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.569517",
+    "last_check": "2026-06-30T19:51:23.495661",
     "status": "observing",
     "promoted_at": null
   },
@@ -475,7 +463,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.578220",
+    "last_check": "2026-06-30T19:51:23.504282",
     "status": "observing",
     "promoted_at": null
   },
@@ -487,7 +475,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.586794",
+    "last_check": "2026-06-30T19:51:23.513077",
     "status": "observing",
     "promoted_at": null
   },
@@ -499,19 +487,19 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.595119",
+    "last_check": "2026-06-30T19:51:23.521703",
     "status": "observing",
     "promoted_at": null
   },
-  "6b6daede85a15150d6bd3d63b299de5c": {
-    "source_key": "6b6daede85a15150d6bd3d63b299de5c",
+  "ce299ecaf147424cd87728248f929636": {
+    "source_key": "ce299ecaf147424cd87728248f929636",
     "channel_name": "CCTV-9",
-    "url": "https://v4-702cae17a28d6e4f0c0002bba021d934.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=4a89ae88ca9affdf432118771dea6480",
+    "url": "https://v4-e6b1c5baf4e240fe63adbf68dda23435.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=880a5ab4ecb6c55eb06b19b616f3fcc0",
     "check_count": 1,
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.603528",
+    "last_check": "2026-06-30T19:51:23.530441",
     "status": "observing",
     "promoted_at": null
   },
@@ -523,7 +511,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.612339",
+    "last_check": "2026-06-30T19:51:23.539341",
     "status": "observing",
     "promoted_at": null
   },
@@ -535,7 +523,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.620590",
+    "last_check": "2026-06-30T19:51:23.547916",
     "status": "observing",
     "promoted_at": null
   },
@@ -547,7 +535,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.628956",
+    "last_check": "2026-06-30T19:51:23.556817",
     "status": "observing",
     "promoted_at": null
   },
@@ -559,19 +547,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.637519",
-    "status": "observing",
-    "promoted_at": null
-  },
-  "63693b490e184b34082b01e443c7be0d": {
-    "source_key": "63693b490e184b34082b01e443c7be0d",
-    "channel_name": "CCTV-10",
-    "url": "https://hwapi.yntv.net/ew265l/z1z6s5.m3u8",
-    "check_count": 1,
-    "success_count": 0,
-    "fail_count": 1,
-    "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.646040",
+    "last_check": "2026-06-30T19:51:23.565584",
     "status": "observing",
     "promoted_at": null
   },
@@ -583,7 +559,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.654549",
+    "last_check": "2026-06-30T19:51:23.574311",
     "status": "observing",
     "promoted_at": null
   },
@@ -595,7 +571,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.663009",
+    "last_check": "2026-06-30T19:51:23.583272",
     "status": "observing",
     "promoted_at": null
   },
@@ -607,7 +583,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.671436",
+    "last_check": "2026-06-30T19:51:23.592155",
     "status": "observing",
     "promoted_at": null
   },
@@ -619,7 +595,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.679989",
+    "last_check": "2026-06-30T19:51:23.600926",
     "status": "observing",
     "promoted_at": null
   },
@@ -631,7 +607,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.688490",
+    "last_check": "2026-06-30T19:51:23.609584",
     "status": "observing",
     "promoted_at": null
   },
@@ -643,7 +619,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.696809",
+    "last_check": "2026-06-30T19:51:23.618351",
     "status": "observing",
     "promoted_at": null
   },
@@ -655,7 +631,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.705381",
+    "last_check": "2026-06-30T19:51:23.627217",
     "status": "observing",
     "promoted_at": null
   },
@@ -667,7 +643,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.714000",
+    "last_check": "2026-06-30T19:51:23.635976",
     "status": "observing",
     "promoted_at": null
   },
@@ -679,7 +655,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.722492",
+    "last_check": "2026-06-30T19:51:23.644834",
     "status": "observing",
     "promoted_at": null
   },
@@ -691,7 +667,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.731110",
+    "last_check": "2026-06-30T19:51:23.653524",
     "status": "observing",
     "promoted_at": null
   },
@@ -703,7 +679,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.739644",
+    "last_check": "2026-06-30T19:51:23.662367",
     "status": "observing",
     "promoted_at": null
   },
@@ -715,7 +691,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.748228",
+    "last_check": "2026-06-30T19:51:23.671364",
     "status": "observing",
     "promoted_at": null
   },
@@ -727,7 +703,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.756747",
+    "last_check": "2026-06-30T19:51:23.680187",
     "status": "observing",
     "promoted_at": null
   },
@@ -739,7 +715,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.765213",
+    "last_check": "2026-06-30T19:51:23.689102",
     "status": "observing",
     "promoted_at": null
   },
@@ -751,7 +727,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.773780",
+    "last_check": "2026-06-30T19:51:23.698056",
     "status": "observing",
     "promoted_at": null
   },
@@ -763,7 +739,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.782429",
+    "last_check": "2026-06-30T19:51:23.707230",
     "status": "observing",
     "promoted_at": null
   },
@@ -775,7 +751,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.791010",
+    "last_check": "2026-06-30T19:51:23.715894",
     "status": "observing",
     "promoted_at": null
   },
@@ -787,7 +763,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.799592",
+    "last_check": "2026-06-30T19:51:23.724971",
     "status": "observing",
     "promoted_at": null
   },
@@ -799,7 +775,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.808372",
+    "last_check": "2026-06-30T19:51:23.733666",
     "status": "observing",
     "promoted_at": null
   },
@@ -811,7 +787,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.817137",
+    "last_check": "2026-06-30T19:51:23.742358",
     "status": "observing",
     "promoted_at": null
   },
@@ -823,7 +799,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.825834",
+    "last_check": "2026-06-30T19:51:23.751144",
     "status": "observing",
     "promoted_at": null
   },
@@ -835,7 +811,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.834549",
+    "last_check": "2026-06-30T19:51:23.760046",
     "status": "observing",
     "promoted_at": null
   },
@@ -847,7 +823,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.843434",
+    "last_check": "2026-06-30T19:51:23.768685",
     "status": "observing",
     "promoted_at": null
   },
@@ -859,7 +835,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.852102",
+    "last_check": "2026-06-30T19:51:23.777748",
     "status": "observing",
     "promoted_at": null
   },
@@ -871,7 +847,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.860646",
+    "last_check": "2026-06-30T19:51:23.786670",
     "status": "observing",
     "promoted_at": null
   },
@@ -883,7 +859,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.869279",
+    "last_check": "2026-06-30T19:51:23.795502",
     "status": "observing",
     "promoted_at": null
   },
@@ -895,31 +871,19 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.877779",
+    "last_check": "2026-06-30T19:51:23.804290",
     "status": "observing",
     "promoted_at": null
   },
-  "64db34abf36a817772f117dfaf156c7a": {
-    "source_key": "64db34abf36a817772f117dfaf156c7a",
+  "dd06655ff1e9a9cad5dc122509ea5a40": {
+    "source_key": "dd06655ff1e9a9cad5dc122509ea5a40",
     "channel_name": "CCTV-16",
-    "url": "http://drive.mxmy.net:8888/udp/239.3.1.184:8001",
+    "url": "http://183.11.239.36:808/hls/169/index.m3u8",
     "check_count": 1,
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.886606",
-    "status": "observing",
-    "promoted_at": null
-  },
-  "75a2efb2cd6116b1e08758ce55e2a32b": {
-    "source_key": "75a2efb2cd6116b1e08758ce55e2a32b",
-    "channel_name": "CCTV-16",
-    "url": "https://piccpndks.v.kcdnvip.com/audio/cctv16_2/index.m3u8",
-    "check_count": 1,
-    "success_count": 0,
-    "fail_count": 1,
-    "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.895273",
+    "last_check": "2026-06-30T19:51:23.813063",
     "status": "observing",
     "promoted_at": null
   },
@@ -931,7 +895,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.904438",
+    "last_check": "2026-06-30T19:51:23.821874",
     "status": "observing",
     "promoted_at": null
   },
@@ -943,7 +907,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.912899",
+    "last_check": "2026-06-30T19:51:23.854691",
     "status": "observing",
     "promoted_at": null
   },
@@ -955,7 +919,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.921970",
+    "last_check": "2026-06-30T19:51:23.863805",
     "status": "observing",
     "promoted_at": null
   },
@@ -967,7 +931,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.930821",
+    "last_check": "2026-06-30T19:51:23.872769",
     "status": "observing",
     "promoted_at": null
   },
@@ -979,7 +943,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.939120",
+    "last_check": "2026-06-30T19:51:23.881700",
     "status": "observing",
     "promoted_at": null
   },
@@ -991,7 +955,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.947487",
+    "last_check": "2026-06-30T19:51:23.890646",
     "status": "observing",
     "promoted_at": null
   },
@@ -1003,7 +967,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.955754",
+    "last_check": "2026-06-30T19:51:23.899311",
     "status": "observing",
     "promoted_at": null
   },
@@ -1015,7 +979,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.964064",
+    "last_check": "2026-06-30T19:51:23.908373",
     "status": "observing",
     "promoted_at": null
   },
@@ -1027,7 +991,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.972317",
+    "last_check": "2026-06-30T19:51:23.917226",
     "status": "observing",
     "promoted_at": null
   },
@@ -1039,7 +1003,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.980491",
+    "last_check": "2026-06-30T19:51:23.926185",
     "status": "observing",
     "promoted_at": null
   },
@@ -1051,7 +1015,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.989000",
+    "last_check": "2026-06-30T19:51:23.934945",
     "status": "observing",
     "promoted_at": null
   },
@@ -1063,7 +1027,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:54.997508",
+    "last_check": "2026-06-30T19:51:23.943778",
     "status": "observing",
     "promoted_at": null
   },
@@ -1075,7 +1039,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.006081",
+    "last_check": "2026-06-30T19:51:23.952604",
     "status": "observing",
     "promoted_at": null
   },
@@ -1087,7 +1051,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.014415",
+    "last_check": "2026-06-30T19:51:23.961283",
     "status": "observing",
     "promoted_at": null
   },
@@ -1099,7 +1063,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.022729",
+    "last_check": "2026-06-30T19:51:23.969976",
     "status": "observing",
     "promoted_at": null
   },
@@ -1111,7 +1075,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.031042",
+    "last_check": "2026-06-30T19:51:23.978734",
     "status": "observing",
     "promoted_at": null
   },
@@ -1123,7 +1087,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.040016",
+    "last_check": "2026-06-30T19:51:23.987637",
     "status": "observing",
     "promoted_at": null
   },
@@ -1135,7 +1099,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.048300",
+    "last_check": "2026-06-30T19:51:23.996316",
     "status": "observing",
     "promoted_at": null
   },
@@ -1147,7 +1111,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.056596",
+    "last_check": "2026-06-30T19:51:24.005274",
     "status": "observing",
     "promoted_at": null
   },
@@ -1159,7 +1123,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.064834",
+    "last_check": "2026-06-30T19:51:24.014048",
     "status": "observing",
     "promoted_at": null
   },
@@ -1171,7 +1135,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.073305",
+    "last_check": "2026-06-30T19:51:24.022833",
     "status": "observing",
     "promoted_at": null
   },
@@ -1183,7 +1147,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.081745",
+    "last_check": "2026-06-30T19:51:24.031805",
     "status": "observing",
     "promoted_at": null
   },
@@ -1195,7 +1159,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.090636",
+    "last_check": "2026-06-30T19:51:24.040606",
     "status": "observing",
     "promoted_at": null
   },
@@ -1207,7 +1171,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.099480",
+    "last_check": "2026-06-30T19:51:24.049323",
     "status": "observing",
     "promoted_at": null
   },
@@ -1219,7 +1183,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.108283",
+    "last_check": "2026-06-30T19:51:24.058316",
     "status": "observing",
     "promoted_at": null
   },
@@ -1231,7 +1195,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.116986",
+    "last_check": "2026-06-30T19:51:24.067345",
     "status": "observing",
     "promoted_at": null
   },
@@ -1243,7 +1207,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.157516",
+    "last_check": "2026-06-30T19:51:24.076206",
     "status": "observing",
     "promoted_at": null
   },
@@ -1255,7 +1219,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.166140",
+    "last_check": "2026-06-30T19:51:24.085055",
     "status": "observing",
     "promoted_at": null
   },
@@ -1267,7 +1231,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.174657",
+    "last_check": "2026-06-30T19:51:24.093954",
     "status": "observing",
     "promoted_at": null
   },
@@ -1279,7 +1243,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.183187",
+    "last_check": "2026-06-30T19:51:24.102861",
     "status": "observing",
     "promoted_at": null
   },
@@ -1291,7 +1255,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.191763",
+    "last_check": "2026-06-30T19:51:24.111866",
     "status": "observing",
     "promoted_at": null
   },
@@ -1303,7 +1267,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.199849",
+    "last_check": "2026-06-30T19:51:24.120880",
     "status": "observing",
     "promoted_at": null
   },
@@ -1315,7 +1279,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.208476",
+    "last_check": "2026-06-30T19:51:24.129940",
     "status": "observing",
     "promoted_at": null
   },
@@ -1327,7 +1291,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.216835",
+    "last_check": "2026-06-30T19:51:24.138877",
     "status": "observing",
     "promoted_at": null
   },
@@ -1339,7 +1303,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.225400",
+    "last_check": "2026-06-30T19:51:24.147936",
     "status": "observing",
     "promoted_at": null
   },
@@ -1351,7 +1315,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.233766",
+    "last_check": "2026-06-30T19:51:24.156838",
     "status": "observing",
     "promoted_at": null
   },
@@ -1363,7 +1327,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.242189",
+    "last_check": "2026-06-30T19:51:24.165937",
     "status": "observing",
     "promoted_at": null
   },
@@ -1375,7 +1339,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.250627",
+    "last_check": "2026-06-30T19:51:24.175038",
     "status": "observing",
     "promoted_at": null
   },
@@ -1387,7 +1351,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.259028",
+    "last_check": "2026-06-30T19:51:24.184052",
     "status": "observing",
     "promoted_at": null
   },
@@ -1399,7 +1363,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.267208",
+    "last_check": "2026-06-30T19:51:24.192889",
     "status": "observing",
     "promoted_at": null
   },
@@ -1411,7 +1375,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.275509",
+    "last_check": "2026-06-30T19:51:24.201909",
     "status": "observing",
     "promoted_at": null
   },
@@ -1423,7 +1387,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.283899",
+    "last_check": "2026-06-30T19:51:24.210973",
     "status": "observing",
     "promoted_at": null
   },
@@ -1435,7 +1399,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.292169",
+    "last_check": "2026-06-30T19:51:24.219868",
     "status": "observing",
     "promoted_at": null
   },
@@ -1447,7 +1411,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.300925",
+    "last_check": "2026-06-30T19:51:24.228994",
     "status": "observing",
     "promoted_at": null
   },
@@ -1459,7 +1423,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.309466",
+    "last_check": "2026-06-30T19:51:24.237835",
     "status": "observing",
     "promoted_at": null
   },
@@ -1471,7 +1435,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.317845",
+    "last_check": "2026-06-30T19:51:24.246812",
     "status": "observing",
     "promoted_at": null
   },
@@ -1483,7 +1447,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.326435",
+    "last_check": "2026-06-30T19:51:24.255813",
     "status": "observing",
     "promoted_at": null
   },
@@ -1495,7 +1459,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.334937",
+    "last_check": "2026-06-30T19:51:24.264765",
     "status": "observing",
     "promoted_at": null
   },
@@ -1507,7 +1471,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.343591",
+    "last_check": "2026-06-30T19:51:24.273707",
     "status": "observing",
     "promoted_at": null
   },
@@ -1519,7 +1483,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.352255",
+    "last_check": "2026-06-30T19:51:24.282776",
     "status": "observing",
     "promoted_at": null
   },
@@ -1531,7 +1495,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.360931",
+    "last_check": "2026-06-30T19:51:24.291756",
     "status": "observing",
     "promoted_at": null
   },
@@ -1543,7 +1507,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.369399",
+    "last_check": "2026-06-30T19:51:24.300615",
     "status": "observing",
     "promoted_at": null
   },
@@ -1555,7 +1519,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.378050",
+    "last_check": "2026-06-30T19:51:24.309520",
     "status": "observing",
     "promoted_at": null
   },
@@ -1567,7 +1531,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.386607",
+    "last_check": "2026-06-30T19:51:24.318273",
     "status": "observing",
     "promoted_at": null
   },
@@ -1579,7 +1543,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.394992",
+    "last_check": "2026-06-30T19:51:24.327263",
     "status": "observing",
     "promoted_at": null
   },
@@ -1591,7 +1555,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.403677",
+    "last_check": "2026-06-30T19:51:24.336272",
     "status": "observing",
     "promoted_at": null
   },
@@ -1603,7 +1567,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.412092",
+    "last_check": "2026-06-30T19:51:24.345226",
     "status": "observing",
     "promoted_at": null
   },
@@ -1615,7 +1579,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.420560",
+    "last_check": "2026-06-30T19:51:24.354282",
     "status": "observing",
     "promoted_at": null
   },
@@ -1627,7 +1591,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.429124",
+    "last_check": "2026-06-30T19:51:24.363349",
     "status": "observing",
     "promoted_at": null
   },
@@ -1639,7 +1603,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.437770",
+    "last_check": "2026-06-30T19:51:24.372306",
     "status": "observing",
     "promoted_at": null
   },
@@ -1651,7 +1615,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.446310",
+    "last_check": "2026-06-30T19:51:24.381229",
     "status": "observing",
     "promoted_at": null
   },
@@ -1663,7 +1627,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.454612",
+    "last_check": "2026-06-30T19:51:24.390174",
     "status": "observing",
     "promoted_at": null
   },
@@ -1675,7 +1639,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.463559",
+    "last_check": "2026-06-30T19:51:24.399220",
     "status": "observing",
     "promoted_at": null
   },
@@ -1687,7 +1651,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.472288",
+    "last_check": "2026-06-30T19:51:24.408233",
     "status": "observing",
     "promoted_at": null
   },
@@ -1699,7 +1663,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.481074",
+    "last_check": "2026-06-30T19:51:24.417286",
     "status": "observing",
     "promoted_at": null
   },
@@ -1711,7 +1675,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.489526",
+    "last_check": "2026-06-30T19:51:24.426467",
     "status": "observing",
     "promoted_at": null
   },
@@ -1723,7 +1687,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.497924",
+    "last_check": "2026-06-30T19:51:24.435457",
     "status": "observing",
     "promoted_at": null
   },
@@ -1735,7 +1699,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.506341",
+    "last_check": "2026-06-30T19:51:24.444510",
     "status": "observing",
     "promoted_at": null
   },
@@ -1747,7 +1711,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.514637",
+    "last_check": "2026-06-30T19:51:24.453552",
     "status": "observing",
     "promoted_at": null
   },
@@ -1759,7 +1723,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.523063",
+    "last_check": "2026-06-30T19:51:24.462475",
     "status": "observing",
     "promoted_at": null
   },
@@ -1771,7 +1735,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.531542",
+    "last_check": "2026-06-30T19:51:24.471400",
     "status": "observing",
     "promoted_at": null
   },
@@ -1783,7 +1747,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.540107",
+    "last_check": "2026-06-30T19:51:24.480423",
     "status": "observing",
     "promoted_at": null
   },
@@ -1795,7 +1759,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.548298",
+    "last_check": "2026-06-30T19:51:24.489358",
     "status": "observing",
     "promoted_at": null
   },
@@ -1807,7 +1771,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.556486",
+    "last_check": "2026-06-30T19:51:24.498426",
     "status": "observing",
     "promoted_at": null
   },
@@ -1819,7 +1783,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.565069",
+    "last_check": "2026-06-30T19:51:24.507436",
     "status": "observing",
     "promoted_at": null
   },
@@ -1831,7 +1795,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.573398",
+    "last_check": "2026-06-30T19:51:24.516427",
     "status": "observing",
     "promoted_at": null
   },
@@ -1843,7 +1807,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.581736",
+    "last_check": "2026-06-30T19:51:24.525383",
     "status": "observing",
     "promoted_at": null
   },
@@ -1855,7 +1819,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.590020",
+    "last_check": "2026-06-30T19:51:24.534358",
     "status": "observing",
     "promoted_at": null
   },
@@ -1867,7 +1831,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.598440",
+    "last_check": "2026-06-30T19:51:24.543316",
     "status": "observing",
     "promoted_at": null
   },
@@ -1879,7 +1843,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.606751",
+    "last_check": "2026-06-30T19:51:24.552357",
     "status": "observing",
     "promoted_at": null
   },
@@ -1891,7 +1855,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.615147",
+    "last_check": "2026-06-30T19:51:24.561291",
     "status": "observing",
     "promoted_at": null
   },
@@ -1903,7 +1867,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.623587",
+    "last_check": "2026-06-30T19:51:24.570314",
     "status": "observing",
     "promoted_at": null
   },
@@ -1915,7 +1879,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.631976",
+    "last_check": "2026-06-30T19:51:24.579586",
     "status": "observing",
     "promoted_at": null
   },
@@ -1927,7 +1891,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.640300",
+    "last_check": "2026-06-30T19:51:24.588739",
     "status": "observing",
     "promoted_at": null
   },
@@ -1939,7 +1903,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.648909",
+    "last_check": "2026-06-30T19:51:24.598791",
     "status": "observing",
     "promoted_at": null
   },
@@ -1951,7 +1915,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.657317",
+    "last_check": "2026-06-30T19:51:24.607951",
     "status": "observing",
     "promoted_at": null
   },
@@ -1963,7 +1927,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.665598",
+    "last_check": "2026-06-30T19:51:24.616897",
     "status": "observing",
     "promoted_at": null
   },
@@ -1975,7 +1939,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.674101",
+    "last_check": "2026-06-30T19:51:24.625756",
     "status": "observing",
     "promoted_at": null
   },
@@ -1987,7 +1951,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.682779",
+    "last_check": "2026-06-30T19:51:24.634706",
     "status": "observing",
     "promoted_at": null
   },
@@ -1999,7 +1963,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.691370",
+    "last_check": "2026-06-30T19:51:24.643763",
     "status": "observing",
     "promoted_at": null
   },
@@ -2011,7 +1975,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.699731",
+    "last_check": "2026-06-30T19:51:24.652755",
     "status": "observing",
     "promoted_at": null
   },
@@ -2023,7 +1987,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.708189",
+    "last_check": "2026-06-30T19:51:24.661878",
     "status": "observing",
     "promoted_at": null
   },
@@ -2035,7 +1999,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.716537",
+    "last_check": "2026-06-30T19:51:24.670849",
     "status": "observing",
     "promoted_at": null
   },
@@ -2047,7 +2011,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.725024",
+    "last_check": "2026-06-30T19:51:24.680066",
     "status": "observing",
     "promoted_at": null
   },
@@ -2059,7 +2023,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.733564",
+    "last_check": "2026-06-30T19:51:24.689036",
     "status": "observing",
     "promoted_at": null
   },
@@ -2071,7 +2035,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.741905",
+    "last_check": "2026-06-30T19:51:24.698002",
     "status": "observing",
     "promoted_at": null
   },
@@ -2083,7 +2047,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.750222",
+    "last_check": "2026-06-30T19:51:24.707053",
     "status": "observing",
     "promoted_at": null
   },
@@ -2095,7 +2059,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.758464",
+    "last_check": "2026-06-30T19:51:24.716007",
     "status": "observing",
     "promoted_at": null
   },
@@ -2107,7 +2071,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.766916",
+    "last_check": "2026-06-30T19:51:24.725090",
     "status": "observing",
     "promoted_at": null
   },
@@ -2119,7 +2083,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.775433",
+    "last_check": "2026-06-30T19:51:24.734085",
     "status": "observing",
     "promoted_at": null
   },
@@ -2131,7 +2095,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.783983",
+    "last_check": "2026-06-30T19:51:24.743157",
     "status": "observing",
     "promoted_at": null
   },
@@ -2143,7 +2107,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.792411",
+    "last_check": "2026-06-30T19:51:24.752172",
     "status": "observing",
     "promoted_at": null
   },
@@ -2155,7 +2119,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.801430",
+    "last_check": "2026-06-30T19:51:24.761081",
     "status": "observing",
     "promoted_at": null
   },
@@ -2167,7 +2131,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.810037",
+    "last_check": "2026-06-30T19:51:24.769862",
     "status": "observing",
     "promoted_at": null
   },
@@ -2179,7 +2143,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.818577",
+    "last_check": "2026-06-30T19:51:24.778885",
     "status": "observing",
     "promoted_at": null
   },
@@ -2191,7 +2155,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.827033",
+    "last_check": "2026-06-30T19:51:24.787830",
     "status": "observing",
     "promoted_at": null
   },
@@ -2203,7 +2167,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.835747",
+    "last_check": "2026-06-30T19:51:24.796979",
     "status": "observing",
     "promoted_at": null
   },
@@ -2215,7 +2179,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.844244",
+    "last_check": "2026-06-30T19:51:24.806069",
     "status": "observing",
     "promoted_at": null
   },
@@ -2227,7 +2191,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.852826",
+    "last_check": "2026-06-30T19:51:24.815164",
     "status": "observing",
     "promoted_at": null
   },
@@ -2239,7 +2203,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.861289",
+    "last_check": "2026-06-30T19:51:24.824054",
     "status": "observing",
     "promoted_at": null
   },
@@ -2251,7 +2215,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.869725",
+    "last_check": "2026-06-30T19:51:24.833050",
     "status": "observing",
     "promoted_at": null
   },
@@ -2263,7 +2227,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.878190",
+    "last_check": "2026-06-30T19:51:24.841926",
     "status": "observing",
     "promoted_at": null
   },
@@ -2275,7 +2239,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.886579",
+    "last_check": "2026-06-30T19:51:24.850937",
     "status": "observing",
     "promoted_at": null
   },
@@ -2287,7 +2251,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.894935",
+    "last_check": "2026-06-30T19:51:24.859935",
     "status": "observing",
     "promoted_at": null
   },
@@ -2299,7 +2263,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.903342",
+    "last_check": "2026-06-30T19:51:24.868820",
     "status": "observing",
     "promoted_at": null
   },
@@ -2311,7 +2275,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.911686",
+    "last_check": "2026-06-30T19:51:24.877757",
     "status": "observing",
     "promoted_at": null
   },
@@ -2323,7 +2287,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.920027",
+    "last_check": "2026-06-30T19:51:24.886566",
     "status": "observing",
     "promoted_at": null
   },
@@ -2335,7 +2299,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.928584",
+    "last_check": "2026-06-30T19:51:24.895254",
     "status": "observing",
     "promoted_at": null
   },
@@ -2347,7 +2311,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.937096",
+    "last_check": "2026-06-30T19:51:24.904247",
     "status": "observing",
     "promoted_at": null
   },
@@ -2359,7 +2323,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.945836",
+    "last_check": "2026-06-30T19:51:24.913266",
     "status": "observing",
     "promoted_at": null
   },
@@ -2371,7 +2335,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.954605",
+    "last_check": "2026-06-30T19:51:24.922095",
     "status": "observing",
     "promoted_at": null
   },
@@ -2383,7 +2347,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.963320",
+    "last_check": "2026-06-30T19:51:24.931033",
     "status": "observing",
     "promoted_at": null
   },
@@ -2395,7 +2359,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.972052",
+    "last_check": "2026-06-30T19:51:24.939684",
     "status": "observing",
     "promoted_at": null
   },
@@ -2407,7 +2371,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.980950",
+    "last_check": "2026-06-30T19:51:24.948712",
     "status": "observing",
     "promoted_at": null
   },
@@ -2419,7 +2383,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.989902",
+    "last_check": "2026-06-30T19:51:24.957564",
     "status": "observing",
     "promoted_at": null
   },
@@ -2431,7 +2395,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:55.999079",
+    "last_check": "2026-06-30T19:51:24.966539",
     "status": "observing",
     "promoted_at": null
   },
@@ -2443,7 +2407,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.007502",
+    "last_check": "2026-06-30T19:51:24.975822",
     "status": "observing",
     "promoted_at": null
   },
@@ -2455,7 +2419,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.015816",
+    "last_check": "2026-06-30T19:51:24.984883",
     "status": "observing",
     "promoted_at": null
   },
@@ -2467,7 +2431,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.024231",
+    "last_check": "2026-06-30T19:51:24.993555",
     "status": "observing",
     "promoted_at": null
   },
@@ -2479,7 +2443,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.032677",
+    "last_check": "2026-06-30T19:51:25.002644",
     "status": "observing",
     "promoted_at": null
   },
@@ -2491,7 +2455,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.041298",
+    "last_check": "2026-06-30T19:51:25.011744",
     "status": "observing",
     "promoted_at": null
   },
@@ -2503,7 +2467,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.049891",
+    "last_check": "2026-06-30T19:51:25.020858",
     "status": "observing",
     "promoted_at": null
   },
@@ -2515,7 +2479,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.058298",
+    "last_check": "2026-06-30T19:51:25.029920",
     "status": "observing",
     "promoted_at": null
   },
@@ -2527,7 +2491,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.066698",
+    "last_check": "2026-06-30T19:51:25.038874",
     "status": "observing",
     "promoted_at": null
   },
@@ -2539,7 +2503,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.075032",
+    "last_check": "2026-06-30T19:51:25.047841",
     "status": "observing",
     "promoted_at": null
   },
@@ -2551,7 +2515,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.083562",
+    "last_check": "2026-06-30T19:51:25.057026",
     "status": "observing",
     "promoted_at": null
   },
@@ -2563,7 +2527,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.092168",
+    "last_check": "2026-06-30T19:51:25.066305",
     "status": "observing",
     "promoted_at": null
   },
@@ -2575,7 +2539,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.100557",
+    "last_check": "2026-06-30T19:51:25.075367",
     "status": "observing",
     "promoted_at": null
   },
@@ -2587,7 +2551,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.109093",
+    "last_check": "2026-06-30T19:51:25.084326",
     "status": "observing",
     "promoted_at": null
   },
@@ -2599,7 +2563,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.117650",
+    "last_check": "2026-06-30T19:51:25.093261",
     "status": "observing",
     "promoted_at": null
   },
@@ -2611,7 +2575,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.126278",
+    "last_check": "2026-06-30T19:51:25.101984",
     "status": "observing",
     "promoted_at": null
   },
@@ -2623,7 +2587,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.134728",
+    "last_check": "2026-06-30T19:51:25.110945",
     "status": "observing",
     "promoted_at": null
   },
@@ -2635,7 +2599,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.143140",
+    "last_check": "2026-06-30T19:51:25.119944",
     "status": "observing",
     "promoted_at": null
   },
@@ -2647,7 +2611,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.151586",
+    "last_check": "2026-06-30T19:51:25.128725",
     "status": "observing",
     "promoted_at": null
   },
@@ -2659,7 +2623,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.160037",
+    "last_check": "2026-06-30T19:51:25.137597",
     "status": "observing",
     "promoted_at": null
   },
@@ -2671,7 +2635,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.168626",
+    "last_check": "2026-06-30T19:51:25.146441",
     "status": "observing",
     "promoted_at": null
   },
@@ -2683,7 +2647,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.177125",
+    "last_check": "2026-06-30T19:51:25.155514",
     "status": "observing",
     "promoted_at": null
   },
@@ -2695,7 +2659,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.185611",
+    "last_check": "2026-06-30T19:51:25.164715",
     "status": "observing",
     "promoted_at": null
   },
@@ -2707,7 +2671,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.194086",
+    "last_check": "2026-06-30T19:51:25.173693",
     "status": "observing",
     "promoted_at": null
   },
@@ -2719,7 +2683,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.202955",
+    "last_check": "2026-06-30T19:51:25.182617",
     "status": "observing",
     "promoted_at": null
   },
@@ -2731,7 +2695,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.211579",
+    "last_check": "2026-06-30T19:51:25.191562",
     "status": "observing",
     "promoted_at": null
   },
@@ -2743,7 +2707,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.220006",
+    "last_check": "2026-06-30T19:51:25.200585",
     "status": "observing",
     "promoted_at": null
   },
@@ -2755,7 +2719,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.228611",
+    "last_check": "2026-06-30T19:51:25.209622",
     "status": "observing",
     "promoted_at": null
   },
@@ -2767,7 +2731,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.237145",
+    "last_check": "2026-06-30T19:51:25.218585",
     "status": "observing",
     "promoted_at": null
   },
@@ -2779,7 +2743,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.245565",
+    "last_check": "2026-06-30T19:51:25.227557",
     "status": "observing",
     "promoted_at": null
   },
@@ -2791,7 +2755,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.253949",
+    "last_check": "2026-06-30T19:51:25.236456",
     "status": "observing",
     "promoted_at": null
   },
@@ -2803,7 +2767,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.262406",
+    "last_check": "2026-06-30T19:51:25.245447",
     "status": "observing",
     "promoted_at": null
   },
@@ -2815,7 +2779,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.271054",
+    "last_check": "2026-06-30T19:51:25.254499",
     "status": "observing",
     "promoted_at": null
   },
@@ -2827,7 +2791,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.279596",
+    "last_check": "2026-06-30T19:51:25.263256",
     "status": "observing",
     "promoted_at": null
   },
@@ -2839,7 +2803,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.288010",
+    "last_check": "2026-06-30T19:51:25.272168",
     "status": "observing",
     "promoted_at": null
   },
@@ -2851,7 +2815,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.296968",
+    "last_check": "2026-06-30T19:51:25.280932",
     "status": "observing",
     "promoted_at": null
   },
@@ -2863,7 +2827,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.305537",
+    "last_check": "2026-06-30T19:51:25.289792",
     "status": "observing",
     "promoted_at": null
   },
@@ -2875,7 +2839,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.314043",
+    "last_check": "2026-06-30T19:51:25.298678",
     "status": "observing",
     "promoted_at": null
   },
@@ -2887,7 +2851,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.322636",
+    "last_check": "2026-06-30T19:51:25.307618",
     "status": "observing",
     "promoted_at": null
   },
@@ -2899,7 +2863,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.331188",
+    "last_check": "2026-06-30T19:51:25.316516",
     "status": "observing",
     "promoted_at": null
   },
@@ -2911,7 +2875,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.340804",
+    "last_check": "2026-06-30T19:51:25.325402",
     "status": "observing",
     "promoted_at": null
   },
@@ -2923,7 +2887,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.349688",
+    "last_check": "2026-06-30T19:51:25.334444",
     "status": "observing",
     "promoted_at": null
   },
@@ -2935,7 +2899,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.358290",
+    "last_check": "2026-06-30T19:51:25.343480",
     "status": "observing",
     "promoted_at": null
   },
@@ -2947,7 +2911,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.366804",
+    "last_check": "2026-06-30T19:51:25.352350",
     "status": "observing",
     "promoted_at": null
   },
@@ -2959,7 +2923,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.375534",
+    "last_check": "2026-06-30T19:51:25.361404",
     "status": "observing",
     "promoted_at": null
   },
@@ -2971,7 +2935,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.384340",
+    "last_check": "2026-06-30T19:51:25.370247",
     "status": "observing",
     "promoted_at": null
   },
@@ -2983,7 +2947,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.392952",
+    "last_check": "2026-06-30T19:51:25.379375",
     "status": "observing",
     "promoted_at": null
   },
@@ -2995,7 +2959,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.401642",
+    "last_check": "2026-06-30T19:51:25.388488",
     "status": "observing",
     "promoted_at": null
   },
@@ -3007,7 +2971,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.410137",
+    "last_check": "2026-06-30T19:51:25.397417",
     "status": "observing",
     "promoted_at": null
   },
@@ -3019,7 +2983,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.418647",
+    "last_check": "2026-06-30T19:51:25.406361",
     "status": "observing",
     "promoted_at": null
   },
@@ -3031,7 +2995,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.427002",
+    "last_check": "2026-06-30T19:51:25.415426",
     "status": "observing",
     "promoted_at": null
   },
@@ -3043,7 +3007,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.435760",
+    "last_check": "2026-06-30T19:51:25.424421",
     "status": "observing",
     "promoted_at": null
   },
@@ -3055,7 +3019,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.444413",
+    "last_check": "2026-06-30T19:51:25.433521",
     "status": "observing",
     "promoted_at": null
   },
@@ -3067,7 +3031,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.453043",
+    "last_check": "2026-06-30T19:51:25.442414",
     "status": "observing",
     "promoted_at": null
   },
@@ -3079,19 +3043,19 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.461665",
+    "last_check": "2026-06-30T19:51:25.451423",
     "status": "observing",
     "promoted_at": null
   },
-  "3f71b7856668634e8fe55595261abca1": {
-    "source_key": "3f71b7856668634e8fe55595261abca1",
+  "90d6a638dfb95cfa870ef622c25d6bc9": {
+    "source_key": "90d6a638dfb95cfa870ef622c25d6bc9",
     "channel_name": "河北农民",
-    "url": "https://jwcdnqx.hebyun.com.cn/live/clzhpd/1500k/tzwj_video.m3u8?zhebd",
+    "url": "https://ls.qingting.fm/live/1650/64k.m3u8",
     "check_count": 1,
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.470404",
+    "last_check": "2026-06-30T19:51:25.460511",
     "status": "observing",
     "promoted_at": null
   },
@@ -3103,7 +3067,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.479004",
+    "last_check": "2026-06-30T19:51:25.469333",
     "status": "observing",
     "promoted_at": null
   },
@@ -3115,7 +3079,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.487691",
+    "last_check": "2026-06-30T19:51:25.478268",
     "status": "observing",
     "promoted_at": null
   },
@@ -3127,7 +3091,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.496255",
+    "last_check": "2026-06-30T19:51:25.487349",
     "status": "observing",
     "promoted_at": null
   },
@@ -3139,7 +3103,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.504820",
+    "last_check": "2026-06-30T19:51:25.496334",
     "status": "observing",
     "promoted_at": null
   },
@@ -3151,7 +3115,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.513262",
+    "last_check": "2026-06-30T19:51:25.505329",
     "status": "observing",
     "promoted_at": null
   },
@@ -3163,7 +3127,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.521897",
+    "last_check": "2026-06-30T19:51:25.514199",
     "status": "observing",
     "promoted_at": null
   },
@@ -3175,7 +3139,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.530441",
+    "last_check": "2026-06-30T19:51:25.523231",
     "status": "observing",
     "promoted_at": null
   },
@@ -3187,7 +3151,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.539030",
+    "last_check": "2026-06-30T19:51:25.532256",
     "status": "observing",
     "promoted_at": null
   },
@@ -3199,7 +3163,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.547504",
+    "last_check": "2026-06-30T19:51:25.541317",
     "status": "observing",
     "promoted_at": null
   },
@@ -3211,7 +3175,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.556094",
+    "last_check": "2026-06-30T19:51:25.550331",
     "status": "observing",
     "promoted_at": null
   },
@@ -3223,7 +3187,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.564547",
+    "last_check": "2026-06-30T19:51:25.559387",
     "status": "observing",
     "promoted_at": null
   },
@@ -3235,7 +3199,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.573100",
+    "last_check": "2026-06-30T19:51:25.568400",
     "status": "observing",
     "promoted_at": null
   },
@@ -3247,7 +3211,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.581531",
+    "last_check": "2026-06-30T19:51:25.577422",
     "status": "observing",
     "promoted_at": null
   },
@@ -3259,7 +3223,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.590078",
+    "last_check": "2026-06-30T19:51:25.586577",
     "status": "observing",
     "promoted_at": null
   },
@@ -3271,7 +3235,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.598852",
+    "last_check": "2026-06-30T19:51:25.595583",
     "status": "observing",
     "promoted_at": null
   },
@@ -3283,7 +3247,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.607510",
+    "last_check": "2026-06-30T19:51:25.604616",
     "status": "observing",
     "promoted_at": null
   },
@@ -3295,7 +3259,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.616108",
+    "last_check": "2026-06-30T19:51:25.613504",
     "status": "observing",
     "promoted_at": null
   },
@@ -3307,7 +3271,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.624776",
+    "last_check": "2026-06-30T19:51:25.622498",
     "status": "observing",
     "promoted_at": null
   },
@@ -3319,7 +3283,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.633444",
+    "last_check": "2026-06-30T19:51:25.631406",
     "status": "observing",
     "promoted_at": null
   },
@@ -3331,7 +3295,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.641991",
+    "last_check": "2026-06-30T19:51:25.640429",
     "status": "observing",
     "promoted_at": null
   },
@@ -3343,7 +3307,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.650669",
+    "last_check": "2026-06-30T19:51:25.649317",
     "status": "observing",
     "promoted_at": null
   },
@@ -3355,7 +3319,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.659436",
+    "last_check": "2026-06-30T19:51:25.658375",
     "status": "observing",
     "promoted_at": null
   },
@@ -3367,7 +3331,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.667862",
+    "last_check": "2026-06-30T19:51:25.667562",
     "status": "observing",
     "promoted_at": null
   },
@@ -3379,7 +3343,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.676528",
+    "last_check": "2026-06-30T19:51:25.676515",
     "status": "observing",
     "promoted_at": null
   },
@@ -3391,7 +3355,19 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.685267",
+    "last_check": "2026-06-30T19:51:25.685748",
+    "status": "observing",
+    "promoted_at": null
+  },
+  "72be9fa63c3c5ff2beeeaba60505e7fa": {
+    "source_key": "72be9fa63c3c5ff2beeeaba60505e7fa",
+    "channel_name": "浙江教科",
+    "url": "http://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8",
+    "check_count": 1,
+    "success_count": 0,
+    "fail_count": 1,
+    "total_latency": 0,
+    "last_check": "2026-06-30T19:51:25.694815",
     "status": "observing",
     "promoted_at": null
   },
@@ -3403,7 +3379,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.693798",
+    "last_check": "2026-06-30T19:51:25.703726",
     "status": "observing",
     "promoted_at": null
   },
@@ -3415,7 +3391,19 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.702193",
+    "last_check": "2026-06-30T19:51:25.712636",
+    "status": "observing",
+    "promoted_at": null
+  },
+  "284f9d965f4c7fa2bce6dab5a2aaff4a": {
+    "source_key": "284f9d965f4c7fa2bce6dab5a2aaff4a",
+    "channel_name": "浙江民生",
+    "url": "http://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8",
+    "check_count": 1,
+    "success_count": 0,
+    "fail_count": 1,
+    "total_latency": 0,
+    "last_check": "2026-06-30T19:51:25.721610",
     "status": "observing",
     "promoted_at": null
   },
@@ -3427,7 +3415,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.710654",
+    "last_check": "2026-06-30T19:51:25.730745",
     "status": "observing",
     "promoted_at": null
   },
@@ -3439,7 +3427,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.719128",
+    "last_check": "2026-06-30T19:51:25.739730",
     "status": "observing",
     "promoted_at": null
   },
@@ -3451,7 +3439,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.727740",
+    "last_check": "2026-06-30T19:51:25.748733",
     "status": "observing",
     "promoted_at": null
   },
@@ -3463,7 +3451,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.736201",
+    "last_check": "2026-06-30T19:51:25.758020",
     "status": "observing",
     "promoted_at": null
   },
@@ -3475,7 +3463,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.744613",
+    "last_check": "2026-06-30T19:51:25.766989",
     "status": "observing",
     "promoted_at": null
   },
@@ -3487,7 +3475,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.752987",
+    "last_check": "2026-06-30T19:51:25.775923",
     "status": "observing",
     "promoted_at": null
   },
@@ -3499,7 +3487,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.761467",
+    "last_check": "2026-06-30T19:51:25.784989",
     "status": "observing",
     "promoted_at": null
   },
@@ -3511,7 +3499,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.769988",
+    "last_check": "2026-06-30T19:51:25.794027",
     "status": "observing",
     "promoted_at": null
   },
@@ -3523,7 +3511,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.778738",
+    "last_check": "2026-06-30T19:51:25.803009",
     "status": "observing",
     "promoted_at": null
   },
@@ -3535,7 +3523,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.787200",
+    "last_check": "2026-06-30T19:51:25.811963",
     "status": "observing",
     "promoted_at": null
   },
@@ -3547,7 +3535,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.795680",
+    "last_check": "2026-06-30T19:51:25.821110",
     "status": "observing",
     "promoted_at": null
   },
@@ -3559,7 +3547,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.804150",
+    "last_check": "2026-06-30T19:51:25.830352",
     "status": "observing",
     "promoted_at": null
   },
@@ -3571,7 +3559,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.812596",
+    "last_check": "2026-06-30T19:51:25.839549",
     "status": "observing",
     "promoted_at": null
   },
@@ -3583,7 +3571,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.821102",
+    "last_check": "2026-06-30T19:51:25.848693",
     "status": "observing",
     "promoted_at": null
   },
@@ -3595,7 +3583,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.829998",
+    "last_check": "2026-06-30T19:51:25.857737",
     "status": "observing",
     "promoted_at": null
   },
@@ -3607,7 +3595,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.838692",
+    "last_check": "2026-06-30T19:51:25.866833",
     "status": "observing",
     "promoted_at": null
   },
@@ -3619,7 +3607,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.847367",
+    "last_check": "2026-06-30T19:51:25.876048",
     "status": "observing",
     "promoted_at": null
   },
@@ -3631,7 +3619,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.855782",
+    "last_check": "2026-06-30T19:51:25.885241",
     "status": "observing",
     "promoted_at": null
   },
@@ -3643,7 +3631,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.864163",
+    "last_check": "2026-06-30T19:51:25.894404",
     "status": "observing",
     "promoted_at": null
   },
@@ -3655,7 +3643,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.872356",
+    "last_check": "2026-06-30T19:51:25.903077",
     "status": "observing",
     "promoted_at": null
   },
@@ -3667,7 +3655,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.880915",
+    "last_check": "2026-06-30T19:51:25.912163",
     "status": "observing",
     "promoted_at": null
   },
@@ -3679,7 +3667,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.889375",
+    "last_check": "2026-06-30T19:51:25.921581",
     "status": "observing",
     "promoted_at": null
   },
@@ -3691,7 +3679,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.897793",
+    "last_check": "2026-06-30T19:51:25.930502",
     "status": "observing",
     "promoted_at": null
   },
@@ -3703,7 +3691,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.906318",
+    "last_check": "2026-06-30T19:51:25.939521",
     "status": "observing",
     "promoted_at": null
   },
@@ -3715,7 +3703,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.914730",
+    "last_check": "2026-06-30T19:51:25.948442",
     "status": "observing",
     "promoted_at": null
   },
@@ -3727,7 +3715,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.923181",
+    "last_check": "2026-06-30T19:51:25.957447",
     "status": "observing",
     "promoted_at": null
   },
@@ -3739,7 +3727,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.931519",
+    "last_check": "2026-06-30T19:51:25.966433",
     "status": "observing",
     "promoted_at": null
   },
@@ -3751,7 +3739,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.939969",
+    "last_check": "2026-06-30T19:51:25.975451",
     "status": "observing",
     "promoted_at": null
   },
@@ -3763,7 +3751,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.948565",
+    "last_check": "2026-06-30T19:51:25.984437",
     "status": "observing",
     "promoted_at": null
   },
@@ -3775,7 +3763,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.957287",
+    "last_check": "2026-06-30T19:51:25.993310",
     "status": "observing",
     "promoted_at": null
   },
@@ -3787,7 +3775,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.966009",
+    "last_check": "2026-06-30T19:51:26.002375",
     "status": "observing",
     "promoted_at": null
   },
@@ -3799,7 +3787,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.974571",
+    "last_check": "2026-06-30T19:51:26.011425",
     "status": "observing",
     "promoted_at": null
   },
@@ -3811,7 +3799,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.983265",
+    "last_check": "2026-06-30T19:51:26.020199",
     "status": "observing",
     "promoted_at": null
   },
@@ -3823,7 +3811,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:56.992099",
+    "last_check": "2026-06-30T19:51:26.029195",
     "status": "observing",
     "promoted_at": null
   },
@@ -3835,7 +3823,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.000737",
+    "last_check": "2026-06-30T19:51:26.038023",
     "status": "observing",
     "promoted_at": null
   },
@@ -3847,7 +3835,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.009363",
+    "last_check": "2026-06-30T19:51:26.046841",
     "status": "observing",
     "promoted_at": null
   },
@@ -3859,7 +3847,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.018104",
+    "last_check": "2026-06-30T19:51:26.055640",
     "status": "observing",
     "promoted_at": null
   },
@@ -3871,7 +3859,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.026588",
+    "last_check": "2026-06-30T19:51:26.064531",
     "status": "observing",
     "promoted_at": null
   },
@@ -3883,7 +3871,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.035035",
+    "last_check": "2026-06-30T19:51:26.073288",
     "status": "observing",
     "promoted_at": null
   },
@@ -3895,7 +3883,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.043736",
+    "last_check": "2026-06-30T19:51:26.082339",
     "status": "observing",
     "promoted_at": null
   },
@@ -3907,7 +3895,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.052488",
+    "last_check": "2026-06-30T19:51:26.091470",
     "status": "observing",
     "promoted_at": null
   },
@@ -3919,7 +3907,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.061087",
+    "last_check": "2026-06-30T19:51:26.100190",
     "status": "observing",
     "promoted_at": null
   },
@@ -3931,7 +3919,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.069726",
+    "last_check": "2026-06-30T19:51:26.109225",
     "status": "observing",
     "promoted_at": null
   },
@@ -3943,7 +3931,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.078153",
+    "last_check": "2026-06-30T19:51:26.118167",
     "status": "observing",
     "promoted_at": null
   },
@@ -3955,7 +3943,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.086847",
+    "last_check": "2026-06-30T19:51:26.127104",
     "status": "observing",
     "promoted_at": null
   },
@@ -3967,7 +3955,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.095319",
+    "last_check": "2026-06-30T19:51:26.135925",
     "status": "observing",
     "promoted_at": null
   },
@@ -3979,7 +3967,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.103846",
+    "last_check": "2026-06-30T19:51:26.144995",
     "status": "observing",
     "promoted_at": null
   },
@@ -3991,7 +3979,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.112352",
+    "last_check": "2026-06-30T19:51:26.153788",
     "status": "observing",
     "promoted_at": null
   },
@@ -4003,7 +3991,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.120910",
+    "last_check": "2026-06-30T19:51:26.162785",
     "status": "observing",
     "promoted_at": null
   },
@@ -4015,7 +4003,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.129660",
+    "last_check": "2026-06-30T19:51:26.171834",
     "status": "observing",
     "promoted_at": null
   },
@@ -4027,7 +4015,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.138163",
+    "last_check": "2026-06-30T19:51:26.180822",
     "status": "observing",
     "promoted_at": null
   },
@@ -4039,7 +4027,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.146461",
+    "last_check": "2026-06-30T19:51:26.189975",
     "status": "observing",
     "promoted_at": null
   },
@@ -4051,7 +4039,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.154920",
+    "last_check": "2026-06-30T19:51:26.199363",
     "status": "observing",
     "promoted_at": null
   },
@@ -4063,7 +4051,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.163485",
+    "last_check": "2026-06-30T19:51:26.208574",
     "status": "observing",
     "promoted_at": null
   },
@@ -4075,7 +4063,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.171944",
+    "last_check": "2026-06-30T19:51:26.217714",
     "status": "observing",
     "promoted_at": null
   },
@@ -4087,7 +4075,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.180571",
+    "last_check": "2026-06-30T19:51:26.227015",
     "status": "observing",
     "promoted_at": null
   },
@@ -4099,7 +4087,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.189317",
+    "last_check": "2026-06-30T19:51:26.235911",
     "status": "observing",
     "promoted_at": null
   },
@@ -4111,7 +4099,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.197841",
+    "last_check": "2026-06-30T19:51:26.244872",
     "status": "observing",
     "promoted_at": null
   },
@@ -4123,7 +4111,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.206347",
+    "last_check": "2026-06-30T19:51:26.253766",
     "status": "observing",
     "promoted_at": null
   },
@@ -4135,7 +4123,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.214697",
+    "last_check": "2026-06-30T19:51:26.262639",
     "status": "observing",
     "promoted_at": null
   },
@@ -4147,7 +4135,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.223232",
+    "last_check": "2026-06-30T19:51:26.271695",
     "status": "observing",
     "promoted_at": null
   },
@@ -4159,7 +4147,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.231704",
+    "last_check": "2026-06-30T19:51:26.280827",
     "status": "observing",
     "promoted_at": null
   },
@@ -4171,7 +4159,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.240183",
+    "last_check": "2026-06-30T19:51:26.289807",
     "status": "observing",
     "promoted_at": null
   },
@@ -4183,7 +4171,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.248706",
+    "last_check": "2026-06-30T19:51:26.298852",
     "status": "observing",
     "promoted_at": null
   },
@@ -4195,7 +4183,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.257307",
+    "last_check": "2026-06-30T19:51:26.307642",
     "status": "observing",
     "promoted_at": null
   },
@@ -4207,7 +4195,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.265883",
+    "last_check": "2026-06-30T19:51:26.316518",
     "status": "observing",
     "promoted_at": null
   },
@@ -4219,7 +4207,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.274493",
+    "last_check": "2026-06-30T19:51:26.325353",
     "status": "observing",
     "promoted_at": null
   },
@@ -4231,7 +4219,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.283154",
+    "last_check": "2026-06-30T19:51:26.334166",
     "status": "observing",
     "promoted_at": null
   },
@@ -4243,7 +4231,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.291526",
+    "last_check": "2026-06-30T19:51:26.343003",
     "status": "observing",
     "promoted_at": null
   },
@@ -4255,7 +4243,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.300221",
+    "last_check": "2026-06-30T19:51:26.351813",
     "status": "observing",
     "promoted_at": null
   },
@@ -4267,7 +4255,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.308617",
+    "last_check": "2026-06-30T19:51:26.360534",
     "status": "observing",
     "promoted_at": null
   },
@@ -4279,7 +4267,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.317237",
+    "last_check": "2026-06-30T19:51:26.369359",
     "status": "observing",
     "promoted_at": null
   },
@@ -4291,7 +4279,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.326006",
+    "last_check": "2026-06-30T19:51:26.378339",
     "status": "observing",
     "promoted_at": null
   },
@@ -4303,7 +4291,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.335363",
+    "last_check": "2026-06-30T19:51:26.387225",
     "status": "observing",
     "promoted_at": null
   },
@@ -4315,7 +4303,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.344007",
+    "last_check": "2026-06-30T19:51:26.396274",
     "status": "observing",
     "promoted_at": null
   },
@@ -4327,7 +4315,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.352490",
+    "last_check": "2026-06-30T19:51:26.405170",
     "status": "observing",
     "promoted_at": null
   },
@@ -4339,7 +4327,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.360983",
+    "last_check": "2026-06-30T19:51:26.414386",
     "status": "observing",
     "promoted_at": null
   },
@@ -4351,7 +4339,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.369510",
+    "last_check": "2026-06-30T19:51:26.423330",
     "status": "observing",
     "promoted_at": null
   },
@@ -4363,7 +4351,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.377994",
+    "last_check": "2026-06-30T19:51:26.432443",
     "status": "observing",
     "promoted_at": null
   },
@@ -4375,7 +4363,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.386408",
+    "last_check": "2026-06-30T19:51:26.441236",
     "status": "observing",
     "promoted_at": null
   },
@@ -4387,7 +4375,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.394834",
+    "last_check": "2026-06-30T19:51:26.450352",
     "status": "observing",
     "promoted_at": null
   },
@@ -4399,7 +4387,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.403311",
+    "last_check": "2026-06-30T19:51:26.459528",
     "status": "observing",
     "promoted_at": null
   },
@@ -4411,7 +4399,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.411771",
+    "last_check": "2026-06-30T19:51:26.468432",
     "status": "observing",
     "promoted_at": null
   },
@@ -4423,7 +4411,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.420111",
+    "last_check": "2026-06-30T19:51:26.477413",
     "status": "observing",
     "promoted_at": null
   },
@@ -4435,7 +4423,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.428593",
+    "last_check": "2026-06-30T19:51:26.486553",
     "status": "observing",
     "promoted_at": null
   },
@@ -4447,7 +4435,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.437023",
+    "last_check": "2026-06-30T19:51:26.495654",
     "status": "observing",
     "promoted_at": null
   },
@@ -4459,7 +4447,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.448058",
+    "last_check": "2026-06-30T19:51:26.504741",
     "status": "observing",
     "promoted_at": null
   },
@@ -4471,7 +4459,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.456651",
+    "last_check": "2026-06-30T19:51:26.513856",
     "status": "observing",
     "promoted_at": null
   },
@@ -4483,7 +4471,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.465234",
+    "last_check": "2026-06-30T19:51:26.523027",
     "status": "observing",
     "promoted_at": null
   },
@@ -4495,7 +4483,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.473629",
+    "last_check": "2026-06-30T19:51:26.531963",
     "status": "observing",
     "promoted_at": null
   },
@@ -4507,7 +4495,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.482130",
+    "last_check": "2026-06-30T19:51:26.540939",
     "status": "observing",
     "promoted_at": null
   },
@@ -4519,7 +4507,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.490473",
+    "last_check": "2026-06-30T19:51:26.550047",
     "status": "observing",
     "promoted_at": null
   },
@@ -4531,7 +4519,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.498944",
+    "last_check": "2026-06-30T19:51:26.559353",
     "status": "observing",
     "promoted_at": null
   },
@@ -4543,7 +4531,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.507396",
+    "last_check": "2026-06-30T19:51:26.568417",
     "status": "observing",
     "promoted_at": null
   },
@@ -4555,7 +4543,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.515734",
+    "last_check": "2026-06-30T19:51:26.577326",
     "status": "observing",
     "promoted_at": null
   },
@@ -4567,7 +4555,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.524230",
+    "last_check": "2026-06-30T19:51:26.586488",
     "status": "observing",
     "promoted_at": null
   },
@@ -4579,7 +4567,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.532816",
+    "last_check": "2026-06-30T19:51:26.595569",
     "status": "observing",
     "promoted_at": null
   },
@@ -4591,7 +4579,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.541563",
+    "last_check": "2026-06-30T19:51:26.604738",
     "status": "observing",
     "promoted_at": null
   },
@@ -4603,7 +4591,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.550225",
+    "last_check": "2026-06-30T19:51:26.613887",
     "status": "observing",
     "promoted_at": null
   },
@@ -4615,7 +4603,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.558663",
+    "last_check": "2026-06-30T19:51:26.623007",
     "status": "observing",
     "promoted_at": null
   },
@@ -4627,7 +4615,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.567305",
+    "last_check": "2026-06-30T19:51:26.632163",
     "status": "observing",
     "promoted_at": null
   },
@@ -4639,7 +4627,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.575885",
+    "last_check": "2026-06-30T19:51:26.641176",
     "status": "observing",
     "promoted_at": null
   },
@@ -4651,7 +4639,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.584243",
+    "last_check": "2026-06-30T19:51:26.650326",
     "status": "observing",
     "promoted_at": null
   },
@@ -4663,7 +4651,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.592521",
+    "last_check": "2026-06-30T19:51:26.659445",
     "status": "observing",
     "promoted_at": null
   },
@@ -4675,7 +4663,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.600884",
+    "last_check": "2026-06-30T19:51:26.668276",
     "status": "observing",
     "promoted_at": null
   },
@@ -4687,19 +4675,19 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.609129",
+    "last_check": "2026-06-30T19:51:26.677129",
     "status": "observing",
     "promoted_at": null
   },
-  "865ca28c081c4f624d256c1cecd6152e": {
-    "source_key": "865ca28c081c4f624d256c1cecd6152e",
+  "2eb6ef8adc7f322b31486e91f6707901": {
+    "source_key": "2eb6ef8adc7f322b31486e91f6707901",
     "channel_name": "东方卫视4K",
-    "url": "https://bp-resource-dfl.bestv.cn/148/3/video.m3u8",
+    "url": "http://bp-resource-dfl.bestv.cn/148/3/video.m3u8",
     "check_count": 1,
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.617770",
+    "last_check": "2026-06-30T19:51:26.686102",
     "status": "observing",
     "promoted_at": null
   },
@@ -4711,7 +4699,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.626504",
+    "last_check": "2026-06-30T19:51:26.694937",
     "status": "observing",
     "promoted_at": null
   },
@@ -4723,7 +4711,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.635138",
+    "last_check": "2026-06-30T19:51:26.703950",
     "status": "observing",
     "promoted_at": null
   },
@@ -4735,7 +4723,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.643746",
+    "last_check": "2026-06-30T19:51:26.712953",
     "status": "observing",
     "promoted_at": null
   },
@@ -4747,7 +4735,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.652324",
+    "last_check": "2026-06-30T19:51:26.721796",
     "status": "observing",
     "promoted_at": null
   },
@@ -4759,19 +4747,19 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.660975",
+    "last_check": "2026-06-30T19:51:26.731018",
     "status": "observing",
     "promoted_at": null
   },
-  "224e1999c68f6c42b4b38bdf9e19704c": {
-    "source_key": "224e1999c68f6c42b4b38bdf9e19704c",
+  "6dcff39ea612677807ea887e75b75636": {
+    "source_key": "6dcff39ea612677807ea887e75b75636",
     "channel_name": "内蒙古卫视",
-    "url": "http://120.76.248.139/live/bfgd/4200000110.m3u8",
+    "url": "http://112.27.235.94:8000/hls/49/index.m3u8",
     "check_count": 1,
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.669525",
+    "last_check": "2026-06-30T19:51:26.740050",
     "status": "observing",
     "promoted_at": null
   },
@@ -4783,7 +4771,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.678164",
+    "last_check": "2026-06-30T19:51:26.749024",
     "status": "observing",
     "promoted_at": null
   },
@@ -4795,7 +4783,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.686845",
+    "last_check": "2026-06-30T19:51:26.758153",
     "status": "observing",
     "promoted_at": null
   },
@@ -4807,7 +4795,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.695577",
+    "last_check": "2026-06-30T19:51:26.767329",
     "status": "observing",
     "promoted_at": null
   },
@@ -4819,7 +4807,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.704207",
+    "last_check": "2026-06-30T19:51:26.776664",
     "status": "observing",
     "promoted_at": null
   },
@@ -4831,7 +4819,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.712675",
+    "last_check": "2026-06-30T19:51:26.785623",
     "status": "observing",
     "promoted_at": null
   },
@@ -4843,7 +4831,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.721236",
+    "last_check": "2026-06-30T19:51:26.794549",
     "status": "observing",
     "promoted_at": null
   },
@@ -4855,19 +4843,19 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.729682",
+    "last_check": "2026-06-30T19:51:26.803226",
     "status": "observing",
     "promoted_at": null
   },
-  "e2bed3ea951bae56c717706282c20bf6": {
-    "source_key": "e2bed3ea951bae56c717706282c20bf6",
+  "d04ad9ea2b5277fd06fdbb7e95eff7fa": {
+    "source_key": "d04ad9ea2b5277fd06fdbb7e95eff7fa",
     "channel_name": "厦门卫视",
-    "url": "http://e2.woc.iiiya.cn:28888/rtp/239.61.2.11:8060",
+    "url": "http://183.11.239.36:808/hls/17/index.m3u8",
     "check_count": 1,
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.738330",
+    "last_check": "2026-06-30T19:51:26.812088",
     "status": "observing",
     "promoted_at": null
   },
@@ -4879,7 +4867,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.746861",
+    "last_check": "2026-06-30T19:51:26.821140",
     "status": "observing",
     "promoted_at": null
   },
@@ -4891,7 +4879,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.755402",
+    "last_check": "2026-06-30T19:51:26.830205",
     "status": "observing",
     "promoted_at": null
   },
@@ -4903,7 +4891,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.763989",
+    "last_check": "2026-06-30T19:51:26.839163",
     "status": "observing",
     "promoted_at": null
   },
@@ -4915,7 +4903,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.772617",
+    "last_check": "2026-06-30T19:51:26.848100",
     "status": "observing",
     "promoted_at": null
   },
@@ -4927,7 +4915,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.781277",
+    "last_check": "2026-06-30T19:51:26.857231",
     "status": "observing",
     "promoted_at": null
   },
@@ -4939,7 +4927,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.789927",
+    "last_check": "2026-06-30T19:51:26.866330",
     "status": "observing",
     "promoted_at": null
   },
@@ -4951,7 +4939,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.798700",
+    "last_check": "2026-06-30T19:51:26.875282",
     "status": "observing",
     "promoted_at": null
   },
@@ -4963,7 +4951,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.807371",
+    "last_check": "2026-06-30T19:51:26.884270",
     "status": "observing",
     "promoted_at": null
   },
@@ -4975,19 +4963,19 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.815836",
+    "last_check": "2026-06-30T19:51:26.893462",
     "status": "observing",
     "promoted_at": null
   },
-  "e6f9e4045573005737c74847a6dc6932": {
-    "source_key": "e6f9e4045573005737c74847a6dc6932",
+  "7ac1c9690a3dab20d073c8f767bbbc83": {
+    "source_key": "7ac1c9690a3dab20d073c8f767bbbc83",
     "channel_name": "天津卫视",
-    "url": "http://112.46.85.60:8009/hls/44/index.m3u8",
+    "url": "http://112.27.235.94:8000/hls/42/index.m3u8",
     "check_count": 1,
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.824288",
+    "last_check": "2026-06-30T19:51:26.902501",
     "status": "observing",
     "promoted_at": null
   },
@@ -4999,7 +4987,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.832838",
+    "last_check": "2026-06-30T19:51:26.911464",
     "status": "observing",
     "promoted_at": null
   },
@@ -5011,7 +4999,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.841479",
+    "last_check": "2026-06-30T19:51:26.920865",
     "status": "observing",
     "promoted_at": null
   },
@@ -5023,7 +5011,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.850146",
+    "last_check": "2026-06-30T19:51:26.929839",
     "status": "observing",
     "promoted_at": null
   },
@@ -5035,7 +5023,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.858815",
+    "last_check": "2026-06-30T19:51:26.939017",
     "status": "observing",
     "promoted_at": null
   },
@@ -5047,7 +5035,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.867478",
+    "last_check": "2026-06-30T19:51:26.947975",
     "status": "observing",
     "promoted_at": null
   },
@@ -5059,7 +5047,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.876004",
+    "last_check": "2026-06-30T19:51:26.956697",
     "status": "observing",
     "promoted_at": null
   },
@@ -5071,7 +5059,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.884612",
+    "last_check": "2026-06-30T19:51:26.965650",
     "status": "observing",
     "promoted_at": null
   },
@@ -5083,7 +5071,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.893239",
+    "last_check": "2026-06-30T19:51:26.974749",
     "status": "observing",
     "promoted_at": null
   },
@@ -5095,7 +5083,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.901933",
+    "last_check": "2026-06-30T19:51:26.983739",
     "status": "observing",
     "promoted_at": null
   },
@@ -5107,7 +5095,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.910660",
+    "last_check": "2026-06-30T19:51:26.992771",
     "status": "observing",
     "promoted_at": null
   },
@@ -5119,7 +5107,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.919324",
+    "last_check": "2026-06-30T19:51:27.001753",
     "status": "observing",
     "promoted_at": null
   },
@@ -5131,7 +5119,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.927938",
+    "last_check": "2026-06-30T19:51:27.010805",
     "status": "observing",
     "promoted_at": null
   },
@@ -5143,7 +5131,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.936610",
+    "last_check": "2026-06-30T19:51:27.019724",
     "status": "observing",
     "promoted_at": null
   },
@@ -5155,7 +5143,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.945292",
+    "last_check": "2026-06-30T19:51:27.028890",
     "status": "observing",
     "promoted_at": null
   },
@@ -5167,7 +5155,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.953777",
+    "last_check": "2026-06-30T19:51:27.038199",
     "status": "observing",
     "promoted_at": null
   },
@@ -5179,7 +5167,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.962433",
+    "last_check": "2026-06-30T19:51:27.046981",
     "status": "observing",
     "promoted_at": null
   },
@@ -5191,7 +5179,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.970936",
+    "last_check": "2026-06-30T19:51:27.055884",
     "status": "observing",
     "promoted_at": null
   },
@@ -5203,7 +5191,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.979750",
+    "last_check": "2026-06-30T19:51:27.064988",
     "status": "observing",
     "promoted_at": null
   },
@@ -5215,7 +5203,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.988368",
+    "last_check": "2026-06-30T19:51:27.074149",
     "status": "observing",
     "promoted_at": null
   },
@@ -5227,7 +5215,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:57.997200",
+    "last_check": "2026-06-30T19:51:27.083333",
     "status": "observing",
     "promoted_at": null
   },
@@ -5239,7 +5227,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.005739",
+    "last_check": "2026-06-30T19:51:27.092311",
     "status": "observing",
     "promoted_at": null
   },
@@ -5251,7 +5239,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.014472",
+    "last_check": "2026-06-30T19:51:27.101492",
     "status": "observing",
     "promoted_at": null
   },
@@ -5263,7 +5251,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.023031",
+    "last_check": "2026-06-30T19:51:27.110604",
     "status": "observing",
     "promoted_at": null
   },
@@ -5275,7 +5263,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.031768",
+    "last_check": "2026-06-30T19:51:27.119452",
     "status": "observing",
     "promoted_at": null
   },
@@ -5287,7 +5275,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.040330",
+    "last_check": "2026-06-30T19:51:27.128445",
     "status": "observing",
     "promoted_at": null
   },
@@ -5299,7 +5287,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.049039",
+    "last_check": "2026-06-30T19:51:27.137282",
     "status": "observing",
     "promoted_at": null
   },
@@ -5311,7 +5299,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.057716",
+    "last_check": "2026-06-30T19:51:27.146251",
     "status": "observing",
     "promoted_at": null
   },
@@ -5323,7 +5311,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.066572",
+    "last_check": "2026-06-30T19:51:27.155064",
     "status": "observing",
     "promoted_at": null
   },
@@ -5335,7 +5323,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.075289",
+    "last_check": "2026-06-30T19:51:27.163991",
     "status": "observing",
     "promoted_at": null
   },
@@ -5347,7 +5335,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.083861",
+    "last_check": "2026-06-30T19:51:27.172890",
     "status": "observing",
     "promoted_at": null
   },
@@ -5359,7 +5347,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.092462",
+    "last_check": "2026-06-30T19:51:27.181805",
     "status": "observing",
     "promoted_at": null
   },
@@ -5371,7 +5359,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.101057",
+    "last_check": "2026-06-30T19:51:27.190761",
     "status": "observing",
     "promoted_at": null
   },
@@ -5383,7 +5371,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.109785",
+    "last_check": "2026-06-30T19:51:27.199662",
     "status": "observing",
     "promoted_at": null
   },
@@ -5395,7 +5383,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.118469",
+    "last_check": "2026-06-30T19:51:27.208465",
     "status": "observing",
     "promoted_at": null
   },
@@ -5407,7 +5395,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.127118",
+    "last_check": "2026-06-30T19:51:27.217551",
     "status": "observing",
     "promoted_at": null
   },
@@ -5419,7 +5407,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.135785",
+    "last_check": "2026-06-30T19:51:27.226875",
     "status": "observing",
     "promoted_at": null
   },
@@ -5431,7 +5419,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.144447",
+    "last_check": "2026-06-30T19:51:27.235831",
     "status": "observing",
     "promoted_at": null
   },
@@ -5443,7 +5431,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.153192",
+    "last_check": "2026-06-30T19:51:27.245001",
     "status": "observing",
     "promoted_at": null
   },
@@ -5455,7 +5443,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.161944",
+    "last_check": "2026-06-30T19:51:27.254296",
     "status": "observing",
     "promoted_at": null
   },
@@ -5467,7 +5455,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.170771",
+    "last_check": "2026-06-30T19:51:27.263491",
     "status": "observing",
     "promoted_at": null
   },
@@ -5479,7 +5467,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.179472",
+    "last_check": "2026-06-30T19:51:27.272755",
     "status": "observing",
     "promoted_at": null
   },
@@ -5491,7 +5479,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.188140",
+    "last_check": "2026-06-30T19:51:27.281900",
     "status": "observing",
     "promoted_at": null
   },
@@ -5503,7 +5491,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.196890",
+    "last_check": "2026-06-30T19:51:27.291105",
     "status": "observing",
     "promoted_at": null
   },
@@ -5515,7 +5503,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.205910",
+    "last_check": "2026-06-30T19:51:27.300184",
     "status": "observing",
     "promoted_at": null
   },
@@ -5527,19 +5515,19 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.214662",
+    "last_check": "2026-06-30T19:51:27.309346",
     "status": "observing",
     "promoted_at": null
   },
-  "88872de003833376db6403079c630408": {
-    "source_key": "88872de003833376db6403079c630408",
+  "90367760d7700d07654c59f535b3e6cf": {
+    "source_key": "90367760d7700d07654c59f535b3e6cf",
     "channel_name": "海峡卫视",
-    "url": "http://38.64.72.148:80/hls/modn/list/4009/chunklist0.m3u8",
+    "url": "http://38.64.72.148:80/hls/modn/list/4009/playlist.m3u8",
     "check_count": 1,
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.223416",
+    "last_check": "2026-06-30T19:51:27.318520",
     "status": "observing",
     "promoted_at": null
   },
@@ -5551,7 +5539,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.232446",
+    "last_check": "2026-06-30T19:51:27.327348",
     "status": "observing",
     "promoted_at": null
   },
@@ -5563,7 +5551,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.241269",
+    "last_check": "2026-06-30T19:51:27.336202",
     "status": "observing",
     "promoted_at": null
   },
@@ -5575,7 +5563,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.250033",
+    "last_check": "2026-06-30T19:51:27.345363",
     "status": "observing",
     "promoted_at": null
   },
@@ -5587,7 +5575,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.258775",
+    "last_check": "2026-06-30T19:51:27.354261",
     "status": "observing",
     "promoted_at": null
   },
@@ -5599,7 +5587,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.267472",
+    "last_check": "2026-06-30T19:51:27.363438",
     "status": "observing",
     "promoted_at": null
   },
@@ -5611,7 +5599,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.276240",
+    "last_check": "2026-06-30T19:51:27.372338",
     "status": "observing",
     "promoted_at": null
   },
@@ -5623,7 +5611,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.284885",
+    "last_check": "2026-06-30T19:51:27.381521",
     "status": "observing",
     "promoted_at": null
   },
@@ -5635,7 +5623,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.293655",
+    "last_check": "2026-06-30T19:51:27.390704",
     "status": "observing",
     "promoted_at": null
   },
@@ -5647,7 +5635,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.302540",
+    "last_check": "2026-06-30T19:51:27.400269",
     "status": "observing",
     "promoted_at": null
   },
@@ -5659,7 +5647,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.311190",
+    "last_check": "2026-06-30T19:51:27.409530",
     "status": "observing",
     "promoted_at": null
   },
@@ -5671,7 +5659,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.319811",
+    "last_check": "2026-06-30T19:51:27.418872",
     "status": "observing",
     "promoted_at": null
   },
@@ -5683,7 +5671,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.328601",
+    "last_check": "2026-06-30T19:51:27.427711",
     "status": "observing",
     "promoted_at": null
   },
@@ -5695,7 +5683,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.337382",
+    "last_check": "2026-06-30T19:51:27.436908",
     "status": "observing",
     "promoted_at": null
   },
@@ -5707,7 +5695,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.346197",
+    "last_check": "2026-06-30T19:51:27.446261",
     "status": "observing",
     "promoted_at": null
   },
@@ -5719,7 +5707,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.355005",
+    "last_check": "2026-06-30T19:51:27.455372",
     "status": "observing",
     "promoted_at": null
   },
@@ -5731,7 +5719,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.363732",
+    "last_check": "2026-06-30T19:51:27.464521",
     "status": "observing",
     "promoted_at": null
   },
@@ -5743,7 +5731,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.372345",
+    "last_check": "2026-06-30T19:51:27.473516",
     "status": "observing",
     "promoted_at": null
   },
@@ -5755,7 +5743,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.381056",
+    "last_check": "2026-06-30T19:51:27.482579",
     "status": "observing",
     "promoted_at": null
   },
@@ -5767,7 +5755,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.389779",
+    "last_check": "2026-06-30T19:51:27.491903",
     "status": "observing",
     "promoted_at": null
   },
@@ -5779,7 +5767,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.398434",
+    "last_check": "2026-06-30T19:51:27.500790",
     "status": "observing",
     "promoted_at": null
   },
@@ -5791,7 +5779,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.407095",
+    "last_check": "2026-06-30T19:51:27.510006",
     "status": "observing",
     "promoted_at": null
   },
@@ -5803,7 +5791,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.415839",
+    "last_check": "2026-06-30T19:51:27.519297",
     "status": "observing",
     "promoted_at": null
   },
@@ -5815,7 +5803,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.424513",
+    "last_check": "2026-06-30T19:51:27.528428",
     "status": "observing",
     "promoted_at": null
   },
@@ -5827,7 +5815,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.433317",
+    "last_check": "2026-06-30T19:51:27.537628",
     "status": "observing",
     "promoted_at": null
   },
@@ -5839,7 +5827,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.442032",
+    "last_check": "2026-06-30T19:51:27.546869",
     "status": "observing",
     "promoted_at": null
   },
@@ -5851,7 +5839,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.450557",
+    "last_check": "2026-06-30T19:51:27.556140",
     "status": "observing",
     "promoted_at": null
   },
@@ -5863,7 +5851,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.459473",
+    "last_check": "2026-06-30T19:51:27.565169",
     "status": "observing",
     "promoted_at": null
   },
@@ -5875,7 +5863,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.468159",
+    "last_check": "2026-06-30T19:51:27.574251",
     "status": "observing",
     "promoted_at": null
   },
@@ -5887,7 +5875,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.476856",
+    "last_check": "2026-06-30T19:51:27.583302",
     "status": "observing",
     "promoted_at": null
   },
@@ -5899,7 +5887,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.485801",
+    "last_check": "2026-06-30T19:51:27.592542",
     "status": "observing",
     "promoted_at": null
   },
@@ -5911,7 +5899,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.494328",
+    "last_check": "2026-06-30T19:51:27.601694",
     "status": "observing",
     "promoted_at": null
   },
@@ -5923,7 +5911,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.503080",
+    "last_check": "2026-06-30T19:51:27.610962",
     "status": "observing",
     "promoted_at": null
   },
@@ -5935,7 +5923,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.511739",
+    "last_check": "2026-06-30T19:51:27.619945",
     "status": "observing",
     "promoted_at": null
   },
@@ -5947,7 +5935,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.520334",
+    "last_check": "2026-06-30T19:51:27.628862",
     "status": "observing",
     "promoted_at": null
   },
@@ -5959,7 +5947,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.528792",
+    "last_check": "2026-06-30T19:51:27.637787",
     "status": "observing",
     "promoted_at": null
   },
@@ -5971,7 +5959,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.537516",
+    "last_check": "2026-06-30T19:51:27.646738",
     "status": "observing",
     "promoted_at": null
   },
@@ -5983,7 +5971,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.546308",
+    "last_check": "2026-06-30T19:51:27.655620",
     "status": "observing",
     "promoted_at": null
   },
@@ -5995,7 +5983,91 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.555126",
+    "last_check": "2026-06-30T19:51:27.664559",
+    "status": "observing",
+    "promoted_at": null
+  },
+  "e373ac4a5cccaa3d218d56ae2f76f67c": {
+    "source_key": "e373ac4a5cccaa3d218d56ae2f76f67c",
+    "channel_name": "云南丽江冰川",
+    "url": "https://gcalic.v.myalicdn.com/gc/hkylxs05_1/index.m3u8",
+    "check_count": 1,
+    "success_count": 0,
+    "fail_count": 1,
+    "total_latency": 0,
+    "last_check": "2026-06-30T19:51:27.673665",
+    "status": "observing",
+    "promoted_at": null
+  },
+  "e23204f90789a430ea56a7fdd34f17af": {
+    "source_key": "e23204f90789a430ea56a7fdd34f17af",
+    "channel_name": "云南丽江印象实景",
+    "url": "https://gcalic.v.myalicdn.com/gc/hkylxs01_1/index.m3u8",
+    "check_count": 1,
+    "success_count": 0,
+    "fail_count": 1,
+    "total_latency": 0,
+    "last_check": "2026-06-30T19:51:27.682941",
+    "status": "observing",
+    "promoted_at": null
+  },
+  "2a64561b40a8aa343cee907e81fe2e84": {
+    "source_key": "2a64561b40a8aa343cee907e81fe2e84",
+    "channel_name": "云南丽江玉龙雪山",
+    "url": "https://gcalic.v.myalicdn.com/gc/ylxs11_1/index.m3u8",
+    "check_count": 1,
+    "success_count": 0,
+    "fail_count": 1,
+    "total_latency": 0,
+    "last_check": "2026-06-30T19:51:27.692283",
+    "status": "observing",
+    "promoted_at": null
+  },
+  "b8150e07898eb7673ea1fa9e74dc93d9": {
+    "source_key": "b8150e07898eb7673ea1fa9e74dc93d9",
+    "channel_name": "云南丽江玉龙雪山草甸",
+    "url": "https://gcalic.v.myalicdn.com/gc/hkylxs06_1/index.m3u8",
+    "check_count": 1,
+    "success_count": 0,
+    "fail_count": 1,
+    "total_latency": 0,
+    "last_check": "2026-06-30T19:51:27.701281",
+    "status": "observing",
+    "promoted_at": null
+  },
+  "a2ccacddff124d86de24958a862b81a6": {
+    "source_key": "a2ccacddff124d86de24958a862b81a6",
+    "channel_name": "云南丽江蓝月谷",
+    "url": "https://gcalic.v.myalicdn.com/gc/ylxs12_1/index.m3u8",
+    "check_count": 1,
+    "success_count": 0,
+    "fail_count": 1,
+    "total_latency": 0,
+    "last_check": "2026-06-30T19:51:27.710375",
+    "status": "observing",
+    "promoted_at": null
+  },
+  "b3e4997da763d1f10745a31d4f9cf912": {
+    "source_key": "b3e4997da763d1f10745a31d4f9cf912",
+    "channel_name": "云南大理崇圣寺三塔中景",
+    "url": "https://gcalic.v.myalicdn.com/gc/dlst03_1/index.m3u8",
+    "check_count": 1,
+    "success_count": 0,
+    "fail_count": 1,
+    "total_latency": 0,
+    "last_check": "2026-06-30T19:51:27.719311",
+    "status": "observing",
+    "promoted_at": null
+  },
+  "bbee943c88a996851db18a5e5f2ecb24": {
+    "source_key": "bbee943c88a996851db18a5e5f2ecb24",
+    "channel_name": "云南大理崇圣寺三塔远景",
+    "url": "https://gcalic.v.myalicdn.com/gc/dlst01_1/index.m3u8",
+    "check_count": 1,
+    "success_count": 0,
+    "fail_count": 1,
+    "total_latency": 0,
+    "last_check": "2026-06-30T19:51:27.728283",
     "status": "observing",
     "promoted_at": null
   },
@@ -6007,7 +6079,19 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.563771",
+    "last_check": "2026-06-30T19:51:27.737195",
+    "status": "observing",
+    "promoted_at": null
+  },
+  "9d02bc3af239ca1de51c185440375e3d": {
+    "source_key": "9d02bc3af239ca1de51c185440375e3d",
+    "channel_name": "云南白沙远眺玉龙雪山",
+    "url": "https://gcalic.v.myalicdn.com/gc/hkylxs03_1/index.m3u8",
+    "check_count": 1,
+    "success_count": 0,
+    "fail_count": 1,
+    "total_latency": 0,
+    "last_check": "2026-06-30T19:51:27.746141",
     "status": "observing",
     "promoted_at": null
   },
@@ -6019,7 +6103,31 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.572571",
+    "last_check": "2026-06-30T19:51:27.754993",
+    "status": "observing",
+    "promoted_at": null
+  },
+  "56335f96c61372d6ad75f1acb677baf6": {
+    "source_key": "56335f96c61372d6ad75f1acb677baf6",
+    "channel_name": "江苏徐州云龙湖风景区云龙山观景台西",
+    "url": "https://gcalic.v.myalicdn.com/gc/ylh04_1/index.m3u8",
+    "check_count": 1,
+    "success_count": 0,
+    "fail_count": 1,
+    "total_latency": 0,
+    "last_check": "2026-06-30T19:51:27.764056",
+    "status": "observing",
+    "promoted_at": null
+  },
+  "d4620ed9f72d2b8e7c33d726be2ef5e5": {
+    "source_key": "d4620ed9f72d2b8e7c33d726be2ef5e5",
+    "channel_name": "鬼吹灯之云南虫谷",
+    "url": "https://live.ottiptv.cc/huya/11352898",
+    "check_count": 1,
+    "success_count": 0,
+    "fail_count": 1,
+    "total_latency": 0,
+    "last_check": "2026-06-30T19:51:27.773028",
     "status": "observing",
     "promoted_at": null
   },
@@ -6031,7 +6139,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.581198",
+    "last_check": "2026-06-30T19:51:27.781903",
     "status": "observing",
     "promoted_at": null
   },
@@ -6043,7 +6151,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.589943",
+    "last_check": "2026-06-30T19:51:27.790944",
     "status": "observing",
     "promoted_at": null
   },
@@ -6055,7 +6163,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.598592",
+    "last_check": "2026-06-30T19:51:27.799794",
     "status": "observing",
     "promoted_at": null
   },
@@ -6067,7 +6175,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.607252",
+    "last_check": "2026-06-30T19:51:27.808715",
     "status": "observing",
     "promoted_at": null
   },
@@ -6079,7 +6187,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.615755",
+    "last_check": "2026-06-30T19:51:27.817652",
     "status": "observing",
     "promoted_at": null
   },
@@ -6091,7 +6199,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.624482",
+    "last_check": "2026-06-30T19:51:27.826602",
     "status": "observing",
     "promoted_at": null
   },
@@ -6103,7 +6211,67 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.633022",
+    "last_check": "2026-06-30T19:51:27.835606",
+    "status": "observing",
+    "promoted_at": null
+  },
+  "33791151c0cc0dc2d45ae26fe742b7f0": {
+    "source_key": "33791151c0cc0dc2d45ae26fe742b7f0",
+    "channel_name": "四川四姑娘山隆珠措",
+    "url": "https://gcalic.v.myalicdn.com/gc/sgns02_1/index.m3u8",
+    "check_count": 1,
+    "success_count": 0,
+    "fail_count": 1,
+    "total_latency": 0,
+    "last_check": "2026-06-30T19:51:27.844527",
+    "status": "observing",
+    "promoted_at": null
+  },
+  "b0827abcaa0378d4a83f6164a6d891c2": {
+    "source_key": "b0827abcaa0378d4a83f6164a6d891c2",
+    "channel_name": "四川峨眉山云海日出",
+    "url": "https://gcalic.v.myalicdn.com/gc/emsarm_1/index.m3u8",
+    "check_count": 1,
+    "success_count": 0,
+    "fail_count": 1,
+    "total_latency": 0,
+    "last_check": "2026-06-30T19:51:27.853492",
+    "status": "observing",
+    "promoted_at": null
+  },
+  "396094e38126781255497bde52f39082": {
+    "source_key": "396094e38126781255497bde52f39082",
+    "channel_name": "四川峨眉山普贤菩萨铜像",
+    "url": "https://gcalic.v.myalicdn.com/gc/emspxps_1/index.m3u8",
+    "check_count": 1,
+    "success_count": 0,
+    "fail_count": 1,
+    "total_latency": 0,
+    "last_check": "2026-06-30T19:51:27.862417",
+    "status": "observing",
+    "promoted_at": null
+  },
+  "59636cdd2624723ca6acc786daa0b1e6": {
+    "source_key": "59636cdd2624723ca6acc786daa0b1e6",
+    "channel_name": "四川峨眉山远眺万佛顶",
+    "url": "https://gcalic.v.myalicdn.com/gc/emswfs_1/index.m3u8",
+    "check_count": 1,
+    "success_count": 0,
+    "fail_count": 1,
+    "total_latency": 0,
+    "last_check": "2026-06-30T19:51:27.871436",
+    "status": "observing",
+    "promoted_at": null
+  },
+  "20599e3fa437ac28e12c18658fd45d26": {
+    "source_key": "20599e3fa437ac28e12c18658fd45d26",
+    "channel_name": "四川峨眉山远眺贡嘎雪山",
+    "url": "https://gcalic.v.myalicdn.com/gc/emsyh_1/index.m3u8",
+    "check_count": 1,
+    "success_count": 0,
+    "fail_count": 1,
+    "total_latency": 0,
+    "last_check": "2026-06-30T19:51:27.880359",
     "status": "observing",
     "promoted_at": null
   },
@@ -6115,7 +6283,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.641759",
+    "last_check": "2026-06-30T19:51:27.889272",
     "status": "observing",
     "promoted_at": null
   },
@@ -6127,7 +6295,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.650476",
+    "last_check": "2026-06-30T19:51:27.898207",
     "status": "observing",
     "promoted_at": null
   },
@@ -6139,7 +6307,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.659516",
+    "last_check": "2026-06-30T19:51:27.907137",
     "status": "observing",
     "promoted_at": null
   },
@@ -6151,7 +6319,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.668229",
+    "last_check": "2026-06-30T19:51:27.916261",
     "status": "observing",
     "promoted_at": null
   },
@@ -6163,7 +6331,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.677183",
+    "last_check": "2026-06-30T19:51:27.925465",
     "status": "observing",
     "promoted_at": null
   },
@@ -6175,7 +6343,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.685886",
+    "last_check": "2026-06-30T19:51:27.934349",
     "status": "observing",
     "promoted_at": null
   },
@@ -6187,7 +6355,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.694682",
+    "last_check": "2026-06-30T19:51:27.943245",
     "status": "observing",
     "promoted_at": null
   },
@@ -6199,7 +6367,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.703564",
+    "last_check": "2026-06-30T19:51:27.952493",
     "status": "observing",
     "promoted_at": null
   },
@@ -6211,7 +6379,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.712448",
+    "last_check": "2026-06-30T19:51:27.961457",
     "status": "observing",
     "promoted_at": null
   },
@@ -6223,7 +6391,19 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.721209",
+    "last_check": "2026-06-30T19:51:27.970611",
+    "status": "observing",
+    "promoted_at": null
+  },
+  "8b6b4f10a42ff8cd090c39146798b57c": {
+    "source_key": "8b6b4f10a42ff8cd090c39146798b57c",
+    "channel_name": "安徽池州九华山风景区九华山",
+    "url": "https://gcalic.v.myalicdn.com/gc/jhs05_1/index.m3u8",
+    "check_count": 1,
+    "success_count": 0,
+    "fail_count": 1,
+    "total_latency": 0,
+    "last_check": "2026-06-30T19:51:27.979568",
     "status": "observing",
     "promoted_at": null
   },
@@ -6235,7 +6415,31 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.730096",
+    "last_check": "2026-06-30T19:51:27.988635",
+    "status": "observing",
+    "promoted_at": null
+  },
+  "0fb756f576a3c85f28dbabed8df61ba6": {
+    "source_key": "0fb756f576a3c85f28dbabed8df61ba6",
+    "channel_name": "安徽黟县芦村远眺",
+    "url": "https://gcalic.v.myalicdn.com/gc/yxlcyt_1/index.m3u8",
+    "check_count": 1,
+    "success_count": 0,
+    "fail_count": 1,
+    "total_latency": 0,
+    "last_check": "2026-06-30T19:51:27.997544",
+    "status": "observing",
+    "promoted_at": null
+  },
+  "0f39d8d53de1125ef6a614ffbe229476": {
+    "source_key": "0f39d8d53de1125ef6a614ffbe229476",
+    "channel_name": "安徽黟县西递牌坊",
+    "url": "https://gcalic.v.myalicdn.com/gc/yxxdpf_1/index.m3u8",
+    "check_count": 1,
+    "success_count": 0,
+    "fail_count": 1,
+    "total_latency": 0,
+    "last_check": "2026-06-30T19:51:28.006507",
     "status": "observing",
     "promoted_at": null
   },
@@ -6247,19 +6451,31 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.738818",
+    "last_check": "2026-06-30T19:51:28.015477",
     "status": "observing",
     "promoted_at": null
   },
-  "7de0436048a7936b01a5ef78662f9245": {
-    "source_key": "7de0436048a7936b01a5ef78662f9245",
-    "channel_name": "浙江经济生活",
-    "url": "http://ali-m-l.cztv.com/channels/lantian/channel03/1080p.m3u8",
+  "14cc09be2b925e3b734b8c593293c772": {
+    "source_key": "14cc09be2b925e3b734b8c593293c772",
+    "channel_name": "广西玉林大容山莲花山顶",
+    "url": "https://gcalic.v.myalicdn.com/gc/drs01_1/index.m3u8",
     "check_count": 1,
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.747599",
+    "last_check": "2026-06-30T19:51:28.024415",
+    "status": "observing",
+    "promoted_at": null
+  },
+  "62fd11e0c6916919eb2cc4125915efb9": {
+    "source_key": "62fd11e0c6916919eb2cc4125915efb9",
+    "channel_name": "浙江经济生活",
+    "url": "http://ali-m-l.cztv.com/channels/lantian/channel03/1080p.m3u8#https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8#http://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8",
+    "check_count": 1,
+    "success_count": 0,
+    "fail_count": 1,
+    "total_latency": 0,
+    "last_check": "2026-06-30T19:51:28.033334",
     "status": "observing",
     "promoted_at": null
   },
@@ -6271,7 +6487,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.756296",
+    "last_check": "2026-06-30T19:51:28.042238",
     "status": "observing",
     "promoted_at": null
   },
@@ -6283,7 +6499,19 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.765151",
+    "last_check": "2026-06-30T19:51:28.051163",
+    "status": "observing",
+    "promoted_at": null
+  },
+  "e092aca41290ddec41162371d4e0062a": {
+    "source_key": "e092aca41290ddec41162371d4e0062a",
+    "channel_name": "浙江舟山东极岛",
+    "url": "https://gcalic.v.myalicdn.com/gc/djd01_1/index.m3u8",
+    "check_count": 1,
+    "success_count": 0,
+    "fail_count": 1,
+    "total_latency": 0,
+    "last_check": "2026-06-30T19:51:28.060349",
     "status": "observing",
     "promoted_at": null
   },
@@ -6295,7 +6523,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.773682",
+    "last_check": "2026-06-30T19:51:28.069526",
     "status": "observing",
     "promoted_at": null
   },
@@ -6307,7 +6535,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.782462",
+    "last_check": "2026-06-30T19:51:28.078626",
     "status": "observing",
     "promoted_at": null
   },
@@ -6319,7 +6547,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.791247",
+    "last_check": "2026-06-30T19:51:28.087803",
     "status": "observing",
     "promoted_at": null
   },
@@ -6331,31 +6559,19 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.800313",
+    "last_check": "2026-06-30T19:51:28.096822",
     "status": "observing",
     "promoted_at": null
   },
-  "66c60b986086a99ee592df32eced0545": {
-    "source_key": "66c60b986086a99ee592df32eced0545",
+  "baf241376ba5b994b2743d58af99c3ea": {
+    "source_key": "baf241376ba5b994b2743d58af99c3ea",
     "channel_name": "广东珠江",
-    "url": "http://r.jdshipin.com/sE5vO",
+    "url": "http://183.11.239.36:808/hls/83/index.m3u8",
     "check_count": 1,
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.809158",
-    "status": "observing",
-    "promoted_at": null
-  },
-  "597473629dd790afce27c41a8d4d7256": {
-    "source_key": "597473629dd790afce27c41a8d4d7256",
-    "channel_name": "河源公共",
-    "url": "http://tmpstream.hyrtv.cn/hygg/sd/live.m3u8",
-    "check_count": 1,
-    "success_count": 0,
-    "fail_count": 1,
-    "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.818004",
+    "last_check": "2026-06-30T19:51:28.105803",
     "status": "observing",
     "promoted_at": null
   },
@@ -6367,7 +6583,19 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.831981",
+    "last_check": "2026-06-30T19:51:28.114804",
+    "status": "observing",
+    "promoted_at": null
+  },
+  "f66376ecbf5747d897e412cbf6aec553": {
+    "source_key": "f66376ecbf5747d897e412cbf6aec553",
+    "channel_name": "广西桂林漓江景区",
+    "url": "https://gcalic.v.myalicdn.com/gc/gllj01_1/index.m3u8",
+    "check_count": 1,
+    "success_count": 0,
+    "fail_count": 1,
+    "total_latency": 0,
+    "last_check": "2026-06-30T19:51:28.123784",
     "status": "observing",
     "promoted_at": null
   },
@@ -6379,7 +6607,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.840765",
+    "last_check": "2026-06-30T19:51:28.132692",
     "status": "observing",
     "promoted_at": null
   },
@@ -6391,7 +6619,19 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.849441",
+    "last_check": "2026-06-30T19:51:28.141617",
+    "status": "observing",
+    "promoted_at": null
+  },
+  "8aea2efae0d53ea76325bcffcf168c00": {
+    "source_key": "8aea2efae0d53ea76325bcffcf168c00",
+    "channel_name": "江苏南京牛首山",
+    "url": "https://gcalic.v.myalicdn.com/gc/nss01_1/index.m3u8",
+    "check_count": 1,
+    "success_count": 0,
+    "fail_count": 1,
+    "total_latency": 0,
+    "last_check": "2026-06-30T19:51:28.150844",
     "status": "observing",
     "promoted_at": null
   },
@@ -6403,7 +6643,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.858266",
+    "last_check": "2026-06-30T19:51:28.160005",
     "status": "observing",
     "promoted_at": null
   },
@@ -6415,7 +6655,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.866984",
+    "last_check": "2026-06-30T19:51:28.169141",
     "status": "observing",
     "promoted_at": null
   },
@@ -6427,19 +6667,19 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.875808",
+    "last_check": "2026-06-30T19:51:28.178300",
     "status": "observing",
     "promoted_at": null
   },
-  "74a62c1f028f74e844f119b79147a79e": {
-    "source_key": "74a62c1f028f74e844f119b79147a79e",
+  "4bb6f24e680e2125201583d0a52c1e20": {
+    "source_key": "4bb6f24e680e2125201583d0a52c1e20",
     "channel_name": "辽宁都市",
-    "url": "http://dassby.qqff.top:99/live/辽宁都市/index.m3u8",
+    "url": "http://120.76.248.139/live/bfgd/4200000068.m3u8",
     "check_count": 1,
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.884529",
+    "last_check": "2026-06-30T19:51:28.187269",
     "status": "observing",
     "promoted_at": null
   },
@@ -6451,7 +6691,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.893376",
+    "last_check": "2026-06-30T19:51:28.196565",
     "status": "observing",
     "promoted_at": null
   },
@@ -6463,7 +6703,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.902217",
+    "last_check": "2026-06-30T19:51:28.205678",
     "status": "observing",
     "promoted_at": null
   },
@@ -6475,7 +6715,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.911166",
+    "last_check": "2026-06-30T19:51:28.214839",
     "status": "observing",
     "promoted_at": null
   },
@@ -6487,7 +6727,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.919935",
+    "last_check": "2026-06-30T19:51:28.224019",
     "status": "observing",
     "promoted_at": null
   },
@@ -6499,7 +6739,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.928817",
+    "last_check": "2026-06-30T19:51:28.233164",
     "status": "observing",
     "promoted_at": null
   },
@@ -6511,7 +6751,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.937665",
+    "last_check": "2026-06-30T19:51:28.242319",
     "status": "observing",
     "promoted_at": null
   },
@@ -6523,7 +6763,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.946465",
+    "last_check": "2026-06-30T19:51:28.251453",
     "status": "observing",
     "promoted_at": null
   },
@@ -6535,7 +6775,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.955163",
+    "last_check": "2026-06-30T19:51:28.260687",
     "status": "observing",
     "promoted_at": null
   },
@@ -6547,7 +6787,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.963824",
+    "last_check": "2026-06-30T19:51:28.269900",
     "status": "observing",
     "promoted_at": null
   },
@@ -6559,19 +6799,19 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.972476",
+    "last_check": "2026-06-30T19:51:28.278968",
     "status": "observing",
     "promoted_at": null
   },
-  "4fe5c04db5a4fee79954c453f06fe95c": {
-    "source_key": "4fe5c04db5a4fee79954c453f06fe95c",
+  "90651f5b91f02d71aaab2d496524cd3a": {
+    "source_key": "90651f5b91f02d71aaab2d496524cd3a",
     "channel_name": "河南都市",
-    "url": "http://1.94.31.214/php/hntv.php?id=hnds",
+    "url": "http://www.lwfz.fun:8800/rtp/239.16.20.164:11640",
     "check_count": 1,
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.981199",
+    "last_check": "2026-06-30T19:51:28.288079",
     "status": "observing",
     "promoted_at": null
   },
@@ -6583,7 +6823,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.990056",
+    "last_check": "2026-06-30T19:51:28.297104",
     "status": "observing",
     "promoted_at": null
   },
@@ -6595,7 +6835,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:58.999019",
+    "last_check": "2026-06-30T19:51:28.306163",
     "status": "observing",
     "promoted_at": null
   },
@@ -6607,7 +6847,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.007746",
+    "last_check": "2026-06-30T19:51:28.315670",
     "status": "observing",
     "promoted_at": null
   },
@@ -6619,7 +6859,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.016413",
+    "last_check": "2026-06-30T19:51:28.324756",
     "status": "observing",
     "promoted_at": null
   },
@@ -6631,19 +6871,19 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.024990",
+    "last_check": "2026-06-30T19:51:28.334397",
     "status": "observing",
     "promoted_at": null
   },
-  "af9bc9552d23e29b066dca41095b7445": {
-    "source_key": "af9bc9552d23e29b066dca41095b7445",
+  "aec93239a6fbc96cd7d29921421b45a5": {
+    "source_key": "aec93239a6fbc96cd7d29921421b45a5",
     "channel_name": "浙江教科影视",
-    "url": "http://ali-m-l.cztv.com/channels/lantian/channel04/1080p.m3u8",
+    "url": "https://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8",
     "check_count": 1,
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.033698",
+    "last_check": "2026-06-30T19:51:28.343890",
     "status": "observing",
     "promoted_at": null
   },
@@ -6655,7 +6895,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.042518",
+    "last_check": "2026-06-30T19:51:28.353083",
     "status": "observing",
     "promoted_at": null
   },
@@ -6667,7 +6907,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.051278",
+    "last_check": "2026-06-30T19:51:28.362467",
     "status": "observing",
     "promoted_at": null
   },
@@ -6679,19 +6919,19 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.059997",
+    "last_check": "2026-06-30T19:51:28.371932",
     "status": "observing",
     "promoted_at": null
   },
-  "61cd4633d38b0a8f96f760342341ea13": {
-    "source_key": "61cd4633d38b0a8f96f760342341ea13",
+  "2c630f5e39c8397e136f9142637a36ef": {
+    "source_key": "2c630f5e39c8397e136f9142637a36ef",
     "channel_name": "浙江民生休闲",
-    "url": "http://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8",
+    "url": "https://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8",
     "check_count": 1,
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.068924",
+    "last_check": "2026-06-30T19:51:28.381379",
     "status": "observing",
     "promoted_at": null
   },
@@ -6703,7 +6943,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.077992",
+    "last_check": "2026-06-30T19:51:28.390651",
     "status": "observing",
     "promoted_at": null
   },
@@ -6715,7 +6955,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.086906",
+    "last_check": "2026-06-30T19:51:28.400148",
     "status": "observing",
     "promoted_at": null
   },
@@ -6727,19 +6967,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.095747",
-    "status": "observing",
-    "promoted_at": null
-  },
-  "1ed046bfc11ae10c237f346a61746731": {
-    "source_key": "1ed046bfc11ae10c237f346a61746731",
-    "channel_name": "浙江钱江频道",
-    "url": "http://ali-m-l.cztv.com/channels/lantian/channel02/1080p.m3u8",
-    "check_count": 1,
-    "success_count": 0,
-    "fail_count": 1,
-    "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.104322",
+    "last_check": "2026-06-30T19:51:28.409310",
     "status": "observing",
     "promoted_at": null
   },
@@ -6751,7 +6979,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.113029",
+    "last_check": "2026-06-30T19:51:28.418610",
     "status": "observing",
     "promoted_at": null
   },
@@ -6763,7 +6991,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.121916",
+    "last_check": "2026-06-30T19:51:28.427732",
     "status": "observing",
     "promoted_at": null
   },
@@ -6775,7 +7003,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.130693",
+    "last_check": "2026-06-30T19:51:28.437000",
     "status": "observing",
     "promoted_at": null
   },
@@ -6787,7 +7015,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.139531",
+    "last_check": "2026-06-30T19:51:28.446360",
     "status": "observing",
     "promoted_at": null
   },
@@ -6799,19 +7027,19 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.148400",
+    "last_check": "2026-06-30T19:51:28.455406",
     "status": "observing",
     "promoted_at": null
   },
-  "d0329d41aeea00f48bc71cb622c9e480": {
-    "source_key": "d0329d41aeea00f48bc71cb622c9e480",
+  "296ab70e3a7485d9e2fff1a2c2bfca5b": {
+    "source_key": "296ab70e3a7485d9e2fff1a2c2bfca5b",
     "channel_name": "浙江公共新闻",
-    "url": "http://ali-m-l.cztv.com/channels/lantian/channel07/1080p.m3u8",
+    "url": "https://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8",
     "check_count": 1,
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.157379",
+    "last_check": "2026-06-30T19:51:28.464406",
     "status": "observing",
     "promoted_at": null
   },
@@ -6823,7 +7051,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.166093",
+    "last_check": "2026-06-30T19:51:28.473502",
     "status": "observing",
     "promoted_at": null
   },
@@ -6835,7 +7063,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.174761",
+    "last_check": "2026-06-30T19:51:28.482608",
     "status": "observing",
     "promoted_at": null
   },
@@ -6847,7 +7075,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.183482",
+    "last_check": "2026-06-30T19:51:28.491761",
     "status": "observing",
     "promoted_at": null
   },
@@ -6859,7 +7087,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.192362",
+    "last_check": "2026-06-30T19:51:28.501058",
     "status": "observing",
     "promoted_at": null
   },
@@ -6871,7 +7099,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.201268",
+    "last_check": "2026-06-30T19:51:28.510353",
     "status": "observing",
     "promoted_at": null
   },
@@ -6883,7 +7111,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.210468",
+    "last_check": "2026-06-30T19:51:28.519666",
     "status": "observing",
     "promoted_at": null
   },
@@ -6895,7 +7123,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.219025",
+    "last_check": "2026-06-30T19:51:28.528866",
     "status": "observing",
     "promoted_at": null
   },
@@ -6907,7 +7135,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.227611",
+    "last_check": "2026-06-30T19:51:28.538049",
     "status": "observing",
     "promoted_at": null
   },
@@ -6919,7 +7147,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.236360",
+    "last_check": "2026-06-30T19:51:28.547378",
     "status": "observing",
     "promoted_at": null
   },
@@ -6931,7 +7159,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.245149",
+    "last_check": "2026-06-30T19:51:28.556866",
     "status": "observing",
     "promoted_at": null
   },
@@ -6943,7 +7171,67 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.253813",
+    "last_check": "2026-06-30T19:51:28.566308",
+    "status": "observing",
+    "promoted_at": null
+  },
+  "ffa30a7240fdc49acac057e87dd43f49": {
+    "source_key": "ffa30a7240fdc49acac057e87dd43f49",
+    "channel_name": "湖南张家界天门山西线玻璃栈道",
+    "url": "https://gcalic.v.myalicdn.com/gc/tms05_1/index.m3u8",
+    "check_count": 1,
+    "success_count": 0,
+    "fail_count": 1,
+    "total_latency": 0,
+    "last_check": "2026-06-30T19:51:28.575512",
+    "status": "observing",
+    "promoted_at": null
+  },
+  "03c0708bf11f160edbd5669b4e8a3fe2": {
+    "source_key": "03c0708bf11f160edbd5669b4e8a3fe2",
+    "channel_name": "湖南张家界宝峰湖",
+    "url": "https://gcalic.v.myalicdn.com/gc/zjjbfh_1/index.m3u8",
+    "check_count": 1,
+    "success_count": 0,
+    "fail_count": 1,
+    "total_latency": 0,
+    "last_check": "2026-06-30T19:51:28.584830",
+    "status": "observing",
+    "promoted_at": null
+  },
+  "b5e3f505cb41dc97f08b94daf7efcafc": {
+    "source_key": "b5e3f505cb41dc97f08b94daf7efcafc",
+    "channel_name": "湖南张家界御笔峰",
+    "url": "https://gcalic.v.myalicdn.com/gc/zjjybf_1/index.m3u8",
+    "check_count": 1,
+    "success_count": 0,
+    "fail_count": 1,
+    "total_latency": 0,
+    "last_check": "2026-06-30T19:51:28.594685",
+    "status": "observing",
+    "promoted_at": null
+  },
+  "c1aa597e9d6a342530d02c2fb17267b0": {
+    "source_key": "c1aa597e9d6a342530d02c2fb17267b0",
+    "channel_name": "湖南张家界水绕四门",
+    "url": "https://gcalic.v.myalicdn.com/gc/zjjsrsm_1/index.m3u8",
+    "check_count": 1,
+    "success_count": 0,
+    "fail_count": 1,
+    "total_latency": 0,
+    "last_check": "2026-06-30T19:51:28.603940",
+    "status": "observing",
+    "promoted_at": null
+  },
+  "3172156a63d5ea5a4671dcbb5b1c6d5a": {
+    "source_key": "3172156a63d5ea5a4671dcbb5b1c6d5a",
+    "channel_name": "特种兵之火凤凰",
+    "url": "https://live.ottiptv.cc/huya/29982636",
+    "check_count": 1,
+    "success_count": 0,
+    "fail_count": 1,
+    "total_latency": 0,
+    "last_check": "2026-06-30T19:51:28.612961",
     "status": "observing",
     "promoted_at": null
   },
@@ -6955,7 +7243,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.262696",
+    "last_check": "2026-06-30T19:51:28.622146",
     "status": "observing",
     "promoted_at": null
   },
@@ -6967,7 +7255,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.271373",
+    "last_check": "2026-06-30T19:51:28.631242",
     "status": "observing",
     "promoted_at": null
   },
@@ -6979,7 +7267,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.280105",
+    "last_check": "2026-06-30T19:51:28.640282",
     "status": "observing",
     "promoted_at": null
   },
@@ -6991,7 +7279,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.288813",
+    "last_check": "2026-06-30T19:51:28.649355",
     "status": "observing",
     "promoted_at": null
   },
@@ -7003,19 +7291,19 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.298001",
+    "last_check": "2026-06-30T19:51:28.658389",
     "status": "observing",
     "promoted_at": null
   },
-  "cf4331b0d3e4002261939f41c9ccc536": {
-    "source_key": "cf4331b0d3e4002261939f41c9ccc536",
+  "b9f9026d4f3b239377136b5e880e5cc4": {
+    "source_key": "b9f9026d4f3b239377136b5e880e5cc4",
     "channel_name": "福建公共",
-    "url": "https://live.264788.xyz/channel/fujianxiangcungonggong?streamid=1cf7fc3a8f6d160c33b43c2f9507a0cc&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk",
+    "url": "https://live.264788.xyz/channel/fujianxiangcungonggong?streamid=2987cc24bada6a8c25589409a6452d9e&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk",
     "check_count": 1,
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.306624",
+    "last_check": "2026-06-30T19:51:28.667842",
     "status": "observing",
     "promoted_at": null
   },
@@ -7027,7 +7315,43 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.315257",
+    "last_check": "2026-06-30T19:51:28.676971",
+    "status": "observing",
+    "promoted_at": null
+  },
+  "312abca87f6a3a199e8426827fe25600": {
+    "source_key": "312abca87f6a3a199e8426827fe25600",
+    "channel_name": "福建旅游",
+    "url": "https://live.264788.xyz/channel/fujianlvyou?streamid=8f26765ebf367079cef58c6b7752da1e&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk",
+    "check_count": 1,
+    "success_count": 0,
+    "fail_count": 1,
+    "total_latency": 0,
+    "last_check": "2026-06-30T19:51:28.686108",
+    "status": "observing",
+    "promoted_at": null
+  },
+  "cc493ddb502c5a5431b00ef0acb40314": {
+    "source_key": "cc493ddb502c5a5431b00ef0acb40314",
+    "channel_name": "福建武夷山玉女峰",
+    "url": "https://gcalic.v.myalicdn.com/gc/wysynf_1/index.m3u8",
+    "check_count": 1,
+    "success_count": 0,
+    "fail_count": 1,
+    "total_latency": 0,
+    "last_check": "2026-06-30T19:51:28.695502",
+    "status": "observing",
+    "promoted_at": null
+  },
+  "b7dbb7274087199d0caa429753cb865d": {
+    "source_key": "b7dbb7274087199d0caa429753cb865d",
+    "channel_name": "福建漳州醉美沙滩翡翠湾",
+    "url": "https://gcalic.v.myalicdn.com/gc/fcw03_1/index.m3u8",
+    "check_count": 1,
+    "success_count": 0,
+    "fail_count": 1,
+    "total_latency": 0,
+    "last_check": "2026-06-30T19:51:28.704763",
     "status": "observing",
     "promoted_at": null
   },
@@ -7039,7 +7363,19 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.323781",
+    "last_check": "2026-06-30T19:51:28.714017",
+    "status": "observing",
+    "promoted_at": null
+  },
+  "c1e1788b57b01202cb16403b986cd3cc": {
+    "source_key": "c1e1788b57b01202cb16403b986cd3cc",
+    "channel_name": "贵州省兴义市万峰林",
+    "url": "https://gcalic.v.myalicdn.com/gc/xywfl_1/index.m3u8",
+    "check_count": 1,
+    "success_count": 0,
+    "fail_count": 1,
+    "total_latency": 0,
+    "last_check": "2026-06-30T19:51:28.723426",
     "status": "observing",
     "promoted_at": null
   },
@@ -7051,19 +7387,19 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.332366",
+    "last_check": "2026-06-30T19:51:28.732846",
     "status": "observing",
     "promoted_at": null
   },
-  "16951aeb59782a568d5d697a47b4b620": {
-    "source_key": "16951aeb59782a568d5d697a47b4b620",
+  "de9104ed71ecb275c2558f5c9ca0629f": {
+    "source_key": "de9104ed71ecb275c2558f5c9ca0629f",
     "channel_name": "辽宁公共",
-    "url": "http://120.76.248.139/live/bfgd/4200000481.m3u8",
+    "url": "http://120.76.248.139/live/bfgd/4200000077.m3u8",
     "check_count": 1,
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.341045",
+    "last_check": "2026-06-30T19:51:28.742133",
     "status": "observing",
     "promoted_at": null
   },
@@ -7075,7 +7411,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.349553",
+    "last_check": "2026-06-30T19:51:28.751466",
     "status": "observing",
     "promoted_at": null
   },
@@ -7087,7 +7423,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.358241",
+    "last_check": "2026-06-30T19:51:28.760804",
     "status": "observing",
     "promoted_at": null
   },
@@ -7099,7 +7435,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.367012",
+    "last_check": "2026-06-30T19:51:28.769976",
     "status": "observing",
     "promoted_at": null
   },
@@ -7111,7 +7447,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.375666",
+    "last_check": "2026-06-30T19:51:28.779172",
     "status": "observing",
     "promoted_at": null
   },
@@ -7123,7 +7459,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.384349",
+    "last_check": "2026-06-30T19:51:28.788620",
     "status": "observing",
     "promoted_at": null
   },
@@ -7135,7 +7471,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.392924",
+    "last_check": "2026-06-30T19:51:28.798331",
     "status": "observing",
     "promoted_at": null
   },
@@ -7147,7 +7483,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.401773",
+    "last_check": "2026-06-30T19:51:28.807867",
     "status": "observing",
     "promoted_at": null
   },
@@ -7159,7 +7495,19 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.410218",
+    "last_check": "2026-06-30T19:51:28.817415",
+    "status": "observing",
+    "promoted_at": null
+  },
+  "577032c40ee456470c2948f34e79af62": {
+    "source_key": "577032c40ee456470c2948f34e79af62",
+    "channel_name": "陕西洋县国宝朱鹮02",
+    "url": "https://gcalic.v.myalicdn.com/gc/zh02_1/index.m3u8",
+    "check_count": 1,
+    "success_count": 0,
+    "fail_count": 1,
+    "total_latency": 0,
+    "last_check": "2026-06-30T19:51:28.827016",
     "status": "observing",
     "promoted_at": null
   },
@@ -7171,7 +7519,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.418675",
+    "last_check": "2026-06-30T19:51:28.836600",
     "status": "observing",
     "promoted_at": null
   },
@@ -7183,7 +7531,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.427149",
+    "last_check": "2026-06-30T19:51:28.845904",
     "status": "observing",
     "promoted_at": null
   },
@@ -7195,7 +7543,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.435833",
+    "last_check": "2026-06-30T19:51:28.855076",
     "status": "observing",
     "promoted_at": null
   },
@@ -7207,7 +7555,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.444736",
+    "last_check": "2026-06-30T19:51:28.864579",
     "status": "observing",
     "promoted_at": null
   },
@@ -7219,7 +7567,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.453317",
+    "last_check": "2026-06-30T19:51:28.873853",
     "status": "observing",
     "promoted_at": null
   },
@@ -7231,7 +7579,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.462031",
+    "last_check": "2026-06-30T19:51:28.883130",
     "status": "observing",
     "promoted_at": null
   },
@@ -7243,43 +7591,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.470680",
-    "status": "observing",
-    "promoted_at": null
-  },
-  "682b521ee2b59e86121a493cd385dd75": {
-    "source_key": "682b521ee2b59e86121a493cd385dd75",
-    "channel_name": "无线新闻台",
-    "url": "http://cdn9.163189.xyz/smt1.1.php?id=inews_twn",
-    "check_count": 1,
-    "success_count": 0,
-    "fail_count": 1,
-    "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.479376",
-    "status": "observing",
-    "promoted_at": null
-  },
-  "feaf3822d52725f7f40b7832460b8984": {
-    "source_key": "feaf3822d52725f7f40b7832460b8984",
-    "channel_name": "无线新闻台",
-    "url": "http://r.jdshipin.com/CkuBd",
-    "check_count": 1,
-    "success_count": 0,
-    "fail_count": 1,
-    "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.488045",
-    "status": "observing",
-    "promoted_at": null
-  },
-  "3a5d1e67fe0746fbd2adaa8aeb71967a": {
-    "source_key": "3a5d1e67fe0746fbd2adaa8aeb71967a",
-    "channel_name": "无线新闻台",
-    "url": "http://php.jdshipin.com/TVOD/iptv.php?id=wxxw",
-    "check_count": 1,
-    "success_count": 0,
-    "fail_count": 1,
-    "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.496679",
+    "last_check": "2026-06-30T19:51:28.892326",
     "status": "observing",
     "promoted_at": null
   },
@@ -7291,19 +7603,19 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.505385",
+    "last_check": "2026-06-30T19:51:28.901784",
     "status": "observing",
     "promoted_at": null
   },
-  "302e07e1c93235cf7a4c8465f7bc049e": {
-    "source_key": "302e07e1c93235cf7a4c8465f7bc049e",
+  "b4f84852b99ae362c6a80eb6b3b53fe6": {
+    "source_key": "b4f84852b99ae362c6a80eb6b3b53fe6",
     "channel_name": "华丽翡翠台",
-    "url": "http://cdn9.163189.xyz/smt1.1.php?id=Tvbjade",
+    "url": "http://php.jdshipin.com/TVOD/iptv.php?id=huali2",
     "check_count": 1,
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.514152",
+    "last_check": "2026-06-30T19:51:28.911638",
     "status": "observing",
     "promoted_at": null
   },
@@ -7315,7 +7627,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.523011",
+    "last_check": "2026-06-30T19:51:28.921468",
     "status": "observing",
     "promoted_at": null
   },
@@ -7327,7 +7639,31 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.531775",
+    "last_check": "2026-06-30T19:51:28.930897",
+    "status": "observing",
+    "promoted_at": null
+  },
+  "feaf3822d52725f7f40b7832460b8984": {
+    "source_key": "feaf3822d52725f7f40b7832460b8984",
+    "channel_name": "无线新闻台",
+    "url": "http://r.jdshipin.com/CkuBd",
+    "check_count": 1,
+    "success_count": 0,
+    "fail_count": 1,
+    "total_latency": 0,
+    "last_check": "2026-06-30T19:51:28.939947",
+    "status": "observing",
+    "promoted_at": null
+  },
+  "3a5d1e67fe0746fbd2adaa8aeb71967a": {
+    "source_key": "3a5d1e67fe0746fbd2adaa8aeb71967a",
+    "channel_name": "无线新闻台",
+    "url": "http://php.jdshipin.com/TVOD/iptv.php?id=wxxw",
+    "check_count": 1,
+    "success_count": 0,
+    "fail_count": 1,
+    "total_latency": 0,
+    "last_check": "2026-06-30T19:51:28.949053",
     "status": "observing",
     "promoted_at": null
   },
@@ -7339,7 +7675,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.540783",
+    "last_check": "2026-06-30T19:51:28.958390",
     "status": "observing",
     "promoted_at": null
   },
@@ -7351,7 +7687,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.549545",
+    "last_check": "2026-06-30T19:51:28.967441",
     "status": "observing",
     "promoted_at": null
   },
@@ -7363,19 +7699,19 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.558196",
+    "last_check": "2026-06-30T19:51:28.976718",
     "status": "observing",
     "promoted_at": null
   },
-  "9be43a6d43b158e8d3a838546be7167a": {
-    "source_key": "9be43a6d43b158e8d3a838546be7167a",
+  "7b4c6158f6e5a5b0c57f9ae8dd5b1131": {
+    "source_key": "7b4c6158f6e5a5b0c57f9ae8dd5b1131",
     "channel_name": "翡翠台",
-    "url": "http://php.jdshipin.com:8880/TVOD/iptv.php?id=fct4",
+    "url": "http://r.jdshipin.com/GeWKr",
     "check_count": 1,
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.566943",
+    "last_check": "2026-06-30T19:51:28.985832",
     "status": "observing",
     "promoted_at": null
   },
@@ -7387,7 +7723,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.575433",
+    "last_check": "2026-06-30T19:51:28.995228",
     "status": "observing",
     "promoted_at": null
   },
@@ -7399,7 +7735,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.584210",
+    "last_check": "2026-06-30T19:51:29.004483",
     "status": "observing",
     "promoted_at": null
   },
@@ -7411,7 +7747,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.592777",
+    "last_check": "2026-06-30T19:51:29.013761",
     "status": "observing",
     "promoted_at": null
   },
@@ -7423,7 +7759,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.601409",
+    "last_check": "2026-06-30T19:51:29.022965",
     "status": "observing",
     "promoted_at": null
   },
@@ -7435,7 +7771,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.610095",
+    "last_check": "2026-06-30T19:51:29.032188",
     "status": "observing",
     "promoted_at": null
   },
@@ -7447,7 +7783,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.618848",
+    "last_check": "2026-06-30T19:51:29.041374",
     "status": "observing",
     "promoted_at": null
   },
@@ -7459,7 +7795,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.627746",
+    "last_check": "2026-06-30T19:51:29.050654",
     "status": "observing",
     "promoted_at": null
   },
@@ -7471,7 +7807,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.636555",
+    "last_check": "2026-06-30T19:51:29.060028",
     "status": "observing",
     "promoted_at": null
   },
@@ -7483,31 +7819,31 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.645490",
+    "last_check": "2026-06-30T19:51:29.069315",
     "status": "observing",
     "promoted_at": null
   },
-  "c4bc5c62f97a842f06474a0a819b18bb": {
-    "source_key": "c4bc5c62f97a842f06474a0a819b18bb",
+  "270fd065c2dbc5404215e4655767762a": {
+    "source_key": "270fd065c2dbc5404215e4655767762a",
     "channel_name": "NewTV精品体育",
-    "url": "https://epg.pw/stream/866a097a0907c9832440f8df38272dd555abf05200dfbafcc137e214c9b30ca7.m3u8",
+    "url": "https://epg.pw/stream/f7556eccd4ae06b0c2991fdc7a4f8388496559f728cc82459a8e50346040e226.m3u8",
     "check_count": 1,
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.654243",
+    "last_check": "2026-06-30T19:51:29.078306",
     "status": "observing",
     "promoted_at": null
   },
-  "37708f3cdf09cc2899957ba11883a661": {
-    "source_key": "37708f3cdf09cc2899957ba11883a661",
+  "18c1040f569820414afe5400174c64cd": {
+    "source_key": "18c1040f569820414afe5400174c64cd",
     "channel_name": "纬来体育",
-    "url": "https://epg.pw/stream/4f18dfe0593db5c686eb64ae8edaf2a9202d4d46bdc9bbde2cee27708e12ea01.m3u8",
+    "url": "https://epg.pw/stream/ab6df63b64d0cc44a1f4f029ed847a26fa54a7aebd455578fb05a63f02c22f4b.m3u8",
     "check_count": 1,
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.662925",
+    "last_check": "2026-06-30T19:51:29.087618",
     "status": "observing",
     "promoted_at": null
   },
@@ -7519,7 +7855,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.671605",
+    "last_check": "2026-06-30T19:51:29.096858",
     "status": "observing",
     "promoted_at": null
   },
@@ -7531,7 +7867,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.680436",
+    "last_check": "2026-06-30T19:51:29.105937",
     "status": "observing",
     "promoted_at": null
   },
@@ -7543,7 +7879,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.689283",
+    "last_check": "2026-06-30T19:51:29.114929",
     "status": "observing",
     "promoted_at": null
   },
@@ -7555,7 +7891,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.698100",
+    "last_check": "2026-06-30T19:51:29.124071",
     "status": "observing",
     "promoted_at": null
   },
@@ -7567,7 +7903,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.707031",
+    "last_check": "2026-06-30T19:51:29.133451",
     "status": "observing",
     "promoted_at": null
   },
@@ -7579,7 +7915,31 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.715736",
+    "last_check": "2026-06-30T19:51:29.142949",
+    "status": "observing",
+    "promoted_at": null
+  },
+  "984416fb59da46080488abb8eebafd4a": {
+    "source_key": "984416fb59da46080488abb8eebafd4a",
+    "channel_name": "中央电视塔东",
+    "url": "https://gcalic.v.myalicdn.com/gc/ztd_1/index.m3u8",
+    "check_count": 1,
+    "success_count": 0,
+    "fail_count": 1,
+    "total_latency": 0,
+    "last_check": "2026-06-30T19:51:29.152355",
+    "status": "observing",
+    "promoted_at": null
+  },
+  "8aa34362597b4345aab994bb6a256e65": {
+    "source_key": "8aa34362597b4345aab994bb6a256e65",
+    "channel_name": "中央电视塔南",
+    "url": "https://gcalic.v.myalicdn.com/gc/ztn_1/index.m3u8",
+    "check_count": 1,
+    "success_count": 0,
+    "fail_count": 1,
+    "total_latency": 0,
+    "last_check": "2026-06-30T19:51:29.161759",
     "status": "observing",
     "promoted_at": null
   },
@@ -7591,7 +7951,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.724432",
+    "last_check": "2026-06-30T19:51:29.171247",
     "status": "observing",
     "promoted_at": null
   },
@@ -7603,7 +7963,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.733222",
+    "last_check": "2026-06-30T19:51:29.180499",
     "status": "observing",
     "promoted_at": null
   },
@@ -7615,7 +7975,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.741755",
+    "last_check": "2026-06-30T19:51:29.189749",
     "status": "observing",
     "promoted_at": null
   },
@@ -7627,7 +7987,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.750320",
+    "last_check": "2026-06-30T19:51:29.199075",
     "status": "observing",
     "promoted_at": null
   },
@@ -7639,7 +7999,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.758920",
+    "last_check": "2026-06-30T19:51:29.208252",
     "status": "observing",
     "promoted_at": null
   },
@@ -7651,7 +8011,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.767660",
+    "last_check": "2026-06-30T19:51:29.217269",
     "status": "observing",
     "promoted_at": null
   },
@@ -7663,7 +8023,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.776260",
+    "last_check": "2026-06-30T19:51:29.226334",
     "status": "observing",
     "promoted_at": null
   },
@@ -7675,7 +8035,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.784861",
+    "last_check": "2026-06-30T19:51:29.235341",
     "status": "observing",
     "promoted_at": null
   },
@@ -7687,7 +8047,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.793637",
+    "last_check": "2026-06-30T19:51:29.244494",
     "status": "observing",
     "promoted_at": null
   },
@@ -7699,7 +8059,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.802452",
+    "last_check": "2026-06-30T19:51:29.253611",
     "status": "observing",
     "promoted_at": null
   },
@@ -7711,7 +8071,7 @@
     "success_count": 0,
     "fail_count": 1,
     "total_latency": 0,
-    "last_check": "2026-06-30T15:28:59.811101",
+    "last_check": "2026-06-30T19:51:29.262958",
     "status": "observing",
     "promoted_at": null
   }
