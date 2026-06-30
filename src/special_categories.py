@@ -161,7 +161,6 @@ async def fetch_iptvorg_jp_sports() -> List[Tuple[str, str]]:
 
 async def filter_channels_by_speed(
     channels: List[Dict],
-    db,
     max_latency: int = SLOW_SPEED_THRESHOLD
 ) -> List[Dict]:
     """
@@ -178,8 +177,8 @@ async def filter_channels_by_speed(
     
     logger.info(f"⏳ 开始对 {len(channels_dict)} 个智能补充频道进行测速过滤...")
     
-    # 调用现有测速函数（会使用缓存）
-    valid = await test_channels_concurrent(channels_dict, db=db)
+    # 调用现有测速函数（不传递 db 参数，内部会自动获取）
+    valid = await test_channels_concurrent(channels_dict)
     
     # 过滤出延迟小于阈值的频道
     filtered = [ch for ch in valid if ch.get("latency", 9999) <= max_latency]
@@ -265,8 +264,8 @@ async def collect_and_append_special_categories(output_dir: Path, db=None) -> Di
         logger.warning("⚠️ 未获取到任何智能补充分类内容")
         return {}
     
-    # 5. 测速过滤
-    filtered_channels = await filter_channels_by_speed(all_channels, db)
+    # 5. 测速过滤（不传递 db 参数）
+    filtered_channels = await filter_channels_by_speed(all_channels)
     
     if not filtered_channels:
         logger.warning("⚠️ 测速过滤后无有效频道")
