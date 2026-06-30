@@ -31,6 +31,7 @@ def get_cdn_proxy() -> str:
     return "https://gh-proxy.19860519.xyz/"
 
 # ========== IPTV 源地址配置 ==========
+# 国内主要源
 RAW_SOURCES = [
     "https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/cn.m3u",
     "https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.txt",
@@ -42,21 +43,31 @@ RAW_SOURCES = [
     "https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
 ]
 
+# 直接访问的源（特殊处理）
 DIRECT_SOURCES = [
     "https://tv.19860519.xyz/abc123",
+   ]
+
+# ========== 日本频道源（新增，保留不被过滤） ==========
+JP_SOURCES = [
     "https://iptv-org.github.io/iptv/countries/jp.m3u",
 ]
 
 PROXY = get_cdn_proxy()
 IPTV_SOURCES = []
 
+# 添加 GitHub 源（环境决定是否加代理）
 for src in RAW_SOURCES:
     if PROXY:
         IPTV_SOURCES.append(PROXY + src)
     else:
         IPTV_SOURCES.append(src)
 
+# 添加直接访问的源（始终不加代理）
 IPTV_SOURCES.extend(DIRECT_SOURCES)
+
+# 添加日本频道源（始终不加代理，避免被国内频道过滤机制误杀）
+IPTV_SOURCES.extend(JP_SOURCES)
 
 if is_github_actions():
     print("🏃 检测到 GitHub Actions 环境，使用直接访问模式")
@@ -67,7 +78,7 @@ else:
 
 print(f"📡 共配置 {len(IPTV_SOURCES)} 个源")
 
-# 性能配置
+# ========== 性能配置 ==========
 MAX_WORKERS = config.get('MAX_WORKERS', 20)
 TIMEOUT = config.get('TIMEOUT', 10)
 
@@ -105,57 +116,57 @@ CCTV_ORDER = [
 M3U_FILE = "tv.m3u"
 TXT_FILE = "tv.txt"
 
-CACHE_HOURS = config.get('CACHE_HOURS', 24)
-MAX_SOURCES_PER_CHANNEL = config.get('MAX_SOURCES_PER_CHANNEL', 3)
+CACHE_HOURS = int(os.getenv("CACHE_HOURS", 24))
+MAX_SOURCES_PER_CHANNEL = int(os.getenv("MAX_SOURCES_PER_CHANNEL", 3))
 
-ENABLE_DEMO_FILTER = config.get('ENABLE_DEMO_FILTER', True)
-ENABLE_ALIAS = config.get('ENABLE_ALIAS', True)
-ENABLE_BLACKLIST = config.get('ENABLE_BLACKLIST', True)
-DATABASE_ENABLE = config.get('DATABASE_ENABLE', True)
+ENABLE_DEMO_FILTER = os.getenv("ENABLE_DEMO_FILTER", "true").lower() == "true"
+ENABLE_ALIAS = os.getenv("ENABLE_ALIAS", "true").lower() == "true"
+ENABLE_BLACKLIST = os.getenv("ENABLE_BLACKLIST", "true").lower() == "true"
+DATABASE_ENABLE = os.getenv("DATABASE_ENABLE", "true").lower() == "true"
 
-DEMO_MATCH_MODE = config.get('DEMO_MATCH_MODE', 'contains')
+DEMO_MATCH_MODE = os.getenv("DEMO_MATCH_MODE", "contains")
 PREFER_H264 = True
 
-WEB_SERVER_PORT = config.get('WEB_SERVER_PORT', 8080)
-WEB_SERVER_HOST = config.get('WEB_SERVER_HOST', '0.0.0.0')
+WEB_SERVER_PORT = int(os.getenv("WEB_SERVER_PORT", 8080))
+WEB_SERVER_HOST = os.getenv("WEB_SERVER_HOST", "0.0.0.0")
 
-RUN_MODE = config.get('RUN_MODE', 'once')
-SCHEDULE_INTERVAL = config.get('SCHEDULE_INTERVAL', 21600)
+RUN_MODE = os.getenv("RUN_MODE", "once")
+SCHEDULE_INTERVAL = int(os.getenv("SCHEDULE_INTERVAL", 21600))
 
-CACHE_RAW_HOURS = config.get('CACHE_RAW_HOURS', 48)
-CACHE_SPEED_HOURS = config.get('CACHE_SPEED_HOURS', 24)
-ENABLE_INCREMENTAL_FETCH = config.get('ENABLE_INCREMENTAL_FETCH', True)
+CACHE_RAW_HOURS = int(os.getenv("CACHE_RAW_HOURS", 48))
+CACHE_SPEED_HOURS = int(os.getenv("CACHE_SPEED_HOURS", 24))
+ENABLE_INCREMENTAL_FETCH = os.getenv("ENABLE_INCREMENTAL_FETCH", "true").lower() == "true"
 
-ENABLE_EPG_INJECTION = config.get('ENABLE_EPG_INJECTION', True)
-EPG_CACHE_DAYS = config.get('EPG_CACHE_DAYS', 7)
+ENABLE_EPG_INJECTION = os.getenv("ENABLE_EPG_INJECTION", "true").lower() == "true"
+EPG_CACHE_DAYS = int(os.getenv("EPG_CACHE_DAYS", 7))
 
-ENABLE_JSON_OUTPUT = config.get('ENABLE_JSON_OUTPUT', True)
-ENABLE_LITE_VERSION = config.get('ENABLE_LITE_VERSION', True)
-ENABLE_EPG_OUTPUT = config.get('ENABLE_EPG_OUTPUT', True)
+ENABLE_JSON_OUTPUT = os.getenv("ENABLE_JSON_OUTPUT", "true").lower() == "true"
+ENABLE_LITE_VERSION = os.getenv("ENABLE_LITE_VERSION", "true").lower() == "true"
+ENABLE_EPG_OUTPUT = os.getenv("ENABLE_EPG_OUTPUT", "true").lower() == "true"
 
 # 自治模式
-AUTONOMOUS_MODE = config.get('AUTONOMOUS_MODE', True)
-AUTO_UPDATE_STABLE = config.get('AUTO_UPDATE_STABLE', True)
-AUTO_REPLACE_FAILED = config.get('AUTO_REPLACE_FAILED', True)
-QUALITY_CHECK_INTERVAL = config.get('QUALITY_CHECK_INTERVAL', 24)
-CANDIDATE_OBSERVATION_HOURS = config.get('CANDIDATE_OBSERVATION_HOURS', 24)
-CANDIDATE_MIN_SUCCESS = config.get('CANDIDATE_MIN_SUCCESS', 10)
-CANDIDATE_MIN_SUCCESS_RATE = config.get('CANDIDATE_MIN_SUCCESS_RATE', 0.8)
-CANDIDATE_MAX_LATENCY = config.get('CANDIDATE_MAX_LATENCY', 2000)
+AUTONOMOUS_MODE = os.getenv("AUTONOMOUS_MODE", "false").lower() == "true"
+AUTO_UPDATE_STABLE = os.getenv("AUTO_UPDATE_STABLE", "true").lower() == "true"
+AUTO_REPLACE_FAILED = os.getenv("AUTO_REPLACE_FAILED", "true").lower() == "true"
+QUALITY_CHECK_INTERVAL = int(os.getenv("QUALITY_CHECK_INTERVAL", 24))
+CANDIDATE_OBSERVATION_HOURS = int(os.getenv("CANDIDATE_OBSERVATION_HOURS", 24))
+CANDIDATE_MIN_SUCCESS = int(os.getenv("CANDIDATE_MIN_SUCCESS", 10))
+CANDIDATE_MIN_SUCCESS_RATE = float(os.getenv("CANDIDATE_MIN_SUCCESS_RATE", 0.8))
+CANDIDATE_MAX_LATENCY = int(os.getenv("CANDIDATE_MAX_LATENCY", 2000))
 
 # ========== 新增增强优化配置 ==========
-HTTP_TIMEOUT = config.get('HTTP_TIMEOUT', 8)
+HTTP_TIMEOUT = int(os.getenv("HTTP_TIMEOUT", 8))
 DOWNLOAD_CHUNK_SIZE = 262144
-MAX_RETRY_BEFORE_BLACKLIST = config.get('MAX_RETRY_BEFORE_BLACKLIST', 2)
-SLOW_SPEED_THRESHOLD = config.get('SLOW_SPEED_THRESHOLD', 3000)
+MAX_RETRY_BEFORE_BLACKLIST = 2
+SLOW_SPEED_THRESHOLD = 3000
 
-CANDIDATE_MAX_AGE_HOURS = config.get('CANDIDATE_MAX_AGE_HOURS', 72)
-AUTO_PROMOTE_THRESHOLD = config.get('AUTO_PROMOTE_THRESHOLD', 3)
+CANDIDATE_MAX_AGE_HOURS = 72
+AUTO_PROMOTE_THRESHOLD = 3
 
-HEALTH_HISTORY_DAYS = config.get('HEALTH_HISTORY_DAYS', 30)
-PREDICT_THRESHOLD = config.get('PREDICT_THRESHOLD', 0.6)
+HEALTH_HISTORY_DAYS = 30
+PREDICT_THRESHOLD = 0.6
 
-PROGRESS_UPDATE_INTERVAL = config.get('PROGRESS_UPDATE_INTERVAL', 1.0)
+PROGRESS_UPDATE_INTERVAL = 1.0
 
 # 打印自治模式状态
 if AUTONOMOUS_MODE:
@@ -170,7 +181,3 @@ if AUTONOMOUS_MODE:
     print(f"   - 慢速阈值: {SLOW_SPEED_THRESHOLD}ms")
     print(f"   - 黑名单阈值: {MAX_RETRY_BEFORE_BLACKLIST}次失败")
     print(f"   - 健康度预测阈值: {PREDICT_THRESHOLD}")
-
-# ========== GitHub 代理配置（兼容旧模块） ==========
-ENABLE_GITHUB_PROXY = False
-GITHUB_RAW_PROXIES = []
