@@ -17,14 +17,13 @@ TARGET_CATEGORIES = [
     "电视剧",
     "动漫",
     "体育竞赛",
-    "音乐吧",          # 匹配“经典老歌”、“经典歌曲”
-    "热门歌曲",        # 匹配“音乐”、“歌曲”、“流行”等
+    "音乐吧",
+    "热门歌曲",
     "戏曲",
     "动感舞曲",
     "广场舞"
 ]
 
-# ========== 分类显示名称映射 ==========
 CATEGORY_DISPLAY_NAME = {
     "广播": "📻 网络电台",
     "韩国女团": "🎤 韩国女团",
@@ -39,8 +38,6 @@ CATEGORY_DISPLAY_NAME = {
     "广场舞": "💃 广场舞",
 }
 
-# 每个分类对应的关键词列表（小写，用于匹配分类名）
-# 优化：音乐吧只匹配“经典老歌”、“经典歌曲”，避免误匹配“经典电影”
 CATEGORY_KEYWORDS = {
     "广播": ["广播", "电台", "fm", "am", "动听"],
     "韩国女团": ["歌团", "女团", "kpop"],
@@ -48,7 +45,6 @@ CATEGORY_KEYWORDS = {
     "电视剧": ["电视剧", "剧集", "剧场", "连续剧"],
     "动漫": ["动漫", "动画", "卡通", "二次元"],
     "体育竞赛": ["体育", "竞赛", "赛事", "竞技"],
-    # 音乐吧：精准匹配“经典老歌”、“经典歌曲”，而非所有含“经典”的
     "音乐吧": ["经典老歌", "经典歌曲", "经典音乐", "经典金曲"],
     "热门歌曲": ["音乐", "歌曲", "热门歌曲", "流行", "金曲", "热歌", "动听", "好歌", "歌单"],
     "戏曲": ["戏曲", "京剧", "越剧", "黄梅戏", "豫剧", "评剧", "秦腔", "昆曲", "粤剧", "河北梆子", "梨园"],
@@ -56,13 +52,11 @@ CATEGORY_KEYWORDS = {
     "广场舞": ["广场舞", "健身舞", "排舞"],
 }
 
-# ========== 验证配置 ==========
-PROBE_TIMEOUT = 8          # 每个频道探测超时(秒)
-PROBE_CONCURRENCY = 20     # 并发探测数
+PROBE_TIMEOUT = 8
+PROBE_CONCURRENCY = 20
 
 
 def detect_province_from_category(cat_name: str) -> Optional[str]:
-    """检测分类名中的省份（如“吉林地方” -> “吉林”）"""
     for prov in PROVINCES:
         if cat_name.startswith(prov) and "地方" in cat_name:
             return prov
@@ -90,7 +84,6 @@ async def probe_channel_quick(url: str, session: aiohttp.ClientSession) -> bool:
             if not data:
                 return False
 
-            # 转为字符串进行错误检测（避免 bytes 中的非 ASCII）
             data_str = data.decode('utf-8', errors='ignore').lower()
             error_keywords = [
                 "<html", "<!doctype", "403", "forbidden",
@@ -101,7 +94,6 @@ async def probe_channel_quick(url: str, session: aiohttp.ClientSession) -> bool:
                 if kw in data_str:
                     return False
 
-            # 视频头检测
             if data.startswith(b'#EXTM3U') or b'#EXTINF' in data:
                 return True
             video_signatures = [
@@ -114,17 +106,12 @@ async def probe_channel_quick(url: str, session: aiohttp.ClientSession) -> bool:
 
             if "text" in content_type:
                 return False
-
             return False
     except Exception:
         return False
 
 
 def parse_abc123_for_targets(content: str) -> Dict[str, List[Tuple[str, str]]]:
-    """
-    解析 abc123 源内容，提取目标分类下的频道
-    特殊处理：省份地方分类归入对应省份分类（如“吉林地方” -> “☘️吉林频道”）
-    """
     if not content:
         return {}
 
@@ -145,13 +132,11 @@ def parse_abc123_for_targets(content: str) -> Dict[str, List[Tuple[str, str]]]:
             current_category = None
             current_province = None
 
-            # 检查是否为省份地方分类
             prov = detect_province_from_category(cat_name)
             if prov:
                 current_province = prov
                 continue
 
-            # 常规分类匹配
             for target, keywords in CATEGORY_KEYWORDS.items():
                 if target == "韩国女团" and ("歌团" in cat_name or "女团" in cat_name):
                     current_category = target
@@ -187,11 +172,38 @@ def parse_abc123_for_targets(content: str) -> Dict[str, List[Tuple[str, str]]]:
             key = f"☘️{prov}频道"
             result[key] = channels
 
+    # ===== 后处理：根据频道名过滤误匹配 =====
+    # 1. 动漫分类：如果频道名包含CCTV/央视，且不包含动漫关键词，则丢弃
+    if "动漫" in result:
+        filtered = []
+        for name, url in result["动漫"]:
+            name_lower = name.lower()
+            if "cctv" in name_lower or "央视" in name:
+                # 保留包含明确动漫关键词的
+                if any(kw in name_lower for kw in ["动漫", "动画", "卡通", "二次元", "漫"]):
+                    filtered.append((name, url))
+                else:
+                    logger.debug(f"丢弃疑似误判的动漫频道: {name}")
+            else:
+                filtered.append((name, url))
+        result["动漫"] = filtered
+
+    # 2. 电影分类：如果频道名包含"广场舞"，则丢弃
+    if "电影" in result:
+        filtered = []
+        for name, url in result["电影"]:
+            if "广场舞" in name:
+                logger.debug(f"丢弃广场舞频道: {name}")
+                continue
+            filtered.append((name, url))
+        result["电影"] = filtered
+
+    # 3. 其他分类也可以增加类似过滤（可选），暂不添加
+
     return {k: v for k, v in result.items() if v}
 
 
 async def validate_channels(channels: List[Tuple[str, str]]) -> List[Tuple[str, str]]:
-    """并发验证频道可用性"""
     if not channels:
         return []
 
@@ -210,7 +222,6 @@ async def validate_channels(channels: List[Tuple[str, str]]) -> List[Tuple[str, 
 
 
 async def fetch_abc123_source() -> Dict[str, List[Tuple[str, str]]]:
-    """拉取 abc123 源并解析分类，然后验证可用性"""
     source_url = "https://tv.19860519.xyz/abc123"
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
@@ -261,7 +272,6 @@ def append_special_to_output(
     special_data: Dict[str, List[Tuple[str, str]]],
     output_dir: Path
 ) -> int:
-    """追加到输出文件，使用分类名作为 group-title"""
     if not special_data:
         return 0
 
@@ -294,7 +304,6 @@ def append_special_to_output(
 
 
 async def collect_and_append_special_categories(output_dir: Path, db=None) -> Dict[str, int]:
-    """主函数：采集、验证并追加"""
     logger.info("🧠 开始智能补充采集（从 abc123 源）...")
 
     special_data = await fetch_abc123_source()
