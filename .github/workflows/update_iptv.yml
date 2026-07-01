@@ -88,19 +88,20 @@ jobs:
         echo "🚀 推送到 main 分支（带重试）..."
         for i in 1 2 3; do
           echo "尝试第 $i 次推送..."
-          if git push origin main; then
+          # 关键修改：使用 refs/heads/main 明确指定推送的是分支
+          if git push origin refs/heads/main; then
             echo "✅ 推送成功"
             exit 0
           else
             echo "⚠️ 推送失败，拉取最新更改后重试..."
-            # 关键修正：使用 git pull 而不是 git push
             git pull origin main --rebase --autostash
             sleep 2
           fi
         done
         
         echo "⚠️ 重试后仍失败，尝试安全强制推送..."
-        git push --force-with-lease origin main
+        # 安全强制推送时也使用完整引用
+        git push --force-with-lease origin refs/heads/main
         echo "✅ 安全强制推送成功"
 
     - name: 上传输出文件作为 artifacts（可选）
