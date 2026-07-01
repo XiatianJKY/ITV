@@ -8,16 +8,20 @@ from typing import List, Dict, Tuple
 from pathlib import Path
 from src.logger import logger
 
-# ========== 需要采集的分类关键词 ==========
-TARGET_CATEGORIES = [
-    "音乐",
-    "广播",
-    "韩国女团",
-    "电影",
-    "电视剧",
-    "动漫",
-    "体育竞赛"
-]
+# ========== 需要采集的分类及关键词映射 ==========
+CATEGORY_KEYWORDS = {
+    "音乐": ["音乐", "歌曲", "金曲", "流行", "经典"],
+    "广播": ["广播", "电台", "FM", "AM", "网络电台", "audio"],
+    "韩国女团": ["韩国女团", "女团", "kpop", "歌团"],  # 歌团特殊处理已在解析中实现
+    "电影": ["电影", "影院", "影片", "CHC", "经典电影", "动作电影", "家庭影院"],
+    "电视剧": ["电视剧", "剧集", "剧场", "热播"],
+    "动漫": ["动漫", "动画", "卡通", "少儿", "儿童"],
+    "体育竞赛": ["体育", "竞赛", "赛事", "运动", "NBA", "英超", "中超"],
+    "戏曲": ["戏曲", "京剧", "越剧", "黄梅戏", "豫剧", "评剧", "秦腔", "昆曲", "梨园"],
+    "美食": ["美食", "烹饪", "吃货", "厨房", "美味"],
+    "动感舞曲": ["动感舞曲", "舞曲", "DJ", "电音", "蹦迪"],
+    "广场舞": ["广场舞", "健身舞", "排舞"],
+}
 
 # ========== 分类显示名称映射 ==========
 CATEGORY_DISPLAY_NAME = {
@@ -28,6 +32,10 @@ CATEGORY_DISPLAY_NAME = {
     "电视剧": "📺 电视剧频道",
     "动漫": "🎬 动漫频道",
     "体育竞赛": "🏀 体育竞赛频道",
+    "戏曲": "🎭 戏曲频道",
+    "美食": "🍜 美食频道",
+    "动感舞曲": "💃 动感舞曲",
+    "广场舞": "💃 广场舞",
 }
 
 # ========== 验证配置 ==========
@@ -46,7 +54,8 @@ def parse_abc123_for_targets(content: str) -> Dict[str, List[Tuple[str, str]]]:
     if not content:
         return {}
     
-    result = {cat: [] for cat in TARGET_CATEGORIES}
+    target_categories = list(CATEGORY_KEYWORDS.keys())
+    result = {cat: [] for cat in target_categories}
     lines = content.splitlines()
     current_category = None
 
@@ -60,17 +69,18 @@ def parse_abc123_for_targets(content: str) -> Dict[str, List[Tuple[str, str]]]:
             cat_name = line.replace(",#genre#", "").replace(", #genre#", "").strip()
             current_category = None
             
-            for target in TARGET_CATEGORIES:
+            # 遍历目标分类，检查是否匹配
+            for target, keywords in CATEGORY_KEYWORDS.items():
                 # 韩国女团特殊匹配
                 if target == "韩国女团" and ("歌团" in cat_name or "女团" in cat_name):
                     current_category = target
                     break
-                # 体育竞赛：匹配"体育"或"竞赛"
-                if target == "体育竞赛" and ("体育" in cat_name or "竞赛" in cat_name):
+                # 体育竞赛特殊匹配
+                if target == "体育竞赛" and ("体育" in cat_name or "竞赛" in cat_name or "赛事" in cat_name):
                     current_category = target
                     break
-                # 普通匹配
-                if target in cat_name:
+                # 通用关键词匹配
+                if any(kw in cat_name for kw in keywords):
                     current_category = target
                     break
             continue
@@ -111,11 +121,8 @@ async def probe_channel_quick(url: str, session: aiohttp.ClientSession) -> bool:
             if resp.status != 200:
                 return False
             content_type = resp.headers.get("content-type", "").lower()
-            # 检查是否为视频流或M3U8
             if any(ct in content_type for ct in ["video", "mpegurl", "x-mpegurl", "application/vnd.apple.mpegurl"]):
                 return True
-            # 如果 Content-Type 未明确，尝试 GET 一小段数据验证
-            # 但为了减少流量，先仅依赖 HEAD
             return False
     except Exception:
         return False
@@ -146,23 +153,6 @@ async def validate_channels(
         valid = [r for r in results if r is not None]
     
     return valid
-
-
-def filter_valid_channels(
-    special_data: Dict[str, List[Tuple[str, str]]]
-) -> Dict[str, List[Tuple[str, str]]]:
-    """
-    对每个分类下的频道进行验证，返回仅包含有效频道的字典
-    同时输出统计日志
-    """
-    if not special_data:
-        return {}
-    
-    # 由于验证是异步的，我们需要在异步上下文中运行
-    # 此函数将被 collect_and_append_special_categories 调用
-    # 那里已经有 async，所以我们直接返回一个协程
-    # 改为在 collect 中直接调用异步验证
-    return special_data
 
 
 async def fetch_abc123_source() -> Dict[str, List[Tuple[str, str]]]:
