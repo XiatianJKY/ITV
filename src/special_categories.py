@@ -13,9 +13,6 @@ from src.classifier import PROVINCES
 TARGET_CATEGORIES = [
     "广播",
     "韩国女团",
-    "电影",
-    "电视剧",
-    "动漫",
     "体育竞赛",
     "音乐吧",
     "热门歌曲",
@@ -27,9 +24,6 @@ TARGET_CATEGORIES = [
 CATEGORY_DISPLAY_NAME = {
     "广播": "📻 网络电台",
     "韩国女团": "🎤 韩国女团",
-    "电影": "🎬 电影频道",
-    "电视剧": "📺 电视剧频道",
-    "动漫": "🎬 动漫频道",
     "体育竞赛": "🏀 体育竞赛频道",
     "音乐吧": "🎵 音乐吧",
     "热门歌曲": "🔥 热门歌曲",
@@ -41,9 +35,6 @@ CATEGORY_DISPLAY_NAME = {
 CATEGORY_KEYWORDS = {
     "广播": ["广播", "电台", "fm", "am", "动听"],
     "韩国女团": ["歌团", "女团", "kpop"],
-    "电影": ["电影", "影院", "影片", "chc", "动作电影", "家庭影院", "影迷电影", "经典电影", "华语影院", "峨眉电影", "第一剧场", "怀旧剧场", "风云剧场"],
-    "电视剧": ["电视剧", "剧集", "剧场", "连续剧"],
-    "动漫": ["动漫", "动画", "卡通", "二次元"],
     "体育竞赛": ["体育", "竞赛", "赛事", "竞技"],
     "音乐吧": ["经典老歌", "经典歌曲", "经典音乐", "经典金曲"],
     "热门歌曲": ["音乐", "歌曲", "热门歌曲", "流行", "金曲", "热歌", "动听", "好歌", "歌单"],
@@ -172,33 +163,8 @@ def parse_abc123_for_targets(content: str) -> Dict[str, List[Tuple[str, str]]]:
             key = f"☘️{prov}频道"
             result[key] = channels
 
-    # ===== 后处理：根据频道名过滤误匹配 =====
-    # 1. 动漫分类：如果频道名包含CCTV/央视，且不包含动漫关键词，则丢弃
-    if "动漫" in result:
-        filtered = []
-        for name, url in result["动漫"]:
-            name_lower = name.lower()
-            if "cctv" in name_lower or "央视" in name:
-                # 保留包含明确动漫关键词的
-                if any(kw in name_lower for kw in ["动漫", "动画", "卡通", "二次元", "漫"]):
-                    filtered.append((name, url))
-                else:
-                    logger.debug(f"丢弃疑似误判的动漫频道: {name}")
-            else:
-                filtered.append((name, url))
-        result["动漫"] = filtered
-
-    # 2. 电影分类：如果频道名包含"广场舞"，则丢弃
-    if "电影" in result:
-        filtered = []
-        for name, url in result["电影"]:
-            if "广场舞" in name:
-                logger.debug(f"丢弃广场舞频道: {name}")
-                continue
-            filtered.append((name, url))
-        result["电影"] = filtered
-
-    # 3. 其他分类也可以增加类似过滤（可选），暂不添加
+    # 移除所有与电影、电视剧、动漫相关的后处理逻辑（已无相关分类）
+    # 直接返回结果
 
     return {k: v for k, v in result.items() if v}
 
