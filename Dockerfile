@@ -3,14 +3,12 @@ FROM python:3.11-slim-bookworm AS builder
 
 WORKDIR /app
 
-# 仅安装编译依赖
 RUN apt-get update && apt-get install -y --no-install-recommends gcc \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt .
 
-# 安装依赖 + 深度清理python全目录冗余
 RUN pip install --no-cache-dir -r requirements.txt \
     -i https://pypi.tuna.tsinghua.edu.cn/simple --trusted-host pypi.tuna.tsinghua.edu.cn \
     && find /usr/local/lib/python3.11 \
@@ -22,28 +20,24 @@ FROM python:3.11-slim-bookworm
 
 WORKDIR /app
 
-# 仅安装最小ffmpeg组件，深度清理系统所有冗余文件
-RUN apt-get update && apt-get install -y --no-install-recommends ffmpeg-tools ffprobe \
+# 只装ffmpeg，ffprobe自带，删除大量系统冗余
+RUN apt-get update && apt-get install -y --no-install-recommends ffmpeg \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* \
-    && rm -rf /usr/share/doc /usr/share/man /usr/share/locale /usr/share/info /usr/share/groff \
-    && rm -rf /var/cache/* /var/log/* \
-    && rm -rf /usr/bin/*-linux-gnu-* /usr/sbin/*-linux-gnu-* \
-    && rm -rf /usr/lib/ssl/man /usr/lib/gcc /usr/include \
+    # 系统无用资源批量删除
+    && rm -rf /usr/share/doc /usr/share/man /usr/share/locale /usr/share/info /usr/share/groff /usr/share/lintian \
+    && rm -rf /var/cache/* /var/log/* /tmp/* \
+    && rm -rf /usr/include /usr/lib/gcc /usr/lib/pkgconfig \
     && ffprobe -version
 
-# 复制构建好的完整python环境
 COPY --from=builder /usr/local /usr/local
 
-# 复制项目文件
 COPY src/ ./src/
 COPY demo.txt alias.txt blacklist.txt ./
 COPY entrypoint.sh ./
 
-# 初始化目录+授权
 RUN mkdir -p /app/data /app/output && chmod +x /app/entrypoint.sh
 
-# 环境变量不变
 ENV AUTONOMOUS_MODE=true \
     FFMPEG_ENABLE=true \
     MAX_WORKERS=20 \
