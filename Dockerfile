@@ -1,49 +1,47 @@
-# ===================== 构建阶段 =====================
+# Dockerfile（优化版）
 FROM python:3.11-slim-bookworm AS builder
 
 WORKDIR /app
 
-RUN apt-get update && apt-get install -y --no-install-recommends gcc \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
+# 安装编译依赖（仅构建阶段）
+RUN apt-get update && apt-get install -y --no-install-recommends gcc && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt .
+# 使用国内镜像源加速，并清理 pip 缓存
+RUN pip install --no-cache-dir -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple --trusted-host pypi.tuna.tsinghua.edu.cn && \
+    pip cache purge
 
-RUN pip install --no-cache-dir -r requirements.txt \
-    -i https://pypi.tuna.tsinghua.edu.cn/simple --trusted-host pypi.tuna.tsinghua.edu.cn \
-    && find /usr/local/lib/python3.11 \
-    \( -name "__pycache__" -o -name "*.pyc" -o -name "*.pyo" -o -name "*.dist-info" -o -name "*.egg-info" -o -name "tests" -o -name "docs" -o -name "examples" -o -name "test" \) \
-    -exec rm -rf {} + || true
-
-# ===================== 运行阶段 =====================
+# ===== 运行时镜像 =====
 FROM python:3.11-slim-bookworm
 
 WORKDIR /app
 
-# 只装ffmpeg，ffprobe自带，删除大量系统冗余
-RUN apt-get update && apt-get install -y --no-install-recommends ffmpeg \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/* \
-    # 系统无用资源批量删除
-    && rm -rf /usr/share/doc /usr/share/man /usr/share/locale /usr/share/info /usr/share/groff /usr/share/lintian \
-    && rm -rf /var/cache/* /var/log/* /tmp/* \
-    && rm -rf /usr/include /usr/lib/gcc /usr/lib/pkgconfig \
-    && ffprobe -version
+# 安装运行时依赖（ffmpeg、curl），并清理缓存
+RUN apt-get update && apt-get install -y --no-install-recommends ffmpeg curl && \
+    apt-get clean && rm -rf /var/lib/apt/lists/* && \
+    ffprobe -version
 
-COPY --from=builder /usr/local /usr/local
+# 从构建阶段复制已安装的 Python 包（排除 .pyc 和 __pycache__）
+COPY --from=builder /usr/local/lib/python3.11/site-packages /usr/local/lib/python3.11/site-packages
+COPY --from=builder /usr/local/bin /usr/local/bin
 
+# 复制项目文件（只复制必要的源码和配置文件）
 COPY src/ ./src/
 COPY demo.txt alias.txt blacklist.txt ./
 COPY entrypoint.sh ./
 
-RUN mkdir -p /app/data /app/output && chmod +x /app/entrypoint.sh
+# 创建数据目录
+RUN mkdir -p /app/data /app/output
 
+# 设置环境变量（可被 docker-compose 覆盖）
 ENV AUTONOMOUS_MODE=true \
     FFMPEG_ENABLE=true \
     MAX_WORKERS=20 \
     TIMEOUT=8 \
     CACHE_HOURS=24 \
     CACHE_RAW_HOURS=48 \
+    CACHE_SPEED_HOURS=24 \
     ENABLE_INCREMENTAL_FETCH=true \
     ENABLE_DEMO_FILTER=true \
     ENABLE_ALIAS=true \
