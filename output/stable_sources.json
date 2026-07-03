@@ -3274,5 +3274,17 @@
     "last_verified": null,
     "fail_count": 0,
     "status": "active"
+  },
+  "黑龙江卫视": {
+    "channel_name": "黑龙江卫视",
+    "url": "http://120.245.84.95:1234/738906901",
+    "latency": 0,
+    "video_codec": "",
+    "promoted_at": "2026-07-03T12:41:22.255881",
+    "is_fixed": true,
+    "auto_optimize": true,
+    "last_verified": null,
+    "fail_count": 0,
+    "status": "active"
   }
 }

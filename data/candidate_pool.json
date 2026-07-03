@@ -25906,5 +25906,89 @@
     "last_check": "2026-07-03T09:08:45.964879",
     "status": "observing",
     "promoted_at": null
+  },
+  "63c7f4a80e6348f8532f930b5998d3b6": {
+    "source_key": "63c7f4a80e6348f8532f930b5998d3b6",
+    "channel_name": "CCTV-3",
+    "url": "http://123.129.70.178:9901/tsfile/live/0003_1.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "32e5a184e932ff9ebc86e5b19cf8f0b5": {
+    "source_key": "32e5a184e932ff9ebc86e5b19cf8f0b5",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1783126800-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-aa1dbd752ebfb02452ee2c4312847948&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "905f876edc47e33471572926f90d88e7": {
+    "source_key": "905f876edc47e33471572926f90d88e7",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-e6b1c5baf4e240fe63adbf68dda23435.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=1ddaddefaaa07e05eda4243b484f4eae",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "471ac3868cf48b30821e993e5a9db5ff": {
+    "source_key": "471ac3868cf48b30821e993e5a9db5ff",
+    "channel_name": "浙江新闻",
+    "url": "http://ali-m-l.cztv.com/channels/lantian/channel007/720p.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "224e1999c68f6c42b4b38bdf9e19704c": {
+    "source_key": "224e1999c68f6c42b4b38bdf9e19704c",
+    "channel_name": "内蒙古卫视",
+    "url": "http://120.76.248.139/live/bfgd/4200000110.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "09641d342ea22ecb31f4bf4441af8b38": {
+    "source_key": "09641d342ea22ecb31f4bf4441af8b38",
+    "channel_name": "广东体育",
+    "url": "http://cdn2.163189.xyz/live/gdty/stream.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "9b819c24d94e992d56cbfafc2d72df97": {
+    "source_key": "9b819c24d94e992d56cbfafc2d72df97",
+    "channel_name": "浙江钱江都市",
+    "url": "http://ali-xwl.cztv.com/live/channel02720Plxw.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
