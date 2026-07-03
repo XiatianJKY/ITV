@@ -72,7 +72,7 @@ class CandidateObserver:
             logger.info(f"📝 批量添加 {added} 个候选源")
     
     async def check_candidate_from_cache(self, source_key: str, db) -> bool:
-        """从缓存检查单个候选源，带异常捕获"""
+        """从数据库候选池表检查单个候选源，判断是否达到稳定标准"""
         obs = self._observations.get(source_key)
         if not obs:
             return False
@@ -80,32 +80,42 @@ class CandidateObserver:
             return obs.status == CandidateStatus.STABLE
         
         try:
-            key = channel_key(obs.channel_name, obs.url)
-            # 超时控制，避免某个查询卡死
-            cached = await asyncio.wait_for(db.get_speed_result(key), timeout=2.0)
+            # 从 candidate_pool 表获取累计统计
+            cursor = await db._conn.execute(
+                "SELECT success_count, fail_count, avg_latency FROM candidate_pool WHERE channel_key = ?",
+                (source_key,)
+            )
+            row = await cursor.fetchone()
+            await cursor.close()
             
-            obs.check_count += 1
-            obs.last_check = datetime.now()
-            
-            if cached and cached.get("latency", 9999) < 5000:
-                obs.success_count += 1
-                obs.total_latency += cached.get("latency", 0)
-            else:
-                obs.fail_count += 1
-            
-            if obs.check_count >= self.MIN_SUCCESS_COUNT:
-                if (obs.success_rate >= self.MIN_SUCCESS_RATE and 
-                    obs.avg_latency <= self.MAX_AVG_LATENCY):
+            if row:
+                sc, fc, avg = row
+                # 更新内存中的统计（仅用于判断，不保存到 JSON，因为 JSON 只存状态）
+                obs.success_count = sc
+                obs.fail_count = fc
+                obs.avg_latency = avg
+                obs.check_count = sc + fc
+                obs.last_check = datetime.now()
+                
+                # 判断是否达到稳定标准
+                if obs.check_count >= self.MIN_SUCCESS_COUNT and \
+                   obs.success_rate >= self.MIN_SUCCESS_RATE and \
+                   obs.avg_latency <= self.MAX_AVG_LATENCY:
                     obs.status = CandidateStatus.STABLE
-                    self._save()
+                    self._save()  # 更新 JSON 中的状态
+                    logger.info(f"✅ 候选源稳定: {obs.channel_name} (成功率 {obs.success_rate:.2%}, 延迟 {obs.avg_latency}ms, 检查 {obs.check_count} 次)")
                     return True
-            self._save()
-            return obs.status == CandidateStatus.STABLE
-        except asyncio.TimeoutError:
-            logger.debug(f"⏱️ 检查 {obs.channel_name} 超时，跳过")
+                else:
+                    # 未达标，但记录一下日志（调试用）
+                    if obs.check_count % 10 == 0:
+                        logger.debug(f"候选源 {obs.channel_name} 未达标: 成功率 {obs.success_rate:.2%}, 延迟 {obs.avg_latency}ms, 检查 {obs.check_count} 次")
+            else:
+                # 数据库中没有该候选源的记录，可能是刚添加的，等待测速
+                pass
+                
             return False
         except Exception as e:
-            logger.warning(f"检查 {obs.channel_name} 异常: {e}")
+            logger.warning(f"检查候选源 {obs.channel_name} 异常: {e}")
             return False
     
     async def observe_batch_from_cache(self, batch_size: int = 3000) -> List[ObservationResult]:
@@ -117,8 +127,8 @@ class CandidateObserver:
         if not observing:
             return []
         
-        # 按检查次数排序
-        observing.sort(key=lambda x: x[1].check_count)
+        # 按添加时间排序（先添加的先观察）
+        observing.sort(key=lambda x: x[1].discovered_at)
         batch = observing[:batch_size]
         
         logger.info(f"🔍 本次观察 {len(batch)} 个候选源（共 {len(observing)} 个待观察）...")
@@ -128,7 +138,6 @@ class CandidateObserver:
         processed = 0
         last_log = 0
         
-        # 直接遍历，单个检查已内部超时，整体超时由外部 asyncio.wait_for 控制
         for key, obs in batch:
             if await self.check_candidate_from_cache(key, db):
                 stable_results.append(obs)
