@@ -46,15 +46,16 @@ from src.logger import logger
 # 新增：新源集成
 from src.hmtj_source import integrate_hmtj_source
 
-# 原有导入
-from src.iptv_org_adapter import get_iptv_org_adapter
-from src.global_channels import get_global_selector
-from src.generator_enhanced import EnhancedOutputGenerator
-from src.overseas_filter import process_overseas_channels
+# 新增：智能补充采集（abc123 源）
 from src.special_categories import collect_and_append_special_categories
 
+# 增强输出
+from src.generator_enhanced import EnhancedOutputGenerator
 
-# ========== 传统模式（完整采集） ==========
+# ========== 注意：已移除 iptv_org_adapter、global_channels、overseas_filter ==========
+
+
+# ========== 传统模式 ==========
 async def run_legacy_mode():
     logger.info("🚀 IPTV 智能整理平台启动 (传统模式)")
     logger.info(f"📡 配置：超时={TIMEOUT}s, 并发={MAX_WORKERS}, ffmpeg={FFMPEG_ENABLE}")
@@ -71,7 +72,7 @@ async def run_legacy_mode():
     raw_contents = {}
     last_update = await db.get_last_update_time() if DATABASE_ENABLE else None
     is_fresh = last_update and (datetime.datetime.now().timestamp() - last_update) < CACHE_RAW_HOURS * 3600
-    
+
     if is_fresh and ENABLE_INCREMENTAL_FETCH:
         logger.info("⚡ 启用增量更新模式（缓存有效）")
         for url in IPTV_SOURCES:
@@ -138,26 +139,17 @@ async def run_legacy_mode():
         logger.error("❌ 过滤后无有效频道")
         return 1
 
-    # ===== 新增：集成新源（http://1080p.19860519.de5.net/live.m3u） =====
+    # ===== 集成新源 =====
     try:
         hmtj_classified = await integrate_hmtj_source()
-        # hmtj_classified 格式: {'央视': [...], '卫视': [...], '地方': [...], '体育赛事': [...]}
         if hmtj_classified:
-            # 将分类后的频道追加到 ordered_channels
             for cat, channels in hmtj_classified.items():
                 for ch in channels:
-                    # 确保频道对象包含 demo_category 属性，用于输出分类
                     ch["demo_category"] = cat
                     ordered_channels.append(ch)
                 logger.info(f"🌐 从新源追加 {len(channels)} 个频道到分类 [{cat}]")
     except Exception as e:
         logger.warning(f"⚠️ 集成新源失败: {e}")
-
-    # 全球频道扩展（原有）
-    if ENABLE_GLOBAL_CHANNELS:
-        logger.info("🌍 正在合并全球频道...")
-        global_selector = get_global_selector()
-        ordered_channels = await global_selector.merge_with_domestic(ordered_channels)
 
     # 最终分类统计
     cat_counter = Counter(ch.get("demo_category", "其他") for ch in ordered_channels)
@@ -165,24 +157,19 @@ async def run_legacy_mode():
     for cat, cnt in cat_counter.items():
         logger.info(f"  {cat}: {cnt} 个频道")
 
-    # 生成输出文件（标准 + 增强）
+    # 生成输出
     generate_outputs_from_demo(ordered_channels, demo_order)
 
     output_gen = EnhancedOutputGenerator()
     output_gen.generate_all_outputs(
-        ordered_channels, 
+        ordered_channels,
         demo_order,
         enable_json=ENABLE_JSON_OUTPUT,
         enable_lite=ENABLE_LITE_VERSION,
         enable_epg=ENABLE_EPG_OUTPUT
     )
 
-    # 处理国外频道（原有）
-    if ENABLE_DEMO_FILTER and unmatched_channels:
-        logger.info(f"🌍 正在处理 {len(unmatched_channels)} 个未匹配频道...")
-        process_overseas_channels(unmatched_channels, OUTPUT_DIR)
-
-    # 智能补充采集（abc123 源）
+    # 智能补充采集
     special_stats = {}
     try:
         special_stats = await collect_and_append_special_categories(OUTPUT_DIR, db)
@@ -194,7 +181,7 @@ async def run_legacy_mode():
     total = len(ordered_channels)
     logger.info(f"🎉 完成！有效频道总数: {total}")
 
-    # 保存统计信息
+    # 保存统计
     stats = {
         "total_channels": total,
         "timestamp": datetime.datetime.now().isoformat(),
@@ -207,7 +194,7 @@ async def run_legacy_mode():
     }
     if special_stats:
         stats["special_categories"] = special_stats
-    
+
     stats_path = OUTPUT_DIR / "stats.json"
     with open(stats_path, "w", encoding="utf-8") as f:
         json.dump(stats, f, indent=2, ensure_ascii=False)
