@@ -97,6 +97,31 @@ CANDIDATE_MIN_SUCCESS = int(os.getenv("CANDIDATE_MIN_SUCCESS", 10))
 CANDIDATE_MIN_SUCCESS_RATE = float(os.getenv("CANDIDATE_MIN_SUCCESS_RATE", 0.8))
 CANDIDATE_MAX_LATENCY = int(os.getenv("CANDIDATE_MAX_LATENCY", 2000))
 
+# ========== 测速与黑名单 ==========
+HTTP_TIMEOUT = int(os.getenv("HTTP_TIMEOUT", 8))
+MAX_RETRY_BEFORE_BLACKLIST = 2
+SLOW_SPEED_THRESHOLD = 3000
+
+# ========== 自治模式 ==========
+AUTONOMOUS_MODE = os.getenv("AUTONOMOUS_MODE", "false").lower() == "true"
+AUTO_UPDATE_STABLE = os.getenv("AUTO_UPDATE_STABLE", "true").lower() == "true"
+AUTO_REPLACE_FAILED = os.getenv("AUTO_REPLACE_FAILED", "true").lower() == "true"
+QUALITY_CHECK_INTERVAL = int(os.getenv("QUALITY_CHECK_INTERVAL", 24))
+CANDIDATE_OBSERVATION_HOURS = int(os.getenv("CANDIDATE_OBSERVATION_HOURS", 24))
+CANDIDATE_MIN_SUCCESS = int(os.getenv("CANDIDATE_MIN_SUCCESS", 10))
+CANDIDATE_MIN_SUCCESS_RATE = float(os.getenv("CANDIDATE_MIN_SUCCESS_RATE", 0.8))
+CANDIDATE_MAX_LATENCY = int(os.getenv("CANDIDATE_MAX_LATENCY", 2000))
+
+# ========== 补充自治及数据库参数 ==========
+AUTO_PROMOTE_THRESHOLD = int(os.getenv("AUTO_PROMOTE_THRESHOLD", 3))
+CANDIDATE_MAX_AGE_HOURS = int(os.getenv("CANDIDATE_MAX_AGE_HOURS", 72))
+ENABLE_BLOOM_FILTER = os.getenv("ENABLE_BLOOM_FILTER", "true").lower() == "true"
+BLOOM_FILTER_CAPACITY = int(os.getenv("BLOOM_FILTER_CAPACITY", 100000))
+
+# ========== 健康度预测 ==========
+HEALTH_HISTORY_DAYS = int(os.getenv("HEALTH_HISTORY_DAYS", 30))
+PREDICT_THRESHOLD = float(os.getenv("PREDICT_THRESHOLD", 0.6))
+
 # 测速与黑名单
 HTTP_TIMEOUT = int(os.getenv("HTTP_TIMEOUT", 8))
 MAX_RETRY_BEFORE_BLACKLIST = 2
