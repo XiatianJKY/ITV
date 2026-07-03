@@ -27,6 +27,7 @@ from src.config import (
     ENABLE_INCREMENTAL_FETCH,
     CACHE_RAW_HOURS,
     AUTONOMOUS_MODE,
+    ENABLE_FIXED_OPTIMIZATION,
 )
 from src.fetcher import fetch_all_sources_incremental
 from src.parser import parse_and_dedupe
@@ -42,17 +43,8 @@ from src.demo_filter import (
 )
 from src.database import get_db_cache
 from src.logger import logger
-
-# 新增：新源集成
 from src.hmtj_source import integrate_hmtj_source
-
-# 新增：智能补充采集（abc123 源）
 from src.special_categories import collect_and_append_special_categories
-
-# 增强输出
-from src.generator_enhanced import EnhancedOutputGenerator
-
-# ========== 注意：已移除 iptv_org_adapter、global_channels、overseas_filter ==========
 
 
 # ========== 传统模式 ==========
@@ -115,6 +107,66 @@ async def run_legacy_mode():
     merged_channels = merge_channels_by_name(valid_channels)
     logger.info(f"📊 合并后的频道数: {len(merged_channels)}")
 
+    # ========== 固定源动态优化 ==========
+    if ENABLE_FIXED_OPTIMIZATION:
+        try:
+            from src.stable.manager import StableManager
+            from src.candidate.observer import CandidateObserver
+            import json
+            from pathlib import Path
+
+            data_dir = Path("data")
+            all_sources_by_channel = {}
+
+            # 加载源池
+            source_pool_file = data_dir / "source_pool.json"
+            if source_pool_file.exists():
+                with open(source_pool_file, 'r') as f:
+                    source_pool = json.load(f)
+                for src in source_pool.values():
+                    ch = src.get('channel_name')
+                    if not ch:
+                        continue
+                    if ch not in all_sources_by_channel:
+                        all_sources_by_channel[ch] = []
+                    all_sources_by_channel[ch].append({
+                        'url': src.get('url'),
+                        'latency': src.get('latency', 0),
+                        'success_count': src.get('success_count', 0),
+                        'fail_count': src.get('fail_count', 0),
+                        'video_codec': src.get('video_codec', '')
+                    })
+
+            # 加载候选池
+            candidate_pool_file = data_dir / "candidate_pool.json"
+            if candidate_pool_file.exists():
+                with open(candidate_pool_file, 'r') as f:
+                    candidate_pool = json.load(f)
+                for obs in candidate_pool.values():
+                    ch = obs.get('channel_name')
+                    if not ch:
+                        continue
+                    if ch not in all_sources_by_channel:
+                        all_sources_by_channel[ch] = []
+                    lat = obs.get('avg_latency', 0)
+                    if lat == 0:
+                        lat = obs.get('total_latency', 0) // max(1, obs.get('success_count', 1))
+                    all_sources_by_channel[ch].append({
+                        'url': obs.get('url'),
+                        'latency': lat,
+                        'success_count': obs.get('success_count', 0),
+                        'fail_count': obs.get('fail_count', 0),
+                        'video_codec': obs.get('video_codec', '')
+                    })
+
+            stable_mgr = StableManager()
+            candidate_observer = CandidateObserver()
+            optimized = stable_mgr.optimize_fixed_sources(all_sources_by_channel, candidate_observer)
+            if optimized > 0:
+                logger.info(f"📌 固定源优化完成: 替换了 {optimized} 个固定源")
+        except Exception as e:
+            logger.warning(f"⚠️ 固定源优化失败: {e}")
+
     if ENABLE_BLACKLIST:
         blacklist_filter = get_blacklist_filter()
         before = len(merged_channels)
@@ -139,9 +191,8 @@ async def run_legacy_mode():
         logger.error("❌ 过滤后无有效频道")
         return 1
 
-       # ===== 集成新源：央视/卫视/地方存入固定源，体育赛事追加输出 =====
+    # ===== 集成新源：央视/卫视/地方存入固定源，体育赛事追加输出 =====
     try:
-        from src.hmtj_source import integrate_hmtj_source
         from src.stable.manager import StableManager
         hmtj_classified = await integrate_hmtj_source()
         if hmtj_classified:
@@ -158,7 +209,7 @@ async def run_legacy_mode():
                             existing = stable_mgr.stable_sources.get(name)
                             if existing and existing.is_fixed:
                                 continue
-                            if stable_mgr.set_fixed_source(name, url):
+                            if stable_mgr.set_fixed_source(name, url, auto_optimize=True):
                                 fixed_count += 1
                                 logger.info(f"📌 从新源固定: {name}")
                     total_fixed += fixed_count
@@ -179,19 +230,10 @@ async def run_legacy_mode():
     for cat, cnt in cat_counter.items():
         logger.info(f"  {cat}: {cnt} 个频道")
 
-    # 生成输出
+    # 生成基础输出
     generate_outputs_from_demo(ordered_channels, demo_order)
 
-    output_gen = EnhancedOutputGenerator()
-    output_gen.generate_all_outputs(
-        ordered_channels,
-        demo_order,
-        enable_json=ENABLE_JSON_OUTPUT,
-        enable_lite=ENABLE_LITE_VERSION,
-        enable_epg=ENABLE_EPG_OUTPUT
-    )
-
-    # 智能补充采集
+    # 智能补充采集（可选项）
     special_stats = {}
     try:
         special_stats = await collect_and_append_special_categories(OUTPUT_DIR, db)
