@@ -40,7 +40,6 @@ IPTV_SOURCES = []
 for src in RAW_SOURCES:
     IPTV_SOURCES.append(PROXY + src if PROXY else src)
 IPTV_SOURCES.extend(DIRECT_SOURCES)
-IPTV_SOURCES.extend(JP_SOURCES)
 
 # ========== 性能配置 ==========
 MAX_WORKERS = int(os.getenv("MAX_WORKERS", 20))
