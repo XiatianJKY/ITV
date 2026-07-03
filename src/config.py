@@ -127,6 +127,14 @@ BLOOM_FILTER_CAPACITY = int(os.getenv("BLOOM_FILTER_CAPACITY", 100000))
 HEALTH_HISTORY_DAYS = int(os.getenv("HEALTH_HISTORY_DAYS", 30))
 PREDICT_THRESHOLD = float(os.getenv("PREDICT_THRESHOLD", 0.6))
 
+# ========== 下载与测速配置 ==========
+DOWNLOAD_CHUNK_SIZE = 262144  # 256KB，用于快速探测流内容
+PROGRESS_UPDATE_INTERVAL = 1.0  # 进度更新间隔（秒）
+
+# ========== 候选池与自动提升 ==========
+CANDIDATE_MAX_AGE_HOURS = 72
+AUTO_PROMOTE_THRESHOLD = 3
+
 # 测速与黑名单
 HTTP_TIMEOUT = int(os.getenv("HTTP_TIMEOUT", 8))
 MAX_RETRY_BEFORE_BLACKLIST = 2
