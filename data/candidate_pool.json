@@ -26086,5 +26086,29 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "5299a2d7924e0fe0a38ef9b7b82d4732": {
+    "source_key": "5299a2d7924e0fe0a38ef9b7b82d4732",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-702cae17a28d6e4f0c0002bba021d934.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=ea61a336dca79d8297e7e2bd6df215ca",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "75a2efb2cd6116b1e08758ce55e2a32b": {
+    "source_key": "75a2efb2cd6116b1e08758ce55e2a32b",
+    "channel_name": "CCTV-16",
+    "url": "https://piccpndks.v.kcdnvip.com/audio/cctv16_2/index.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
