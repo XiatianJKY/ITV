@@ -26218,5 +26218,65 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "17c89a1c41cb60e3f5850d90bb80695d": {
+    "source_key": "17c89a1c41cb60e3f5850d90bb80695d",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1783209600-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-a55f985f165777ead60e5f986d33c0ca&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "5cbac93829001d333ef76a34a37b3c5d": {
+    "source_key": "5cbac93829001d333ef76a34a37b3c5d",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1783209600-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-33b241acb62104e74bd3b6f048db5f22&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "6fc47968e3fe51cf40b004e0f4150da1": {
+    "source_key": "6fc47968e3fe51cf40b004e0f4150da1",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-702cae17a28d6e4f0c0002bba021d934.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=773052fb1b2897e77f9849021c2f500f",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "9a315969c733651e6668a962ab8cdf47": {
+    "source_key": "9a315969c733651e6668a962ab8cdf47",
+    "channel_name": "CCTV-12",
+    "url": "http://112.46.85.60:8009/hls/507/index.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "d2990ee16c9c22a75e969c2f990d3c42": {
+    "source_key": "d2990ee16c9c22a75e969c2f990d3c42",
+    "channel_name": "浙江民生休闲",
+    "url": "http://ali-xwl.cztv.com/live/channel061080Plxw.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
