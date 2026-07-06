@@ -26746,5 +26746,101 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "59e6b84e75dd6d3d32da27678b1e73f1": {
+    "source_key": "59e6b84e75dd6d3d32da27678b1e73f1",
+    "channel_name": "CCTV-1",
+    "url": "http://182.114.50.61:9901/tsfile/live/0001_1.m3u8?key=txiptv&playlive=1&authid=0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "35e7cbbf0a82ae67dfa2bfe83e87a9ed": {
+    "source_key": "35e7cbbf0a82ae67dfa2bfe83e87a9ed",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1783377900-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-52792628028a9150dc551266fff96f4c&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "5e6d88759e2407f0e43fde53a25ab6aa": {
+    "source_key": "5e6d88759e2407f0e43fde53a25ab6aa",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1783377900-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-a33520b3d522771d7411a5cb16872c51&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "89ab8e3cd236ffe8429f68f471497461": {
+    "source_key": "89ab8e3cd236ffe8429f68f471497461",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-e6b1c5baf4e240fe63adbf68dda23435.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=1c84c77be1d4059c8bcee51780cc628a",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "ce571866c56934f541eb9560bd0eba21": {
+    "source_key": "ce571866c56934f541eb9560bd0eba21",
+    "channel_name": "CCTV-17",
+    "url": "http://123.130.84.106:8154/tsfile/live/0019_1.m3u8?key=txiptv&playlive=1&authid=0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "1005c23c8b9b88abbbfc2782473701e1": {
+    "source_key": "1005c23c8b9b88abbbfc2782473701e1",
+    "channel_name": "深圳卫视4K",
+    "url": "http://nn.7x9d.cn/深圳最新.php?id=szws4k",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "66c60b986086a99ee592df32eced0545": {
+    "source_key": "66c60b986086a99ee592df32eced0545",
+    "channel_name": "广东珠江",
+    "url": "http://r.jdshipin.com/sE5vO",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "cbf61c53fcc466a1ee676203b54b68c7": {
+    "source_key": "cbf61c53fcc466a1ee676203b54b68c7",
+    "channel_name": "洛阳科教",
+    "url": "http://devlivepull.migucloud.com/live/A2HVH5BQ_C0.flv",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
