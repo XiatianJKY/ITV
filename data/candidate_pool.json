@@ -27178,5 +27178,101 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "dcde8ed1695fe8b8f1e988ca72219cbc": {
+    "source_key": "dcde8ed1695fe8b8f1e988ca72219cbc",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1783497600-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-de70a18a8ac77af632602daf6fbb5839&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "0910746a023b4a04d621c5dea8e69eee": {
+    "source_key": "0910746a023b4a04d621c5dea8e69eee",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1783497600-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-743c3f93634c4fa459d0323a8426d2f5&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "2719e036a4f778792e245bc4701bbb18": {
+    "source_key": "2719e036a4f778792e245bc4701bbb18",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-702cae17a28d6e4f0c0002bba021d934.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=2d3f3a401985ba63d4fa711c13d95cdd",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "d38d90dcb134a21979327c7df2df1e97": {
+    "source_key": "d38d90dcb134a21979327c7df2df1e97",
+    "channel_name": "浙江新闻",
+    "url": "http://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "71c2cd8b9b6d586d722c0b84347f0bc7": {
+    "source_key": "71c2cd8b9b6d586d722c0b84347f0bc7",
+    "channel_name": "CCTV-5+",
+    "url": "http://183.129.255.66:8480/hls/6/index.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "1de316639ae0da8a3b2be073217ffba8": {
+    "source_key": "1de316639ae0da8a3b2be073217ffba8",
+    "channel_name": "吉林卫视",
+    "url": "http://223.75.149.129:9906/tsfile/live/0116_1.m3u8?key=txiptv",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "feca2fc1a4863d72c294db899d590692": {
+    "source_key": "feca2fc1a4863d72c294db899d590692",
+    "channel_name": "广西卫视",
+    "url": "https://hlscdn.liangtv.cn/live/de0f97348eb84f62aa6b7d8cf0430770/dd505d87880c478f901f38560ca4d4e6.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "92fdf8ee03a5319b88b0606e74ff2e6c": {
+    "source_key": "92fdf8ee03a5319b88b0606e74ff2e6c",
+    "channel_name": "甘肃卫视",
+    "url": "http://live.zohi.tv/video/s10001-fztv-3/index.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
