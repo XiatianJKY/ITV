@@ -26986,5 +26986,89 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "a31fe97b8ce6c9e77a40db8b0eb8d6dd": {
+    "source_key": "a31fe97b8ce6c9e77a40db8b0eb8d6dd",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1783461600-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-7c5b9826228d8e66ffedb96e4919fc34&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "48a9fd66d266766b40a483ec781c137b": {
+    "source_key": "48a9fd66d266766b40a483ec781c137b",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1783461600-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-a1c87be3ace1b31686c96818d93d269f&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "ddf60166e43d99f631ea2cdfdd68d2d2": {
+    "source_key": "ddf60166e43d99f631ea2cdfdd68d2d2",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-702cae17a28d6e4f0c0002bba021d934.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=abd3add0705abfb0af286f9ee8048b57",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "a87c73d056bbd0da01241ce6bff66b25": {
+    "source_key": "a87c73d056bbd0da01241ce6bff66b25",
+    "channel_name": "延边卫视",
+    "url": "http://l.cztvcloud.com/channels/lantian/SXxinchang2/720p.m3u8#",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "7dee6febc1eafee84a862c6441dd3422": {
+    "source_key": "7dee6febc1eafee84a862c6441dd3422",
+    "channel_name": "浙江教科影视",
+    "url": "http://ali-xwl.cztv.com/live/channel041080Plxw.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "f2b1dc2bf6e72f05a3f8ede904a091cb": {
+    "source_key": "f2b1dc2bf6e72f05a3f8ede904a091cb",
+    "channel_name": "福建旅游",
+    "url": "https://live.264788.xyz/channel/fujianlvyou?streamid=fc58882de71ce4575b66002f2475226b&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "c7348fcd36e6d27696cccc675a93e702": {
+    "source_key": "c7348fcd36e6d27696cccc675a93e702",
+    "channel_name": "TVB Plus",
+    "url": "http://r.jdshipin.com/ndGgS",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
