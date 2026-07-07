@@ -27070,5 +27070,113 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "884dbd9a88c406bfe919431bbd5011a1": {
+    "source_key": "884dbd9a88c406bfe919431bbd5011a1",
+    "channel_name": "CCTV-2",
+    "url": "http://60.10.139.113:8801/hls/2/index.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "497c380424065bd19cb5292df3c118ed": {
+    "source_key": "497c380424065bd19cb5292df3c118ed",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1783483200-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-010370ffc1cbdc1f907c3fb0ffdd8fde&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "54d62827caad922611517cf26f0c9443": {
+    "source_key": "54d62827caad922611517cf26f0c9443",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1783483200-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-d2298587c2a599cf2cb9526c08fdc583&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "41da2cdd096328aa91d57d81ce97926d": {
+    "source_key": "41da2cdd096328aa91d57d81ce97926d",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-702cae17a28d6e4f0c0002bba021d934.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=abf838cd9717ed3eef45ead380484351",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "e2d21efbf9b3ef37e8d3c2e742621623": {
+    "source_key": "e2d21efbf9b3ef37e8d3c2e742621623",
+    "channel_name": "三沙卫视",
+    "url": "http://221.226.51.220:50081/newlive/live/hls/38/live.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "4a4d7600186c9ccba93fb146450e794f": {
+    "source_key": "4a4d7600186c9ccba93fb146450e794f",
+    "channel_name": "新疆卫视",
+    "url": "http://123.163.114.168:9901/tsfile/live/0110_1.m3u8?key=txiptv&playlive=1&authid=0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "9a00e4e696032a60bf721604d29db827": {
+    "source_key": "9a00e4e696032a60bf721604d29db827",
+    "channel_name": "青海卫视",
+    "url": "http://123.163.114.168:9901/tsfile/live/0140_1.m3u8?key=txiptv&playlive=1&authid=0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "fe306bbccbcdbd99552134d0cca0dfc0": {
+    "source_key": "fe306bbccbcdbd99552134d0cca0dfc0",
+    "channel_name": "浙江经济生活",
+    "url": "http://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "ba9ce4c9e0e8175c772807bd6bb39fd6": {
+    "source_key": "ba9ce4c9e0e8175c772807bd6bb39fd6",
+    "channel_name": "华丽翡翠台",
+    "url": "http://r.jdshipin.com/thuYX",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
