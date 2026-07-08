@@ -27274,5 +27274,77 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "6a027fe5dd9538f11a088ceef4db3a38": {
+    "source_key": "6a027fe5dd9538f11a088ceef4db3a38",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-702cae17a28d6e4f0c0002bba021d934.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=b8809a80dce8d27eb532686ba3700c1c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "be46d1d5d26ddc62ac47f79caaf15185": {
+    "source_key": "be46d1d5d26ddc62ac47f79caaf15185",
+    "channel_name": "CCTV-13",
+    "url": "http://ali-m-l.cztv.com/channels/lantian/channel21/1080p.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "46d41eeeac729c747c9ccd166417445d": {
+    "source_key": "46d41eeeac729c747c9ccd166417445d",
+    "channel_name": "CGTN Spanish (1080p)",
+    "url": "http://45.6.4.35/CGTN/index.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "9fbad703f11a9a0acdf908b15b12bd32": {
+    "source_key": "9fbad703f11a9a0acdf908b15b12bd32",
+    "channel_name": "大湾区卫视",
+    "url": "http://183.11.239.36:808/hls/132/index.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "ee6d2c17433e0491c277093123b06d4b": {
+    "source_key": "ee6d2c17433e0491c277093123b06d4b",
+    "channel_name": "辽宁卫视",
+    "url": "http://183.11.239.36:808/hls/47/index.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "68f47af133f7826997b2da928ac51d31": {
+    "source_key": "68f47af133f7826997b2da928ac51d31",
+    "channel_name": "青海卫视",
+    "url": "http://123.130.84.106:8154/tsfile/live/0140_1.m3u8?key=txiptv&playlive=1&authid=0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }

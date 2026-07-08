@@ -1,6 +1,6 @@
 #EXTM3U
 #EXTINF:-1 group-title="📺央视频道",CCTV-1
-http://198.204.240.250:82/live/cctv1.m3u8
+http://112.27.235.94:8000/hls/1/index.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-2
 http://74.91.26.218:82/live/cctv2hd.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-3
@@ -12,7 +12,7 @@ http://112.27.235.94:8000/hls/5/index.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-5+
 http://ottproxy2.ist.ooo/livehls/MOB-U1-NO/03.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-6
-http://69.30.245.50/live/cctv6.m3u8
+http://198.204.240.250:82/live/cctv6.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-7
 http://74.91.26.218:82/live/cctv7hd.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-8
@@ -30,7 +30,7 @@ http://112.27.235.94:8000/hls/14/index.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-14
 http://74.91.26.218:82/live/cctv14hd.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-15
-http://45.192.97.170:8880/play/16.m3u8
+https://xykt-fix.github.io/play/a02e/index.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-16
 http://183.11.239.36:808/hls/169/index.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-17
@@ -42,7 +42,7 @@ http://45.192.97.170:8880/play/19.m3u8
 #EXTINF:-1 group-title="📺央视频道",老故事
 http://112.27.235.94:8000/hls/50/index.m3u8
 #EXTINF:-1 group-title="📺央视频道",CGTN
-http://217.20.112.199:8080/cgtn/index.m3u8
+https://english-livebkali.cgtn.com/live/encgtn.m3u8
 #EXTINF:-1 group-title="📺央视频道",CGTN纪录
 https://english-livebkali.cgtn.com/live/doccgtn_0.m3u8
 #EXTINF:-1 group-title="📺央视频道",CGTN阿语
@@ -53,38 +53,54 @@ https://english-livebkali.cgtn.com/live/encgtn_0.m3u8
 https://gcalic.v.myalicdn.com/gc/ztd_1/index.m3u8
 #EXTINF:-1 group-title="📺央视频道",中央电视塔南
 https://gcalic.v.myalicdn.com/gc/ztn_1/index.m3u8
-#EXTINF:-1 group-title="📺央视频道",CHC家庭影院
-http://61.162.52.6:8088/newlive/live/hls/60/live.m3u8
 #EXTINF:-1 group-title="📡卫视频道",广东卫视
 http://112.27.235.94:8000/hls/30/index.m3u8
 #EXTINF:-1 group-title="📡卫视频道",浙江卫视
 http://112.27.235.94:8000/hls/29/index.m3u8
+#EXTINF:-1 group-title="📡卫视频道",湖南卫视
+http://112.27.235.94:8000/hls/31/index.m3u8
 #EXTINF:-1 group-title="📡卫视频道",北京卫视
 http://112.27.235.94:8000/hls/27/index.m3u8
+#EXTINF:-1 group-title="📡卫视频道",湖北卫视
+http://112.27.235.94:8000/hls/41/index.m3u8
+#EXTINF:-1 group-title="📡卫视频道",黑龙江卫视
+http://112.27.235.94:8000/hls/48/index.m3u8
+#EXTINF:-1 group-title="📡卫视频道",安徽卫视
+http://112.27.235.94:8000/hls/26/index.m3u8
+#EXTINF:-1 group-title="📡卫视频道",重庆卫视
+http://112.27.235.94:8000/hls/36/index.m3u8
 #EXTINF:-1 group-title="📡卫视频道",东南卫视
 http://112.27.235.94:8000/hls/38/index.m3u8
-#EXTINF:-1 group-title="📡卫视频道",河北
-https://event.pull.hebtv.com:443/live/live101.m3u8
+#EXTINF:-1 group-title="📡卫视频道",贵州卫视
+http://112.27.235.94:8000/hls/46/index.m3u8
+#EXTINF:-1 group-title="📡卫视频道",河北卫视
+http://112.27.235.94:8000/hls/39/index.m3u8
+#EXTINF:-1 group-title="📡卫视频道",河南卫视
+http://112.27.235.94:8000/hls/37/index.m3u8
 #EXTINF:-1 group-title="📡卫视频道",江西卫视
 http://112.27.235.94:8000/hls/44/index.m3u8
+#EXTINF:-1 group-title="📡卫视频道",辽宁卫视
+http://112.27.235.94:8000/hls/47/index.m3u8
 #EXTINF:-1 group-title="📡卫视频道",内蒙古卫视
 http://112.27.235.94:8000/hls/49/index.m3u8
 #EXTINF:-1 group-title="📡卫视频道",青海卫视
 http://123.163.114.168:9901/tsfile/live/0140_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 group-title="📡卫视频道",山东卫视
 http://112.27.235.94:8000/hls/34/index.m3u8
+#EXTINF:-1 group-title="📡卫视频道",陕西卫视
+http://112.27.235.94:8000/hls/43/index.m3u8
+#EXTINF:-1 group-title="📡卫视频道",陕西卫视
+http://112.27.235.94:8000/hls/43/index.m3u8
 #EXTINF:-1 group-title="📡卫视频道",四川卫视
 http://112.27.235.94:8000/hls/35/index.m3u8
+#EXTINF:-1 group-title="📡卫视频道",深圳卫视
+http://112.27.235.94:8000/hls/33/index.m3u8
 #EXTINF:-1 group-title="📡卫视频道",三沙卫视
 http://221.226.51.220:50081/newlive/live/hls/38/live.m3u8
-#EXTINF:-1 group-title="📡卫视频道",天津卫视
-http://112.27.235.94:8000/hls/42/index.m3u8
 #EXTINF:-1 group-title="📡卫视频道",新疆卫视
 http://123.163.114.168:9901/tsfile/live/0110_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 group-title="📡卫视频道",云南卫视
 http://112.27.235.94:8000/hls/40/index.m3u8
-#EXTINF:-1 group-title="📡卫视频道",上海卫视
-http://112.27.235.94:8000/hls/28/index.m3u8
 #EXTINF:-1 group-title="📡卫视频道",安多卫视
 https://liveout.xntv.tv/a65jur/96iln2.m3u8
 #EXTINF:-1 group-title="📡卫视频道",海峡卫视
@@ -95,18 +111,20 @@ https://video.bread-tv.com:8091/hls-live24/online/index.m3u8
 http://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8
 #EXTINF:-1 group-title="📡卫视频道",人间卫视
 http://61.216.67.119:1935/bltvhd/bltv1/chunklist_w1266569526.m3u
+#EXTINF:-1 group-title="📡卫视频道",深圳卫视
+http://112.27.235.94:8000/hls/33/index.m3u8
 #EXTINF:-1 group-title="📡卫视频道",福州少儿
 http://live.zohi.tv/video/s10001-fztv-4/index.m3u8
 #EXTINF:-1 group-title="☘️北京频道",耀才财经
 https://v3.mediacast.hk/webcast/bshdlive-pc/chunklist_w99771165.m3u8
-#EXTINF:-1 group-title="☘️上海频道",旺苍新闻综合
-http://channel.wcrmt.cn:80/nmip-media/channellive/channel105268/playlist.m3u8
+#EXTINF:-1 group-title="☘️上海频道",武汉一台新闻综合
+https://ls.qingting.fm/live/20198/64k.m3u8
 #EXTINF:-1 group-title="☘️上海频道",普陀山
 https://gcalic.v.myalicdn.com/gc/pts01_1/index.m3u8
-#EXTINF:-1 group-title="☘️天津频道",天津卫视
-http://112.27.235.94:8000/hls/42/index.m3u8
 #EXTINF:-1 group-title="☘️重庆频道",江津新闻
 http://222.179.155.21:1935/ch1.m3u8?zzhongqd
+#EXTINF:-1 group-title="☘️重庆频道",重庆卫视
+http://112.27.235.94:8000/hls/36/index.m3u8
 #EXTINF:-1 group-title="☘️重庆频道",铜梁综合
 http://183.64.174.171:40123/ch1.m3u8?zzhongqd
 #EXTINF:-1 group-title="☘️重庆频道",荣昌综合 [Not 24/7]
@@ -115,10 +133,14 @@ http://183.64.181.25:40023/rongchang01.m3u8
 http://222.179.155.21:1935/ch1.m3u8
 #EXTINF:-1 group-title="☘️广东频道",广东卫视
 http://112.27.235.94:8000/hls/30/index.m3u8
+#EXTINF:-1 group-title="☘️广东频道",广州竞赛
+http://8.138.7.223/tv/gzjs.m3u8
 #EXTINF:-1 group-title="☘️广东频道",泰山白云亭悬崖
 https://gcalic.v.myalicdn.com/gc/hkts02_1/index.m3u8
 #EXTINF:-1 group-title="☘️广东频道",广州综合
 https://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=f0147ae6453a80f5989f382368b72aad&txTime=18d00acf487
+#EXTINF:-1 group-title="☘️广东频道",广州竞赛
+http://8.138.7.223/tv/gzjs.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",浙江钱江频道
 http://ali-m-l.cztv.com/channels/lantian/channel02/1080p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",浙江经济
@@ -129,8 +151,8 @@ http://ali-m-l.cztv.com/channels/lantian/channel04/720p.m3u8
 http://ali-m-l.cztv.com/channels/lantian/channel06/1080p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",浙江少儿
 http://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8
-#EXTINF:-1 group-title="☘️浙江频道",浙江教科影院
-http://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8
+#EXTINF:-1 group-title="☘️浙江频道",浙江教科影视
+http://ali-m-l.cztv.com/channels/lantian/channel04/1080p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",浙江经视
 http://ali-m-l.cztv.com/channels/lantian/channel003/720p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",浙江国际
@@ -163,6 +185,8 @@ http://live.xysrmt.cn/xwzh/sd/live.m3u8?zjiangsd"
 http://live.xysrmt.cn/shpd/sd/live.m3u8?zjiangsd
 #EXTINF:-1 group-title="☘️江苏频道",武进新闻
 https://live.wjyanghu.com/live/CH1.m3u8
+#EXTINF:-1 group-title="☘️江苏频道",江苏徐州云龙湖风景区云龙山观景台西
+https://gcalic.v.myalicdn.com/gc/ylh04_1/index.m3u8
 #EXTINF:-1 group-title="☘️江苏频道",武进生活
 http://live.wjyanghu.com/live/CH2.m3u8
 #EXTINF:-1 group-title="☘️安徽频道",安徽导视
@@ -175,8 +199,14 @@ http://www.guzhenm.com:7001/hls/hd-live.m3u8?%E5%85%B3%E6%B3%A8%E5%BE%AE%E4%BF%A
 https://gcalic.v.myalicdn.com/gc/ahhs01_1/index.m3u8
 #EXTINF:-1 group-title="☘️安徽频道",铜陵新闻综合
 https://ls.qingting.fm/live/21303/64k.m3u8
+#EXTINF:-1 group-title="☘️安徽频道",祁门综合
+http://zbbf2.ahbztv.com/live/416.m3u8?zanhd
 #EXTINF:-1 group-title="☘️安徽频道",七台河新闻综合
 http://live.qthnews.org.cn:1935/live/live1/800k/tzwj_video.m3u8
+#EXTINF:-1 group-title="☘️安徽频道",亳州农村
+http://zbbf2.ahbztv.com/live/418.m3u8?zanhd
+#EXTINF:-1 group-title="☘️安徽频道",RT News
+https://rt-glb.rttv.com/dvr/rtnews/playlist_4500Kb.m3u8
 #EXTINF:-1 group-title="☘️福建频道",三明新闻综合
 https://ls.qingting.fm/live/5022100/64k.m3u8
 #EXTINF:-1 group-title="☘️福建频道",云霄综合
@@ -197,6 +227,8 @@ http://1.94.31.214/php/hntv.php?id=hnxc
 https://ls.qingting.fm/live/20198/64k.m3u8
 #EXTINF:-1 group-title="☘️湖南频道",CHC电影
 http://183.237.95.108:9901/tsfile/live/1008_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 group-title="☘️湖南频道",湖南卫视
+http://112.27.235.94:8000/hls/31/index.m3u8
 #EXTINF:-1 group-title="☘️湖南频道",湖南张家界宝峰湖
 https://gcalic.v.myalicdn.com/gc/zjjbfh_1/index.m3u8
 #EXTINF:-1 group-title="☘️湖南频道",湖南张家界御笔峰
@@ -215,6 +247,8 @@ https://ls.qingting.fm/live/5043/64k.m3u8
 https://hlscdn.liangtv.cn/live/0234c48e0bc24fe1b41b9999a253e581/1075ee38e04f490690f6a36a16e09c79.m3u8
 #EXTINF:-1 group-title="☘️海南频道",天涯石
 https://gcalic.v.myalicdn.com/gc/tyhjtys_1/index.m3u8
+#EXTINF:-1 group-title="☘️四川频道",乐山大佛全景
+https://gcalic.v.myalicdn.com/gc/lsdfgfl_1/index.m3u8
 #EXTINF:-1 group-title="☘️四川频道",乐至综合
 http://175.155.106.72:89/live1/live1.m3u8?zsicd
 #EXTINF:-1 group-title="☘️四川频道",剑阁综合
@@ -231,14 +265,20 @@ http://channel.wcrmt.cn:80/nmip-media/channellive/channel105268/playlist.m3u8
 https://gcalic.v.myalicdn.com/gc/djyqyl1_1/index.m3u8
 #EXTINF:-1 group-title="☘️贵州频道",安顺新闻
 https://ls.qingting.fm/live/5022203/64k.m3u8
+#EXTINF:-1 group-title="☘️贵州频道",贵州卫视
+http://112.27.235.94:8000/hls/46/index.m3u8
 #EXTINF:-1 group-title="☘️贵州频道",贵州省兴义市万峰林
 https://gcalic.v.myalicdn.com/gc/xywfl_1/index.m3u8
 #EXTINF:-1 group-title="☘️云南频道",丽江古城万古楼遥望玉龙雪山
 https://gcalic.v.myalicdn.com/gc/ljgcwglytylxs_1/index.m3u8
+#EXTINF:-1 group-title="☘️云南频道",云南丽江玉龙雪山草甸
+https://gcalic.v.myalicdn.com/gc/hkylxs06_1/index.m3u8
 #EXTINF:-1 group-title="☘️云南频道",云南丽江蓝月谷
 https://gcalic.v.myalicdn.com/gc/ylxs12_1/index.m3u8
 #EXTINF:-1 group-title="☘️云南频道",云南卫视
 http://112.27.235.94:8000/hls/40/index.m3u8
+#EXTINF:-1 group-title="☘️陕西频道",陕西卫视
+http://112.27.235.94:8000/hls/43/index.m3u8
 #EXTINF:-1 group-title="☘️陕西频道",黄龙
 https://gcalic.v.myalicdn.com/gc/hlzycc_1/index.m3u8
 #EXTINF:-1 group-title="☘️陕西频道",黄龙
@@ -269,6 +309,8 @@ http://218.84.12.186:8002/hls/main/playlist.m3u8?zxinjd
 http://112.27.235.94:8000/hls/49/index.m3u8
 #EXTINF:-1 group-title="☘️山西频道",太谷新闻综合
 https://p2.vzan.com/slowlive/596867413819827251/live.m3u8?zbid=1725814272&amp;amp;tpid=1516989100&amp;amp;type=0
+#EXTINF:-1 group-title="☘️山西频道",陕西卫视
+http://112.27.235.94:8000/hls/43/index.m3u8
 #EXTINF:-1 group-title="☘️山西频道",怀仁综合
 https://1yp7hc5p.live.sxmty.com/live/hls/bff8529922344209985b6e49baa9555a/efa2543628fc4a7ea93d3d6c975f77dc-1.m3u8
 #EXTINF:-1 group-title="☘️山西频道",长子综合
@@ -277,6 +319,8 @@ https://www.wxhcgbds.com:8081/channelTv/WXTV_1.m3u8?zshanxd
 https://gcalic.v.myalicdn.com/gc/zjwzbblh_1/index.m3u8
 #EXTINF:-1 group-title="☘️辽宁频道",泰山太平岭
 https://gcalic.v.myalicdn.com/gc/hkts09_1/index.m3u8
+#EXTINF:-1 group-title="☘️辽宁频道",辽宁卫视
+http://112.27.235.94:8000/hls/47/index.m3u8
 #EXTINF:-1 group-title="☘️辽宁频道",辽宁都市
 https://ls.qingting.fm/live/1099/64k.m3u8
 #EXTINF:-1 group-title="☘️吉林频道",敦化一套
@@ -299,16 +343,20 @@ http://stream.hrbtv.net/zxpd/sd/live.m3u8?zheild
 https://gcalic.v.myalicdn.com/gc/hsxksqj_1/index.m3u8
 #EXTINF:-1 group-title="☘️黑龙江频道",甘南县综合
 https://stream.hrbtv.net/zxpd/sd/live.m3u8
+#EXTINF:-1 group-title="☘️黑龙江频道",黑龙江卫视
+http://112.27.235.94:8000/hls/48/index.m3u8
 #EXTINF:-1 group-title="☘️黑龙江频道",黑龙江少儿
 https://ls.qingting.fm/live/4972/64k.m3u8
 #EXTINF:-1 group-title="☘️黑龙江频道",黑龙江新闻
 https://ls.qingting.fm/live/4974/64k.m3u8
+#EXTINF:-1 group-title="☘️河北频道",河北
+https://event.pull.hebtv.com:443/live/live101.m3u8
 #EXTINF:-1 group-title="☘️河北频道",河北公共
 http://1.94.31.214/php/hebei.php?id=hbgg
 #EXTINF:-1 group-title="☘️河北频道",河北农民
 https://ls.qingting.fm/live/1650/64k.m3u8
-#EXTINF:-1 group-title="☘️河北频道",河北
-https://event.pull.hebtv.com:443/live/live101.m3u8
+#EXTINF:-1 group-title="☘️河北频道",河北卫视
+http://112.27.235.94:8000/hls/39/index.m3u8
 #EXTINF:-1 group-title="☘️河北频道",河北少儿
 http://1.94.31.214/php/hebei.php?id=sekj
 #EXTINF:-1 group-title="☘️河北频道",河北影视
@@ -335,736 +383,804 @@ http://61.221.215.25:8800/hls/48/index.m3u8
 # ===== 以下为自动追加的港澳台日频道 =====
 
 # ----- 体育赛事 -----
-#EXTINF:-1 group-title="体育赛事",U17男篮世界杯 美国VS塞尔维亚 全场回放（姜帆） 01:05
-http://42.193.195.163:3000/965999830
-#EXTINF:-1 group-title="体育赛事",U17男篮世界杯 美国VS塞尔维亚 全场回放（原声） 01:05
-http://42.193.195.163:3000/966001637
-#EXTINF:-1 group-title="体育赛事",U17男篮世界杯 美国VS塞尔维亚 全场回放 01:05
-http://42.193.195.163:3000/966003498
-#EXTINF:-1 group-title="体育赛事",NBA 雄鹿VS篮网 全场回放（张泽欣） 02:55
-http://42.193.195.163:3000/966001378
-#EXTINF:-1 group-title="体育赛事",NBA 雄鹿VS篮网 全场回放（英文原声） 02:55
-http://42.193.195.163:3000/966001962
-#EXTINF:-1 group-title="体育赛事",世界杯 巴西VS挪威 纯享版回放（詹俊、张路、武磊、孙继海、李子琪） 03:45
-http://42.193.195.163:3000/966003457
-#EXTINF:-1 group-title="体育赛事",世界杯 巴西VS挪威 全场回放（詹俊、张路、武磊、孙继海、李子琪） 03:45
-http://42.193.195.163:3000/966003888
-#EXTINF:-1 group-title="体育赛事",世界杯 巴西VS挪威 全场回放（兰子非、胡小凡） 03:45
-http://42.193.195.163:3000/966003693
-#EXTINF:-1 group-title="体育赛事",世界杯 巴西VS挪威 全场回放（张昊泽、涂远） 03:45
-http://42.193.195.163:3000/966003628
-#EXTINF:-1 group-title="体育赛事",世界杯 巴西VS挪威 全场回放（洪荒） 03:45
-http://42.193.195.163:3000/966003494
-#EXTINF:-1 group-title="体育赛事",世界杯 巴西VS挪威 全场回放（陈渤胄） 03:45
-http://42.193.195.163:3000/966003487
-#EXTINF:-1 group-title="体育赛事",世界杯 巴西VS挪威 全场回放（任锴、梁柏翘） 03:45
-http://42.193.195.163:3000/966003908
-#EXTINF:-1 group-title="体育赛事",世界杯 巴西VS挪威 全场回放（AI智慧观赛） 03:45
-http://42.193.195.163:3000/966003719
-#EXTINF:-1 group-title="体育赛事",世界杯 巴西VS挪威 全场回放（智能解说） 03:45
-http://42.193.195.163:3000/966003913
-#EXTINF:-1 group-title="体育赛事",NBA 湖人VS热火 全场回放（盛哲） 04:25
-http://42.193.195.163:3000/966004239
-#EXTINF:-1 group-title="体育赛事",NBA 湖人VS热火 全场回放（英文原声） 04:25
-http://42.193.195.163:3000/966004757
-#EXTINF:-1 group-title="体育赛事",NBA 国王VS勇士蓝队 全场回放 04:55
-http://42.193.195.163:3000/966004477
-#EXTINF:-1 group-title="体育赛事",NBA 国王VS勇士蓝队 全场回放（英文原声） 04:55
-http://42.193.195.163:3000/966005168
-#EXTINF:-1 group-title="体育赛事",NBA 勇士金队VS马刺 全场回放（姜帆） 06:55
-http://42.193.195.163:3000/966005376
-#EXTINF:-1 group-title="体育赛事",NBA 勇士金队VS马刺 全场回放（英文原声） 06:55
-http://42.193.195.163:3000/966006712
-#EXTINF:-1 group-title="体育赛事",世界杯 墨西哥VS英格兰 纯享版回放（苏东、刘越、杨九郎、郭小仙儿） 07:00
-http://42.193.195.163:3000/966010195
-#EXTINF:-1 group-title="体育赛事",世界杯 墨西哥VS英格兰 全场回放（苏东、刘越、杨九郎、郭小仙儿） 07:00
-http://42.193.195.163:3000/966011118
-#EXTINF:-1 group-title="体育赛事",世界杯 墨西哥VS英格兰 全场回放（梁祥宇、贺宇） 07:00
-http://42.193.195.163:3000/966010828
-#EXTINF:-1 group-title="体育赛事",世界杯 墨西哥VS英格兰 全场回放（陈曦、陈熙荣） 07:00
-http://42.193.195.163:3000/966010420
-#EXTINF:-1 group-title="体育赛事",世界杯 墨西哥VS英格兰 全场回放（沈云怡、林梦鸽） 07:00
-http://42.193.195.163:3000/966010327
-#EXTINF:-1 group-title="体育赛事",世界杯 墨西哥VS英格兰 全场回放（陈渤胄） 07:00
-http://42.193.195.163:3000/966010241
-#EXTINF:-1 group-title="体育赛事",世界杯 墨西哥VS英格兰 全场回放（洪荒） 07:00
-http://42.193.195.163:3000/966010269
-#EXTINF:-1 group-title="体育赛事",世界杯 墨西哥VS英格兰 全场回放（张天翼、洪宇青） 07:00
-http://42.193.195.163:3000/966010758
-#EXTINF:-1 group-title="体育赛事",世界杯 墨西哥VS英格兰 全场回放（AI智慧观赛） 07:00
-http://42.193.195.163:3000/966011079
-#EXTINF:-1 group-title="体育赛事",世界杯 墨西哥VS英格兰 全场回放（智能解说） 07:00
-http://42.193.195.163:3000/966010834
-#EXTINF:-1 group-title="体育赛事",中国围棋协会系列赛事 第三届晋城全国职业围棋公开赛 第三届晋城全国职业围棋公开赛决赛全场回放（官方解说） 14:30
-http://42.193.195.163:3000/966021759
-#EXTINF:-1 group-title="体育赛事",浙BA 海盐67-76秀洲 2026浙江省城市篮球联赛全场回放：海盐VS秀洲（赛场原声） 19:30
-http://42.193.195.163:3000/966024993
-#EXTINF:-1 group-title="体育赛事",浙BA 云和62-69缙云 2026浙江省城市篮球联赛全场回放：云和VS缙云（赛场原声） 19:30
-http://42.193.195.163:3000/966024634
-#EXTINF:-1 group-title="体育赛事",浙BA 景宁87-76遂昌 2026浙江省城市篮球联赛全场回放：景宁VS遂昌（赛场原声） 19:30
-http://42.193.195.163:3000/966025026
+#EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 纯享版回放（詹俊、张路、孙继海、邵凌霄） 02:30
+http://42.193.195.163:3000/966028279
 #EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 纯享版回放（詹俊、张路、孙继海、邵凌霄） 02:30
 http://223.167.209.88:1234/966028279
+#EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 纯享版回放（詹俊、张路、孙继海、邵凌霄） 02:30
+http://36.24.107.147:1234/966028279
 #EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 纯享版回放（詹俊、张路、孙继海、邵凌霄） 02:30
 http://112.85.93.6:7788/966028279
 #EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 纯享版回放（詹俊、张路、孙继海、邵凌霄） 02:30
 http://2280.eu.org:1234/966028279
 #EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（詹俊、张路、孙继海、邵凌霄） 02:30
+http://42.193.195.163:3000/966028607
+#EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（詹俊、张路、孙继海、邵凌霄） 02:30
 http://223.167.209.88:1234/966028607
+#EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（詹俊、张路、孙继海、邵凌霄） 02:30
+http://36.24.107.147:1234/966028607
 #EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（詹俊、张路、孙继海、邵凌霄） 02:30
 http://112.85.93.6:7788/966028607
 #EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（詹俊、张路、孙继海、邵凌霄） 02:30
 http://2280.eu.org:1234/966028607
 #EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（胡小凡、兰子非） 02:30
+http://42.193.195.163:3000/966028371
+#EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（胡小凡、兰子非） 02:30
 http://223.167.209.88:1234/966028371
+#EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（胡小凡、兰子非） 02:30
+http://36.24.107.147:1234/966028371
 #EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（胡小凡、兰子非） 02:30
 http://112.85.93.6:7788/966028371
 #EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（胡小凡、兰子非） 02:30
 http://2280.eu.org:1234/966028371
 #EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（江忠德） 02:30
+http://42.193.195.163:3000/966028316
+#EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（江忠德） 02:30
 http://223.167.209.88:1234/966028316
+#EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（江忠德） 02:30
+http://36.24.107.147:1234/966028316
 #EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（江忠德） 02:30
 http://112.85.93.6:7788/966028316
 #EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（江忠德） 02:30
 http://2280.eu.org:1234/966028316
 #EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（洪荒） 02:30
+http://42.193.195.163:3000/966028383
+#EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（洪荒） 02:30
 http://223.167.209.88:1234/966028383
+#EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（洪荒） 02:30
+http://36.24.107.147:1234/966028383
 #EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（洪荒） 02:30
 http://112.85.93.6:7788/966028383
 #EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（洪荒） 02:30
 http://2280.eu.org:1234/966028383
 #EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（陈渤胄） 02:30
+http://42.193.195.163:3000/966028417
+#EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（陈渤胄） 02:30
 http://223.167.209.88:1234/966028417
+#EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（陈渤胄） 02:30
+http://36.24.107.147:1234/966028417
 #EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（陈渤胄） 02:30
 http://112.85.93.6:7788/966028417
 #EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（陈渤胄） 02:30
 http://2280.eu.org:1234/966028417
 #EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（刘一臻、盛斌） 02:30
+http://42.193.195.163:3000/966028481
+#EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（刘一臻、盛斌） 02:30
 http://223.167.209.88:1234/966028481
+#EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（刘一臻、盛斌） 02:30
+http://36.24.107.147:1234/966028481
 #EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（刘一臻、盛斌） 02:30
 http://112.85.93.6:7788/966028481
 #EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（刘一臻、盛斌） 02:30
 http://2280.eu.org:1234/966028481
 #EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（AI智慧观赛） 02:30
+http://42.193.195.163:3000/966028630
+#EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（AI智慧观赛） 02:30
 http://223.167.209.88:1234/966028630
+#EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（AI智慧观赛） 02:30
+http://36.24.107.147:1234/966028630
 #EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（AI智慧观赛） 02:30
 http://112.85.93.6:7788/966028630
 #EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（AI智慧观赛） 02:30
 http://2280.eu.org:1234/966028630
 #EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（智能解说） 02:30
+http://42.193.195.163:3000/966028583
+#EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（智能解说） 02:30
 http://223.167.209.88:1234/966028583
+#EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（智能解说） 02:30
+http://36.24.107.147:1234/966028583
 #EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（智能解说） 02:30
 http://112.85.93.6:7788/966028583
 #EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（智能解说） 02:30
 http://2280.eu.org:1234/966028583
 #EXTINF:-1 group-title="体育赛事",NBA 雷霆VS老鹰 全场回放（刘芳宇） 06:55
+http://42.193.195.163:3000/966031076
+#EXTINF:-1 group-title="体育赛事",NBA 雷霆VS老鹰 全场回放（刘芳宇） 06:55
 http://223.167.209.88:1234/966031076
+#EXTINF:-1 group-title="体育赛事",NBA 雷霆VS老鹰 全场回放（刘芳宇） 06:55
+http://36.24.107.147:1234/966031076
 #EXTINF:-1 group-title="体育赛事",NBA 雷霆VS老鹰 全场回放（刘芳宇） 06:55
 http://112.85.93.6:7788/966031076
 #EXTINF:-1 group-title="体育赛事",NBA 雷霆VS老鹰 全场回放（刘芳宇） 06:55
 http://2280.eu.org:1234/966031076
 #EXTINF:-1 group-title="体育赛事",NBA 雷霆VS老鹰 全场回放（英文原声） 06:55
+http://42.193.195.163:3000/966032431
+#EXTINF:-1 group-title="体育赛事",NBA 雷霆VS老鹰 全场回放（英文原声） 06:55
 http://223.167.209.88:1234/966032431
+#EXTINF:-1 group-title="体育赛事",NBA 雷霆VS老鹰 全场回放（英文原声） 06:55
+http://36.24.107.147:1234/966032431
 #EXTINF:-1 group-title="体育赛事",NBA 雷霆VS老鹰 全场回放（英文原声） 06:55
 http://112.85.93.6:7788/966032431
 #EXTINF:-1 group-title="体育赛事",NBA 雷霆VS老鹰 全场回放（英文原声） 06:55
 http://2280.eu.org:1234/966032431
 #EXTINF:-1 group-title="体育赛事",NBA 马刺VS湖人 全场回放（孙博） 07:25
+http://42.193.195.163:3000/966032269
+#EXTINF:-1 group-title="体育赛事",NBA 马刺VS湖人 全场回放（孙博） 07:25
 http://223.167.209.88:1234/966032269
+#EXTINF:-1 group-title="体育赛事",NBA 马刺VS湖人 全场回放（孙博） 07:25
+http://36.24.107.147:1234/966032269
 #EXTINF:-1 group-title="体育赛事",NBA 马刺VS湖人 全场回放（孙博） 07:25
 http://112.85.93.6:7788/966032269
 #EXTINF:-1 group-title="体育赛事",NBA 马刺VS湖人 全场回放（孙博） 07:25
 http://2280.eu.org:1234/966032269
 #EXTINF:-1 group-title="体育赛事",NBA 马刺VS湖人 全场回放（英文原声） 07:25
+http://42.193.195.163:3000/966034350
+#EXTINF:-1 group-title="体育赛事",NBA 马刺VS湖人 全场回放（英文原声） 07:25
 http://223.167.209.88:1234/966034350
+#EXTINF:-1 group-title="体育赛事",NBA 马刺VS湖人 全场回放（英文原声） 07:25
+http://36.24.107.147:1234/966034350
 #EXTINF:-1 group-title="体育赛事",NBA 马刺VS湖人 全场回放（英文原声） 07:25
 http://112.85.93.6:7788/966034350
 #EXTINF:-1 group-title="体育赛事",NBA 马刺VS湖人 全场回放（英文原声） 07:25
 http://2280.eu.org:1234/966034350
 #EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 纯享版回放（苏东、刘越、徐云龙、林梦鸽） 07:00
+http://42.193.195.163:3000/966032980
+#EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 纯享版回放（苏东、刘越、徐云龙、林梦鸽） 07:00
 http://223.167.209.88:1234/966032980
+#EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 纯享版回放（苏东、刘越、徐云龙、林梦鸽） 07:00
+http://36.24.107.147:1234/966032980
 #EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 纯享版回放（苏东、刘越、徐云龙、林梦鸽） 07:00
 http://112.85.93.6:7788/966032980
 #EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 纯享版回放（苏东、刘越、徐云龙、林梦鸽） 07:00
 http://2280.eu.org:1234/966032980
 #EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（苏东、刘越、徐云龙、林梦鸽） 07:00
+http://42.193.195.163:3000/966033832
+#EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（苏东、刘越、徐云龙、林梦鸽） 07:00
 http://223.167.209.88:1234/966033832
+#EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（苏东、刘越、徐云龙、林梦鸽） 07:00
+http://36.24.107.147:1234/966033832
 #EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（苏东、刘越、徐云龙、林梦鸽） 07:00
 http://112.85.93.6:7788/966033832
 #EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（苏东、刘越、徐云龙、林梦鸽） 07:00
 http://2280.eu.org:1234/966033832
 #EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（梁祥宇、贺宇） 07:00
+http://42.193.195.163:3000/966033223
+#EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（梁祥宇、贺宇） 07:00
 http://223.167.209.88:1234/966033223
+#EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（梁祥宇、贺宇） 07:00
+http://36.24.107.147:1234/966033223
 #EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（梁祥宇、贺宇） 07:00
 http://112.85.93.6:7788/966033223
 #EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（梁祥宇、贺宇） 07:00
 http://2280.eu.org:1234/966033223
 #EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（陈曦、叶紫辰） 07:00
+http://42.193.195.163:3000/966033450
+#EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（陈曦、叶紫辰） 07:00
 http://223.167.209.88:1234/966033450
+#EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（陈曦、叶紫辰） 07:00
+http://36.24.107.147:1234/966033450
 #EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（陈曦、叶紫辰） 07:00
 http://112.85.93.6:7788/966033450
 #EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（陈曦、叶紫辰） 07:00
 http://2280.eu.org:1234/966033450
 #EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（沈云怡、兰子非） 07:00
+http://42.193.195.163:3000/966033476
+#EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（沈云怡、兰子非） 07:00
 http://223.167.209.88:1234/966033476
+#EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（沈云怡、兰子非） 07:00
+http://36.24.107.147:1234/966033476
 #EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（沈云怡、兰子非） 07:00
 http://112.85.93.6:7788/966033476
 #EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（沈云怡、兰子非） 07:00
 http://2280.eu.org:1234/966033476
 #EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（鹿中原、乔迁） 07:00
+http://42.193.195.163:3000/966033626
+#EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（鹿中原、乔迁） 07:00
 http://223.167.209.88:1234/966033626
+#EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（鹿中原、乔迁） 07:00
+http://36.24.107.147:1234/966033626
 #EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（鹿中原、乔迁） 07:00
 http://112.85.93.6:7788/966033626
 #EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（鹿中原、乔迁） 07:00
 http://2280.eu.org:1234/966033626
 #EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（洪荒） 07:00
+http://42.193.195.163:3000/966033527
+#EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（洪荒） 07:00
 http://223.167.209.88:1234/966033527
+#EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（洪荒） 07:00
+http://36.24.107.147:1234/966033527
 #EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（洪荒） 07:00
 http://112.85.93.6:7788/966033527
 #EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（洪荒） 07:00
 http://2280.eu.org:1234/966033527
 #EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（陈渤胄） 07:00
+http://42.193.195.163:3000/966033578
+#EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（陈渤胄） 07:00
 http://223.167.209.88:1234/966033578
+#EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（陈渤胄） 07:00
+http://36.24.107.147:1234/966033578
 #EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（陈渤胄） 07:00
 http://112.85.93.6:7788/966033578
 #EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（陈渤胄） 07:00
 http://2280.eu.org:1234/966033578
 #EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（智能解说） 07:00
+http://42.193.195.163:3000/966033692
+#EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（智能解说） 07:00
 http://223.167.209.88:1234/966033692
+#EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（智能解说） 07:00
+http://36.24.107.147:1234/966033692
 #EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（智能解说） 07:00
 http://112.85.93.6:7788/966033692
 #EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（智能解说） 07:00
 http://2280.eu.org:1234/966033692
 #EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（AI智慧观赛） 07:00
+http://42.193.195.163:3000/966033829
+#EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（AI智慧观赛） 07:00
 http://223.167.209.88:1234/966033829
+#EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（AI智慧观赛） 07:00
+http://36.24.107.147:1234/966033829
 #EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（AI智慧观赛） 07:00
 http://112.85.93.6:7788/966033829
 #EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（AI智慧观赛） 07:00
 http://2280.eu.org:1234/966033829
 #EXTINF:-1 group-title="体育赛事",NBA 篮网VS勇士蓝队 全场回放（王凯） 07:55
+http://42.193.195.163:3000/966033205
+#EXTINF:-1 group-title="体育赛事",NBA 篮网VS勇士蓝队 全场回放（王凯） 07:55
 http://223.167.209.88:1234/966033205
+#EXTINF:-1 group-title="体育赛事",NBA 篮网VS勇士蓝队 全场回放（王凯） 07:55
+http://36.24.107.147:1234/966033205
 #EXTINF:-1 group-title="体育赛事",NBA 篮网VS勇士蓝队 全场回放（王凯） 07:55
 http://112.85.93.6:7788/966033205
 #EXTINF:-1 group-title="体育赛事",NBA 篮网VS勇士蓝队 全场回放（王凯） 07:55
 http://2280.eu.org:1234/966033205
 #EXTINF:-1 group-title="体育赛事",NBA 篮网VS勇士蓝队 全场回放（英文原声） 07:55
+http://42.193.195.163:3000/966035219
+#EXTINF:-1 group-title="体育赛事",NBA 篮网VS勇士蓝队 全场回放（英文原声） 07:55
 http://223.167.209.88:1234/966035219
+#EXTINF:-1 group-title="体育赛事",NBA 篮网VS勇士蓝队 全场回放（英文原声） 07:55
+http://36.24.107.147:1234/966035219
 #EXTINF:-1 group-title="体育赛事",NBA 篮网VS勇士蓝队 全场回放（英文原声） 07:55
 http://112.85.93.6:7788/966035219
 #EXTINF:-1 group-title="体育赛事",NBA 篮网VS勇士蓝队 全场回放（英文原声） 07:55
 http://2280.eu.org:1234/966035219
 #EXTINF:-1 group-title="体育赛事",NBA 爵士VS灰熊 全场回放（连睿） 08:55
+http://42.193.195.163:3000/966035252
+#EXTINF:-1 group-title="体育赛事",NBA 爵士VS灰熊 全场回放（连睿） 08:55
 http://223.167.209.88:1234/966035252
+#EXTINF:-1 group-title="体育赛事",NBA 爵士VS灰熊 全场回放（连睿） 08:55
+http://36.24.107.147:1234/966035252
 #EXTINF:-1 group-title="体育赛事",NBA 爵士VS灰熊 全场回放（连睿） 08:55
 http://112.85.93.6:7788/966035252
 #EXTINF:-1 group-title="体育赛事",NBA 爵士VS灰熊 全场回放（连睿） 08:55
 http://2280.eu.org:1234/966035252
 #EXTINF:-1 group-title="体育赛事",NBA 爵士VS灰熊 全场回放（英文原声） 08:55
+http://42.193.195.163:3000/966037059
+#EXTINF:-1 group-title="体育赛事",NBA 爵士VS灰熊 全场回放（英文原声） 08:55
 http://223.167.209.88:1234/966037059
+#EXTINF:-1 group-title="体育赛事",NBA 爵士VS灰熊 全场回放（英文原声） 08:55
+http://36.24.107.147:1234/966037059
 #EXTINF:-1 group-title="体育赛事",NBA 爵士VS灰熊 全场回放（英文原声） 08:55
 http://112.85.93.6:7788/966037059
 #EXTINF:-1 group-title="体育赛事",NBA 爵士VS灰熊 全场回放（英文原声） 08:55
 http://2280.eu.org:1234/966037059
 #EXTINF:-1 group-title="体育赛事",NBA 勇士金队VS热火 全场回放（董倡硕） 09:55
+http://42.193.195.163:3000/966037115
+#EXTINF:-1 group-title="体育赛事",NBA 勇士金队VS热火 全场回放（董倡硕） 09:55
 http://223.167.209.88:1234/966037115
+#EXTINF:-1 group-title="体育赛事",NBA 勇士金队VS热火 全场回放（董倡硕） 09:55
+http://36.24.107.147:1234/966037115
 #EXTINF:-1 group-title="体育赛事",NBA 勇士金队VS热火 全场回放（董倡硕） 09:55
 http://112.85.93.6:7788/966037115
 #EXTINF:-1 group-title="体育赛事",NBA 勇士金队VS热火 全场回放（董倡硕） 09:55
 http://2280.eu.org:1234/966037115
 #EXTINF:-1 group-title="体育赛事",NBA 勇士金队VS热火 全场回放（英文原声） 09:55
+http://42.193.195.163:3000/966037635
+#EXTINF:-1 group-title="体育赛事",NBA 勇士金队VS热火 全场回放（英文原声） 09:55
 http://223.167.209.88:1234/966037635
+#EXTINF:-1 group-title="体育赛事",NBA 勇士金队VS热火 全场回放（英文原声） 09:55
+http://36.24.107.147:1234/966037635
 #EXTINF:-1 group-title="体育赛事",NBA 勇士金队VS热火 全场回放（英文原声） 09:55
 http://112.85.93.6:7788/966037635
 #EXTINF:-1 group-title="体育赛事",NBA 勇士金队VS热火 全场回放（英文原声） 09:55
 http://2280.eu.org:1234/966037635
 #EXTINF:-1 group-title="体育赛事",NBA 国王VS雄鹿 全场回放（邵化谦） 09:55
+http://42.193.195.163:3000/966037180
+#EXTINF:-1 group-title="体育赛事",NBA 国王VS雄鹿 全场回放（邵化谦） 09:55
 http://223.167.209.88:1234/966037180
+#EXTINF:-1 group-title="体育赛事",NBA 国王VS雄鹿 全场回放（邵化谦） 09:55
+http://36.24.107.147:1234/966037180
 #EXTINF:-1 group-title="体育赛事",NBA 国王VS雄鹿 全场回放（邵化谦） 09:55
 http://112.85.93.6:7788/966037180
 #EXTINF:-1 group-title="体育赛事",NBA 国王VS雄鹿 全场回放（邵化谦） 09:55
 http://2280.eu.org:1234/966037180
 #EXTINF:-1 group-title="体育赛事",NBA 国王VS雄鹿 全场回放（英文原声） 09:55
+http://42.193.195.163:3000/966037841
+#EXTINF:-1 group-title="体育赛事",NBA 国王VS雄鹿 全场回放（英文原声） 09:55
 http://223.167.209.88:1234/966037841
+#EXTINF:-1 group-title="体育赛事",NBA 国王VS雄鹿 全场回放（英文原声） 09:55
+http://36.24.107.147:1234/966037841
 #EXTINF:-1 group-title="体育赛事",NBA 国王VS雄鹿 全场回放（英文原声） 09:55
 http://112.85.93.6:7788/966037841
 #EXTINF:-1 group-title="体育赛事",NBA 国王VS雄鹿 全场回放（英文原声） 09:55
 http://2280.eu.org:1234/966037841
 #EXTINF:-1 group-title="体育赛事",武术套路世界杯 男子长拳与南拳大展雄风 杨亚霖与杜洪杰夺金 第四届武术套路世界杯第一比赛日上午场全场回放（赛场原声） 09:55
+http://42.193.195.163:3000/966040875
+#EXTINF:-1 group-title="体育赛事",武术套路世界杯 男子长拳与南拳大展雄风 杨亚霖与杜洪杰夺金 第四届武术套路世界杯第一比赛日上午场全场回放（赛场原声） 09:55
 http://223.167.209.88:1234/966040875
+#EXTINF:-1 group-title="体育赛事",武术套路世界杯 男子长拳与南拳大展雄风 杨亚霖与杜洪杰夺金 第四届武术套路世界杯第一比赛日上午场全场回放（赛场原声） 09:55
+http://36.24.107.147:1234/966040875
 #EXTINF:-1 group-title="体育赛事",武术套路世界杯 男子长拳与南拳大展雄风 杨亚霖与杜洪杰夺金 第四届武术套路世界杯第一比赛日上午场全场回放（赛场原声） 09:55
 http://112.85.93.6:7788/966040875
 #EXTINF:-1 group-title="体育赛事",武术套路世界杯 男子长拳与南拳大展雄风 杨亚霖与杜洪杰夺金 第四届武术套路世界杯第一比赛日上午场全场回放（赛场原声） 09:55
 http://2280.eu.org:1234/966040875
 #EXTINF:-1 group-title="体育赛事",武术套路世界杯 男子长拳与南拳大展雄风 杨亚霖与杜洪杰夺金 第四届武术套路世界杯第一比赛日上午场全场回放（官方解说） 09:55
+http://42.193.195.163:3000/966041381
+#EXTINF:-1 group-title="体育赛事",武术套路世界杯 男子长拳与南拳大展雄风 杨亚霖与杜洪杰夺金 第四届武术套路世界杯第一比赛日上午场全场回放（官方解说） 09:55
 http://223.167.209.88:1234/966041381
+#EXTINF:-1 group-title="体育赛事",武术套路世界杯 男子长拳与南拳大展雄风 杨亚霖与杜洪杰夺金 第四届武术套路世界杯第一比赛日上午场全场回放（官方解说） 09:55
+http://36.24.107.147:1234/966041381
 #EXTINF:-1 group-title="体育赛事",武术套路世界杯 男子长拳与南拳大展雄风 杨亚霖与杜洪杰夺金 第四届武术套路世界杯第一比赛日上午场全场回放（官方解说） 09:55
 http://112.85.93.6:7788/966041381
 #EXTINF:-1 group-title="体育赛事",武术套路世界杯 男子长拳与南拳大展雄风 杨亚霖与杜洪杰夺金 第四届武术套路世界杯第一比赛日上午场全场回放（官方解说） 09:55
 http://2280.eu.org:1234/966041381
 #EXTINF:-1 group-title="体育赛事",武术套路世界杯 第四届武术世界杯 首日下半场 第四届武术套路世界杯第一比赛日下午场全场回放（赛场原声） 14:55
+http://42.193.195.163:3000/966048155
+#EXTINF:-1 group-title="体育赛事",武术套路世界杯 第四届武术世界杯 首日下半场 第四届武术套路世界杯第一比赛日下午场全场回放（赛场原声） 14:55
 http://223.167.209.88:1234/966048155
+#EXTINF:-1 group-title="体育赛事",武术套路世界杯 第四届武术世界杯 首日下半场 第四届武术套路世界杯第一比赛日下午场全场回放（赛场原声） 14:55
+http://36.24.107.147:1234/966048155
 #EXTINF:-1 group-title="体育赛事",武术套路世界杯 第四届武术世界杯 首日下半场 第四届武术套路世界杯第一比赛日下午场全场回放（赛场原声） 14:55
 http://112.85.93.6:7788/966048155
 #EXTINF:-1 group-title="体育赛事",武术套路世界杯 第四届武术世界杯 首日下半场 第四届武术套路世界杯第一比赛日下午场全场回放（赛场原声） 14:55
 http://2280.eu.org:1234/966048155
 #EXTINF:-1 group-title="体育赛事",武术套路世界杯 第四届武术世界杯 首日下半场 第四届武术套路世界杯第一比赛日下午场全场回放（官方解说） 14:55
+http://42.193.195.163:3000/966048297
+#EXTINF:-1 group-title="体育赛事",武术套路世界杯 第四届武术世界杯 首日下半场 第四届武术套路世界杯第一比赛日下午场全场回放（官方解说） 14:55
 http://223.167.209.88:1234/966048297
+#EXTINF:-1 group-title="体育赛事",武术套路世界杯 第四届武术世界杯 首日下半场 第四届武术套路世界杯第一比赛日下午场全场回放（官方解说） 14:55
+http://36.24.107.147:1234/966048297
 #EXTINF:-1 group-title="体育赛事",武术套路世界杯 第四届武术世界杯 首日下半场 第四届武术套路世界杯第一比赛日下午场全场回放（官方解说） 14:55
 http://112.85.93.6:7788/966048297
 #EXTINF:-1 group-title="体育赛事",武术套路世界杯 第四届武术世界杯 首日下半场 第四届武术套路世界杯第一比赛日下午场全场回放（官方解说） 14:55
 http://2280.eu.org:1234/966048297
 #EXTINF:-1 group-title="体育赛事",WTT 周冠达、侯英超、程靖淇复盘美满 全场回放（周冠达、侯英超、程靖淇） 17:00
+http://42.193.195.163:3000/966047141
+#EXTINF:-1 group-title="体育赛事",WTT 周冠达、侯英超、程靖淇复盘美满 全场回放（周冠达、侯英超、程靖淇） 17:00
 http://223.167.209.88:1234/966047141
+#EXTINF:-1 group-title="体育赛事",WTT 周冠达、侯英超、程靖淇复盘美满 全场回放（周冠达、侯英超、程靖淇） 17:00
+http://36.24.107.147:1234/966047141
 #EXTINF:-1 group-title="体育赛事",WTT 周冠达、侯英超、程靖淇复盘美满 全场回放（周冠达、侯英超、程靖淇） 17:00
 http://112.85.93.6:7788/966047141
 #EXTINF:-1 group-title="体育赛事",WTT 周冠达、侯英超、程靖淇复盘美满 全场回放（周冠达、侯英超、程靖淇） 17:00
 http://2280.eu.org:1234/966047141
 #EXTINF:-1 group-title="体育赛事",浙BA 滨江64-77上城 2026浙江省城市篮球联赛全场回放：滨江VS上城（赛场原声） 19:00
+http://42.193.195.163:3000/966049493
+#EXTINF:-1 group-title="体育赛事",浙BA 滨江64-77上城 2026浙江省城市篮球联赛全场回放：滨江VS上城（赛场原声） 19:00
 http://223.167.209.88:1234/966049493
+#EXTINF:-1 group-title="体育赛事",浙BA 滨江64-77上城 2026浙江省城市篮球联赛全场回放：滨江VS上城（赛场原声） 19:00
+http://36.24.107.147:1234/966049493
 #EXTINF:-1 group-title="体育赛事",浙BA 滨江64-77上城 2026浙江省城市篮球联赛全场回放：滨江VS上城（赛场原声） 19:00
 http://112.85.93.6:7788/966049493
 #EXTINF:-1 group-title="体育赛事",浙BA 滨江64-77上城 2026浙江省城市篮球联赛全场回放：滨江VS上城（赛场原声） 19:00
 http://2280.eu.org:1234/966049493
 #EXTINF:-1 group-title="体育赛事",浙BA 南浔63-73吴兴 2026浙江省城市篮球联赛全场回放：南浔VS吴兴（赛场原声） 19:30
+http://42.193.195.163:3000/966049517
+#EXTINF:-1 group-title="体育赛事",浙BA 南浔63-73吴兴 2026浙江省城市篮球联赛全场回放：南浔VS吴兴（赛场原声） 19:30
 http://223.167.209.88:1234/966049517
+#EXTINF:-1 group-title="体育赛事",浙BA 南浔63-73吴兴 2026浙江省城市篮球联赛全场回放：南浔VS吴兴（赛场原声） 19:30
+http://36.24.107.147:1234/966049517
 #EXTINF:-1 group-title="体育赛事",浙BA 南浔63-73吴兴 2026浙江省城市篮球联赛全场回放：南浔VS吴兴（赛场原声） 19:30
 http://112.85.93.6:7788/966049517
 #EXTINF:-1 group-title="体育赛事",浙BA 南浔63-73吴兴 2026浙江省城市篮球联赛全场回放：南浔VS吴兴（赛场原声） 19:30
 http://2280.eu.org:1234/966049517
 #EXTINF:-1 group-title="体育赛事",浙BA 玉环69-68天台 2026浙江省城市篮球联赛全场回放：玉环VS天台（赛场原声） 19:30
+http://42.193.195.163:3000/966049749
+#EXTINF:-1 group-title="体育赛事",浙BA 玉环69-68天台 2026浙江省城市篮球联赛全场回放：玉环VS天台（赛场原声） 19:30
 http://223.167.209.88:1234/966049749
+#EXTINF:-1 group-title="体育赛事",浙BA 玉环69-68天台 2026浙江省城市篮球联赛全场回放：玉环VS天台（赛场原声） 19:30
+http://36.24.107.147:1234/966049749
 #EXTINF:-1 group-title="体育赛事",浙BA 玉环69-68天台 2026浙江省城市篮球联赛全场回放：玉环VS天台（赛场原声） 19:30
 http://112.85.93.6:7788/966049749
 #EXTINF:-1 group-title="体育赛事",浙BA 玉环69-68天台 2026浙江省城市篮球联赛全场回放：玉环VS天台（赛场原声） 19:30
 http://2280.eu.org:1234/966049749
 #EXTINF:-1 group-title="体育赛事",浙BA 龙泉56-72青田 2026浙江省城市篮球联赛全场回放：龙泉VS青田（赛场原声） 19:30
+http://42.193.195.163:3000/966050026
+#EXTINF:-1 group-title="体育赛事",浙BA 龙泉56-72青田 2026浙江省城市篮球联赛全场回放：龙泉VS青田（赛场原声） 19:30
 http://223.167.209.88:1234/966050026
+#EXTINF:-1 group-title="体育赛事",浙BA 龙泉56-72青田 2026浙江省城市篮球联赛全场回放：龙泉VS青田（赛场原声） 19:30
+http://36.24.107.147:1234/966050026
 #EXTINF:-1 group-title="体育赛事",浙BA 龙泉56-72青田 2026浙江省城市篮球联赛全场回放：龙泉VS青田（赛场原声） 19:30
 http://112.85.93.6:7788/966050026
 #EXTINF:-1 group-title="体育赛事",浙BA 龙泉56-72青田 2026浙江省城市篮球联赛全场回放：龙泉VS青田（赛场原声） 19:30
 http://2280.eu.org:1234/966050026
 #EXTINF:-1 group-title="体育赛事",NBA经典赛事 NBA夏季联赛精彩重播： 灰熊 vs 爵士 全场回放（连睿） 20:00
+http://42.193.195.163:3000/966035252
+#EXTINF:-1 group-title="体育赛事",NBA经典赛事 NBA夏季联赛精彩重播： 灰熊 vs 爵士 全场回放（连睿） 20:00
 http://223.167.209.88:1234/966035252
+#EXTINF:-1 group-title="体育赛事",NBA经典赛事 NBA夏季联赛精彩重播： 灰熊 vs 爵士 全场回放（连睿） 20:00
+http://36.24.107.147:1234/966035252
 #EXTINF:-1 group-title="体育赛事",NBA经典赛事 NBA夏季联赛精彩重播： 灰熊 vs 爵士 全场回放（连睿） 20:00
 http://112.85.93.6:7788/966035252
 #EXTINF:-1 group-title="体育赛事",NBA经典赛事 NBA夏季联赛精彩重播： 灰熊 vs 爵士 全场回放（连睿） 20:00
 http://2280.eu.org:1234/966035252
-#EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 纯享版回放（詹俊、张路、孙继海、邵凌霄） 02:30
-http://42.193.195.163:3000/966028279
-#EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（詹俊、张路、孙继海、邵凌霄） 02:30
-http://42.193.195.163:3000/966028607
-#EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（胡小凡、兰子非） 02:30
-http://42.193.195.163:3000/966028371
-#EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（江忠德） 02:30
-http://42.193.195.163:3000/966028316
-#EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（洪荒） 02:30
-http://42.193.195.163:3000/966028383
-#EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（陈渤胄） 02:30
-http://42.193.195.163:3000/966028417
-#EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（刘一臻、盛斌） 02:30
-http://42.193.195.163:3000/966028481
-#EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（AI智慧观赛） 02:30
-http://42.193.195.163:3000/966028630
-#EXTINF:-1 group-title="体育赛事",世界杯 葡萄牙VS西班牙 全场回放（智能解说） 02:30
-http://42.193.195.163:3000/966028583
-#EXTINF:-1 group-title="体育赛事",NBA 雷霆VS老鹰 全场回放（刘芳宇） 06:55
-http://42.193.195.163:3000/966031076
-#EXTINF:-1 group-title="体育赛事",NBA 雷霆VS老鹰 全场回放（英文原声） 06:55
-http://42.193.195.163:3000/966032431
-#EXTINF:-1 group-title="体育赛事",NBA 马刺VS湖人 全场回放（孙博） 07:25
-http://42.193.195.163:3000/966032269
-#EXTINF:-1 group-title="体育赛事",NBA 马刺VS湖人 全场回放（英文原声） 07:25
-http://42.193.195.163:3000/966034350
-#EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 纯享版回放（苏东、刘越、徐云龙、林梦鸽） 07:00
-http://42.193.195.163:3000/966032980
-#EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（苏东、刘越、徐云龙、林梦鸽） 07:00
-http://42.193.195.163:3000/966033832
-#EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（梁祥宇、贺宇） 07:00
-http://42.193.195.163:3000/966033223
-#EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（陈曦、叶紫辰） 07:00
-http://42.193.195.163:3000/966033450
-#EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（沈云怡、兰子非） 07:00
-http://42.193.195.163:3000/966033476
-#EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（鹿中原、乔迁） 07:00
-http://42.193.195.163:3000/966033626
-#EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（洪荒） 07:00
-http://42.193.195.163:3000/966033527
-#EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（陈渤胄） 07:00
-http://42.193.195.163:3000/966033578
-#EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（智能解说） 07:00
-http://42.193.195.163:3000/966033692
-#EXTINF:-1 group-title="体育赛事",世界杯 美国VS比利时 全场回放（AI智慧观赛） 07:00
-http://42.193.195.163:3000/966033829
-#EXTINF:-1 group-title="体育赛事",NBA 篮网VS勇士蓝队 全场回放（王凯） 07:55
-http://42.193.195.163:3000/966033205
-#EXTINF:-1 group-title="体育赛事",NBA 篮网VS勇士蓝队 全场回放（英文原声） 07:55
-http://42.193.195.163:3000/966035219
-#EXTINF:-1 group-title="体育赛事",NBA 爵士VS灰熊 全场回放（连睿） 08:55
-http://42.193.195.163:3000/966035252
-#EXTINF:-1 group-title="体育赛事",NBA 爵士VS灰熊 全场回放（英文原声） 08:55
-http://42.193.195.163:3000/966037059
-#EXTINF:-1 group-title="体育赛事",NBA 勇士金队VS热火 全场回放（董倡硕） 09:55
-http://42.193.195.163:3000/966037115
-#EXTINF:-1 group-title="体育赛事",NBA 勇士金队VS热火 全场回放（英文原声） 09:55
-http://42.193.195.163:3000/966037635
-#EXTINF:-1 group-title="体育赛事",NBA 国王VS雄鹿 全场回放（邵化谦） 09:55
-http://42.193.195.163:3000/966037180
-#EXTINF:-1 group-title="体育赛事",NBA 国王VS雄鹿 全场回放（英文原声） 09:55
-http://42.193.195.163:3000/966037841
-#EXTINF:-1 group-title="体育赛事",武术套路世界杯 男子长拳与南拳大展雄风 杨亚霖与杜洪杰夺金 第四届武术套路世界杯第一比赛日上午场全场回放（赛场原声） 09:55
-http://42.193.195.163:3000/966040875
-#EXTINF:-1 group-title="体育赛事",武术套路世界杯 男子长拳与南拳大展雄风 杨亚霖与杜洪杰夺金 第四届武术套路世界杯第一比赛日上午场全场回放（官方解说） 09:55
-http://42.193.195.163:3000/966041381
-#EXTINF:-1 group-title="体育赛事",武术套路世界杯 第四届武术世界杯 首日下半场 第四届武术套路世界杯第一比赛日下午场全场回放（赛场原声） 14:55
-http://42.193.195.163:3000/966048155
-#EXTINF:-1 group-title="体育赛事",武术套路世界杯 第四届武术世界杯 首日下半场 第四届武术套路世界杯第一比赛日下午场全场回放（官方解说） 14:55
-http://42.193.195.163:3000/966048297
-#EXTINF:-1 group-title="体育赛事",WTT 周冠达、侯英超、程靖淇复盘美满 全场回放（周冠达、侯英超、程靖淇） 17:00
-http://42.193.195.163:3000/966047141
-#EXTINF:-1 group-title="体育赛事",NBA经典赛事 NBA夏季联赛精彩重播： 灰熊 vs 爵士 连睿 20:00
-http://42.193.195.163:3000/966047009
-#EXTINF:-1 group-title="体育赛事",世界杯 人机大战：谁是世界杯预言家 颜强苏东致敬C罗传奇生涯 人机大战第13期 21:00
-http://42.193.195.163:3000/965549872
+#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 纯享版回放（詹俊、张路、徐云龙、魏欣怡） 23:45
+http://42.193.195.163:3000/966053710
 #EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 纯享版回放（詹俊、张路、徐云龙、魏欣怡） 23:45
 http://223.167.209.88:1234/966053710
 #EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 纯享版回放（詹俊、张路、徐云龙、魏欣怡） 23:45
+http://36.24.107.147:1234/966053710
+#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 纯享版回放（詹俊、张路、徐云龙、魏欣怡） 23:45
 http://112.85.93.6:7788/966053710
+#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 纯享版回放（詹俊、张路、徐云龙、魏欣怡） 23:45
+http://2280.eu.org:1234/966053710
+#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（詹俊、张路、徐云龙、魏欣怡） 23:45
+http://42.193.195.163:3000/966054331
 #EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（詹俊、张路、徐云龙、魏欣怡） 23:45
 http://223.167.209.88:1234/966054331
 #EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（詹俊、张路、徐云龙、魏欣怡） 23:45
+http://36.24.107.147:1234/966054331
+#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（詹俊、张路、徐云龙、魏欣怡） 23:45
 http://112.85.93.6:7788/966054331
+#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（詹俊、张路、徐云龙、魏欣怡） 23:45
+http://2280.eu.org:1234/966054331
+#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（李欣、李金羽、姚安妮） 23:45
+http://42.193.195.163:3000/966054326
 #EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（李欣、李金羽、姚安妮） 23:45
 http://223.167.209.88:1234/966054326
 #EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（李欣、李金羽、姚安妮） 23:45
+http://36.24.107.147:1234/966054326
+#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（李欣、李金羽、姚安妮） 23:45
 http://112.85.93.6:7788/966054326
+#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（李欣、李金羽、姚安妮） 23:45
+http://2280.eu.org:1234/966054326
+#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（胡小凡、林梦鸽） 23:45
+http://42.193.195.163:3000/966054099
 #EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（胡小凡、林梦鸽） 23:45
 http://223.167.209.88:1234/966054099
 #EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（胡小凡、林梦鸽） 23:45
+http://36.24.107.147:1234/966054099
+#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（胡小凡、林梦鸽） 23:45
 http://112.85.93.6:7788/966054099
+#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（胡小凡、林梦鸽） 23:45
+http://2280.eu.org:1234/966054099
+#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（张昊泽、涂远） 23:45
+http://42.193.195.163:3000/966054284
 #EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（张昊泽、涂远） 23:45
 http://223.167.209.88:1234/966054284
 #EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（张昊泽、涂远） 23:45
+http://36.24.107.147:1234/966054284
+#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（张昊泽、涂远） 23:45
 http://112.85.93.6:7788/966054284
+#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（张昊泽、涂远） 23:45
+http://2280.eu.org:1234/966054284
+#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（孟繁达、张力） 23:45
+http://42.193.195.163:3000/966054218
 #EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（孟繁达、张力） 23:45
 http://223.167.209.88:1234/966054218
 #EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（孟繁达、张力） 23:45
+http://36.24.107.147:1234/966054218
+#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（孟繁达、张力） 23:45
 http://112.85.93.6:7788/966054218
+#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（孟繁达、张力） 23:45
+http://2280.eu.org:1234/966054218
+#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（陈凯冬、陈熙荣） 23:45
+http://42.193.195.163:3000/966054400
 #EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（陈凯冬、陈熙荣） 23:45
 http://223.167.209.88:1234/966054400
 #EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（陈凯冬、陈熙荣） 23:45
+http://36.24.107.147:1234/966054400
+#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（陈凯冬、陈熙荣） 23:45
 http://112.85.93.6:7788/966054400
+#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（陈凯冬、陈熙荣） 23:45
+http://2280.eu.org:1234/966054400
+#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（洪荒） 23:45
+http://42.193.195.163:3000/966054206
 #EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（洪荒） 23:45
 http://223.167.209.88:1234/966054206
 #EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（洪荒） 23:45
+http://36.24.107.147:1234/966054206
+#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（洪荒） 23:45
 http://112.85.93.6:7788/966054206
+#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（洪荒） 23:45
+http://2280.eu.org:1234/966054206
+#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（陈渤胄） 23:45
+http://42.193.195.163:3000/966054239
 #EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（陈渤胄） 23:45
 http://223.167.209.88:1234/966054239
 #EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（陈渤胄） 23:45
+http://36.24.107.147:1234/966054239
+#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（陈渤胄） 23:45
 http://112.85.93.6:7788/966054239
+#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（陈渤胄） 23:45
+http://2280.eu.org:1234/966054239
+#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（AI智慧观赛） 23:45
+http://42.193.195.163:3000/966054395
 #EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（AI智慧观赛） 23:45
 http://223.167.209.88:1234/966054395
 #EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（AI智慧观赛） 23:45
+http://36.24.107.147:1234/966054395
+#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（AI智慧观赛） 23:45
 http://112.85.93.6:7788/966054395
+#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（AI智慧观赛） 23:45
+http://2280.eu.org:1234/966054395
+#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（智能解说） 23:45
+http://42.193.195.163:3000/966054442
 #EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（智能解说） 23:45
 http://223.167.209.88:1234/966054442
-#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 娄一晨 李彦 赵鹏 孙蕊 03:00
-http://223.167.209.88:1234/965996100
-#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 娄一晨 李彦 赵鹏 孙蕊 03:00
-http://112.85.93.6:7788/965996100
-#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 瑞士队视角 03:00
-http://223.167.209.88:1234/965995823
-#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 瑞士队视角 03:00
-http://112.85.93.6:7788/965995823
-#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 哥伦比亚队视角 03:00
-http://223.167.209.88:1234/965995813
-#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 哥伦比亚队视角 03:00
-http://112.85.93.6:7788/965995813
-#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 AI智慧观赛 03:55
-http://223.167.209.88:1234/965995352
-#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 AI智慧观赛 03:55
-http://112.85.93.6:7788/965995352
-#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 AI智慧观赛 03:55
-http://2280.eu.org:1234/965995352
-#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 粤语：叶紫辰 陆毅隽 03:30
-http://223.167.209.88:1234/965996587
-#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 粤语：叶紫辰 陆毅隽 03:30
-http://112.85.93.6:7788/965996587
-#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 粤语：叶紫辰 陆毅隽 03:30
-http://2280.eu.org:1234/965996587
-#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 女声：沈云怡 兰子非 03:45
-http://223.167.209.88:1234/965996590
-#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 女声：沈云怡 兰子非 03:45
-http://112.85.93.6:7788/965996590
-#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 女声：沈云怡 兰子非 03:45
-http://2280.eu.org:1234/965996590
-#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 新声代：张天翼 洪宇青 03:45
-http://223.167.209.88:1234/965996556
-#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 新声代：张天翼 洪宇青 03:45
-http://112.85.93.6:7788/965996556
-#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 新声代：张天翼 洪宇青 03:45
-http://2280.eu.org:1234/965996556
-#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 闽南语：洪荒 03:45
-http://223.167.209.88:1234/965996584
-#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 闽南语：洪荒 03:45
-http://112.85.93.6:7788/965996584
-#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 闽南语：洪荒 03:45
-http://2280.eu.org:1234/965996584
-#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 沪语：陈渤胄 03:45
-http://223.167.209.88:1234/965996568
-#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 沪语：陈渤胄 03:45
-http://112.85.93.6:7788/965996568
-#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 沪语：陈渤胄 03:45
-http://2280.eu.org:1234/965996568
-#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 CCTV5 12:00
-http://223.167.209.88:1234/965271838
-#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 CCTV5 12:00
-http://112.85.93.6:7788/965271838
-#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 智能字幕 03:00
-http://223.167.209.88:1234/965995447
-#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 智能字幕 03:00
-http://112.85.93.6:7788/965995447
-#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 智能字幕 03:00
-http://2280.eu.org:1234/965995447
-#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 赛场原声 03:45
-http://223.167.209.88:1234/965996073
-#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 赛场原声 03:45
-http://112.85.93.6:7788/965996073
-#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 赛场原声 03:45
-http://2280.eu.org:1234/965996073
-#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 闽南语智能字幕 03:45
-http://223.167.209.88:1234/965995458
-#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 闽南语智能字幕 03:45
-http://112.85.93.6:7788/965995458
-#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 闽南语智能字幕 03:45
-http://2280.eu.org:1234/965995458
-#EXTINF:-1 group-title="体育赛事",NBA 灰熊VS老鹰 王凯 06:55
-http://223.167.209.88:1234/965896670
-#EXTINF:-1 group-title="体育赛事",NBA 灰熊VS老鹰 王凯 06:55
-http://112.85.93.6:7788/965896670
-#EXTINF:-1 group-title="体育赛事",NBA 灰熊VS老鹰 王凯 06:55
-http://2280.eu.org:1234/965896670
-#EXTINF:-1 group-title="体育赛事",NBA 灰熊VS老鹰 英文原声 06:55
-http://223.167.209.88:1234/965898636
-#EXTINF:-1 group-title="体育赛事",NBA 灰熊VS老鹰 英文原声 06:55
-http://112.85.93.6:7788/965898636
-#EXTINF:-1 group-title="体育赛事",NBA 灰熊VS老鹰 英文原声 06:55
-http://2280.eu.org:1234/965898636
+#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（智能解说） 23:45
+http://36.24.107.147:1234/966054442
+#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（智能解说） 23:45
+http://112.85.93.6:7788/966054442
+#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 全场回放（智能解说） 23:45
+http://2280.eu.org:1234/966054442
+#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 纯享版回放（娄一晨、李彦、赵鹏、孙蕊） 03:45
+http://42.193.195.163:3000/966057211
+#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 纯享版回放（娄一晨、李彦、赵鹏、孙蕊） 03:45
+http://223.167.209.88:1234/966057211
+#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 纯享版回放（娄一晨、李彦、赵鹏、孙蕊） 03:45
+http://112.85.93.6:7788/966057211
+#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 全场回放（娄一晨、李彦、赵鹏、孙蕊） 03:45
+http://42.193.195.163:3000/966057402
+#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 全场回放（娄一晨、李彦、赵鹏、孙蕊） 03:45
+http://223.167.209.88:1234/966057402
+#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 全场回放（娄一晨、李彦、赵鹏、孙蕊） 03:45
+http://112.85.93.6:7788/966057402
+#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 全场回放（沈云怡、兰子非） 03:45
+http://42.193.195.163:3000/966057274
+#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 全场回放（沈云怡、兰子非） 03:45
+http://223.167.209.88:1234/966057274
+#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 全场回放（沈云怡、兰子非） 03:45
+http://112.85.93.6:7788/966057274
+#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 全场回放（张天翼、洪宇青） 03:45
+http://42.193.195.163:3000/966057262
+#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 全场回放（张天翼、洪宇青） 03:45
+http://223.167.209.88:1234/966057262
+#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 全场回放（张天翼、洪宇青） 03:45
+http://112.85.93.6:7788/966057262
+#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 全场回放（叶紫辰、陆毅隽） 03:45
+http://42.193.195.163:3000/966057257
+#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 全场回放（叶紫辰、陆毅隽） 03:45
+http://223.167.209.88:1234/966057257
+#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 全场回放（叶紫辰、陆毅隽） 03:45
+http://112.85.93.6:7788/966057257
+#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 全场回放（洪荒） 03:45
+http://42.193.195.163:3000/966057250
+#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 全场回放（洪荒） 03:45
+http://223.167.209.88:1234/966057250
+#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 全场回放（洪荒） 03:45
+http://112.85.93.6:7788/966057250
+#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 全场回放（陈渤胄） 03:45
+http://42.193.195.163:3000/966057289
+#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 全场回放（陈渤胄） 03:45
+http://223.167.209.88:1234/966057289
+#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 全场回放（陈渤胄） 03:45
+http://112.85.93.6:7788/966057289
+#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 全场回放（AI智慧观赛） 03:45
+http://42.193.195.163:3000/966057344
+#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 全场回放（AI智慧观赛） 03:45
+http://223.167.209.88:1234/966057344
+#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 全场回放（AI智慧观赛） 03:45
+http://112.85.93.6:7788/966057344
+#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 全场回放（智能解说） 03:45
+http://42.193.195.163:3000/966057313
+#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 全场回放（智能解说） 03:45
+http://223.167.209.88:1234/966057313
+#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 全场回放（智能解说） 03:45
+http://112.85.93.6:7788/966057313
+#EXTINF:-1 group-title="体育赛事",NBA 灰熊VS老鹰 全场回放（王凯） 06:55
+http://42.193.195.163:3000/966058145
+#EXTINF:-1 group-title="体育赛事",NBA 灰熊VS老鹰 全场回放（王凯） 06:55
+http://223.167.209.88:1234/966058145
+#EXTINF:-1 group-title="体育赛事",NBA 灰熊VS老鹰 全场回放（王凯） 06:55
+http://112.85.93.6:7788/966058145
+#EXTINF:-1 group-title="体育赛事",NBA 爵士VS雷霆 罗森 08:55
+http://42.193.195.163:3000/965896691
 #EXTINF:-1 group-title="体育赛事",NBA 爵士VS雷霆 罗森 08:55
 http://223.167.209.88:1234/965896691
+#EXTINF:-1 group-title="体育赛事",NBA 爵士VS雷霆 罗森 08:55
+http://36.24.107.147:1234/965896691
 #EXTINF:-1 group-title="体育赛事",NBA 爵士VS雷霆 罗森 08:55
 http://112.85.93.6:7788/965896691
 #EXTINF:-1 group-title="体育赛事",NBA 爵士VS雷霆 罗森 08:55
 http://2280.eu.org:1234/965896691
 #EXTINF:-1 group-title="体育赛事",NBA 爵士VS雷霆 英文原声 08:55
+http://42.193.195.163:3000/965898669
+#EXTINF:-1 group-title="体育赛事",NBA 爵士VS雷霆 英文原声 08:55
 http://223.167.209.88:1234/965898669
+#EXTINF:-1 group-title="体育赛事",NBA 爵士VS雷霆 英文原声 08:55
+http://36.24.107.147:1234/965898669
 #EXTINF:-1 group-title="体育赛事",NBA 爵士VS雷霆 英文原声 08:55
 http://112.85.93.6:7788/965898669
 #EXTINF:-1 group-title="体育赛事",NBA 爵士VS雷霆 英文原声 08:55
 http://2280.eu.org:1234/965898669
 #EXTINF:-1 group-title="体育赛事",武术套路世界杯 第四届武术世界杯 第二日上半场 解说 08:55
+http://42.193.195.163:3000/965929646
+#EXTINF:-1 group-title="体育赛事",武术套路世界杯 第四届武术世界杯 第二日上半场 解说 08:55
 http://223.167.209.88:1234/965929646
+#EXTINF:-1 group-title="体育赛事",武术套路世界杯 第四届武术世界杯 第二日上半场 解说 08:55
+http://36.24.107.147:1234/965929646
 #EXTINF:-1 group-title="体育赛事",武术套路世界杯 第四届武术世界杯 第二日上半场 解说 08:55
 http://112.85.93.6:7788/965929646
 #EXTINF:-1 group-title="体育赛事",武术套路世界杯 第四届武术世界杯 第二日上半场 解说 08:55
 http://2280.eu.org:1234/965929646
 #EXTINF:-1 group-title="体育赛事",武术套路世界杯 第四届武术世界杯 第二日上半场 清流 08:55
+http://42.193.195.163:3000/965929682
+#EXTINF:-1 group-title="体育赛事",武术套路世界杯 第四届武术世界杯 第二日上半场 清流 08:55
 http://223.167.209.88:1234/965929682
+#EXTINF:-1 group-title="体育赛事",武术套路世界杯 第四届武术世界杯 第二日上半场 清流 08:55
+http://36.24.107.147:1234/965929682
 #EXTINF:-1 group-title="体育赛事",武术套路世界杯 第四届武术世界杯 第二日上半场 清流 08:55
 http://112.85.93.6:7788/965929682
 #EXTINF:-1 group-title="体育赛事",武术套路世界杯 第四届武术世界杯 第二日上半场 清流 08:55
 http://2280.eu.org:1234/965929682
 #EXTINF:-1 group-title="体育赛事",BWF 经典重映-2026全英赛决赛 赛事重映 12:00
+http://42.193.195.163:3000/966014263
+#EXTINF:-1 group-title="体育赛事",BWF 经典重映-2026全英赛决赛 赛事重映 12:00
 http://223.167.209.88:1234/966014263
+#EXTINF:-1 group-title="体育赛事",BWF 经典重映-2026全英赛决赛 赛事重映 12:00
+http://36.24.107.147:1234/966014263
 #EXTINF:-1 group-title="体育赛事",BWF 经典重映-2026全英赛决赛 赛事重映 12:00
 http://112.85.93.6:7788/966014263
 #EXTINF:-1 group-title="体育赛事",BWF 经典重映-2026全英赛决赛 赛事重映 12:00
 http://2280.eu.org:1234/966014263
 #EXTINF:-1 group-title="体育赛事",武术套路世界杯 第四届武术世界杯 第二日下半场 解说 14:55
+http://42.193.195.163:3000/965929650
+#EXTINF:-1 group-title="体育赛事",武术套路世界杯 第四届武术世界杯 第二日下半场 解说 14:55
 http://223.167.209.88:1234/965929650
+#EXTINF:-1 group-title="体育赛事",武术套路世界杯 第四届武术世界杯 第二日下半场 解说 14:55
+http://36.24.107.147:1234/965929650
 #EXTINF:-1 group-title="体育赛事",武术套路世界杯 第四届武术世界杯 第二日下半场 解说 14:55
 http://112.85.93.6:7788/965929650
 #EXTINF:-1 group-title="体育赛事",武术套路世界杯 第四届武术世界杯 第二日下半场 解说 14:55
 http://2280.eu.org:1234/965929650
 #EXTINF:-1 group-title="体育赛事",武术套路世界杯 第四届武术世界杯 第二日下半场 清流 14:55
+http://42.193.195.163:3000/965929694
+#EXTINF:-1 group-title="体育赛事",武术套路世界杯 第四届武术世界杯 第二日下半场 清流 14:55
 http://223.167.209.88:1234/965929694
+#EXTINF:-1 group-title="体育赛事",武术套路世界杯 第四届武术世界杯 第二日下半场 清流 14:55
+http://36.24.107.147:1234/965929694
 #EXTINF:-1 group-title="体育赛事",武术套路世界杯 第四届武术世界杯 第二日下半场 清流 14:55
 http://112.85.93.6:7788/965929694
 #EXTINF:-1 group-title="体育赛事",武术套路世界杯 第四届武术世界杯 第二日下半场 清流 14:55
 http://2280.eu.org:1234/965929694
 #EXTINF:-1 group-title="体育赛事",斯诺克 【重播】2022世锦赛 凯伦·威尔逊vs丁俊晖（第一阶段） 第一阶段 17:00
+http://42.193.195.163:3000/966011505
+#EXTINF:-1 group-title="体育赛事",斯诺克 【重播】2022世锦赛 凯伦·威尔逊vs丁俊晖（第一阶段） 第一阶段 17:00
 http://223.167.209.88:1234/966011505
+#EXTINF:-1 group-title="体育赛事",斯诺克 【重播】2022世锦赛 凯伦·威尔逊vs丁俊晖（第一阶段） 第一阶段 17:00
+http://36.24.107.147:1234/966011505
 #EXTINF:-1 group-title="体育赛事",斯诺克 【重播】2022世锦赛 凯伦·威尔逊vs丁俊晖（第一阶段） 第一阶段 17:00
 http://112.85.93.6:7788/966011505
 #EXTINF:-1 group-title="体育赛事",斯诺克 【重播】2022世锦赛 凯伦·威尔逊vs丁俊晖（第一阶段） 第一阶段 17:00
 http://2280.eu.org:1234/966011505
 #EXTINF:-1 group-title="体育赛事",世界杯 《绿茵狂想》第27期 绿茵狂想第27期 19:00
+http://42.193.195.163:3000/965274161
+#EXTINF:-1 group-title="体育赛事",世界杯 《绿茵狂想》第27期 绿茵狂想第27期 19:00
 http://223.167.209.88:1234/965274161
+#EXTINF:-1 group-title="体育赛事",世界杯 《绿茵狂想》第27期 绿茵狂想第27期 19:00
+http://36.24.107.147:1234/965274161
 #EXTINF:-1 group-title="体育赛事",世界杯 《绿茵狂想》第27期 绿茵狂想第27期 19:00
 http://112.85.93.6:7788/965274161
 #EXTINF:-1 group-title="体育赛事",世界杯 《绿茵狂想》第27期 绿茵狂想第27期 19:00
 http://2280.eu.org:1234/965274161
 #EXTINF:-1 group-title="体育赛事",粤BA 深圳VS广州 2026赛季广东省城市篮球联赛半决赛第二轮: 深圳VS广州 19:30
+http://42.193.195.163:3000/965798940
+#EXTINF:-1 group-title="体育赛事",粤BA 深圳VS广州 2026赛季广东省城市篮球联赛半决赛第二轮: 深圳VS广州 19:30
 http://223.167.209.88:1234/965798940
+#EXTINF:-1 group-title="体育赛事",粤BA 深圳VS广州 2026赛季广东省城市篮球联赛半决赛第二轮: 深圳VS广州 19:30
+http://36.24.107.147:1234/965798940
 #EXTINF:-1 group-title="体育赛事",粤BA 深圳VS广州 2026赛季广东省城市篮球联赛半决赛第二轮: 深圳VS广州 19:30
 http://112.85.93.6:7788/965798940
 #EXTINF:-1 group-title="体育赛事",粤BA 深圳VS广州 2026赛季广东省城市篮球联赛半决赛第二轮: 深圳VS广州 19:30
 http://2280.eu.org:1234/965798940
 #EXTINF:-1 group-title="体育赛事",粤BA 东莞VS中山 2026赛季广东省城市篮球联赛半决赛第二轮: 东莞VS中山 19:30
+http://42.193.195.163:3000/965798957
+#EXTINF:-1 group-title="体育赛事",粤BA 东莞VS中山 2026赛季广东省城市篮球联赛半决赛第二轮: 东莞VS中山 19:30
 http://223.167.209.88:1234/965798957
+#EXTINF:-1 group-title="体育赛事",粤BA 东莞VS中山 2026赛季广东省城市篮球联赛半决赛第二轮: 东莞VS中山 19:30
+http://36.24.107.147:1234/965798957
 #EXTINF:-1 group-title="体育赛事",粤BA 东莞VS中山 2026赛季广东省城市篮球联赛半决赛第二轮: 东莞VS中山 19:30
 http://112.85.93.6:7788/965798957
 #EXTINF:-1 group-title="体育赛事",粤BA 东莞VS中山 2026赛季广东省城市篮球联赛半决赛第二轮: 东莞VS中山 19:30
 http://2280.eu.org:1234/965798957
 #EXTINF:-1 group-title="体育赛事",浙BA 衢江VS龙游 2026赛季浙江省城市篮球联赛衢州赛区: 衢江VS龙游 19:30
+http://42.193.195.163:3000/966011074
+#EXTINF:-1 group-title="体育赛事",浙BA 衢江VS龙游 2026赛季浙江省城市篮球联赛衢州赛区: 衢江VS龙游 19:30
 http://223.167.209.88:1234/966011074
+#EXTINF:-1 group-title="体育赛事",浙BA 衢江VS龙游 2026赛季浙江省城市篮球联赛衢州赛区: 衢江VS龙游 19:30
+http://36.24.107.147:1234/966011074
 #EXTINF:-1 group-title="体育赛事",浙BA 衢江VS龙游 2026赛季浙江省城市篮球联赛衢州赛区: 衢江VS龙游 19:30
 http://112.85.93.6:7788/966011074
 #EXTINF:-1 group-title="体育赛事",浙BA 衢江VS龙游 2026赛季浙江省城市篮球联赛衢州赛区: 衢江VS龙游 19:30
 http://2280.eu.org:1234/966011074
 #EXTINF:-1 group-title="体育赛事",中国之队·银川国际青年足球锦标赛 中国U17VS坦桑尼亚U17 张昊泽 王宇 19:20
+http://42.193.195.163:3000/965930702
+#EXTINF:-1 group-title="体育赛事",中国之队·银川国际青年足球锦标赛 中国U17VS坦桑尼亚U17 张昊泽 王宇 19:20
 http://223.167.209.88:1234/965930702
+#EXTINF:-1 group-title="体育赛事",中国之队·银川国际青年足球锦标赛 中国U17VS坦桑尼亚U17 张昊泽 王宇 19:20
+http://36.24.107.147:1234/965930702
 #EXTINF:-1 group-title="体育赛事",中国之队·银川国际青年足球锦标赛 中国U17VS坦桑尼亚U17 张昊泽 王宇 19:20
 http://112.85.93.6:7788/965930702
 #EXTINF:-1 group-title="体育赛事",中国之队·银川国际青年足球锦标赛 中国U17VS坦桑尼亚U17 张昊泽 王宇 19:20
 http://2280.eu.org:1234/965930702
 #EXTINF:-1 group-title="体育赛事",中国之队·银川国际青年足球锦标赛 中国U17VS坦桑尼亚U17 赛场原声 19:20
+http://42.193.195.163:3000/965930679
+#EXTINF:-1 group-title="体育赛事",中国之队·银川国际青年足球锦标赛 中国U17VS坦桑尼亚U17 赛场原声 19:20
 http://223.167.209.88:1234/965930679
+#EXTINF:-1 group-title="体育赛事",中国之队·银川国际青年足球锦标赛 中国U17VS坦桑尼亚U17 赛场原声 19:20
+http://36.24.107.147:1234/965930679
 #EXTINF:-1 group-title="体育赛事",中国之队·银川国际青年足球锦标赛 中国U17VS坦桑尼亚U17 赛场原声 19:20
 http://112.85.93.6:7788/965930679
 #EXTINF:-1 group-title="体育赛事",中国之队·银川国际青年足球锦标赛 中国U17VS坦桑尼亚U17 赛场原声 19:20
 http://2280.eu.org:1234/965930679
-#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 詹俊 张路 徐云龙 魏欣怡 23:00
-http://2280.eu.org:1234/965996216
-#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 李欣 李金羽 姚安妮 23:00
-http://2280.eu.org:1234/965996214
-#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 孟繁达 张力 23:45
-http://2280.eu.org:1234/965996176
-#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 AI智慧观赛 23:55
-http://2280.eu.org:1234/965995339
-#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 粤语：陈凯冬 陈熙荣 23:30
-http://2280.eu.org:1234/965996653
-#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 阿根廷队球星视角 23:00
-http://2280.eu.org:1234/965995912
-#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 埃及队球星视角 23:00
-http://2280.eu.org:1234/965995870
-#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 女声：胡小凡 林梦鸽 23:45
-http://2280.eu.org:1234/965996678
-#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 新声代：张昊泽 涂远 23:45
-http://2280.eu.org:1234/965996612
-#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 闽南语：洪荒 23:45
-http://2280.eu.org:1234/965996627
-#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 沪语：陈渤胄 23:45
-http://2280.eu.org:1234/965996623
-#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 CCTV5 12:00
-http://2280.eu.org:1234/965271838
-#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 赛场原声 23:45
-http://2280.eu.org:1234/965996120
-#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 阿根廷队视角 23:00
-http://2280.eu.org:1234/965995994
-#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 埃及队视角 23:00
-http://2280.eu.org:1234/965995940
-#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 我在主席台看球 23:00
-http://2280.eu.org:1234/965995932
-#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 最佳观赛位 23:00
-http://2280.eu.org:1234/965995881
-#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 开天眼了！ 23:00
-http://2280.eu.org:1234/965995841
-#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 为了听不到的你 23:00
-http://2280.eu.org:1234/965995414
-#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 沪语智能字幕 23:45
-http://2280.eu.org:1234/965995484
-#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 娄一晨 李彦 赵鹏 03:00
+#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 娄一晨 李彦 赵鹏 孙蕊 03:00
+http://36.24.107.147:1234/965996100
+#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 娄一晨 李彦 赵鹏 孙蕊 03:00
 http://2280.eu.org:1234/965996100
-#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 詹俊 张路 徐云龙 23:00
-http://42.193.195.163:3000/965996216
-#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 李欣 李金羽 姚安妮 23:00
-http://42.193.195.163:3000/965996214
-#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 孟繁达 张力 23:45
-http://42.193.195.163:3000/965996176
-#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 AI智慧观赛 23:55
-http://42.193.195.163:3000/965995339
-#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 粤语：陈凯冬 陈熙荣 23:30
-http://42.193.195.163:3000/965996653
-#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 女声：胡小凡 林梦鸽 23:45
-http://42.193.195.163:3000/965996678
-#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 新声代：张昊泽 涂远 23:45
-http://42.193.195.163:3000/965996612
-#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 闽南语：洪荒 23:45
-http://42.193.195.163:3000/965996627
-#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 沪语：陈渤胄 23:45
-http://42.193.195.163:3000/965996623
-#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 赛场原声 23:45
-http://42.193.195.163:3000/965996120
-#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 智能字幕 23:00
-http://42.193.195.163:3000/965995414
-#EXTINF:-1 group-title="体育赛事",世界杯 阿根廷VS埃及 沪语智能字幕 23:45
-http://42.193.195.163:3000/965995484
-#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 娄一晨 李彦 赵鹏 03:00
-http://42.193.195.163:3000/965996100
 #EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 AI智慧观赛 03:55
-http://42.193.195.163:3000/965995352
+http://36.24.107.147:1234/965995352
 #EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 粤语：叶紫辰 陆毅隽 03:30
-http://42.193.195.163:3000/965996587
+http://36.24.107.147:1234/965996587
 #EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 女声：沈云怡 兰子非 03:45
-http://42.193.195.163:3000/965996590
+http://36.24.107.147:1234/965996590
 #EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 新声代：张天翼 洪宇青 03:45
-http://42.193.195.163:3000/965996556
+http://36.24.107.147:1234/965996556
 #EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 闽南语：洪荒 03:45
-http://42.193.195.163:3000/965996584
+http://36.24.107.147:1234/965996584
 #EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 沪语：陈渤胄 03:45
-http://42.193.195.163:3000/965996568
+http://36.24.107.147:1234/965996568
+#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 瑞士队视角 03:00
+http://36.24.107.147:1234/965995823
+#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 瑞士队视角 03:00
+http://2280.eu.org:1234/965995823
+#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 哥伦比亚队视角 03:00
+http://36.24.107.147:1234/965995813
+#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 瑞士队球星视角 03:45
+http://36.24.107.147:1234/965995754
+#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 瑞士队球星视角 03:45
+http://2280.eu.org:1234/965995754
+#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 哥伦比亚队球星视角 03:45
+http://36.24.107.147:1234/965995691
+#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 我在主席台看球 03:45
+http://36.24.107.147:1234/965995764
+#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 最佳观赛位 03:45
+http://36.24.107.147:1234/965995713
+#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 开天眼了！ 03:45
+http://36.24.107.147:1234/965995689
+#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 CCTV5 12:00
+http://36.24.107.147:1234/965271838
 #EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 智能字幕 03:00
-http://42.193.195.163:3000/965995447
+http://36.24.107.147:1234/965995447
+#EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 智能字幕 03:00
+http://2280.eu.org:1234/965995447
 #EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 赛场原声 03:45
-http://42.193.195.163:3000/965996073
+http://36.24.107.147:1234/965996073
 #EXTINF:-1 group-title="体育赛事",世界杯 瑞士VS哥伦比亚 闽南语智能字幕 03:45
-http://42.193.195.163:3000/965995458
+http://36.24.107.147:1234/965995458
 #EXTINF:-1 group-title="体育赛事",NBA 灰熊VS老鹰 王凯 06:55
-http://42.193.195.163:3000/965896670
+http://36.24.107.147:1234/965896670
+#EXTINF:-1 group-title="体育赛事",NBA 灰熊VS老鹰 王凯 06:55
+http://2280.eu.org:1234/965896670
 #EXTINF:-1 group-title="体育赛事",NBA 灰熊VS老鹰 英文原声 06:55
-http://42.193.195.163:3000/965898636
-#EXTINF:-1 group-title="体育赛事",NBA 爵士VS雷霆 罗森 08:55
-http://42.193.195.163:3000/965896691
-#EXTINF:-1 group-title="体育赛事",NBA 爵士VS雷霆 英文原声 08:55
-http://42.193.195.163:3000/965898669
-#EXTINF:-1 group-title="体育赛事",武术套路世界杯 第四届武术世界杯 第二日上半场 解说 08:55
-http://42.193.195.163:3000/965929646
-#EXTINF:-1 group-title="体育赛事",武术套路世界杯 第四届武术世界杯 第二日上半场 清流 08:55
-http://42.193.195.163:3000/965929682
-#EXTINF:-1 group-title="体育赛事",BWF 经典重映-2026全英赛决赛 赛事重映 12:00
-http://42.193.195.163:3000/966014263
-#EXTINF:-1 group-title="体育赛事",武术套路世界杯 第四届武术世界杯 第二日下半场 解说 14:55
-http://42.193.195.163:3000/965929650
-#EXTINF:-1 group-title="体育赛事",武术套路世界杯 第四届武术世界杯 第二日下半场 清流 14:55
-http://42.193.195.163:3000/965929694
-#EXTINF:-1 group-title="体育赛事",斯诺克 【重播】2022世锦赛 凯伦·威尔逊vs丁俊晖（第一阶段） 第一阶段 17:00
-http://42.193.195.163:3000/966011505
-#EXTINF:-1 group-title="体育赛事",世界杯 《绿茵狂想》第27期 绿茵狂想第27期 19:00
-http://42.193.195.163:3000/965274161
-#EXTINF:-1 group-title="体育赛事",粤BA 深圳VS广州 2026赛季广东省城市篮球联赛半决赛第二轮: 深圳VS广州 19:30
-http://42.193.195.163:3000/965798940
-#EXTINF:-1 group-title="体育赛事",粤BA 东莞VS中山 2026赛季广东省城市篮球联赛半决赛第二轮: 东莞VS中山 19:30
-http://42.193.195.163:3000/965798957
-#EXTINF:-1 group-title="体育赛事",浙BA 衢江VS龙游 2026赛季浙江省城市篮球联赛衢州赛区: 衢江VS龙游 19:30
-http://42.193.195.163:3000/966011074
-#EXTINF:-1 group-title="体育赛事",中国之队·银川国际青年足球锦标赛 中国U17VS坦桑尼亚U17 张昊泽 王宇 19:20
-http://42.193.195.163:3000/965930702
-#EXTINF:-1 group-title="体育赛事",中国之队·银川国际青年足球锦标赛 中国U17VS坦桑尼亚U17 赛场原声 19:20
-http://42.193.195.163:3000/965930679
+http://36.24.107.147:1234/965898636
+#EXTINF:-1 group-title="体育赛事",NBA 灰熊VS老鹰 英文原声 06:55
+http://2280.eu.org:1234/965898636
+#EXTINF:-1 group-title="体育赛事",BWF 经典重映-2026印尼赛半决赛 赛事重映 12:00
+http://42.193.195.163:3000/966014347
 #EXTINF:-1 group-title="体育赛事",BWF 经典重映-2026印尼赛半决赛 赛事重映 12:00
 http://223.167.209.88:1234/966014347
+#EXTINF:-1 group-title="体育赛事",BWF 经典重映-2026印尼赛半决赛 赛事重映 12:00
+http://36.24.107.147:1234/966014347
 #EXTINF:-1 group-title="体育赛事",BWF 经典重映-2026印尼赛半决赛 赛事重映 12:00
 http://112.85.93.6:7788/966014347
 #EXTINF:-1 group-title="体育赛事",BWF 经典重映-2026印尼赛半决赛 赛事重映 12:00
 http://2280.eu.org:1234/966014347
 #EXTINF:-1 group-title="体育赛事",斯诺克 【重播】2022世锦赛 凯伦·威尔逊vs丁俊晖（第二阶段） 第二阶段 17:00
+http://42.193.195.163:3000/966011498
+#EXTINF:-1 group-title="体育赛事",斯诺克 【重播】2022世锦赛 凯伦·威尔逊vs丁俊晖（第二阶段） 第二阶段 17:00
 http://223.167.209.88:1234/966011498
+#EXTINF:-1 group-title="体育赛事",斯诺克 【重播】2022世锦赛 凯伦·威尔逊vs丁俊晖（第二阶段） 第二阶段 17:00
+http://36.24.107.147:1234/966011498
 #EXTINF:-1 group-title="体育赛事",斯诺克 【重播】2022世锦赛 凯伦·威尔逊vs丁俊晖（第二阶段） 第二阶段 17:00
 http://112.85.93.6:7788/966011498
 #EXTINF:-1 group-title="体育赛事",斯诺克 【重播】2022世锦赛 凯伦·威尔逊vs丁俊晖（第二阶段） 第二阶段 17:00
 http://2280.eu.org:1234/966011498
 #EXTINF:-1 group-title="体育赛事",世界杯 人机大战：谁是世界杯预言家 第14期 人机大战第14期 21:00
+http://42.193.195.163:3000/965549876
+#EXTINF:-1 group-title="体育赛事",世界杯 人机大战：谁是世界杯预言家 第14期 人机大战第14期 21:00
 http://223.167.209.88:1234/965549876
+#EXTINF:-1 group-title="体育赛事",世界杯 人机大战：谁是世界杯预言家 第14期 人机大战第14期 21:00
+http://36.24.107.147:1234/965549876
 #EXTINF:-1 group-title="体育赛事",世界杯 人机大战：谁是世界杯预言家 第14期 人机大战第14期 21:00
 http://112.85.93.6:7788/965549876
 #EXTINF:-1 group-title="体育赛事",世界杯 人机大战：谁是世界杯预言家 第14期 人机大战第14期 21:00
