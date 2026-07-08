@@ -27346,5 +27346,65 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "1d161d5b5b8ef87bc77318a9f1eaf016": {
+    "source_key": "1d161d5b5b8ef87bc77318a9f1eaf016",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1783543500-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-b38332734a4b8cc4507bfe3d396f1974&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "9a966c83be2b97b20792b89c0c3ea1e9": {
+    "source_key": "9a966c83be2b97b20792b89c0c3ea1e9",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1783543500-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-d48ecb4ed330c0413002839d44ea8cfa&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "abce72ea322fa399816551ed98c411e1": {
+    "source_key": "abce72ea322fa399816551ed98c411e1",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-e6b1c5baf4e240fe63adbf68dda23435.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=88cbdc12e8b58c32c0ba4d4ff3301b28",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "0751e7705b6d7ddc4ce1705c229f9e4c": {
+    "source_key": "0751e7705b6d7ddc4ce1705c229f9e4c",
+    "channel_name": "新疆卫视",
+    "url": "http://123.163.114.168:85/tsfile/live/0110_1.m3u8?key=txiptv&playlive=1&authid=0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "4cc94e2f664d75245fd239b2206d9812": {
+    "source_key": "4cc94e2f664d75245fd239b2206d9812",
+    "channel_name": "湖南卫视",
+    "url": "https://txmov2.a.kwimgs.com/bs3/video-hls/5199687338554291078_hlsb.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
