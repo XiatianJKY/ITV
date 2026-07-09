@@ -27670,5 +27670,53 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "164f24057f684e702152385bc34474ef": {
+    "source_key": "164f24057f684e702152385bc34474ef",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1783659600-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-96793a24200822e1fb45f28edc60b9d1&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "a29b79fa9806a93569be387523d87165": {
+    "source_key": "a29b79fa9806a93569be387523d87165",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-e6b1c5baf4e240fe63adbf68dda23435.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=36db1500e7ac8ce7620c22fbd1eabc47",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "25dee81d4094b33a5b4eacd0b82252fa": {
+    "source_key": "25dee81d4094b33a5b4eacd0b82252fa",
+    "channel_name": "四川卫视",
+    "url": "http://182.150.23.74:808/hls/38/index.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "ad301fdda4a15419ea6ba1213029c819": {
+    "source_key": "ad301fdda4a15419ea6ba1213029c819",
+    "channel_name": "广安公共",
+    "url": "http://live1.gatv.com.cn:85/live/GGPD.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
