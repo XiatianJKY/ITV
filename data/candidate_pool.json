@@ -27562,5 +27562,77 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "cd522921c88b54e720afd6da6240bf93": {
+    "source_key": "cd522921c88b54e720afd6da6240bf93",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1783612800-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-ab8a63248aa130d58580a7c9cef002df&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "7ff453489182ff7c93da2990b60ebb2d": {
+    "source_key": "7ff453489182ff7c93da2990b60ebb2d",
+    "channel_name": "CCTV-7",
+    "url": "http://112.46.85.60:8009/hls/504/index.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "d29ff16be3d7f01c454c41f9e8314d90": {
+    "source_key": "d29ff16be3d7f01c454c41f9e8314d90",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-702cae17a28d6e4f0c0002bba021d934.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=9624f2d1f1dd4e41f4440a78cbc6acce",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "3b10fc4ca3bcfb0f9be8683596a8612e": {
+    "source_key": "3b10fc4ca3bcfb0f9be8683596a8612e",
+    "channel_name": "河南卫视",
+    "url": "http://183.11.239.36:808/hls/51/index.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "161eada491b128d4e498f6f71a316685": {
+    "source_key": "161eada491b128d4e498f6f71a316685",
+    "channel_name": "湖北卫视",
+    "url": "http://124.116.183.146:9901/tsfile/live/0132_1.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "1dfc48f38acb69952005231a88e86736": {
+    "source_key": "1dfc48f38acb69952005231a88e86736",
+    "channel_name": "澳视澳门",
+    "url": "http://php.jdshipin.com:8880/TVOD/iptv.php?id=asam",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
