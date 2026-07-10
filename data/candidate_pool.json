@@ -27766,5 +27766,113 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "b5c631a2f7b4c17c91e22947ce474130": {
+    "source_key": "b5c631a2f7b4c17c91e22947ce474130",
+    "channel_name": "CCTV-1",
+    "url": "http://183.11.239.36:808/hls/19/index.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "de36a11954a2b7901d103fd13d464d17": {
+    "source_key": "de36a11954a2b7901d103fd13d464d17",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1783699200-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-ec1154bfaa5a4b9aca68d8af9b30231d&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "46f045d6f93cc07aa96d6fe49891031d": {
+    "source_key": "46f045d6f93cc07aa96d6fe49891031d",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1783699200-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-55fad9cce78819045b65f00c2defbd0c&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "fa615fb615339b4e860536d015369acb": {
+    "source_key": "fa615fb615339b4e860536d015369acb",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-702cae17a28d6e4f0c0002bba021d934.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=4d9c769a6120bcff344c011d007121f5",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "e757b0688befeac6bd783621fc6b1fb8": {
+    "source_key": "e757b0688befeac6bd783621fc6b1fb8",
+    "channel_name": "CCTV-10",
+    "url": "http://183.11.239.36:808/hls/28/index.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "27ad0d8128e19f69e1685f72a1ea38ae": {
+    "source_key": "27ad0d8128e19f69e1685f72a1ea38ae",
+    "channel_name": "CCTV-11",
+    "url": "http://183.11.239.36:808/hls/29/index.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "453f66f41101d386f6fcdcb533f34c7e": {
+    "source_key": "453f66f41101d386f6fcdcb533f34c7e",
+    "channel_name": "CCTV-5",
+    "url": "http://222.169.85.8:9901/tsfile/live/0005_1.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "dde9fef443f381a6d2eaa2587d10b98a": {
+    "source_key": "dde9fef443f381a6d2eaa2587d10b98a",
+    "channel_name": "宁夏卫视",
+    "url": "http://183.11.239.36:808/hls/106/index.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "7666cf2d0d8acca14387bc04fed5f6b6": {
+    "source_key": "7666cf2d0d8acca14387bc04fed5f6b6",
+    "channel_name": "江西卫视",
+    "url": "http://183.11.239.36:808/hls/44/index.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
