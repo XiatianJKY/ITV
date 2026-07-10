@@ -27946,5 +27946,89 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "e0ff16176f870dec298a208b81e26d6c": {
+    "source_key": "e0ff16176f870dec298a208b81e26d6c",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1783756800-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-934bf009c0e448206e15b60c26624468&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "5e7f73b0e79f1068c51661fd173e578c": {
+    "source_key": "5e7f73b0e79f1068c51661fd173e578c",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1783756800-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-9a75e1d517aa1f930470015395913706&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "0f2b8be9493761bd5b0f55d360ed63e6": {
+    "source_key": "0f2b8be9493761bd5b0f55d360ed63e6",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-e6b1c5baf4e240fe63adbf68dda23435.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=3813914d39b548c058c850cb6a1a30d0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "4408d1161407e26d45f84382f5c7a43a": {
+    "source_key": "4408d1161407e26d45f84382f5c7a43a",
+    "channel_name": "CGTN俄语",
+    "url": "http://russian-livews.cgtn.com/hls/LSvexABhNipibK5KRuUkvHZ7220802LSTeze9o8tdFXMHsb1VosgoT220802cd.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "82730b4bdeec9e013436ec6d22f39248": {
+    "source_key": "82730b4bdeec9e013436ec6d22f39248",
+    "channel_name": "海南卫视",
+    "url": "http://111.221.137.234:44330/tsfile/live/0117_1.m3u8?key=txiptv&playlive=0&authid=0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "ee2ebf533f421018ffc34bffc11a6039": {
+    "source_key": "ee2ebf533f421018ffc34bffc11a6039",
+    "channel_name": "浙江教科影视",
+    "url": "http://ali-xwl.cztv.com/live/channel04720Plxw.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "a364cf3842568964e3a2238dd1417940": {
+    "source_key": "a364cf3842568964e3a2238dd1417940",
+    "channel_name": "浙江数码时代",
+    "url": "https://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8\\r\\n",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
