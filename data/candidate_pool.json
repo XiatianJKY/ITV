@@ -28162,5 +28162,89 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "9fd4bebc725feb3d7ad28c176e7586fb": {
+    "source_key": "9fd4bebc725feb3d7ad28c176e7586fb",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1783825200-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-faa6facaf638dc1f8c8b608fc007fd93&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "59288d92be190ca59e51e778e2ee2218": {
+    "source_key": "59288d92be190ca59e51e778e2ee2218",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-e6b1c5baf4e240fe63adbf68dda23435.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=e6f4e216eec4a291a00318e791656d3a",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "4db5b61373c08f0ae70a3767909d0431": {
+    "source_key": "4db5b61373c08f0ae70a3767909d0431",
+    "channel_name": "CCTV-17",
+    "url": "http://120.76.248.139/live/bfgd/4200000204.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "c3e2fa6aa09c69e14a234b23458f3558": {
+    "source_key": "c3e2fa6aa09c69e14a234b23458f3558",
+    "channel_name": "CGTN法语",
+    "url": "http://espanol-liveali.cgtn.com/hls/LSveOGBaBw41Ea7ukkVAUdKQ220802LSTexu6xAuFH8VZNBLE1ZNEa220802cd.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "e85e88c53abd9996d66ddf518bc4939a": {
+    "source_key": "e85e88c53abd9996d66ddf518bc4939a",
+    "channel_name": "青海卫视",
+    "url": "http://120.76.248.139/live/bfgd/4200000111.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "6d48d70d390c39b6fddc0f81e526034a": {
+    "source_key": "6d48d70d390c39b6fddc0f81e526034a",
+    "channel_name": "黑龙江卫视",
+    "url": "http://120.76.248.139/live/bfgd/4200000095.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "8b59f42398580f45d943b2154652251c": {
+    "source_key": "8b59f42398580f45d943b2154652251c",
+    "channel_name": "辽宁北方",
+    "url": "http://dassby.qqff.top:99/live/辽宁北方/index.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
