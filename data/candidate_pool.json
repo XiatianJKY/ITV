@@ -28330,5 +28330,41 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "d0c9ba1c40d58cc4b798663460ccdcc8": {
+    "source_key": "d0c9ba1c40d58cc4b798663460ccdcc8",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1783890000-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-a135ddf3c9d48715c67bcdf2e0abd451&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "d08640bf889a67f838ddcddf290bc317": {
+    "source_key": "d08640bf889a67f838ddcddf290bc317",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1783890000-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-45eb7532e0bdb6688df68cff2916e6d8&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "77f14bf9f1426eb7f6b29ca9a3159447": {
+    "source_key": "77f14bf9f1426eb7f6b29ca9a3159447",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-e6b1c5baf4e240fe63adbf68dda23435.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=ef70c8521353da1267cb84e92f3753f6",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
