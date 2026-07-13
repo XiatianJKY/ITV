@@ -28510,5 +28510,65 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "6d65307196ad0c17e47b0ae7727c7953": {
+    "source_key": "6d65307196ad0c17e47b0ae7727c7953",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1784001600-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-df9d0d3e52e8242b794c8cbd23039f40&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "a617920dfc2e4c5a373de7bfd3a0726d": {
+    "source_key": "a617920dfc2e4c5a373de7bfd3a0726d",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1784001600-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-cd12c2f558cd8d81303a9e8ecdf9b0ae&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "30fd65d28719b62c5e04da36d4c81911": {
+    "source_key": "30fd65d28719b62c5e04da36d4c81911",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-e6b1c5baf4e240fe63adbf68dda23435.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=7cc52275a220f2bea2e425be17d563c6",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "b74601ef360dde383370278150529238": {
+    "source_key": "b74601ef360dde383370278150529238",
+    "channel_name": "CCTV-5",
+    "url": "http://112.46.85.60:8009/hls/503/index.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "8badd8c389b4c8dd528f320f0fcac51d": {
+    "source_key": "8badd8c389b4c8dd528f320f0fcac51d",
+    "channel_name": "辽宁卫视",
+    "url": "http://123.130.84.106:8154/tsfile/live/0121_1.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
