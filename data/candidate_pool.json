@@ -28654,5 +28654,65 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "e09b85688204dfff13a09d830145ecfc": {
+    "source_key": "e09b85688204dfff13a09d830145ecfc",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1784044800-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-5750f0754b11b4dedbd085dee49c22e2&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "c838e0b4f4849da9bfd1eefde960e9ec": {
+    "source_key": "c838e0b4f4849da9bfd1eefde960e9ec",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1784044800-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-ca8ac9128dea2615ce64081c920d1c71&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "21ca5bd2de52b1c1d1a79663df61e2a6": {
+    "source_key": "21ca5bd2de52b1c1d1a79663df61e2a6",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-702cae17a28d6e4f0c0002bba021d934.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=bb760be49e7fd7de9f6e8b07040cd36c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "2262b78db92cdb301a152ca344165b93": {
+    "source_key": "2262b78db92cdb301a152ca344165b93",
+    "channel_name": "浙江卫视",
+    "url": "http://ali-m-l.cztv.com/channels/lantian/channel01/1080p.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "21c95719905cf1bd194ff2b983149849": {
+    "source_key": "21c95719905cf1bd194ff2b983149849",
+    "channel_name": "浙江生活",
+    "url": "http://ali-m-l.cztv.com/channels/lantian/channel03/1080p.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
