@@ -29410,5 +29410,53 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "dcbea1c83b3934e611e4835221e6d4e8": {
+    "source_key": "dcbea1c83b3934e611e4835221e6d4e8",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1784216700-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-f03f0b4f39535524beb98d6b120942eb&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "9a5ca7ca715e258d99b6df94cb07cbed": {
+    "source_key": "9a5ca7ca715e258d99b6df94cb07cbed",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1784216700-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-094e170fb4a0c68ffd89fa22d800e3e0&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "a923422a4b0ee60f9a313ded48cc524e": {
+    "source_key": "a923422a4b0ee60f9a313ded48cc524e",
+    "channel_name": "CCTV-7",
+    "url": "http://183.11.239.36:808/hls/25/index.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "dbcf645b879dc45c3658e11e06755127": {
+    "source_key": "dbcf645b879dc45c3658e11e06755127",
+    "channel_name": "浙江新闻",
+    "url": "https://ali-m-l.cztv.com/channels/lantian/channel07/1080p.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
