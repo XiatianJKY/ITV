@@ -29710,5 +29710,89 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "3d62bff0cd778e868addd5a0b284b342": {
+    "source_key": "3d62bff0cd778e868addd5a0b284b342",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1784358000-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-109c81da2b0d59c7b20e5792a12e386f&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "bbb1fa83225a665b9b6e99fa172fe5f0": {
+    "source_key": "bbb1fa83225a665b9b6e99fa172fe5f0",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1784358000-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-c0b2f705841d49d821e3075961bb6e84&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "6855f92148485fa5dca6ecd04c8ecbb7": {
+    "source_key": "6855f92148485fa5dca6ecd04c8ecbb7",
+    "channel_name": "CCTV-6",
+    "url": "http://183.11.239.36:808/hls/94/index.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "8f51f567d2a06f452164f436913b8517": {
+    "source_key": "8f51f567d2a06f452164f436913b8517",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-e6b1c5baf4e240fe63adbf68dda23435.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=8a60541ebe4d355d0da6b086b9f2026d",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "249378ecdd87e387af84b357903a2228": {
+    "source_key": "249378ecdd87e387af84b357903a2228",
+    "channel_name": "浙江国际",
+    "url": "https://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8?",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "310458ace9588cebf469fdd3f9e7d5b7": {
+    "source_key": "310458ace9588cebf469fdd3f9e7d5b7",
+    "channel_name": "贵州卫视",
+    "url": "http://183.11.239.36:808/hls/49/index.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "744392fabcd1444174af58082e2a0054": {
+    "source_key": "744392fabcd1444174af58082e2a0054",
+    "channel_name": "重庆卫视",
+    "url": "http://183.11.239.36:808/hls/53/index.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
