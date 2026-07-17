@@ -6,7 +6,7 @@ http://112.27.235.94:8000/hls/2/index.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-3
 http://69.30.245.50/live/cctv3.m3u8 # http://45.192.97.170:8880/play/3.m3u8 # http://112.27.235.94:8000/hls/3/index.m3u8 # http://182.150.23.74:808/hls/3/index.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-4
-https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1784232000-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-7fa60b6467642d93e2dc891ef8839e54&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c # http://112.27.235.94:8000/hls/4/index.m3u8
+http://112.27.235.94:8000/hls/4/index.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-5
 http://112.27.235.94:8000/hls/5/index.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-5+
@@ -183,14 +183,12 @@ http://www.guzhenm.com:7001/hls/hd-live.m3u8
 https://gcalic.v.myalicdn.com/gc/ahhs01_1/index.m3u8
 #EXTINF:-1 group-title="☘️安徽频道",铜陵新闻综合
 https://ls.qingting.fm/live/21303/64k.m3u8
-#EXTINF:-1 group-title="☘️安徽频道",亳州农村
-http://zbbf2.ahbztv.com/live/418.m3u8
-#EXTINF:-1 group-title="☘️福建频道",三明新闻综合
-https://ls.qingting.fm/live/5022100/64k.m3u8
 #EXTINF:-1 group-title="☘️福建频道",云霄综合
 https://live.zzyxxw.com:2443/live/xwzh.m3u8
 #EXTINF:-1 group-title="☘️福建频道",福州少儿
 http://live.zohi.tv/video/s10001-fztv-4/index.m3u8
+#EXTINF:-1 group-title="☘️河南频道",河南公共
+http://1.94.31.214/php/hntv.php?id=hngg
 #EXTINF:-1 group-title="☘️湖北频道",武汉一台新闻综合
 https://ls.qingting.fm/live/20198/64k.m3u8
 #EXTINF:-1 group-title="☘️湖南频道",CHC电影
@@ -241,6 +239,10 @@ https://gcalic.v.myalicdn.com/gc/ylxs12_1/index.m3u8
 http://112.27.235.94:8000/hls/40/index.m3u8
 #EXTINF:-1 group-title="☘️陕西频道",陕西卫视
 http://112.27.235.94:8000/hls/43/index.m3u8
+#EXTINF:-1 group-title="☘️陕西频道",黄龙
+https://gcalic.v.myalicdn.com/gc/hlzycc_1/index.m3u8
+#EXTINF:-1 group-title="☘️陕西频道",黄龙
+https://gcalic.v.myalicdn.com/gc/hlzycc_1/index.m3u8
 #EXTINF:-1 group-title="☘️甘肃频道",张掖七彩丹霞
 https://gcalic.v.myalicdn.com/gc/zyqcdx01_1/index.m3u8
 #EXTINF:-1 group-title="☘️宁夏频道",绍兴公共
@@ -289,22 +291,16 @@ https://gcalic.v.myalicdn.com/gc/hsxksqj_1/index.m3u8
 https://stream.hrbtv.net/zxpd/sd/live.m3u8
 #EXTINF:-1 group-title="☘️黑龙江频道",黑龙江卫视
 http://112.27.235.94:8000/hls/48/index.m3u8
-#EXTINF:-1 group-title="☘️黑龙江频道",黑龙江少儿
-https://ls.qingting.fm/live/4972/64k.m3u8
 #EXTINF:-1 group-title="☘️黑龙江频道",黑龙江新闻
 https://ls.qingting.fm/live/4974/64k.m3u8
 #EXTINF:-1 group-title="☘️河北频道",河北公共
 http://1.94.31.214/php/hebei.php?id=hbgg
-#EXTINF:-1 group-title="☘️河北频道",河北农民
-https://ls.qingting.fm/live/1650/64k.m3u8
 #EXTINF:-1 group-title="☘️河北频道",河北卫视
 http://112.27.235.94:8000/hls/39/index.m3u8
 #EXTINF:-1 group-title="☘️河北频道",河北少儿
 http://1.94.31.214/php/hebei.php?id=sekj
 #EXTINF:-1 group-title="☘️河北频道",河北影视
 http://1.94.31.214/php/hebei.php?id=hbys
-#EXTINF:-1 group-title="☘️河北频道",河北经济
-http://1.94.31.214/php/hebei.php?id=jjsh
 #EXTINF:-1 group-title="🌊港·澳·台",环球电视
 http://utv1.hqtvzb.com:9999/hls/world.m3u8
 #EXTINF:-1 group-title="🌊港·澳·台",台视新闻
@@ -395,18 +391,12 @@ https://migu.361181.com/966231667
 https://migu.361181.com/966233665
 #EXTINF:-1 group-title="体育赛事",全国女子篮球锦标赛 福建金篮83-75北京大学 全场回放（赛场原声） 19:25
 https://migu.361181.com/966230717
-#EXTINF:-1 group-title="体育赛事",NBA 雷霆VS独行侠 罗森 03:55
-https://migu.361181.com/966089474
-#EXTINF:-1 group-title="体育赛事",NBA 雷霆VS独行侠 英文原声 03:55
-https://migu.361181.com/966089491
-#EXTINF:-1 group-title="体育赛事",NBA 火箭VS篮网 周鹏 04:25
-https://migu.361181.com/966089513
-#EXTINF:-1 group-title="体育赛事",NBA 火箭VS篮网 英文原声 04:25
-https://migu.361181.com/966089529
-#EXTINF:-1 group-title="体育赛事",NBA 公牛VS湖人 蔡凯臣 05:55
-https://migu.361181.com/966089539
-#EXTINF:-1 group-title="体育赛事",NBA 公牛VS湖人 英文原声 05:55
-https://migu.361181.com/966089557
+#EXTINF:-1 group-title="体育赛事",NBA 雷霆VS独行侠 全场回放（罗森） 03:55
+https://migu.361181.com/966234070
+#EXTINF:-1 group-title="体育赛事",NBA 雷霆VS独行侠 全场回放（英文原声） 03:55
+https://migu.361181.com/966234155
+#EXTINF:-1 group-title="体育赛事",NBA 火箭VS篮网 全场回放（周鹏） 04:25
+https://migu.361181.com/966234190
 #EXTINF:-1 group-title="体育赛事",NBA 尼克斯VS勇士 王冠证 06:55
 https://migu.361181.com/966089566
 #EXTINF:-1 group-title="体育赛事",NBA 尼克斯VS勇士 英文原声 06:55
@@ -457,6 +447,8 @@ https://migu.361181.com/966151095
 https://migu.361181.com/966151278
 #EXTINF:-1 group-title="体育赛事",全国乒乓球锦标赛 马龙/许昕冲连胜 动漫组合争晋级 3号桌 18:00
 https://migu.361181.com/966151448
+#EXTINF:-1 group-title="体育赛事",NBA经典赛事 NBA季后赛精彩重播：湖人vs雷霆 G2 杨健 李根 马健 18:00
+https://migu.361181.com/966204047
 #EXTINF:-1 group-title="体育赛事",U17女篮世界杯 澳大利亚VS日本 赛场原声 17:50
 https://migu.361181.com/966227306
 #EXTINF:-1 group-title="体育赛事",贵州村超 忠诚村足球队VS寿洞村足球队 赛场原声 18:30

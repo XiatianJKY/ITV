@@ -2,7 +2,7 @@
 CCTV-1,http://69.30.245.50/live/cctv1.m3u8
 CCTV-2,http://112.27.235.94:8000/hls/2/index.m3u8
 CCTV-3,http://69.30.245.50/live/cctv3.m3u8
-CCTV-4,https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1784232000-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-7fa60b6467642d93e2dc891ef8839e54&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c
+CCTV-4,http://112.27.235.94:8000/hls/4/index.m3u8
 CCTV-5,http://112.27.235.94:8000/hls/5/index.m3u8
 CCTV-5+,http://ottproxy2.ist.ooo/livehls/MOB-U1-NO/03.m3u8
 CCTV-6,http://112.27.235.94:8000/hls/7/index.m3u8
@@ -100,14 +100,13 @@ Bread TV面包台,https://video.bread-tv.com:8091/hls-live24/online/index.m3u8
 固镇新闻,http://www.guzhenm.com:7001/hls/hd-live.m3u8
 黄山,https://gcalic.v.myalicdn.com/gc/ahhs01_1/index.m3u8
 铜陵新闻综合,https://ls.qingting.fm/live/21303/64k.m3u8
-亳州农村,http://zbbf2.ahbztv.com/live/418.m3u8
 ☘️福建频道,#genre#
-三明新闻综合,https://ls.qingting.fm/live/5022100/64k.m3u8
 云霄综合,https://live.zzyxxw.com:2443/live/xwzh.m3u8
 福州少儿,http://live.zohi.tv/video/s10001-fztv-4/index.m3u8
 ☘️江西频道,#genre#
 ☘️山东频道,#genre#
 ☘️河南频道,#genre#
+河南公共,http://1.94.31.214/php/hntv.php?id=hngg
 ☘️湖北频道,#genre#
 武汉一台新闻综合,https://ls.qingting.fm/live/20198/64k.m3u8
 ☘️湖南频道,#genre#
@@ -141,6 +140,8 @@ CHC电影,http://183.237.95.108:9901/tsfile/live/1008_1.m3u8?key=txiptv&playlive
 云南卫视,http://112.27.235.94:8000/hls/40/index.m3u8
 ☘️陕西频道,#genre#
 陕西卫视,http://112.27.235.94:8000/hls/43/index.m3u8
+黄龙,https://gcalic.v.myalicdn.com/gc/hlzycc_1/index.m3u8
+黄龙,https://gcalic.v.myalicdn.com/gc/hlzycc_1/index.m3u8
 ☘️甘肃频道,#genre#
 张掖七彩丹霞,https://gcalic.v.myalicdn.com/gc/zyqcdx01_1/index.m3u8
 ☘️青海频道,#genre#
@@ -174,15 +175,12 @@ CHC电影,http://183.237.95.108:9901/tsfile/live/1008_1.m3u8?key=txiptv&playlive
 恒山悬空寺全景,https://gcalic.v.myalicdn.com/gc/hsxksqj_1/index.m3u8
 甘南县综合,https://stream.hrbtv.net/zxpd/sd/live.m3u8
 黑龙江卫视,http://112.27.235.94:8000/hls/48/index.m3u8
-黑龙江少儿,https://ls.qingting.fm/live/4972/64k.m3u8
 黑龙江新闻,https://ls.qingting.fm/live/4974/64k.m3u8
 ☘️河北频道,#genre#
 河北公共,http://1.94.31.214/php/hebei.php?id=hbgg
-河北农民,https://ls.qingting.fm/live/1650/64k.m3u8
 河北卫视,http://112.27.235.94:8000/hls/39/index.m3u8
 河北少儿,http://1.94.31.214/php/hebei.php?id=sekj
 河北影视,http://1.94.31.214/php/hebei.php?id=hbys
-河北经济,http://1.94.31.214/php/hebei.php?id=jjsh
 🌊港·澳·台,#genre#
 环球电视,http://utv1.hqtvzb.com:9999/hls/world.m3u8
 台视新闻,http://38.64.72.148/hls/modn/list/4013/chunklist1.m3u8
@@ -232,12 +230,9 @@ NBA 快船VS奇才 全场回放（英文原声） 10:25,https://migu.361181.com/
 浙BA 吴兴58-70安吉 2026浙江省城市篮球联赛全场回放：吴兴VS安吉（赛场原声） 19:30,https://migu.361181.com/966231667
 浙BA 景宁46-58庆元 2026浙江省城市篮球联赛全场回放：景宁VS庆元（赛场原声） 19:30,https://migu.361181.com/966233665
 全国女子篮球锦标赛 福建金篮83-75北京大学 全场回放（赛场原声） 19:25,https://migu.361181.com/966230717
-NBA 雷霆VS独行侠 罗森 03:55,https://migu.361181.com/966089474
-NBA 雷霆VS独行侠 英文原声 03:55,https://migu.361181.com/966089491
-NBA 火箭VS篮网 周鹏 04:25,https://migu.361181.com/966089513
-NBA 火箭VS篮网 英文原声 04:25,https://migu.361181.com/966089529
-NBA 公牛VS湖人 蔡凯臣 05:55,https://migu.361181.com/966089539
-NBA 公牛VS湖人 英文原声 05:55,https://migu.361181.com/966089557
+NBA 雷霆VS独行侠 全场回放（罗森） 03:55,https://migu.361181.com/966234070
+NBA 雷霆VS独行侠 全场回放（英文原声） 03:55,https://migu.361181.com/966234155
+NBA 火箭VS篮网 全场回放（周鹏） 04:25,https://migu.361181.com/966234190
 NBA 尼克斯VS勇士 王冠证 06:55,https://migu.361181.com/966089566
 NBA 尼克斯VS勇士 英文原声 06:55,https://migu.361181.com/966089591
 中国体育舞蹈联合会系列赛 2026年亚洲体育舞蹈节 解说 07:45,https://migu.361181.com/966179584
@@ -263,6 +258,7 @@ U17女篮世界杯 科特迪瓦VS哥伦比亚 赛场原声 17:20,https://migu.36
 全国乒乓球锦标赛 马龙/许昕冲连胜 动漫组合争晋级 1号桌 18:00,https://migu.361181.com/966151095
 全国乒乓球锦标赛 马龙/许昕冲连胜 动漫组合争晋级 2号桌 18:00,https://migu.361181.com/966151278
 全国乒乓球锦标赛 马龙/许昕冲连胜 动漫组合争晋级 3号桌 18:00,https://migu.361181.com/966151448
+NBA经典赛事 NBA季后赛精彩重播：湖人vs雷霆 G2 杨健 李根 马健 18:00,https://migu.361181.com/966204047
 U17女篮世界杯 澳大利亚VS日本 赛场原声 17:50,https://migu.361181.com/966227306
 贵州村超 忠诚村足球队VS寿洞村足球队 赛场原声 18:30,https://migu.361181.com/966180232
 中超 青岛西海岸VS成都蓉城 孙雷 李欣 程思钦 18:30,https://migu.361181.com/966217217
@@ -347,7 +343,6 @@ U17女篮世界杯 美国VS斯洛文尼亚 赛场原声 02:05,https://migu.36118
 
 📻 网络电台,#genre#
 香港第三台,http://45.192.97.170:8880/play/5950.m3u8
-亚洲热歌,http://45.192.97.170:8880/play/5952.m3u8
 澳门绿坉,http://45.192.97.170:8880/play/5956.m3u8
 香港古典音乐,http://45.192.97.170:8880/play/5961.m3u8
 CRI环球资讯广播,http://45.192.97.170:8880/play/5971.m3u8
@@ -378,6 +373,7 @@ CNR经济之声,http://45.192.97.170:8880/play/5977.m3u8
 山东经济广播,http://45.192.97.170:8880/play/5997.m3u8
 山东乡村广播,http://45.192.97.170:8880/play/5998.m3u8
 陕西交通广播,http://45.192.97.170:8880/play/5999.m3u8
+陕西经济广播·896汽车调频,http://45.192.97.170:8880/play/6000.m3u8
 陕西农村广播,http://45.192.97.170:8880/play/6002.m3u8
 陕西新闻广播,http://45.192.97.170:8880/play/6004.m3u8
 浙江之声,http://45.192.97.170:8880/play/6005.m3u8
@@ -422,6 +418,7 @@ CNR经济之声,http://45.192.97.170:8880/play/5977.m3u8
 云南经济广播·私家车电台,http://45.192.97.170:8880/play/6052.m3u8
 云南交通之声,http://45.192.97.170:8880/play/6053.m3u8
 云南民族广播,http://45.192.97.170:8880/play/6055.m3u8
+云南国际广播,http://45.192.97.170:8880/play/6056.m3u8
 宁夏新闻广播,http://45.192.97.170:8880/play/6059.m3u8
 青海新闻综合广播,http://45.192.97.170:8880/play/6061.m3u8
 青海经济广播,http://45.192.97.170:8880/play/6062.m3u8
@@ -445,6 +442,7 @@ CRI HIT FM,http://45.192.97.170:8880/play/6070.m3u8
 浙江音乐调频·动听968,http://45.192.97.170:8880/play/6090.m3u8
 河北音乐广播,http://45.192.97.170:8880/play/6091.m3u8
 广东音乐之声,http://45.192.97.170:8880/play/6092.m3u8
+深圳飞扬971,http://45.192.97.170:8880/play/6093.m3u8
 深圳生活942,http://45.192.97.170:8880/play/6094.m3u8
 海南音乐广播,http://45.192.97.170:8880/play/6095.m3u8
 贵州音乐广播,http://45.192.97.170:8880/play/6096.m3u8

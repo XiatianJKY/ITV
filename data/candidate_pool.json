@@ -29590,5 +29590,41 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "3bd790707892eec5aeeb226c0c37dc6d": {
+    "source_key": "3bd790707892eec5aeeb226c0c37dc6d",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-e6b1c5baf4e240fe63adbf68dda23435.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=dbe105ba71640986a78ad0abe316f2f2",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "c8407fbd177b3d888161b7fd087c08c4": {
+    "source_key": "c8407fbd177b3d888161b7fd087c08c4",
+    "channel_name": "CCTV-10",
+    "url": "https://jsv-live-play.sfccn.com/live/jsv_3920_fhd.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "9550b4be45749c5d1e277ff1ad7148e7": {
+    "source_key": "9550b4be45749c5d1e277ff1ad7148e7",
+    "channel_name": "黑龙江卫视",
+    "url": "http://124.116.183.146:9901/tsfile/live/0143_1.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
