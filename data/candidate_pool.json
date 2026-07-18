@@ -30094,5 +30094,65 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "b05cb660b10be115a2142078cd59cfce": {
+    "source_key": "b05cb660b10be115a2142078cd59cfce",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1784444400-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-7f8d869ad8ff3c4c8147262640189872&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "abe02db05a2d959edcae67f13d5fdce0": {
+    "source_key": "abe02db05a2d959edcae67f13d5fdce0",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1784444400-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-6b303223d1a404a347f36af9b21c9af6&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "0dbfc7096597b02790a700ed53844815": {
+    "source_key": "0dbfc7096597b02790a700ed53844815",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-e6b1c5baf4e240fe63adbf68dda23435.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=12c0cb945af13b3a1a5e7ba54d13de96",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "b9e94d2a04f82e8c1728ec479f52c15f": {
+    "source_key": "b9e94d2a04f82e8c1728ec479f52c15f",
+    "channel_name": "山东卫视",
+    "url": "http://61.136.172.236:9901/tsfile/live/0131_1.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "755c07b67f48252763720a693062a6e4": {
+    "source_key": "755c07b67f48252763720a693062a6e4",
+    "channel_name": "深圳卫视",
+    "url": "http://61.136.172.236:9901/tsfile/live/0126_1.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
