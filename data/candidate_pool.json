@@ -30262,5 +30262,77 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "d8f3420ad40b132e720ed9feb6f0a406": {
+    "source_key": "d8f3420ad40b132e720ed9feb6f0a406",
+    "channel_name": "CCTV-3",
+    "url": "http://222.169.85.8:9901/tsfile/live/0003_1.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "efd1dcedc9ecbd01156d2bd3d4f65821": {
+    "source_key": "efd1dcedc9ecbd01156d2bd3d4f65821",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1784530800-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-3d1b75295c548c571c6c20e463bb1346&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "51a57a31db4408e5a9766b943099874f": {
+    "source_key": "51a57a31db4408e5a9766b943099874f",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1784530800-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-81abe66c10149ebf3316adc6b81f0022&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "fd46e007c74a6b40d67c81ccd8e7ef7b": {
+    "source_key": "fd46e007c74a6b40d67c81ccd8e7ef7b",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-e6b1c5baf4e240fe63adbf68dda23435.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=c9b941e7fe950dba544639d378846a03",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "a8c45c632779fb94edc92ae4043a75ed": {
+    "source_key": "a8c45c632779fb94edc92ae4043a75ed",
+    "channel_name": "CCTV-5",
+    "url": "http://101.35.240.114:88/live.php?id=CCTV5p",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "3635c0e433e3e044140fdee976a23993": {
+    "source_key": "3635c0e433e3e044140fdee976a23993",
+    "channel_name": "浙江少儿",
+    "url": "https://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8?",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
