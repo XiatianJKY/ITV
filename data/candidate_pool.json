@@ -30154,5 +30154,41 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "09efe61e74595c456e875227fbf7dc27": {
+    "source_key": "09efe61e74595c456e875227fbf7dc27",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1784476800-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-ea7c321973eb6c4458afbc16518dee80&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "dcb0500d5c3c7e858c5c55c5b4828ff1": {
+    "source_key": "dcb0500d5c3c7e858c5c55c5b4828ff1",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-702cae17a28d6e4f0c0002bba021d934.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=2d8b0e0d8977f93f8c42fd49abaa9dd2",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "f41aee0f311d8d213d29c3e643d5a6c0": {
+    "source_key": "f41aee0f311d8d213d29c3e643d5a6c0",
+    "channel_name": "贵州卫视",
+    "url": "http://59.39.89.130:60901/tsfile/live/0125_15.m3u8?key=txiptv&playlive=1&authid=0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
