@@ -30334,5 +30334,65 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "a099493874a0f7302bf676dd24da1dd4": {
+    "source_key": "a099493874a0f7302bf676dd24da1dd4",
+    "channel_name": "CCTV-2",
+    "url": "http://183.11.239.36:808/hls/20/index.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "a1d2983509f2257f5230d678199fba76": {
+    "source_key": "a1d2983509f2257f5230d678199fba76",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1784563200-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-d2fad62231892608e28a29d882cd7762&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "dd8e7a8c4c272db698c1ecbe65b31f19": {
+    "source_key": "dd8e7a8c4c272db698c1ecbe65b31f19",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1784563200-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-a22aae685d54194b7e9d9460067e40a1&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "ca3b06be3d93da4b4cd92a9c80faec8e": {
+    "source_key": "ca3b06be3d93da4b4cd92a9c80faec8e",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-e6b1c5baf4e240fe63adbf68dda23435.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=46ecda581e9c3dec58661282571d71b7",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "94c6cde5b1cd597906ad95b2d7478308": {
+    "source_key": "94c6cde5b1cd597906ad95b2d7478308",
+    "channel_name": "四川卫视",
+    "url": "http://222.134.245.16:9901/tsfile/live/0123_1.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
