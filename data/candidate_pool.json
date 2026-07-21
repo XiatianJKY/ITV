@@ -30514,5 +30514,41 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "1e864adb66bc39ea05e9f32aac68f1e6": {
+    "source_key": "1e864adb66bc39ea05e9f32aac68f1e6",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1784649600-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-56df73b2003842215424a7931cbb5192&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "701b83e0a5bd6d9ff586f1edb3bf230a": {
+    "source_key": "701b83e0a5bd6d9ff586f1edb3bf230a",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-e6b1c5baf4e240fe63adbf68dda23435.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=32ec0a7e45dca5f6745c9926a16abd8e",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "c4fedc220c017be668c0f84791c1c025": {
+    "source_key": "c4fedc220c017be668c0f84791c1c025",
+    "channel_name": "广东体育",
+    "url": "http://r.jdshipin.com/LiYdg",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
