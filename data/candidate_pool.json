@@ -31330,5 +31330,77 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "7bda918db357ae4605cbb160e329dac5": {
+    "source_key": "7bda918db357ae4605cbb160e329dac5",
+    "channel_name": "CCTV-1",
+    "url": "http://123.130.84.106:8154/tsfile/live/0001_1.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "31495737a3361e11f9fe5975df11168b": {
+    "source_key": "31495737a3361e11f9fe5975df11168b",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1784963700-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-c15cdb824fc6ce30ba3c273b15f6c722&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "6eb8b120ec5d7a00375a78972ebfdccc": {
+    "source_key": "6eb8b120ec5d7a00375a78972ebfdccc",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1784963700-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-7a9a748a70adfb91bb58a92d8f786496&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "9c2b14729db9322b7cb0e8b404f906af": {
+    "source_key": "9c2b14729db9322b7cb0e8b404f906af",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-702cae17a28d6e4f0c0002bba021d934.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=eb00ffb2960ee7f0094712cc9c9d74e0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "0f84393ca6a6725486f52998522d0e52": {
+    "source_key": "0f84393ca6a6725486f52998522d0e52",
+    "channel_name": "北京卫视",
+    "url": "http://182.150.23.74:808/hls/17/index.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "406937b3acc8ffa558bf82a1e6805025": {
+    "source_key": "406937b3acc8ffa558bf82a1e6805025",
+    "channel_name": "北京新闻",
+    "url": "https://ls.qingting.fm/live/339/64k.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
