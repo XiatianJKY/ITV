@@ -1,9 +1,9 @@
 {
-  "total_channels": 349,
-  "timestamp": "2026-07-23T19:10:58.274607",
+  "total_channels": 454,
+  "timestamp": "2026-07-24T02:24:08.488933",
   "category_stats": {
     "📺央视频道": 26,
-    "📡卫视频道": 28,
+    "📡卫视频道": 27,
     "☘️北京频道": 1,
     "☘️上海频道": 2,
     "☘️重庆频道": 1,
@@ -30,15 +30,15 @@
     "🌊港·澳·台": 7,
     "☘️山东频道": 2,
     "☘️河南频道": 1,
-    "体育赛事": 199
+    "体育赛事": 305
   },
-  "unmatched_count": 39,
+  "unmatched_count": 43,
   "features": {
     "epg_injection_enabled": true,
     "incremental_mode": true
   },
   "special_categories": {
-    "广播": 263,
+    "广播": 257,
     "韩国女团": 113,
     "热门歌曲": 118,
     "动感舞曲": 41,
