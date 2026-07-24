@@ -31222,5 +31222,53 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "15409f423c8db32cd8784f5763b7c2b5": {
+    "source_key": "15409f423c8db32cd8784f5763b7c2b5",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1784926800-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-3f1bfacc045d88227da1cca308c84927&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "19f318301c55f020b7b413838f48cb8a": {
+    "source_key": "19f318301c55f020b7b413838f48cb8a",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1784926800-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-d7dd000824a8941e38e71d58d609ea08&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "9fcfbeb32f573d94f4f3cf5ddb4d82ba": {
+    "source_key": "9fcfbeb32f573d94f4f3cf5ddb4d82ba",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-702cae17a28d6e4f0c0002bba021d934.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=b0c73b3e8b317546b0787e9b30d1a802",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "894c59fd7e29cfff3d5ccbb19c210781": {
+    "source_key": "894c59fd7e29cfff3d5ccbb19c210781",
+    "channel_name": "CCTV-10",
+    "url": "http://124.116.183.146:9901/tsfile/live/0010_1.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
