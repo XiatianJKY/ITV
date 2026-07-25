@@ -1,40 +1,40 @@
 #EXTM3U
 #EXTINF:-1 group-title="📺央视频道",CCTV-1
-http://69.30.245.50/live/cctv1.m3u8
+http://112.27.235.94:8000/hls/1/index.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-2
 http://112.27.235.94:8000/hls/2/index.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-3
-http://112.27.235.94:8000/hls/3/index.m3u8
-#EXTINF:-1 group-title="📺央视频道",CCTV-11
-http://74.91.26.218:82/live/cctv11hd.m3u8
+http://121.57.88.206:898/hls/3/index.m3u8
+#EXTINF:-1 group-title="📺央视频道",CCTV-4
+https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1785035700-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-2dd080dffb5cc16ba693ca1fb40db812&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c
 #EXTINF:-1 group-title="📺央视频道",CCTV-5
-http://112.27.235.94:8000/hls/5/index.m3u8
+http://69.30.245.50/live/cctv5.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-5+
 http://112.27.235.94:8000/hls/6/index.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-6
-http://69.30.245.50/live/cctv6.m3u8
+http://112.27.235.94:8000/hls/7/index.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-7
 http://69.30.245.50/live/cctv7.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-8
-http://112.27.235.94:8000/hls/9/index.m3u8
+http://192.151.150.154/live/cctv8k.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-9
-http://74.91.26.218:82/live/cctv9hd.m3u8
+http://112.27.235.94:8000/hls/10/index.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-10
 http://69.30.245.50/live/cctv10.m3u8
+#EXTINF:-1 group-title="📺央视频道",CCTV-11
+http://74.91.26.218:82/live/cctv11hd.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-12
 http://74.91.26.218:82/live/cctv12hd.m3u8
-#EXTINF:-1 group-title="📺央视频道",CCTV-14
-http://74.91.26.218:82/live/cctv14hd.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-13
 http://112.27.235.94:8000/hls/14/index.m3u8
-#EXTINF:-1 group-title="📺央视频道",CCTV-17
-http://74.91.26.218:82/live/cctv17hd.m3u8
+#EXTINF:-1 group-title="📺央视频道",CCTV-14
+http://74.91.26.218:82/live/cctv14hd.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-15
 http://112.27.235.94:8000/hls/16/index.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-16
 http://183.11.239.36:808/hls/169/index.m3u8
-#EXTINF:-1 group-title="📺央视频道",CCTV4欧洲
-http://45.192.97.170:8880/play/18.m3u8
+#EXTINF:-1 group-title="📺央视频道",CCTV-17
+http://74.91.26.218:82/live/cctv17hd.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV4欧洲
 http://45.192.97.170:8880/play/18.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV4美洲
@@ -42,13 +42,9 @@ http://45.192.97.170:8880/play/19.m3u8
 #EXTINF:-1 group-title="📺央视频道",老故事
 http://112.27.235.94:8000/hls/50/index.m3u8
 #EXTINF:-1 group-title="📺央视频道",CGTN
-http://112.27.235.94:8000/hls/17/index.m3u8
+https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8
 #EXTINF:-1 group-title="📺央视频道",CGTN纪录
 https://english-livebkali.cgtn.com/live/doccgtn_0.m3u8
-#EXTINF:-1 group-title="📺央视频道",CGTN西语
-http://espanol-liveali.cgtn.com/hls/LSveOGBaBw41Ea7ukkVAUdKQ220802LSTexu6xAuFH8VZNBLE1ZNEa220802cd.m3u8
-#EXTINF:-1 group-title="📺央视频道",CGTN阿语
-http://espanol-liveali.cgtn.com/hls/LSveOGBaBw41Ea7ukkVAUdKQ220802LSTexu6xAuFH8VZNBLE1ZNEa220802cd.m3u8
 #EXTINF:-1 group-title="📺央视频道",CGTN英语
 https://english-livebkali.cgtn.com/live/encgtn_0.m3u8
 #EXTINF:-1 group-title="📺央视频道",中央电视塔东
@@ -57,8 +53,6 @@ https://gcalic.v.myalicdn.com/gc/ztd_1/index.m3u8
 https://gcalic.v.myalicdn.com/gc/ztn_1/index.m3u8
 #EXTINF:-1 group-title="📺央视频道",CHC家庭影院
 http://61.162.52.6:8088/newlive/live/hls/60/live.m3u8
-#EXTINF:-1 group-title="📡卫视频道",广东卫视
-http://112.27.235.94:8000/hls/30/index.m3u8
 #EXTINF:-1 group-title="📡卫视频道",浙江卫视
 http://112.27.235.94:8000/hls/29/index.m3u8
 #EXTINF:-1 group-title="📡卫视频道",湖南卫视
@@ -77,12 +71,8 @@ https://txmov2.a.kwimgs.com/bs3/video-hls/5219953535631090825_hlsb.m3u8
 http://112.27.235.94:8000/hls/38/index.m3u8
 #EXTINF:-1 group-title="📡卫视频道",贵州卫视
 http://112.27.235.94:8000/hls/46/index.m3u8
-#EXTINF:-1 group-title="📡卫视频道",河北卫视
-http://112.27.235.94:8000/hls/39/index.m3u8
 #EXTINF:-1 group-title="📡卫视频道",河南卫视
 http://112.27.235.94:8000/hls/37/index.m3u8
-#EXTINF:-1 group-title="📡卫视频道",吉林卫视
-http://61.136.172.236:9901/tsfile/live/0116_1.m3u8
 #EXTINF:-1 group-title="📡卫视频道",江苏卫视
 http://112.27.235.94:8000/hls/32/index.m3u8
 #EXTINF:-1 group-title="📡卫视频道",江西卫视
@@ -95,8 +85,6 @@ http://112.27.235.94:8000/hls/49/index.m3u8
 http://112.27.235.94:8000/hls/34/index.m3u8
 #EXTINF:-1 group-title="📡卫视频道",山西卫视
 http://112.27.235.94:8000/hls/45/index.m3u8
-#EXTINF:-1 group-title="📡卫视频道",陕西卫视
-http://112.27.235.94:8000/hls/43/index.m3u8
 #EXTINF:-1 group-title="📡卫视频道",四川卫视
 http://112.27.235.94:8000/hls/35/index.m3u8
 #EXTINF:-1 group-title="📡卫视频道",深圳卫视
@@ -105,14 +93,12 @@ http://112.27.235.94:8000/hls/33/index.m3u8
 http://221.226.51.220:50081/newlive/live/hls/38/live.m3u8
 #EXTINF:-1 group-title="📡卫视频道",天津卫视
 http://112.27.235.94:8000/hls/42/index.m3u8
-#EXTINF:-1 group-title="📡卫视频道",新疆卫视
-http://218.84.12.186:8001/hls/main/playlist.m3u8?zxinjd;http://218.84.12.186:8001/hls/main/playlist.m3u8zxinjd
 #EXTINF:-1 group-title="📡卫视频道",云南卫视
 http://112.27.235.94:8000/hls/40/index.m3u8
 #EXTINF:-1 group-title="📡卫视频道",上海卫视
 http://112.27.235.94:8000/hls/28/index.m3u8
 #EXTINF:-1 group-title="📡卫视频道",海峡卫视
-http://38.64.72.148:80/hls/modn/list/4009/playlist.m3u8
+http://38.64.72.148:80/hls/modn/list/4009/chunklist0.m3u8
 #EXTINF:-1 group-title="📡卫视频道",Bread TV面包台
 https://video.bread-tv.com:8091/hls-live24/online/index.m3u8
 #EXTINF:-1 group-title="📡卫视频道",浙江国际
@@ -121,42 +107,30 @@ http://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8
 http://112.27.235.94:8000/hls/33/index.m3u8
 #EXTINF:-1 group-title="☘️北京频道",耀才财经
 https://v3.mediacast.hk/webcast/bshdlive-pc/chunklist_w99771165.m3u8
-#EXTINF:-1 group-title="☘️上海频道",武汉一台新闻综合
-https://ls.qingting.fm/live/20198/64k.m3u8
+#EXTINF:-1 group-title="☘️上海频道",铜陵新闻综合
+https://ls.qingting.fm/live/21303/64k.m3u8
 #EXTINF:-1 group-title="☘️上海频道",普陀山
 https://gcalic.v.myalicdn.com/gc/pts01_1/index.m3u8
 #EXTINF:-1 group-title="☘️天津频道",天津卫视
 http://112.27.235.94:8000/hls/42/index.m3u8
 #EXTINF:-1 group-title="☘️重庆频道",重庆卫视
 http://112.27.235.94:8000/hls/36/index.m3u8
-#EXTINF:-1 group-title="☘️重庆频道",荣昌综合 [Not 24/7]
-http://183.64.181.25:40023/rongchang01.m3u8
-#EXTINF:-1 group-title="☘️广东频道",广东卫视
-http://112.27.235.94:8000/hls/30/index.m3u8
-#EXTINF:-1 group-title="☘️广东频道",广州综合
-https://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=f0147ae6453a80f5989f382368b72aad&txTime=18d00acf487
-#EXTINF:-1 group-title="☘️浙江频道",浙江钱江频道
-http://ali-m-l.cztv.com/channels/lantian/channel02/1080p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",浙江经济生活
 http://ali-m-l.cztv.com/channels/lantian/channel03/1080p.m3u8#https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8#http://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",浙江教育
 http://ali-m-l.cztv.com/channels/lantian/channel04/720p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",浙江民生
-http://ali-m-l.cztv.com/channels/lantian/channel06/720p.m3u8
-#EXTINF:-1 group-title="☘️浙江频道",浙江少儿
-http://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8
-#EXTINF:-1 group-title="☘️浙江频道",浙江教科
+http://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8
+#EXTINF:-1 group-title="☘️浙江频道",浙江教科影院
 http://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8
-#EXTINF:-1 group-title="☘️浙江频道",浙江经视
-http://ali-m-l.cztv.com/channels/lantian/channel003/720p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",浙江国际
 http://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",浙江数码时代
 http://ali-m-l.cztv.com/channels/lantian/channel12/720p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",浙江休闲台
 http://ali-m-l.cztv.com/channels/lantian/channel006/720p.m3u8
-#EXTINF:-1 group-title="☘️浙江频道",象山综合
-http://play-sh13.quklive.com/live/1702360350551252.m3u8?auth_key=2037107484-800189c57a5a44d3b823b60cf84f6756-0-a6f6828a62d5c167cff5e68735fa0d39
+#EXTINF:-1 group-title="☘️浙江频道",绍兴电视台公共
+http://live.shaoxing.com.cn/video/s10001-sxtv2/index.m3u8?%E5%85%B3%E6%B3%A8%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7[%E6%99%B4%E5%9B%AD]
 #EXTINF:-1 group-title="☘️浙江频道",中国蓝新闻
 http://ali-m-l.cztv.com/channels/lantian/channel009/1080p.m3u8
 #EXTINF:-1 group-title="☘️江苏频道",南京玄武湖公园
@@ -183,8 +157,6 @@ https://gcalic.v.myalicdn.com/gc/ahhs01_1/index.m3u8
 https://ls.qingting.fm/live/21303/64k.m3u8
 #EXTINF:-1 group-title="☘️福建频道",云霄综合
 https://live.zzyxxw.com:2443/live/xwzh.m3u8
-#EXTINF:-1 group-title="☘️湖北频道",武汉一台新闻综合
-https://ls.qingting.fm/live/20198/64k.m3u8
 #EXTINF:-1 group-title="☘️湖南频道",湖南卫视
 http://112.27.235.94:8000/hls/31/index.m3u8
 #EXTINF:-1 group-title="☘️湖南频道",湖南张家界宝峰湖
@@ -199,8 +171,6 @@ https://gcalic.v.myalicdn.com/gc/tms05_1/index.m3u8
 https://gcalic.v.myalicdn.com/gc/gllj01_1/index.m3u8
 #EXTINF:-1 group-title="☘️广西频道",来宾综合
 http://zb.gxlbamc.com:1935/live/lbzh.stream/playlist.m3u8
-#EXTINF:-1 group-title="☘️广西频道",象山综合
-http://play-sh13.quklive.com/live/1702360350551252.m3u8?auth_key=2037107484-800189c57a5a44d3b823b60cf84f6756-0-a6f6828a62d5c167cff5e68735fa0d39
 #EXTINF:-1 group-title="☘️海南频道",天涯石
 https://gcalic.v.myalicdn.com/gc/tyhjtys_1/index.m3u8
 #EXTINF:-1 group-title="☘️四川频道",乐山大佛全景
@@ -227,8 +197,6 @@ https://gcalic.v.myalicdn.com/gc/hkylxs03_1/index.m3u8
 https://gcalic.v.myalicdn.com/gc/ylxs12_1/index.m3u8
 #EXTINF:-1 group-title="☘️云南频道",云南卫视
 http://112.27.235.94:8000/hls/40/index.m3u8
-#EXTINF:-1 group-title="☘️陕西频道",陕西卫视
-http://112.27.235.94:8000/hls/43/index.m3u8
 #EXTINF:-1 group-title="☘️陕西频道",黄龙
 https://gcalic.v.myalicdn.com/gc/hlzycc_1/index.m3u8
 #EXTINF:-1 group-title="☘️陕西频道",黄龙
@@ -240,15 +208,13 @@ http://live.shaoxing.com.cn/video/s10001-sxtv2/index.m3u8
 #EXTINF:-1 group-title="☘️新疆频道",伊犁经济法制
 http://110.153.180.106:55555/out_4/index.m3u8
 #EXTINF:-1 group-title="☘️新疆频道",伊犁维吾尔
-http://110.153.180.106:55555/out_2/index.m3u8
+http://110.153.180.106:55555/out_2/index.m3u8?zxinjd
 #EXTINF:-1 group-title="☘️新疆频道",奎屯汉语
 http://218.84.12.186:8001/hls/main/playlist.m3u8?zxinjd
-#EXTINF:-1 group-title="☘️新疆频道",新疆卫视
-http://218.84.12.186:8001/hls/main/playlist.m3u8?zxinjd;http://218.84.12.186:8001/hls/main/playlist.m3u8zxinjd
 #EXTINF:-1 group-title="☘️新疆频道",玛纳斯综合
 http://218.84.127.245:1026/hls/main1/playlist.m3u8?zxinjd,
 #EXTINF:-1 group-title="☘️新疆频道",伊犁维吾尔
-http://110.153.180.106:55555/out_2/index.m3u8
+http://110.153.180.106:55555/out_2/index.m3u8?zxinjd
 #EXTINF:-1 group-title="☘️内蒙古频道",内蒙古卫视
 http://112.27.235.94:8000/hls/49/index.m3u8
 #EXTINF:-1 group-title="☘️山西频道",山西卫视
@@ -281,8 +247,8 @@ http://112.27.235.94:8000/hls/48/index.m3u8
 https://ls.qingting.fm/live/4972/64k.m3u8
 #EXTINF:-1 group-title="☘️黑龙江频道",黑龙江新闻
 https://ls.qingting.fm/live/4974/64k.m3u8
-#EXTINF:-1 group-title="☘️河北频道",河北卫视
-http://112.27.235.94:8000/hls/39/index.m3u8
+#EXTINF:-1 group-title="🌊港·澳·台",环球电视
+http://utv1.hqtvzb.com:9999/hls/world.m3u8
 #EXTINF:-1 group-title="🌊港·澳·台",台视新闻
 http://38.64.72.148/hls/modn/list/4013/chunklist1.m3u8
 #EXTINF:-1 group-title="🌊港·澳·台",TVBS-Asia
@@ -547,21 +513,21 @@ http://121.23.132.120:7788/959983713
 http://223.83.177.142:1234/959983713
 #EXTINF:-1 group-title="体育赛事",NBA经典赛事 NBA精彩重播：马刺vs湖人 全场回放（李天宇、陈正昊、王羽希） 18:00
 http://113.122.170.202:7788/959983713
-#EXTINF:-1 group-title="体育赛事",晋超联赛 河津市选拔赛暨河津市第九届夏季篮球联赛3-4名、冠亚军决赛 2026山西省男子篮球超级联赛第6轮全场回放：天辰房产vs八大队（官方解说） 19:10
+#EXTINF:-1 group-title="体育赛事",晋超联赛 河津市选拔赛暨河津市第九届夏季篮球联赛3-4名、冠亚军决赛 全场回放：天辰房产vs八大队 19:10
 http://116.52.173.134:1234/966374764
-#EXTINF:-1 group-title="体育赛事",晋超联赛 河津市选拔赛暨河津市第九届夏季篮球联赛3-4名、冠亚军决赛 2026山西省男子篮球超级联赛第6轮全场回放：天辰房产vs八大队（官方解说） 19:10
+#EXTINF:-1 group-title="体育赛事",晋超联赛 河津市选拔赛暨河津市第九届夏季篮球联赛3-4名、冠亚军决赛 全场回放：天辰房产vs八大队 19:10
 http://121.23.132.120:7788/966374764
-#EXTINF:-1 group-title="体育赛事",晋超联赛 河津市选拔赛暨河津市第九届夏季篮球联赛3-4名、冠亚军决赛 2026山西省男子篮球超级联赛第6轮全场回放：天辰房产vs八大队（官方解说） 19:10
+#EXTINF:-1 group-title="体育赛事",晋超联赛 河津市选拔赛暨河津市第九届夏季篮球联赛3-4名、冠亚军决赛 全场回放：天辰房产vs八大队 19:10
 http://223.83.177.142:1234/966374764
-#EXTINF:-1 group-title="体育赛事",晋超联赛 河津市选拔赛暨河津市第九届夏季篮球联赛3-4名、冠亚军决赛 2026山西省男子篮球超级联赛第6轮全场回放：天辰房产vs八大队（官方解说） 19:10
+#EXTINF:-1 group-title="体育赛事",晋超联赛 河津市选拔赛暨河津市第九届夏季篮球联赛3-4名、冠亚军决赛 全场回放：天辰房产vs八大队 19:10
 http://113.122.170.202:7788/966374764
-#EXTINF:-1 group-title="体育赛事",晋超联赛 河津市选拔赛暨河津市第九届夏季篮球联赛3-4名、冠亚军决赛 2026山西省男子篮球超级联赛第7轮全场回放：建鑫洗煤vs途顺运输（官方解说） 19:10
+#EXTINF:-1 group-title="体育赛事",晋超联赛 河津市选拔赛暨河津市第九届夏季篮球联赛3-4名、冠亚军决赛 全场回放：建鑫洗煤vs途顺运输 19:10
 http://116.52.173.134:1234/966375476
-#EXTINF:-1 group-title="体育赛事",晋超联赛 河津市选拔赛暨河津市第九届夏季篮球联赛3-4名、冠亚军决赛 2026山西省男子篮球超级联赛第7轮全场回放：建鑫洗煤vs途顺运输（官方解说） 19:10
+#EXTINF:-1 group-title="体育赛事",晋超联赛 河津市选拔赛暨河津市第九届夏季篮球联赛3-4名、冠亚军决赛 全场回放：建鑫洗煤vs途顺运输 19:10
 http://121.23.132.120:7788/966375476
-#EXTINF:-1 group-title="体育赛事",晋超联赛 河津市选拔赛暨河津市第九届夏季篮球联赛3-4名、冠亚军决赛 2026山西省男子篮球超级联赛第7轮全场回放：建鑫洗煤vs途顺运输（官方解说） 19:10
+#EXTINF:-1 group-title="体育赛事",晋超联赛 河津市选拔赛暨河津市第九届夏季篮球联赛3-4名、冠亚军决赛 全场回放：建鑫洗煤vs途顺运输 19:10
 http://223.83.177.142:1234/966375476
-#EXTINF:-1 group-title="体育赛事",晋超联赛 河津市选拔赛暨河津市第九届夏季篮球联赛3-4名、冠亚军决赛 2026山西省男子篮球超级联赛第7轮全场回放：建鑫洗煤vs途顺运输（官方解说） 19:10
+#EXTINF:-1 group-title="体育赛事",晋超联赛 河津市选拔赛暨河津市第九届夏季篮球联赛3-4名、冠亚军决赛 全场回放：建鑫洗煤vs途顺运输 19:10
 http://113.122.170.202:7788/966375476
 #EXTINF:-1 group-title="体育赛事",全国女子篮球锦标赛 新疆天山74-76陕西榆林天泽 全场回放（赛场原声） 19:25
 http://116.52.173.134:1234/966375036
@@ -625,134 +591,52 @@ http://116.52.173.134:1234/966381930
 http://121.23.132.120:7788/966381930
 #EXTINF:-1 group-title="体育赛事",全国女子篮球锦标赛 赣州章贡赣星57-76武汉盛帆黄鹤 全场回放（赛场原声） 09:55
 http://223.83.177.142:1234/966381930
-#EXTINF:-1 group-title="体育赛事",全国女子篮球锦标赛 陕西榆林天泽vs山东赤水河酒 清流播出 14:25
-http://116.52.173.134:1234/966340270
-#EXTINF:-1 group-title="体育赛事",全国女子篮球锦标赛 陕西榆林天泽vs山东赤水河酒 清流播出 14:25
-http://121.23.132.120:7788/966340270
-#EXTINF:-1 group-title="体育赛事",全国女子篮球锦标赛 陕西榆林天泽vs山东赤水河酒 清流播出 14:25
-http://223.83.177.142:1234/966340270
-#EXTINF:-1 group-title="体育赛事",全国女子篮球锦标赛 陕西榆林天泽vs山东赤水河酒 清流播出 14:25
-http://113.122.170.202:7788/966340270
-#EXTINF:-1 group-title="体育赛事",中国围棋协会系列赛事 第六届嵊州杯中国王中王围棋争霸赛 解说 14:30
-http://116.52.173.134:1234/966169091
-#EXTINF:-1 group-title="体育赛事",中国围棋协会系列赛事 第六届嵊州杯中国王中王围棋争霸赛 解说 14:30
-http://121.23.132.120:7788/966169091
-#EXTINF:-1 group-title="体育赛事",中国围棋协会系列赛事 第六届嵊州杯中国王中王围棋争霸赛 解说 14:30
-http://223.83.177.142:1234/966169091
-#EXTINF:-1 group-title="体育赛事",中国围棋协会系列赛事 第六届嵊州杯中国王中王围棋争霸赛 解说 14:30
-http://113.122.170.202:7788/966169091
-#EXTINF:-1 group-title="体育赛事",贵州村超 忠诚村足球队VS大利侗寨足球队 赛场原声 16:40
-http://116.52.173.134:1234/966339424
-#EXTINF:-1 group-title="体育赛事",贵州村超 忠诚村足球队VS大利侗寨足球队 赛场原声 16:40
-http://121.23.132.120:7788/966339424
-#EXTINF:-1 group-title="体育赛事",贵州村超 忠诚村足球队VS大利侗寨足球队 赛场原声 16:40
-http://223.83.177.142:1234/966339424
-#EXTINF:-1 group-title="体育赛事",贵州村超 忠诚村足球队VS大利侗寨足球队 赛场原声 16:40
-http://113.122.170.202:7788/966339424
-#EXTINF:-1 group-title="体育赛事",全国女子篮球锦标赛 北京师范大学vs新疆天山 清流播出 16:55
-http://116.52.173.134:1234/966167560
-#EXTINF:-1 group-title="体育赛事",全国女子篮球锦标赛 北京师范大学vs新疆天山 清流播出 16:55
-http://121.23.132.120:7788/966167560
-#EXTINF:-1 group-title="体育赛事",全国女子篮球锦标赛 北京师范大学vs新疆天山 清流播出 16:55
-http://223.83.177.142:1234/966167560
-#EXTINF:-1 group-title="体育赛事",全国女子篮球锦标赛 北京师范大学vs新疆天山 清流播出 16:55
-http://113.122.170.202:7788/966167560
-#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、白雨露、吴安仪出战 1号桌 17:00
-http://116.52.173.134:1234/966237913
-#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、白雨露、吴安仪出战 1号桌 17:00
-http://121.23.132.120:7788/966237913
-#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、白雨露、吴安仪出战 1号桌 17:00
-http://223.83.177.142:1234/966237913
-#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、白雨露、吴安仪出战 1号桌 17:00
-http://113.122.170.202:7788/966237913
-#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、白雨露、吴安仪出战 2号桌 17:00
-http://116.52.173.134:1234/966237984
-#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、白雨露、吴安仪出战 2号桌 17:00
-http://121.23.132.120:7788/966237984
-#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、白雨露、吴安仪出战 2号桌 17:00
-http://223.83.177.142:1234/966237984
-#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、白雨露、吴安仪出战 2号桌 17:00
-http://113.122.170.202:7788/966237984
-#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、白雨露、吴安仪出战 3号桌 17:00
-http://116.52.173.134:1234/966238020
-#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、白雨露、吴安仪出战 3号桌 17:00
-http://121.23.132.120:7788/966238020
-#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、白雨露、吴安仪出战 3号桌 17:00
-http://223.83.177.142:1234/966238020
-#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、白雨露、吴安仪出战 3号桌 17:00
-http://113.122.170.202:7788/966238020
-#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、白雨露、吴安仪出战 4号桌 17:00
-http://116.52.173.134:1234/966239435
-#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、白雨露、吴安仪出战 4号桌 17:00
-http://121.23.132.120:7788/966239435
-#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、白雨露、吴安仪出战 4号桌 17:00
-http://223.83.177.142:1234/966239435
-#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、白雨露、吴安仪出战 4号桌 17:00
-http://113.122.170.202:7788/966239435
-#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、白雨露、吴安仪出战 5号桌 17:00
+#EXTINF:-1 group-title="体育赛事",全国女子篮球锦标赛 赣州章贡赣星57-76武汉盛帆黄鹤 全场回放（赛场原声） 09:55
+http://113.122.170.202:7788/966381930
+#EXTINF:-1 group-title="体育赛事",全国女子篮球锦标赛 陕西榆林天泽61-94山东赤水河酒 全场回放（赛场原声） 14:25
+http://116.52.173.134:1234/966385876
+#EXTINF:-1 group-title="体育赛事",全国女子篮球锦标赛 陕西榆林天泽61-94山东赤水河酒 全场回放（赛场原声） 14:25
+http://121.23.132.120:7788/966385876
+#EXTINF:-1 group-title="体育赛事",全国女子篮球锦标赛 陕西榆林天泽61-94山东赤水河酒 全场回放（赛场原声） 14:25
+http://223.83.177.142:1234/966385876
+#EXTINF:-1 group-title="体育赛事",全国女子篮球锦标赛 陕西榆林天泽61-94山东赤水河酒 全场回放（赛场原声） 14:25
+http://113.122.170.202:7788/966385876
+#EXTINF:-1 group-title="体育赛事",中国围棋协会系列赛事 第六届嵊州杯中国王中王围棋争霸赛 2026第六届嵊州杯中国王中王围棋争霸赛Day1全场回放（官方解说） 14:30
+http://116.52.173.134:1234/966388180
+#EXTINF:-1 group-title="体育赛事",中国围棋协会系列赛事 第六届嵊州杯中国王中王围棋争霸赛 2026第六届嵊州杯中国王中王围棋争霸赛Day1全场回放（官方解说） 14:30
+http://121.23.132.120:7788/966388180
+#EXTINF:-1 group-title="体育赛事",中国围棋协会系列赛事 第六届嵊州杯中国王中王围棋争霸赛 2026第六届嵊州杯中国王中王围棋争霸赛Day1全场回放（官方解说） 14:30
+http://223.83.177.142:1234/966388180
+#EXTINF:-1 group-title="体育赛事",全国女子篮球锦标赛 北京师范大学78-54新疆天山 全场回放（赛场原声） 16:55
+http://116.52.173.134:1234/966388852
+#EXTINF:-1 group-title="体育赛事",全国女子篮球锦标赛 北京师范大学78-54新疆天山 全场回放（赛场原声） 16:55
+http://121.23.132.120:7788/966388852
+#EXTINF:-1 group-title="体育赛事",全国女子篮球锦标赛 北京师范大学78-54新疆天山 全场回放（赛场原声） 16:55
+http://223.83.177.142:1234/966388852
+#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、吴安仪出战 白雨露0-4遭淘汰 5号桌 17:00
 http://116.52.173.134:1234/966239489
-#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、白雨露、吴安仪出战 5号桌 17:00
+#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、吴安仪出战 白雨露0-4遭淘汰 5号桌 17:00
 http://121.23.132.120:7788/966239489
-#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、白雨露、吴安仪出战 5号桌 17:00
+#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、吴安仪出战 白雨露0-4遭淘汰 5号桌 17:00
 http://223.83.177.142:1234/966239489
-#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、白雨露、吴安仪出战 5号桌 17:00
-http://113.122.170.202:7788/966239489
-#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、白雨露、吴安仪出战 6号桌 17:00
+#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、吴安仪出战 白雨露0-4遭淘汰 6号桌 17:00
 http://116.52.173.134:1234/966239531
-#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、白雨露、吴安仪出战 6号桌 17:00
+#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、吴安仪出战 白雨露0-4遭淘汰 6号桌 17:00
 http://121.23.132.120:7788/966239531
-#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、白雨露、吴安仪出战 6号桌 17:00
+#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、吴安仪出战 白雨露0-4遭淘汰 6号桌 17:00
 http://223.83.177.142:1234/966239531
-#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、白雨露、吴安仪出战 6号桌 17:00
-http://113.122.170.202:7788/966239531
-#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、白雨露、吴安仪出战 7号桌 17:00
+#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、吴安仪出战 白雨露0-4遭淘汰 7号桌 17:00
 http://116.52.173.134:1234/966239618
-#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、白雨露、吴安仪出战 7号桌 17:00
+#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、吴安仪出战 白雨露0-4遭淘汰 7号桌 17:00
 http://121.23.132.120:7788/966239618
-#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、白雨露、吴安仪出战 7号桌 17:00
+#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、吴安仪出战 白雨露0-4遭淘汰 7号桌 17:00
 http://223.83.177.142:1234/966239618
-#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、白雨露、吴安仪出战 7号桌 17:00
-http://113.122.170.202:7788/966239618
-#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、白雨露、吴安仪出战 8号桌 17:00
-http://116.52.173.134:1234/966239655
-#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、白雨露、吴安仪出战 8号桌 17:00
-http://121.23.132.120:7788/966239655
-#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、白雨露、吴安仪出战 8号桌 17:00
-http://223.83.177.142:1234/966239655
-#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、白雨露、吴安仪出战 8号桌 17:00
-http://113.122.170.202:7788/966239655
-#EXTINF:-1 group-title="体育赛事",中国羽毛球公开赛 李罗组合出战 梁王稍后登场 CCTV5+ 17:00
-http://116.52.173.134:1234/966364071
-#EXTINF:-1 group-title="体育赛事",中国羽毛球公开赛 李罗组合出战 梁王稍后登场 CCTV5+ 17:00
-http://121.23.132.120:7788/966364071
-#EXTINF:-1 group-title="体育赛事",中国羽毛球公开赛 李罗组合出战 梁王稍后登场 CCTV5+ 17:00
-http://223.83.177.142:1234/966364071
-#EXTINF:-1 group-title="体育赛事",中国羽毛球公开赛 李罗组合出战 梁王稍后登场 CCTV5+ 17:00
-http://113.122.170.202:7788/966364071
-#EXTINF:-1 group-title="体育赛事",中超 青岛海牛VS天津津门虎 梁祥宇 张辛昕 17:15
-http://116.52.173.134:1234/966350374
-#EXTINF:-1 group-title="体育赛事",中超 青岛海牛VS天津津门虎 梁祥宇 张辛昕 17:15
-http://121.23.132.120:7788/966350374
-#EXTINF:-1 group-title="体育赛事",中超 青岛海牛VS天津津门虎 梁祥宇 张辛昕 17:15
-http://223.83.177.142:1234/966350374
-#EXTINF:-1 group-title="体育赛事",中超 青岛海牛VS天津津门虎 梁祥宇 张辛昕 17:15
-http://113.122.170.202:7788/966350374
-#EXTINF:-1 group-title="体育赛事",中超 青岛海牛VS天津津门虎 赛场原声 17:15
-http://116.52.173.134:1234/966350941
-#EXTINF:-1 group-title="体育赛事",中超 青岛海牛VS天津津门虎 赛场原声 17:15
-http://121.23.132.120:7788/966350941
-#EXTINF:-1 group-title="体育赛事",中超 青岛海牛VS天津津门虎 赛场原声 17:15
-http://223.83.177.142:1234/966350941
-#EXTINF:-1 group-title="体育赛事",中超 青岛海牛VS天津津门虎 赛场原声 17:15
-http://113.122.170.202:7788/966350941
-#EXTINF:-1 group-title="体育赛事",中超 青岛海牛VS天津津门虎 智能解说 17:25
-http://116.52.173.134:1234/966373520
-#EXTINF:-1 group-title="体育赛事",中超 青岛海牛VS天津津门虎 智能解说 17:25
-http://121.23.132.120:7788/966373520
-#EXTINF:-1 group-title="体育赛事",中超 青岛海牛VS天津津门虎 智能解说 17:25
-http://223.83.177.142:1234/966373520
-#EXTINF:-1 group-title="体育赛事",中超 青岛海牛VS天津津门虎 智能解说 17:25
-http://113.122.170.202:7788/966373520
+#EXTINF:-1 group-title="体育赛事",中超 青岛海牛VS天津津门虎 全场回放（梁祥宇、张辛昕） 17:15
+http://116.52.173.134:1234/966388989
+#EXTINF:-1 group-title="体育赛事",中超 青岛海牛VS天津津门虎 全场回放（梁祥宇、张辛昕） 17:15
+http://121.23.132.120:7788/966388989
+#EXTINF:-1 group-title="体育赛事",中超 青岛海牛VS天津津门虎 全场回放（梁祥宇、张辛昕） 17:15
+http://223.83.177.142:1234/966388989
 #EXTINF:-1 group-title="体育赛事",NBA经典赛事 NBA精彩重播：勇士vs马刺 王晓晨 马健 秋童 18:00
 http://116.52.173.134:1234/966323727
 #EXTINF:-1 group-title="体育赛事",NBA经典赛事 NBA精彩重播：勇士vs马刺 王晓晨 马健 秋童 18:00
@@ -828,27 +712,19 @@ http://113.122.170.202:7788/965595677
 #EXTINF:-1 group-title="体育赛事",全国女子篮球锦标赛 黑龙江队vs合肥文旅 清流播出 19:25
 http://116.52.173.134:1234/966340464
 #EXTINF:-1 group-title="体育赛事",全国女子篮球锦标赛 黑龙江队vs合肥文旅 清流播出 19:25
-http://116.52.173.134:1234/966340463
-#EXTINF:-1 group-title="体育赛事",全国女子篮球锦标赛 黑龙江队vs合肥文旅 清流播出 19:25
 http://121.23.132.120:7788/966340464
 #EXTINF:-1 group-title="体育赛事",全国女子篮球锦标赛 黑龙江队vs合肥文旅 清流播出 19:25
-http://121.23.132.120:7788/966340463
-#EXTINF:-1 group-title="体育赛事",全国女子篮球锦标赛 黑龙江队vs合肥文旅 清流播出 19:25
 http://223.83.177.142:1234/966340464
-#EXTINF:-1 group-title="体育赛事",全国女子篮球锦标赛 黑龙江队vs合肥文旅 清流播出 19:25
-http://223.83.177.142:1234/966340463
 #EXTINF:-1 group-title="体育赛事",全国女子篮球锦标赛 黑龙江队vs合肥文旅 清流播出 19:25
 http://113.122.170.202:7788/966340464
 #EXTINF:-1 group-title="体育赛事",全国女子篮球锦标赛 黑龙江队vs合肥文旅 清流播出 19:25
 http://113.122.170.202:7788/966340463
-#EXTINF:-1 group-title="体育赛事",贵州村超 平永村足球队VS车江一村足球队 赛场原声 19:30
+#EXTINF:-1 group-title="体育赛事",贵州村超 平永村足球队VS车江一村足球队 赛场原声 19:45
 http://116.52.173.134:1234/966339435
-#EXTINF:-1 group-title="体育赛事",贵州村超 平永村足球队VS车江一村足球队 赛场原声 19:30
+#EXTINF:-1 group-title="体育赛事",贵州村超 平永村足球队VS车江一村足球队 赛场原声 19:45
 http://121.23.132.120:7788/966339435
-#EXTINF:-1 group-title="体育赛事",贵州村超 平永村足球队VS车江一村足球队 赛场原声 19:30
+#EXTINF:-1 group-title="体育赛事",贵州村超 平永村足球队VS车江一村足球队 赛场原声 19:45
 http://223.83.177.142:1234/966339435
-#EXTINF:-1 group-title="体育赛事",贵州村超 平永村足球队VS车江一村足球队 赛场原声 19:30
-http://113.122.170.202:7788/966339435
 #EXTINF:-1 group-title="体育赛事",东北超 哈尔滨VS长春 2026赛季东北地区城市足球联赛第5轮: 哈尔滨VS长春 19:31
 http://116.52.173.134:1234/964851595
 #EXTINF:-1 group-title="体育赛事",东北超 哈尔滨VS长春 2026赛季东北地区城市足球联赛第5轮: 哈尔滨VS长春 19:31
@@ -873,14 +749,6 @@ http://121.23.132.120:7788/966350642
 http://223.83.177.142:1234/966350642
 #EXTINF:-1 group-title="体育赛事",中超 上海海港VS上海申花 鲁靖明 李彦 邵凌霄 18:00
 http://113.122.170.202:7788/966350642
-#EXTINF:-1 group-title="体育赛事",中超 上海海港VS上海申花 4K赛场原声 19:20
-http://116.52.173.134:1234/966350541
-#EXTINF:-1 group-title="体育赛事",中超 上海海港VS上海申花 4K赛场原声 19:20
-http://121.23.132.120:7788/966350541
-#EXTINF:-1 group-title="体育赛事",中超 上海海港VS上海申花 4K赛场原声 19:20
-http://223.83.177.142:1234/966350541
-#EXTINF:-1 group-title="体育赛事",中超 上海海港VS上海申花 4K赛场原声 19:20
-http://113.122.170.202:7788/966350541
 #EXTINF:-1 group-title="体育赛事",中超 上海海港VS上海申花 上海海港球星视角 19:20
 http://116.52.173.134:1234/966350963
 #EXTINF:-1 group-title="体育赛事",中超 上海海港VS上海申花 上海海港球星视角 19:20
@@ -897,6 +765,14 @@ http://121.23.132.120:7788/966350982
 http://223.83.177.142:1234/966350982
 #EXTINF:-1 group-title="体育赛事",中超 上海海港VS上海申花 上海申花球星视角 19:20
 http://113.122.170.202:7788/966350982
+#EXTINF:-1 group-title="体育赛事",中超 上海海港VS上海申花 4K赛场原声 19:20
+http://116.52.173.134:1234/966350541
+#EXTINF:-1 group-title="体育赛事",中超 上海海港VS上海申花 4K赛场原声 19:20
+http://121.23.132.120:7788/966350541
+#EXTINF:-1 group-title="体育赛事",中超 上海海港VS上海申花 4K赛场原声 19:20
+http://223.83.177.142:1234/966350541
+#EXTINF:-1 group-title="体育赛事",中超 上海海港VS上海申花 4K赛场原声 19:20
+http://113.122.170.202:7788/966350541
 #EXTINF:-1 group-title="体育赛事",中超 上海海港VS上海申花 数智战术视角 19:30
 http://116.52.173.134:1234/966350996
 #EXTINF:-1 group-title="体育赛事",中超 上海海港VS上海申花 数智战术视角 19:30
@@ -1017,12 +893,46 @@ http://121.23.132.120:7788/966364773
 http://223.83.177.142:1234/966364773
 #EXTINF:-1 group-title="体育赛事",足球热身赛 凯尔特人VSAC米兰 赛场原声 21:45
 http://113.122.170.202:7788/966364773
-#EXTINF:-1 group-title="体育赛事",全国女子篮球锦标赛 赣州章贡赣星vs武汉盛帆黄鹤 清流播出 09:55
-http://113.122.170.202:7788/966167514
-#EXTINF:-1 group-title="体育赛事",中国羽毛球公开赛 王祉怡出战 娃卉组合晋级决赛 CCTV5 10:00
-http://113.122.170.202:7788/966364219
-#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、白雨露、吴安仪出战 涂子轩 23:00
-http://113.122.170.202:7788/966379797
+#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、吴安仪出战 白雨露0-4遭淘汰 1号桌 17:00
+http://223.83.177.142:1234/966237913
+#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、吴安仪出战 白雨露0-4遭淘汰 2号桌 17:00
+http://223.83.177.142:1234/966237984
+#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、吴安仪出战 白雨露0-4遭淘汰 3号桌 17:00
+http://223.83.177.142:1234/966238020
+#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、吴安仪出战 白雨露0-4遭淘汰 4号桌 17:00
+http://223.83.177.142:1234/966239435
+#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、吴安仪出战 白雨露0-4遭淘汰 8号桌 17:00
+http://223.83.177.142:1234/966239655
+#EXTINF:-1 group-title="体育赛事",中超 青岛海牛VS天津津门虎 全场回放 17:15
+http://223.83.177.142:1234/966389807
+#EXTINF:-1 group-title="体育赛事",贵州村超 忠诚村足球队VS大利侗寨足球队 赛场原声 16:40
+http://113.122.170.202:7788/966339424
+#EXTINF:-1 group-title="体育赛事",全国女子篮球锦标赛 北京师范大学vs新疆天山 清流播出 16:55
+http://113.122.170.202:7788/966167560
+#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、白雨露、吴安仪出战 2号桌 17:00
+http://113.122.170.202:7788/966237984
+#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、白雨露、吴安仪出战 1号桌 17:00
+http://113.122.170.202:7788/966237913
+#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、白雨露、吴安仪出战 3号桌 17:00
+http://113.122.170.202:7788/966238020
+#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、白雨露、吴安仪出战 4号桌 17:00
+http://113.122.170.202:7788/966239435
+#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、白雨露、吴安仪出战 5号桌 17:00
+http://113.122.170.202:7788/966239489
+#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、白雨露、吴安仪出战 6号桌 17:00
+http://113.122.170.202:7788/966239531
+#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、白雨露、吴安仪出战 7号桌 17:00
+http://113.122.170.202:7788/966239618
+#EXTINF:-1 group-title="体育赛事",斯诺克 傅家俊、白雨露、吴安仪出战 8号桌 17:00
+http://113.122.170.202:7788/966239655
+#EXTINF:-1 group-title="体育赛事",中国羽毛球公开赛 李罗组合出战 梁王稍后登场 CCTV5+ 17:00
+http://113.122.170.202:7788/966364071
+#EXTINF:-1 group-title="体育赛事",中超 青岛海牛VS天津津门虎 梁祥宇 张辛昕 17:15
+http://113.122.170.202:7788/966350374
+#EXTINF:-1 group-title="体育赛事",中超 青岛海牛VS天津津门虎 赛场原声 17:15
+http://113.122.170.202:7788/966350941
+#EXTINF:-1 group-title="体育赛事",贵州村超 平永村足球队VS车江一村足球队 赛场原声 19:30
+http://113.122.170.202:7788/966339435
 #EXTINF:-1 group-title="体育赛事",足球热身赛 利物浦VS桑德兰 刘焕 鲁靖明 05:45
 http://116.52.173.134:1234/966365115
 #EXTINF:-1 group-title="体育赛事",足球热身赛 利物浦VS桑德兰 刘焕 鲁靖明 05:45
@@ -1077,6 +987,8 @@ http://116.52.173.134:1234/966380072
 http://121.23.132.120:7788/966380072
 #EXTINF:-1 group-title="体育赛事",中国羽毛球公开赛 决赛 CCTV5 12:55
 http://223.83.177.142:1234/966380072
+#EXTINF:-1 group-title="体育赛事",中国羽毛球公开赛 决赛 CCTV5 12:55
+http://113.122.170.202:7788/966380072
 #EXTINF:-1 group-title="体育赛事",全国女子篮球锦标赛 黑龙江队vs陕西榆林天泽 清流播出 14:25
 http://116.52.173.134:1234/966340303
 #EXTINF:-1 group-title="体育赛事",全国女子篮球锦标赛 黑龙江队vs陕西榆林天泽 清流播出 14:25
@@ -1309,12 +1221,10 @@ http://121.23.132.120:7788/966352013
 http://223.83.177.142:1234/966352013
 #EXTINF:-1 group-title="体育赛事",海南“村VA” “九九杯”海南（文昌）乡镇排球联赛  Day 3 文昌 20:00
 http://113.122.170.202:7788/966352013
-#EXTINF:-1 group-title="体育赛事",中国羽毛球公开赛 决赛 2026年中国羽毛球公开赛- 决赛 12:55
-http://113.122.170.202:7788/966380072
 
 # ========== 智能补充分类 ==========
 
-# ----- 📻 网络电台 (263个频道) -----
+# ----- 📻 网络电台 (262个频道) -----
 #EXTINF:-1 group-title="📻 网络电台",香港第三台
 http://45.192.97.170:8880/play/6362.m3u8
 #EXTINF:-1 group-title="📻 网络电台",亚洲热歌
@@ -1571,8 +1481,6 @@ http://45.192.97.170:8880/play/6537.m3u8
 http://45.192.97.170:8880/play/6538.m3u8
 #EXTINF:-1 group-title="📻 网络电台",北京生活
 http://45.192.97.170:8880/play/6539.m3u8
-#EXTINF:-1 group-title="📻 网络电台",第一财经
-http://45.192.97.170:8880/play/6540.m3u8
 #EXTINF:-1 group-title="📻 网络电台",湖南潇湘之声
 http://45.192.97.170:8880/play/6541.m3u8
 #EXTINF:-1 group-title="📻 网络电台",湖南经济广播
