@@ -32170,5 +32170,65 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "180982e1d593dd8aef60589855fc64b2": {
+    "source_key": "180982e1d593dd8aef60589855fc64b2",
+    "channel_name": "CCTV-2",
+    "url": "http://118.193.115.2:9901/tsfile/live/0002_1.m3u8?key=txiptv",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "b8ec9b537684bff2313548ec728bdafd": {
+    "source_key": "b8ec9b537684bff2313548ec728bdafd",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1785309300-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-89a2775ff21849d8a92db2ed62e3f834&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "53a60c400bfdc5bbfc774547554deed7": {
+    "source_key": "53a60c400bfdc5bbfc774547554deed7",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1785309300-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-eb939a102429873125dc6cb2970dd533&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "ccc296cbc3031c0ef03990cde87cce7a": {
+    "source_key": "ccc296cbc3031c0ef03990cde87cce7a",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-e6b1c5baf4e240fe63adbf68dda23435.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=f457741a9b1677216998d8af49a21f5b",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "cd70a7dbf4972226d39135ebaaf3c440": {
+    "source_key": "cd70a7dbf4972226d39135ebaaf3c440",
+    "channel_name": "内蒙古卫视",
+    "url": "https://live.264788.xyz/channel/neimengguweishi?streamid=3e7340acf8869ac1c7dad1bb836dcd35&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
