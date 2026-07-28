@@ -32062,5 +32062,113 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "c67a40e4d8100dd5e1a883557d0f020f": {
+    "source_key": "c67a40e4d8100dd5e1a883557d0f020f",
+    "channel_name": "CCTV-2",
+    "url": "http://120.76.248.139/live/bfgd/4200000061.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "d711a8907185ab5b4f38884cee5f217b": {
+    "source_key": "d711a8907185ab5b4f38884cee5f217b",
+    "channel_name": "CCTV-2",
+    "url": "https://p2.bdstatic.com/rtmp.liveshow.lss-user.baidubce.com/live/stream_bduid_6488563992_8982723413/merged_1707497046297_88536_25144_41936.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "734522da15e3423c187f6be4d85b0060": {
+    "source_key": "734522da15e3423c187f6be4d85b0060",
+    "channel_name": "CCTV-3",
+    "url": "http://120.76.248.139/live/bfgd/4200000062.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "44e5ea3eafd506ab6f650d4caef4e4ec": {
+    "source_key": "44e5ea3eafd506ab6f650d4caef4e4ec",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1785298500-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-d6dd8bfb1be582963bdb763285f61b23&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "a438b3036a247714680912f0de42bf01": {
+    "source_key": "a438b3036a247714680912f0de42bf01",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1785298500-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-171caadad9066e1a6d55298a19535615&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "4419abebda3baf5d5e51f61ac7162cb0": {
+    "source_key": "4419abebda3baf5d5e51f61ac7162cb0",
+    "channel_name": "CCTV-9",
+    "url": "http://120.76.248.139/live/bfgd/4200000128.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "a2838059eb7a7fecf3c836f7aa733cdf": {
+    "source_key": "a2838059eb7a7fecf3c836f7aa733cdf",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-e6b1c5baf4e240fe63adbf68dda23435.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=9e56d2028a4584a1fca12f051a1a34c3",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "f1418cd0eac2c9f48efeb57e74936799": {
+    "source_key": "f1418cd0eac2c9f48efeb57e74936799",
+    "channel_name": "CCTV-11",
+    "url": "http://120.76.248.139/live/bfgd/4200000130.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "3bd768e06edbb16b4c7771b5ce14ff12": {
+    "source_key": "3bd768e06edbb16b4c7771b5ce14ff12",
+    "channel_name": "CCTV-14",
+    "url": "http://120.76.248.139/live/bfgd/4200000132.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
