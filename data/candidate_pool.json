@@ -32266,5 +32266,65 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "17d9e5a1f8bccf842c480820e3fa295f": {
+    "source_key": "17d9e5a1f8bccf842c480820e3fa295f",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1785359700-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-44320777e384217c387e5e8352f37386&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "9ca11997385f627ac0c8bb0bb4bf9a9e": {
+    "source_key": "9ca11997385f627ac0c8bb0bb4bf9a9e",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1785359700-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-b5d3c47653500a97bd3afc2b03d6fc2b&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "1e0b658deb0fb44bfe7e7bd3e33e4e9b": {
+    "source_key": "1e0b658deb0fb44bfe7e7bd3e33e4e9b",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-e6b1c5baf4e240fe63adbf68dda23435.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=306d76a3b154839117a4dfbf025010e3",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "35a278e71c00f1203790c154dc979a34": {
+    "source_key": "35a278e71c00f1203790c154dc979a34",
+    "channel_name": "新疆卫视",
+    "url": "http://121.19.134.253:808/tsfile/live/0110_1.m3u8?key=txiptv&playlive=1&authid=0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "4f2401b1cd2b693cef1bdbdc3adc60bc": {
+    "source_key": "4f2401b1cd2b693cef1bdbdc3adc60bc",
+    "channel_name": "西藏卫视",
+    "url": "http://121.19.134.22:808/tsfile/live/0111_1.m3u8?key=txiptv&playlive=1&authid=0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
