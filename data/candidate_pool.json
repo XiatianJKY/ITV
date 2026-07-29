@@ -32326,5 +32326,65 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "7726187395b915e71ce8526d886adaf2": {
+    "source_key": "7726187395b915e71ce8526d886adaf2",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1785384900-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-9cc385fa4cb36d00b5685e3fb080b069&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "63f6d56156e7e90c8daf5502d99fd056": {
+    "source_key": "63f6d56156e7e90c8daf5502d99fd056",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1785384900-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-a7654ba8cf447ee465ffc9fa43e4815e&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "9c02ab67d6376cb9bd4fdc9fbc6b14d3": {
+    "source_key": "9c02ab67d6376cb9bd4fdc9fbc6b14d3",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-702cae17a28d6e4f0c0002bba021d934.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=073ed542145a9572bbf0019171071c4e",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "9faaa3a1a5482b67d593ff2291a2dc28": {
+    "source_key": "9faaa3a1a5482b67d593ff2291a2dc28",
+    "channel_name": "通海电视台",
+    "url": "https://zb-live.ynurl.com/tonghai/3bfe3a9e-48e6-4c1e-8770-1df66447cc6c.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "792912cb1c69bc77c5c726acba74fac8": {
+    "source_key": "792912cb1c69bc77c5c726acba74fac8",
+    "channel_name": "凤凰香港",
+    "url": "http://r.jdshipin.com/NfC0f",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
