@@ -1,6 +1,6 @@
 {
   "total_channels": 269,
-  "timestamp": "2026-07-30T08:21:11.325486",
+  "timestamp": "2026-07-30T13:52:38.868825",
   "category_stats": {
     "📺央视频道": 25,
     "📡卫视频道": 24,
@@ -25,13 +25,13 @@
     "☘️河南频道": 1,
     "体育赛事": 176
   },
-  "unmatched_count": 22,
+  "unmatched_count": 23,
   "features": {
     "epg_injection_enabled": true,
     "incremental_mode": true
   },
   "special_categories": {
-    "广播": 254,
+    "广播": 243,
     "韩国女团": 112,
     "热门歌曲": 118,
     "动感舞曲": 41,
