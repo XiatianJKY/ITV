@@ -32626,5 +32626,65 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "e2c4b83d8f94a0b1ed152e9763de78af": {
+    "source_key": "e2c4b83d8f94a0b1ed152e9763de78af",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1785514500-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-1ee82251ac75d25611ee00ca6ccbdc04&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "cd45a2f33e5aa9ff25b409734d924083": {
+    "source_key": "cd45a2f33e5aa9ff25b409734d924083",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1785514500-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-15db7606dbc4cbadd3dcef43f2e9cabb&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "5590d5a7616fc455e48c073c2183303f": {
+    "source_key": "5590d5a7616fc455e48c073c2183303f",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-e6b1c5baf4e240fe63adbf68dda23435.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=701ff723bf93793c27dd98a570604ced",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "3e0ad63b30bd12402142133e4ededfb0": {
+    "source_key": "3e0ad63b30bd12402142133e4ededfb0",
+    "channel_name": "CCTV-15",
+    "url": "http://222.134.245.16:9901/tsfile/live/0015_1.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "0c9e22a0f32a0e21cfc40275e7595925": {
+    "source_key": "0c9e22a0f32a0e21cfc40275e7595925",
+    "channel_name": "浙江经济生活",
+    "url": "http://ali-vl.cztv.com/channels/lantian/channel003/360p.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
