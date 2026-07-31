@@ -32794,5 +32794,53 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "c00629c590fe14531c308428cf8cd5de": {
+    "source_key": "c00629c590fe14531c308428cf8cd5de",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1785571200-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-27a2e38b6c9c00cca1fa0f9c25a675aa&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "a1b3cd155dc7bcc3ac04e9d62dc5e147": {
+    "source_key": "a1b3cd155dc7bcc3ac04e9d62dc5e147",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1785571200-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-c309f00e4648d0298a7f80f4375197b4&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "8e212e0d34982ac08b5a8b19a7676f21": {
+    "source_key": "8e212e0d34982ac08b5a8b19a7676f21",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-e6b1c5baf4e240fe63adbf68dda23435.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=6bb3b3cf259aec793bb15bedac64f4d3",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "28d15409c3c327ab57c384efa2c078cb": {
+    "source_key": "28d15409c3c327ab57c384efa2c078cb",
+    "channel_name": "吉林卫视",
+    "url": "http://183.11.239.36:808/hls/10/index.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
