@@ -32686,5 +32686,65 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "c57fc88686c90f1226f0297c5a95a2ac": {
+    "source_key": "c57fc88686c90f1226f0297c5a95a2ac",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1785532500-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-efa50b278a55fdfc19601f98065e6f1f&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "676192ef0b4eb5bd43d0a68e06e5b590": {
+    "source_key": "676192ef0b4eb5bd43d0a68e06e5b590",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1785532500-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-12693c59a4e342579c5ca8febad92555&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "05e3df68d899cf06e1ca38ed8221f8e2": {
+    "source_key": "05e3df68d899cf06e1ca38ed8221f8e2",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-e6b1c5baf4e240fe63adbf68dda23435.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=ed438f15cc055b1fb9b1deb908ad228e",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "182c547b0ce4cb59d4e1ebc0edfe4372": {
+    "source_key": "182c547b0ce4cb59d4e1ebc0edfe4372",
+    "channel_name": "云南卫视",
+    "url": "http://101.66.194.129:9901/tsfile/live/0119_1.m3u8?key=txiptv&playlive=0&authid=0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "85cd38bbad33106e88baa66cd2434041": {
+    "source_key": "85cd38bbad33106e88baa66cd2434041",
+    "channel_name": "安徽卫视",
+    "url": "http://222.134.245.16:9901/tsfile/live/0130_1.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
