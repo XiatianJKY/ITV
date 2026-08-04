@@ -33430,5 +33430,17 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "41682110cbd722d5154bfe6199e54607": {
+    "source_key": "41682110cbd722d5154bfe6199e54607",
+    "channel_name": "海南卫视",
+    "url": "http://183.11.239.36:808/hls/124/index.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
