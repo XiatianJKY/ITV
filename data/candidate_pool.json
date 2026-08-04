@@ -33442,5 +33442,17 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "bdc3cd43c6a2b18a56f9a16217847fca": {
+    "source_key": "bdc3cd43c6a2b18a56f9a16217847fca",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-e6b1c5baf4e240fe63adbf68dda23435.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=23477659ebb04894a11b7ad1d2e30730",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
