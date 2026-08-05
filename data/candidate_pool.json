@@ -33466,5 +33466,65 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "c388fd2bb4131b924a8e0a6b9aef3132": {
+    "source_key": "c388fd2bb4131b924a8e0a6b9aef3132",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1785945600-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-105dc4f18a7bb654336120104887da3d&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "f07daa19b8a6319d2366effc7132453b": {
+    "source_key": "f07daa19b8a6319d2366effc7132453b",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1785945600-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-aaf8ec302ce483d67566b7584bf1aa1f&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "1fdae005308037b7f2e020f9db101b7a": {
+    "source_key": "1fdae005308037b7f2e020f9db101b7a",
+    "channel_name": "CCTV-6",
+    "url": "https://live.eac-news.com/CCTV/streams/cctv6.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "ef155b10a1c5b338d5f2b86e112dbbab": {
+    "source_key": "ef155b10a1c5b338d5f2b86e112dbbab",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-702cae17a28d6e4f0c0002bba021d934.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=c5acf41712da8eb0458d9473154b1077",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "6626d599d085fed8c47902c7d66b28cc": {
+    "source_key": "6626d599d085fed8c47902c7d66b28cc",
+    "channel_name": "CCTV-5",
+    "url": "https://myip.pdtvhd.com/Sports/streams/CCTV5pul.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
