@@ -33922,5 +33922,41 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "832af3a7ed0fe03f9865da6244528df0": {
+    "source_key": "832af3a7ed0fe03f9865da6244528df0",
+    "channel_name": "CCTV-7",
+    "url": "http://221.13.235.58:9901/tsfile/live/0007_1.m3u8?key=txiptv&playlive=1&authid=0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "81e7f5d97adec9305d8dcfe6bba54ecf": {
+    "source_key": "81e7f5d97adec9305d8dcfe6bba54ecf",
+    "channel_name": "CCTV-9",
+    "url": "http://111.4.59.41:60901/tsfile/live/1008_1.m3u8?key=txiptv&playlive=0&authid=0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "e3d9263758a0f8a54bb0fbf5bb10da35": {
+    "source_key": "e3d9263758a0f8a54bb0fbf5bb10da35",
+    "channel_name": "CCTV-16",
+    "url": "https://shcm-stream-cf1.stream.264788.xyz/cms001/ch00000090990000001258/index.m3u8?streamid=a78e16d1a56172e5525dedde279787a3&streamkey=070kmnWlSO6tVxvh6JyoORGIRdEtU2N6uMhBr52XFXMlpDP5cJR3WbAE4XDUyMtM85fygRhPAwq9wyn0AD7vg5QKiMGxk82vdtaBG0RYT7p2mBDXWyty&token=1775753992-d3736074ec706d13-0-d4be0b2d62639f66eea98eb8ecb876a6",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
