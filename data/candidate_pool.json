@@ -33958,5 +33958,29 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "72677c4935283a212238445bcf626865": {
+    "source_key": "72677c4935283a212238445bcf626865",
+    "channel_name": "CCTV-15",
+    "url": "http://183.11.239.36:808/hls/102/index.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "837b2c64e164c4bc51870688480df3ff": {
+    "source_key": "837b2c64e164c4bc51870688480df3ff",
+    "channel_name": "安徽卫视",
+    "url": "http://183.11.239.36:808/hls/40/index.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
