@@ -36346,5 +36346,113 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "f7cbfd3ed512d5ed7b355d926fe6e0e9": {
+    "source_key": "f7cbfd3ed512d5ed7b355d926fe6e0e9",
+    "channel_name": "CCTV-4",
+    "url": "http://119.39.9.8:9901/tsfile/live/0004_1.m3u8?key=txiptv&playlive=0&authid=0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "b810c276c7e427bf70917d2929b274a5": {
+    "source_key": "b810c276c7e427bf70917d2929b274a5",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1786590000-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-c9aa4c8dd81bbe7f96e0ab1a896f8a85&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "fc33113a656c8660f10d6594a206a46c": {
+    "source_key": "fc33113a656c8660f10d6594a206a46c",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1786590000-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-20128f2b4c7925fa2e0412ea57b7abd8&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "7dc4a9343f4d1b488f3edba85c15de04": {
+    "source_key": "7dc4a9343f4d1b488f3edba85c15de04",
+    "channel_name": "CCTV-5",
+    "url": "http://113.57.140.161:10081/newlive/live/hls/5/live.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "3bdf6dcaabd148ffe3d1d417a61da699": {
+    "source_key": "3bdf6dcaabd148ffe3d1d417a61da699",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-e6b1c5baf4e240fe63adbf68dda23435.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=3c2ffa7bbe7b9d1d9550eb64261b4c04",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "7e79379a68a35bd059034864438303c2": {
+    "source_key": "7e79379a68a35bd059034864438303c2",
+    "channel_name": "CCTV-17",
+    "url": "http://111.8.242.104:8088/tsfile/live/1025_1.m3u8?key=txiptv&playlive=1&authid=0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "fcf7d241fd7ee63d03a9bbe16382e3a1": {
+    "source_key": "fcf7d241fd7ee63d03a9bbe16382e3a1",
+    "channel_name": "厦门卫视",
+    "url": "http://118.122.144.115:8888/newlive/live/hls/28/live.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "3973e71abf2fa824416a76144a7f8ae5": {
+    "source_key": "3973e71abf2fa824416a76144a7f8ae5",
+    "channel_name": "吉林卫视",
+    "url": "http://113.26.202.52:1299/tsfile/live/0116_1.m3u8?key=txiptv&playlive=1&authid=0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "85a8e0a73951c49c8e435e551b67099c": {
+    "source_key": "85a8e0a73951c49c8e435e551b67099c",
+    "channel_name": "青海卫视",
+    "url": "http://111.8.242.104:8088/tsfile/live/1030_1.m3u8?key=txiptv&playlive=1&authid=0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
