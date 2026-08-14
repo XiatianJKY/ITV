@@ -2,7 +2,7 @@
 #EXTINF:-1 group-title="📺央视频道",CCTV-1
 http://69.30.245.50/live/cctv1.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-2
-http://69.30.245.50/live/cctv2.m3u8
+http://112.27.235.94:8000/hls/2/index.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-3
 http://112.27.235.94:8000/hls/3/index.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-4
@@ -22,7 +22,7 @@ http://69.30.245.50/live/cctv9.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-10
 http://112.27.235.94:8000/hls/11/index.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-11
-http://112.27.235.94:8000/hls/12/index.m3u8
+http://74.91.26.218:82/live/cctv11hd.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-12
 http://74.91.26.218:82/live/cctv12hd.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-13
@@ -59,16 +59,10 @@ https://txmov2.a.kwimgs.com/bs3/video-hls/5219953535631090825_hlsb.m3u8
 http://112.27.235.94:8000/hls/38/index.m3u8
 #EXTINF:-1 group-title="📡卫视频道",甘肃卫视
 http://61.161.61.119:9004/hls/40/index.m3u8
-#EXTINF:-1 group-title="📡卫视频道",广西卫视
-http://111.8.242.127:9999/tsfile/live/1022_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 group-title="📡卫视频道",河北卫视
 http://112.27.235.94:8000/hls/39/index.m3u8
 #EXTINF:-1 group-title="📡卫视频道",河南卫视
 http://112.27.235.94:8000/hls/37/index.m3u8
-#EXTINF:-1 group-title="📡卫视频道",吉林卫视
-http://111.8.242.142:9999/tsfile/live/1032_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 group-title="📡卫视频道",青海卫视
-http://111.8.242.127:9999/tsfile/live/1030_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 group-title="📡卫视频道",山东卫视
 http://112.27.235.94:8000/hls/34/index.m3u8
 #EXTINF:-1 group-title="📡卫视频道",四川卫视
@@ -141,8 +135,6 @@ http://ali-m-l.cztv.com/channels/lantian/channel009/1080p.m3u8
 http://1.190.240.47:9003/hls/2073/index.m3u8
 #EXTINF:-1 group-title="☘️湖南频道",湖南卫视
 https://txmov2.a.kwimgs.com/bs3/video-hls/5199687338554291078_hlsb.m3u8
-#EXTINF:-1 group-title="☘️广西频道",广西卫视
-http://111.8.242.127:9999/tsfile/live/1022_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 group-title="☘️广西频道",象山综合
 http://play-sh13.quklive.com/live/1702360350551252.m3u8?auth_key=2037107484-800189c57a5a44d3b823b60cf84f6756-0-a6f6828a62d5c167cff5e68735fa0d39
 #EXTINF:-1 group-title="☘️四川频道",乐至综合
@@ -161,6 +153,8 @@ http://110.153.180.106:55555/out_4/index.m3u8
 http://218.84.12.186:8001/hls/main/playlist.m3u8?zxinjd
 #EXTINF:-1 group-title="☘️新疆频道",新疆卫视
 http://222.71.55.147:9901/tsfile/live/0110_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 group-title="☘️新疆频道",玛纳斯
+http://218.84.127.245:1026/hls/main1/playlist.m3u8?zxinjd
 #EXTINF:-1 group-title="☘️新疆频道",伊犁哈萨克
 http://110.153.180.106:55555/out_3/index.m3u8?zxinjd
 #EXTINF:-1 group-title="☘️黑龙江频道",哈尔滨娱乐
