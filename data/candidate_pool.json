@@ -39238,5 +39238,65 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "94729429e855bf9590e0fc1533cb8e55": {
+    "source_key": "94729429e855bf9590e0fc1533cb8e55",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1787122800-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-40a4a1a8acb1be3353f182eb338f81eb&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "aa7bdcc623cc45c3b6ca2029e0b9579f": {
+    "source_key": "aa7bdcc623cc45c3b6ca2029e0b9579f",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1787122800-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-e9424e57b1516f63a796aedd375a9e2f&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "f9b2b0da7b26bcdd998fc6a40ee5d3f2": {
+    "source_key": "f9b2b0da7b26bcdd998fc6a40ee5d3f2",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-e6b1c5baf4e240fe63adbf68dda23435.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=ff52063e000f481b8b8663557f1cf489",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "e4464ea10a40c6a493345e40439e83ed": {
+    "source_key": "e4464ea10a40c6a493345e40439e83ed",
+    "channel_name": "天津卫视",
+    "url": "https://piccpndks.v.kcdnvip.com/audio/tianjin_2/index.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "928bd76b30ec19991b0025f84eed600c": {
+    "source_key": "928bd76b30ec19991b0025f84eed600c",
+    "channel_name": "海南卫视",
+    "url": "http://112.234.22.76:9901/tsfile/live/1037_1.m3u8?key=txiptv&playlive=1&authid=0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
