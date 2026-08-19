@@ -8,7 +8,7 @@ http://1.28.123.148:9901/tsfile/live/1028_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 group-title="📺央视频道",CCTV-4
 https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1787194800-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-a5c422867197ef14e17de9da61dd3d78&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c
 #EXTINF:-1 group-title="📺央视频道",CCTV-5
-https://myip.pdtvhd.com/Sports/streams/CCTV5pul.m3u8
+http://113.57.140.161:10081/newlive/live/hls/5/live.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-5+
 http://ottproxy2.ist.ooo/livehls/MOB-U1-NO/03.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-6
@@ -143,6 +143,8 @@ http://live.shaoxing.com.cn/video/s10001-sxtv2/index.m3u8
 http://110.153.180.106:55555/out_4/index.m3u8?zxinjd
 #EXTINF:-1 group-title="☘️新疆频道",伊犁维吾尔
 http://110.153.180.106:55555/out_2/index.m3u8?zxinjd
+#EXTINF:-1 group-title="☘️新疆频道",奎屯汉语
+http://218.84.12.186:8001/hls/main/playlist.m3u8?zxinjd
 #EXTINF:-1 group-title="☘️新疆频道",新疆卫视
 http://222.71.55.147:9901/tsfile/live/0110_1.m3u8?key=txiptv&playlive=0&authid=0
 #EXTINF:-1 group-title="☘️新疆频道",玛纳斯综合
