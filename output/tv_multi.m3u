@@ -6,9 +6,9 @@ http://113.90.154.189:9901/tsfile/live/0002_1.m3u8?key=txiptv&playlive=1&authid=
 #EXTINF:-1 group-title="📺央视频道",CCTV-3
 http://1.28.123.148:9901/tsfile/live/1028_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 group-title="📺央视频道",CCTV-4
-https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1787194800-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-a5c422867197ef14e17de9da61dd3d78&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c # https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1787194800-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-459fc55e0e3cfff4cf140acab88b022b&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c
+http://69.30.245.50/live/cctv4.m3u8 # http://45.192.97.170:8880/play/4.m3u8 # http://112.27.235.94:8000/hls/4/index.m3u8 # http://182.150.23.74:808/hls/4/index.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-5
-http://113.57.140.161:10081/newlive/live/hls/5/live.m3u8
+http://113.57.140.161:10081/newlive/live/hls/5/live.m3u8 # https://myip.pdtvhd.com/Sports/streams/CCTV5pul.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-5+
 http://ottproxy2.ist.ooo/livehls/MOB-U1-NO/03.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-6
@@ -167,16 +167,12 @@ http://stream.hrbtv.net/zxpd/sd/live.m3u8
 http://stream.hrbtv.net/zxpd/sd/live.m3u8?zheild
 #EXTINF:-1 group-title="☘️黑龙江频道",甘南县综合
 https://stream.hrbtv.net/zxpd/sd/live.m3u8
-#EXTINF:-1 group-title="☘️河北频道",河北农民
-https://ls.qingting.fm/live/1650/64k.m3u8
 #EXTINF:-1 group-title="🌊港·澳·台",凤凰香港
 http://r.jdshipin.com/NfC0f
 #EXTINF:-1 group-title="🌊港·澳·台",环球电视
 http://utv1.hqtvzb.com:9999/hls/world.m3u8
 #EXTINF:-1 group-title="🌊港·澳·台",台视新闻
 http://38.64.72.148/hls/modn/list/4013/chunklist1.m3u8
-#EXTINF:-1 group-title="🌊港·澳·台",TVBS-Asia
-http://38.64.72.148/hls/modn/list/4005/playlist.m3u8
 #EXTINF:-1 group-title="🌊港·澳·台",TVBS新闻台
 http://61.221.215.25:8800/hls/9/index.m3u8
 #EXTINF:-1 group-title="🌊港·澳·台",三立戏剧
