@@ -40870,5 +40870,65 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "5da6e43955207ac06d29b615940f4230": {
+    "source_key": "5da6e43955207ac06d29b615940f4230",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1787338800-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-62688ca05e4a07bbca6c90b64436ce33&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "07121c885e9cf72b9235ba12bd7c4b19": {
+    "source_key": "07121c885e9cf72b9235ba12bd7c4b19",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1787338800-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-5862a5c35943e07f081f2cae1747c8b5&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "22b345feb9353c21e03e6c0702a785aa": {
+    "source_key": "22b345feb9353c21e03e6c0702a785aa",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-702cae17a28d6e4f0c0002bba021d934.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=65f5da4af304785a75bda35a8ee023c6",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "9c49133af7fcc749ceb96692e635264b": {
+    "source_key": "9c49133af7fcc749ceb96692e635264b",
+    "channel_name": "凤凰中文",
+    "url": "http://43.152.224.209/qctv.fengshows.cn/live/0701pcc72.flv",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "0ca98ac0d55c0081aba75a946f3942e6": {
+    "source_key": "0ca98ac0d55c0081aba75a946f3942e6",
+    "channel_name": "凤凰香港",
+    "url": "http://43.152.224.209/qctv.fengshows.cn/live/0701phk72.flv",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
