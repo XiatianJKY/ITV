@@ -41854,5 +41854,113 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "94e8f4b65aefe78d9d2ba546864f46fa": {
+    "source_key": "94e8f4b65aefe78d9d2ba546864f46fa",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1787598000-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-42c6692bedf16abf707a6c9a33f7c815&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "20b49bcb10b4426f6379f2b2a166e2eb": {
+    "source_key": "20b49bcb10b4426f6379f2b2a166e2eb",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1787598000-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-2e9663863e253c247249ef64e603d9b2&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "2eec5778ef136a8a934c86fd920d41a0": {
+    "source_key": "2eec5778ef136a8a934c86fd920d41a0",
+    "channel_name": "CCTV-8",
+    "url": "http://112.249.75.196:9989/tsfile/live/0008_1.m3u8?key=txiptv&playlive=1&authid=0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "a31c09ba958973fb9c0d39c2198020fc": {
+    "source_key": "a31c09ba958973fb9c0d39c2198020fc",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-702cae17a28d6e4f0c0002bba021d934.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=5e48bcc218fc16b2f0c998caf37b2a8d",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "642b20b3c8bbfa289586a987e758337b": {
+    "source_key": "642b20b3c8bbfa289586a987e758337b",
+    "channel_name": "CCTV-17",
+    "url": "http://112.27.5.218:9901/tsfile/live/0019_1.m3u8?key=txiptv&playlive=1&authid=0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "e85b70bba44e9b758367d83a55abaddc": {
+    "source_key": "e85b70bba44e9b758367d83a55abaddc",
+    "channel_name": "CCTV-5+",
+    "url": "http://223.78.65.165:9901/tsfile/live/0006_1.m3u8?key=txiptv&playlive=1&authid=0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "5e9d92ef25b77e857a8942a55f8bf34b": {
+    "source_key": "5e9d92ef25b77e857a8942a55f8bf34b",
+    "channel_name": "内蒙古卫视",
+    "url": "http://112.123.243.37:50085/tsfile/live/0118_1.m3u8?key=txiptv&playlive=0&authid=0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "86cbee82e2f7b8388498503ad8c0f506": {
+    "source_key": "86cbee82e2f7b8388498503ad8c0f506",
+    "channel_name": "吉林卫视",
+    "url": "http://112.249.75.196:9989/tsfile/live/0116_1.m3u8?key=txiptv&playlive=1&authid=0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "e6ecd93840f3bc0be805e4b5378123f9": {
+    "source_key": "e6ecd93840f3bc0be805e4b5378123f9",
+    "channel_name": "宁夏卫视",
+    "url": "http://112.123.243.37:50085/tsfile/live/0125_1.m3u8?key=txiptv&playlive=0&authid=0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
