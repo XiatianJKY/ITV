@@ -42370,5 +42370,65 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "c08c2d71aee26ab7fa59b1a1b99c9520": {
+    "source_key": "c08c2d71aee26ab7fa59b1a1b99c9520",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1787727600-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-969b7d2933cae20f25ee7f621bc43eda&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "103c411152f0668fd47ece2631068da9": {
+    "source_key": "103c411152f0668fd47ece2631068da9",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1787727600-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-ed093ef5bbc214900104c5185f41ea56&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "090c2068be6a89506beb3197749a9aca": {
+    "source_key": "090c2068be6a89506beb3197749a9aca",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-702cae17a28d6e4f0c0002bba021d934.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=e4b0ecad5933086110d4147f5f02245b",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "503a6555ed2312b898f4a68689857148": {
+    "source_key": "503a6555ed2312b898f4a68689857148",
+    "channel_name": "云南卫视",
+    "url": "http://222.169.85.8:9901/tsfile/live/0119_1.m3u8?key=txiptv&playlive=1&authid=0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "c84aeb23c062668cb40b827ac3604a1d": {
+    "source_key": "c84aeb23c062668cb40b827ac3604a1d",
+    "channel_name": "东森洋片",
+    "url": "http://31.43.191.125:8080/vip6821768502490/6c17bae55394/34904",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
