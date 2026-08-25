@@ -42154,5 +42154,89 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "42466153af55920aed2dad462c289842": {
+    "source_key": "42466153af55920aed2dad462c289842",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1787670000-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-1d75f67f73bb20ac82064a69c2c4ba00&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "3f3f4a7ac653dd582b3a95ef03de6fec": {
+    "source_key": "3f3f4a7ac653dd582b3a95ef03de6fec",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1787670000-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-a5da3e4409427510ae4cd229f561cdbb&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "d4abfad0d0338cd5a8aa3af4c4679fce": {
+    "source_key": "d4abfad0d0338cd5a8aa3af4c4679fce",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-e6b1c5baf4e240fe63adbf68dda23435.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=a429478154fe3819a9aaa9071ed5f831",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "b444c7c1d2730ca5425938cf459945b6": {
+    "source_key": "b444c7c1d2730ca5425938cf459945b6",
+    "channel_name": "CGTN (1080p)",
+    "url": "https://hlspackager.akamaized.net/live/DB/CGTN_ENGLISH/HLS/CGTN_ENGLISH.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "6cfd25e5bf185a63d790800b9c00d9a4": {
+    "source_key": "6cfd25e5bf185a63d790800b9c00d9a4",
+    "channel_name": "CGTN Documentary (1080p)",
+    "url": "https://hlspackager.akamaized.net/live/DB/CGTN_DOCUMENTARY/HLS/CGTN_DOCUMENTARY.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "6cbc501fc3752d102ae28d6a578106ed": {
+    "source_key": "6cbc501fc3752d102ae28d6a578106ed",
+    "channel_name": "兵团卫视",
+    "url": "http://218.13.138.139:59901/tsfile/live/0115_1.m3u8?key=txiptv&playlive=1&authid=0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "7163ab54ebad685c7ffe7f15f623280f": {
+    "source_key": "7163ab54ebad685c7ffe7f15f623280f",
+    "channel_name": "河南卫视",
+    "url": "http://113.9.214.47:9003/hls/49/index.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
