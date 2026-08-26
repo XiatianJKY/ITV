@@ -42634,5 +42634,113 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "e6b2a7391e720f378bc44d200698f0f9": {
+    "source_key": "e6b2a7391e720f378bc44d200698f0f9",
+    "channel_name": "CCTV-2",
+    "url": "http://112.27.5.218:9901/tsfile/live/0002_1.m3u8?key=txiptv&playlive=1&authid=0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "d25a3f708069b1aa7044be4dc080e3b1": {
+    "source_key": "d25a3f708069b1aa7044be4dc080e3b1",
+    "channel_name": "CCTV-3",
+    "url": "http://112.27.5.218:9901/tsfile/live/faacts/0003_1.m3u8?key=txiptv&playlive=1&authid=0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "9f181a9ddd008e92c4a6d2d88af7a75b": {
+    "source_key": "9f181a9ddd008e92c4a6d2d88af7a75b",
+    "channel_name": "CCTV-4",
+    "url": "http://112.27.5.218:9901/tsfile/live/0004_1.m3u8?key=txiptv&playlive=1&authid=0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "1f08a39a916e0aea2a8d0b23ec105fed": {
+    "source_key": "1f08a39a916e0aea2a8d0b23ec105fed",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1787770800-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-1048a0b9322b59be7fc6c3471d20fb89&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "3eef7939491cfc6a83e74a8835b3889b": {
+    "source_key": "3eef7939491cfc6a83e74a8835b3889b",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1787770800-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-99b1eb113c8a4359332bac743c904f03&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "f51a1c9821dee9e23060233c7311b604": {
+    "source_key": "f51a1c9821dee9e23060233c7311b604",
+    "channel_name": "CCTV-9",
+    "url": "http://221.7.175.154:8445/tsfile/live/1007_1.m3u8?key=txiptv&playlive=1&authid=0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "9d03a72f5bb0cee0af1e96c28491b926": {
+    "source_key": "9d03a72f5bb0cee0af1e96c28491b926",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-702cae17a28d6e4f0c0002bba021d934.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=569797240a9260f4ede49fb80bffe011",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "52f69ceceb0aa30fa86e12b33eee6bc5": {
+    "source_key": "52f69ceceb0aa30fa86e12b33eee6bc5",
+    "channel_name": "东南卫视",
+    "url": "http://221.226.51.220:50081/newlive/live/hls/20/live.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "e23016a36a4ff0398fff0b8f05b30615": {
+    "source_key": "e23016a36a4ff0398fff0b8f05b30615",
+    "channel_name": "辽宁卫视",
+    "url": "http://111.59.24.227:8181/tsfile/live/0121_1.m3u8?key=txiptv&playlive=1&authid=0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
