@@ -42790,5 +42790,89 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "b19a91fa983d2e83fddd9da5cd29a41d": {
+    "source_key": "b19a91fa983d2e83fddd9da5cd29a41d",
+    "channel_name": "CCTV-3",
+    "url": "http://221.7.175.154:8445/tsfile/live/1002_1.m3u8?key=txiptv&playlive=1&authid=0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "2a9752c1ea3a126ec5e4f25ad0654290": {
+    "source_key": "2a9752c1ea3a126ec5e4f25ad0654290",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1787814000-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-0cb1f46f09c4ccccac0dd3f5482d7c5b&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "77621b1f038fd5fd8166db4131441a02": {
+    "source_key": "77621b1f038fd5fd8166db4131441a02",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1787814000-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-ce966ebb37e294b408535bb953ed4ff7&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "3c601f7d8a5ae4492145046944390014": {
+    "source_key": "3c601f7d8a5ae4492145046944390014",
+    "channel_name": "CCTV-7",
+    "url": "http://221.226.51.220:50081/newlive/live/hls/8/live.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "b7e1427d0abb2cbc6b104fc7528d7b2f": {
+    "source_key": "b7e1427d0abb2cbc6b104fc7528d7b2f",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-e6b1c5baf4e240fe63adbf68dda23435.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=9b1d8504a04a3082df2e367ac25cd71b",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "2602c33e8c0464110590dd00d770e393": {
+    "source_key": "2602c33e8c0464110590dd00d770e393",
+    "channel_name": "CCTV-12",
+    "url": "http://221.7.175.154:8445/tsfile/live/1010_1.m3u8?key=txiptv&playlive=1&authid=0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "9bd9d3fb02d24157221f49b511e62ddf": {
+    "source_key": "9bd9d3fb02d24157221f49b511e62ddf",
+    "channel_name": "福建旅游",
+    "url": "https://live.264788.xyz/channel/fujianlvyou?streamid=599c11c8b284751261b165f4d5765b36&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
