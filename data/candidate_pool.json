@@ -42874,5 +42874,101 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "e69307b25bcd5ffdb2ed67a5653b6eb3": {
+    "source_key": "e69307b25bcd5ffdb2ed67a5653b6eb3",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1787860800-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-a26b9de2dceaddb0cb8c7fb941adb0ab&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "e8aed7681de7b35fe3245bc6697426b9": {
+    "source_key": "e8aed7681de7b35fe3245bc6697426b9",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1787860800-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-5cd991c10306e58efc9d84d25a54854f&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "baf37c9d6e0792da007275887885ffa3": {
+    "source_key": "baf37c9d6e0792da007275887885ffa3",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-e6b1c5baf4e240fe63adbf68dda23435.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=499084c22119ff94989923062301c48e",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "3ddef50abb6e3e265e94774940b13b9d": {
+    "source_key": "3ddef50abb6e3e265e94774940b13b9d",
+    "channel_name": "CCTV-17",
+    "url": "http://222.169.85.8:9901/tsfile/live/0007_1.m3u8?key=txiptv&playlive=1&authid=0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "c134580f116908b91ca23c6694e334b1": {
+    "source_key": "c134580f116908b91ca23c6694e334b1",
+    "channel_name": "四川卫视",
+    "url": "http://101.66.195.5:9901/tsfile/live/0123_1.m3u8?key=txiptv&playlive=0&authid=0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "5ed5ea0bb534429314c803412eb8ed87": {
+    "source_key": "5ed5ea0bb534429314c803412eb8ed87",
+    "channel_name": "深圳卫视",
+    "url": "http://gmxw.7766.org:808/hls/45/index.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "0b8177bd95399f659e0f92fd92181ed5": {
+    "source_key": "0b8177bd95399f659e0f92fd92181ed5",
+    "channel_name": "甘肃卫视",
+    "url": "http://118.193.115.2:9901/tsfile/live/0139_2.m3u8?key=txiptv&playlive=1&authid=0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "231aac382337ccf45b9275e3be29ddde": {
+    "source_key": "231aac382337ccf45b9275e3be29ddde",
+    "channel_name": "青海卫视",
+    "url": "http://118.193.115.2:9901/tsfile/live/0140_1.m3u8?key=txiptv&playlive=1&authid=0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
