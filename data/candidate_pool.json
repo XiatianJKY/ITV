@@ -43126,5 +43126,113 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "7c45fbc425b942f4bdf89cf26687b1ae": {
+    "source_key": "7c45fbc425b942f4bdf89cf26687b1ae",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1787983200-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-d7471e899c33151799dd38ada22f0262&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "720491c9727d36523c72068715c5ef4e": {
+    "source_key": "720491c9727d36523c72068715c5ef4e",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1787983200-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-2c3cf15c4d08af832fc6a95ab1002c04&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "3b7f2240bb4fcc4f07f26d34ce1b1584": {
+    "source_key": "3b7f2240bb4fcc4f07f26d34ce1b1584",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-702cae17a28d6e4f0c0002bba021d934.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=e860debf311fa1a5de1b5665dd78d379",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "6ae0265fb81c2a13326ce86c820a4201": {
+    "source_key": "6ae0265fb81c2a13326ce86c820a4201",
+    "channel_name": "浙江钱江",
+    "url": "https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8?",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "3f8dd86f08b77ce0630e0716c9124ced": {
+    "source_key": "3f8dd86f08b77ce0630e0716c9124ced",
+    "channel_name": "四川卫视",
+    "url": "https://live.264788.xyz/channel/sichuanweishi4k?streamid=21be5901ee81559c827dc84e46f26452&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "1abf6d2be812f4cb149b57997e8aa6d9": {
+    "source_key": "1abf6d2be812f4cb149b57997e8aa6d9",
+    "channel_name": "福建海峡卫视",
+    "url": "http://38.64.72.148:80/hls/modn/list/4009/playlist.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "80a9f43289be054771a89d7e6d2ccb54": {
+    "source_key": "80a9f43289be054771a89d7e6d2ccb54",
+    "channel_name": "重庆卫视",
+    "url": "http://file.lpsntv.com/nmip-media/channellive/channel110181/playlist.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "20cb2280d8d9e6d2246bbe526aad58ca": {
+    "source_key": "20cb2280d8d9e6d2246bbe526aad58ca",
+    "channel_name": "陕西卫视",
+    "url": "http://stream.snrtv.com/sxbc-star-qCRWYZ.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "ca7e1e587aac5f2a536e8b2762ee5fcc": {
+    "source_key": "ca7e1e587aac5f2a536e8b2762ee5fcc",
+    "channel_name": "无线星河",
+    "url": "http://r.jdshipin.com/sXuuD",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
