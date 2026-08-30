@@ -43570,5 +43570,65 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "52ba4ed56c80a605e63dfd0399860dc3": {
+    "source_key": "52ba4ed56c80a605e63dfd0399860dc3",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1788166800-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-c4e66c35812e79b9570a52af72281fa2&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "bf4a255a380de329fa6197374e714a19": {
+    "source_key": "bf4a255a380de329fa6197374e714a19",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1788166800-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-aad77fe5c46e7fd37aa0c8e3a5167967&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "fa3d221ce98e0925fe005f297018621e": {
+    "source_key": "fa3d221ce98e0925fe005f297018621e",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-702cae17a28d6e4f0c0002bba021d934.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=f42b3c3fd743662589cbd66b1036c98c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "b7ff125f2caf4945b49d8438a5f1f36f": {
+    "source_key": "b7ff125f2caf4945b49d8438a5f1f36f",
+    "channel_name": "东南卫视",
+    "url": "http://120.40.39.246:352/newlive/live/hls/20/live.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "c81dcfc13ba8bd92906069bb5b541813": {
+    "source_key": "c81dcfc13ba8bd92906069bb5b541813",
+    "channel_name": "普陀电视台",
+    "url": "http://l.cztvcloud.com/channels/lantian/SXputuo1/720p.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
