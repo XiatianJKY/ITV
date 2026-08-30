@@ -43486,5 +43486,89 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "7b024cecc06cbcc50c0a7c7b2e4d30cc": {
+    "source_key": "7b024cecc06cbcc50c0a7c7b2e4d30cc",
+    "channel_name": "CCTV-2",
+    "url": "http://t.061899.xyz/tl/tl.php?id=cctv2",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "4380d3eb381dc2c99435158394e2a6e9": {
+    "source_key": "4380d3eb381dc2c99435158394e2a6e9",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1788156000-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-9e72bc88ed60da388d0b29cb79a129c5&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "d4a9d2bea2d9ce71990b93f1974d93ec": {
+    "source_key": "d4a9d2bea2d9ce71990b93f1974d93ec",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1788156000-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-f2de9c3d8aead00ff458218b343b4090&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "9de3dc3c8b678bb19e856f80406673fa": {
+    "source_key": "9de3dc3c8b678bb19e856f80406673fa",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-702cae17a28d6e4f0c0002bba021d934.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=79202bad3de5c7a20c38091051196c05",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "9a105afb064daf2353d00330ac9c0630": {
+    "source_key": "9a105afb064daf2353d00330ac9c0630",
+    "channel_name": "CCTV-13",
+    "url": "http://t.061899.xyz/tl/tl.php?id=cctv13",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "6968895e175471fb8a6adee3bd79d3d7": {
+    "source_key": "6968895e175471fb8a6adee3bd79d3d7",
+    "channel_name": "海南卫视",
+    "url": "http://218.13.170.98:9901/tsfile/live/1020_1.m3u8?key=txiptv&playlive=1&authid=0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "20e57c628ec7aff681a772b7e2e460a9": {
+    "source_key": "20e57c628ec7aff681a772b7e2e460a9",
+    "channel_name": "无线星河",
+    "url": "http://r.jdshipin.com/Voac4",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
