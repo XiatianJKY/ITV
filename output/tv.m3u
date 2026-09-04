@@ -6,7 +6,7 @@ http://69.30.245.50/live/cctv2.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-3
 http://69.30.245.50/live/cctv3.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-4
-https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1788537600-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-4d129df303d4fa286d49f110e47fb34e&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c
+http://69.30.245.50/live/cctv4.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV-5
 http://112.30.73.119:9901/tsfile/live/0005_2.m3u8?key=txiptv&playlive=0&authid=0
 #EXTINF:-1 group-title="📺央视频道",CCTV-5+
@@ -40,7 +40,7 @@ http://45.192.97.170:8880/play/18.m3u8
 #EXTINF:-1 group-title="📺央视频道",CCTV4美洲
 http://45.192.97.170:8880/play/19.m3u8
 #EXTINF:-1 group-title="📺央视频道",CGTN
-https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8
+https://hlspackager.akamaized.net/live/DB/CGTN_ENGLISH/HLS/CGTN_ENGLISH.m3u8
 #EXTINF:-1 group-title="📺央视频道",CGTN纪录
 https://english-livebkali.cgtn.com/live/doccgtn_0.m3u8
 #EXTINF:-1 group-title="📺央视频道",CGTN西语
@@ -105,12 +105,16 @@ http://zb.gxlbamc.com:1935/live/lbzh.stream/playlist.m3u8
 http://175.155.106.72:89/live1/live1.m3u8?zsicd
 #EXTINF:-1 group-title="☘️新疆频道",伊犁经济法制
 http://110.153.180.106:55555/out_4/index.m3u8
+#EXTINF:-1 group-title="☘️新疆频道",伊犁维吾尔
+http://110.153.180.106:55555/out_2/index.m3u8?zxinjd
 #EXTINF:-1 group-title="☘️新疆频道",奎屯汉语
 http://218.84.12.186:8001/hls/main/playlist.m3u8?zxinjd
 #EXTINF:-1 group-title="☘️新疆频道",新疆卫视
 http://218.84.12.186:8001/hls/main/playlist.m3u8?zxinjd;http://218.84.12.186:8001/hls/main/playlist.m3u8zxinjd
 #EXTINF:-1 group-title="☘️新疆频道",玛纳斯综合
 http://218.84.127.245:1026/hls/main1/playlist.m3u8?zxinjd,
+#EXTINF:-1 group-title="☘️新疆频道",伊犁维吾尔
+http://110.153.180.106:55555/out_2/index.m3u8?zxinjd
 #EXTINF:-1 group-title="☘️山西频道",长子综合
 https://www.wxhcgbds.com:8081/channelTv/WXTV_1.m3u8?zshanxd
 #EXTINF:-1 group-title="☘️辽宁频道",辽宁卫视
