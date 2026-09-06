@@ -45226,5 +45226,65 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "0e5cb6c56708a7655bcee555b74b82f5": {
+    "source_key": "0e5cb6c56708a7655bcee555b74b82f5",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1788735600-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-9d781eff0dce4bb2e77881d0dc2b3a99&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "40412e5893b9d96259c3b1e435b17cd7": {
+    "source_key": "40412e5893b9d96259c3b1e435b17cd7",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1788735600-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-80357fc6372d66d8d5fb1add10822437&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "7e7d6d5aa7e5fb3fd212075e8a97ea89": {
+    "source_key": "7e7d6d5aa7e5fb3fd212075e8a97ea89",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-e6b1c5baf4e240fe63adbf68dda23435.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=6300cacfd9abf2f6090dfc8c5408cc12",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "dd8a10cb98138d561410d72c7164c45e": {
+    "source_key": "dd8a10cb98138d561410d72c7164c45e",
+    "channel_name": "CCTV-11",
+    "url": "http://123.130.84.106:8154/tsfile/live/0011_1.m3u8?key=txiptv&playlive=1&authid=0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "faf8b9790a13f0fb432cd3148ad69df6": {
+    "source_key": "faf8b9790a13f0fb432cd3148ad69df6",
+    "channel_name": "重庆卫视",
+    "url": "http://p2.ioioz.com/videojs.php?id=https://sjlivecdn9.cbg.cn/202609061605/app_2/_definst_/ls_2.stream/chunklist.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
