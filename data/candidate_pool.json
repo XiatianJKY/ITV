@@ -45646,5 +45646,113 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "5f2d2328b8e21b8403d47d3f0a95b2bb": {
+    "source_key": "5f2d2328b8e21b8403d47d3f0a95b2bb",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1788883200-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-2f8245e12e3cde271a93a36ecf1c8019&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "e213993cf14164b5170edd4acbcff5fd": {
+    "source_key": "e213993cf14164b5170edd4acbcff5fd",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1788883200-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-f3ddb3adbe46cecb5efac9ae83029c5e&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "e7f8ecf8931eab430f36cb30a7ed17df": {
+    "source_key": "e7f8ecf8931eab430f36cb30a7ed17df",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-702cae17a28d6e4f0c0002bba021d934.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=109cb20721108ac9412b133e2e98dadf",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "b1e0b3a9672b48b3314ddd039a3399ba": {
+    "source_key": "b1e0b3a9672b48b3314ddd039a3399ba",
+    "channel_name": "三沙卫视",
+    "url": "http://nn.7x9d.cn/地方台8563/海南.php?id=ssws",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "882919e9333ec857707fdc235b439058": {
+    "source_key": "882919e9333ec857707fdc235b439058",
+    "channel_name": "重庆卫视",
+    "url": "http://p2.ioioz.com/videojs.php?id=https://sjlivecdn9.cbg.cn/202609080906/app_2/_definst_/ls_2.stream/chunklist.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "122765ad03a50d34af9a25c4881c776b": {
+    "source_key": "122765ad03a50d34af9a25c4881c776b",
+    "channel_name": "海南公共",
+    "url": "http://nn.7x9d.cn/地方台8563/海南.php?id=ggpd",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "74996f35fcd101aec0c72b6a48f74cb6": {
+    "source_key": "74996f35fcd101aec0c72b6a48f74cb6",
+    "channel_name": "海南少儿",
+    "url": "http://nn.7x9d.cn/地方台8563/海南.php?id=sepd",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "9c19cdf261af8b5197ae1edfc17c5765": {
+    "source_key": "9c19cdf261af8b5197ae1edfc17c5765",
+    "channel_name": "海南文旅",
+    "url": "http://nn.7x9d.cn/地方台8563/海南.php?id=wlpd",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "b97b68ee7450469df78a1fb8bdc9af38": {
+    "source_key": "b97b68ee7450469df78a1fb8bdc9af38",
+    "channel_name": "海南自贸",
+    "url": "http://nn.7x9d.cn/地方台8563/海南.php?id=jjpd",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
