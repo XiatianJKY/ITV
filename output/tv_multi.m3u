@@ -57,8 +57,6 @@ http://125.42.148.178:9901/tsfile/live/0124_1.m3u8?key=txiptv&playlive=1&authid=
 http://125.42.148.178:9901/tsfile/live/0138_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 group-title="📡卫视频道",吉林卫视
 http://221.7.175.154:8445/tsfile/live/1014_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 group-title="📡卫视频道",江西卫视
-http://112.27.5.218:9901/tsfile/live/faacts/0138_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 group-title="📡卫视频道",新疆卫视
 http://218.84.12.186:8001/hls/main/playlist.m3u8?zxinjd;http://218.84.12.186:8001/hls/main/playlist.m3u8zxinjd
 #EXTINF:-1 group-title="📡卫视频道",海峡卫视
@@ -73,14 +71,10 @@ http://183.64.181.25:40023/rongchang01.m3u8
 http://8.138.7.223/tv/gzjs.m3u8
 #EXTINF:-1 group-title="☘️广东频道",广州竞赛
 http://8.138.7.223/tv/gzjs.m3u8
-#EXTINF:-1 group-title="☘️浙江频道",浙江钱江频道
-http://ali-m-l.cztv.com/channels/lantian/channel02/1080p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",浙江经济生活
 http://ali-m-l.cztv.com/channels/lantian/channel03/1080p.m3u8
-#EXTINF:-1 group-title="☘️浙江频道",浙江教育
-http://ali-m-l.cztv.com/channels/lantian/channel04/720p.m3u8
-#EXTINF:-1 group-title="☘️浙江频道",浙江民生
-http://ali-m-l.cztv.com/channels/lantian/channel06/1080p.m3u8
+#EXTINF:-1 group-title="☘️浙江频道",浙江民生休闲
+http://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",浙江少儿
 http://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",浙江教科
@@ -89,8 +83,8 @@ http://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8
 http://ali-m-l.cztv.com/channels/lantian/channel003/720p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",浙江国际
 http://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8
-#EXTINF:-1 group-title="☘️浙江频道",浙江数码时代
-http://ali-m-l.cztv.com/channels/lantian/channel12/720p.m3u8
+#EXTINF:-1 group-title="☘️浙江频道",数码时代
+http://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",浙江休闲台
 http://ali-m-l.cztv.com/channels/lantian/channel006/720p.m3u8
 #EXTINF:-1 group-title="☘️浙江频道",绍兴电视台公共

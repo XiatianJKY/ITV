@@ -46702,5 +46702,65 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "65d6bc419fcc728babfeb889b1ab2d81": {
+    "source_key": "65d6bc419fcc728babfeb889b1ab2d81",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1789192800-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-f10494c0d2d58b843aa5abda235952a5&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "0ffaee8a419749e4ef11bef36d58c49b": {
+    "source_key": "0ffaee8a419749e4ef11bef36d58c49b",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1789192800-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-0d240479c78a919f009469faa4eef444&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "d37fecb4871c7e141f8e5a87af05fe5f": {
+    "source_key": "d37fecb4871c7e141f8e5a87af05fe5f",
+    "channel_name": "CCTV-6",
+    "url": "http://125.42.148.178:9901/tsfile/live/1006_1.m3u8?key=txiptv&playlive=1&authid=0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "b2dbd49f9a11d00ec02b396c9ca1335a": {
+    "source_key": "b2dbd49f9a11d00ec02b396c9ca1335a",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-702cae17a28d6e4f0c0002bba021d934.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=d2d1afb13895dddc0bbb7b6f82190dd4",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "4bab0a8ae2d8853837d212ddde3c43fc": {
+    "source_key": "4bab0a8ae2d8853837d212ddde3c43fc",
+    "channel_name": "海峡卫视",
+    "url": "http://t.061899.xyz/tl/tl.php?id=hxws",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
