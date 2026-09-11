@@ -46570,5 +46570,65 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "e34b456e2d1a250d3747aad935973686": {
+    "source_key": "e34b456e2d1a250d3747aad935973686",
+    "channel_name": "CCTV-1",
+    "url": "http://t.061899.xyz/tl/tl.php?id=cctv1",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "af5c1a85b7fc270a251442d93e64fe83": {
+    "source_key": "af5c1a85b7fc270a251442d93e64fe83",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1789142400-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-38ffac4db533840dcefd98f832f83f56&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "0f2a277452bf56ed9b2dbb417f802e7c": {
+    "source_key": "0f2a277452bf56ed9b2dbb417f802e7c",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1789142400-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-6b3cf29368c0029bdd74c909f580d0b5&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "0cb746ffcc589f1de6a30a7bfea7e9c9": {
+    "source_key": "0cb746ffcc589f1de6a30a7bfea7e9c9",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-702cae17a28d6e4f0c0002bba021d934.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=c0eab0c3fb5d25336a2489f4143850d5",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "553724276b0b9a2db641fb96f9a80263": {
+    "source_key": "553724276b0b9a2db641fb96f9a80263",
+    "channel_name": "浙江少儿",
+    "url": "http://ali-vl.cztv.com/channels/lantian/channel008/360p.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
