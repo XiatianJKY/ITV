@@ -2,7 +2,7 @@
 CCTV-1,http://69.30.245.50/live/cctv1.m3u8
 CCTV-2,http://69.30.245.50/live/cctv2.m3u8
 CCTV-3,http://69.30.245.50/live/cctv3.m3u8
-CCTV-4,https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1789203600-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-b650b76d4232a5242775e2f5e892aef9&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c
+CCTV-4,http://69.30.245.50/live/cctv4.m3u8
 CCTV-5,http://69.30.245.50/live/cctv5.m3u8
 CCTV-5+,http://ottproxy2.ist.ooo/livehls/MOB-U1-NO/03.m3u8
 CCTV-6,http://69.30.245.50/live/cctv6.m3u8
@@ -26,7 +26,6 @@ CGTN阿语,http://espanol-liveali.cgtn.com/hls/LSveOGBaBw41Ea7ukkVAUdKQ220802LST
 📡卫视频道,#genre#
 浙江卫视,http://ali-m-l.cztv.com:80/channels/lantian/channel001/1080p.m3u8
 湖南卫视,https://txmov2.a.kwimgs.com/bs3/video-hls/5199687338554291078_hlsb.m3u8
-三沙卫视,http://nn.7x9d.cn/地方台8563/海南.php?id=ssws
 海峡卫视,http://8.138.7.223/tv/hxws.m3u8
 浙江国际,https://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8?
 ☘️北京频道,#genre#
@@ -34,6 +33,7 @@ CGTN阿语,http://espanol-liveali.cgtn.com/hls/LSveOGBaBw41Ea7ukkVAUdKQ220802LST
 ☘️上海频道,#genre#
 ☘️天津频道,#genre#
 ☘️重庆频道,#genre#
+荣昌综合 [Not 24/7],http://183.64.181.25:40023/rongchang01.m3u8
 ☘️广东频道,#genre#
 广州竞赛,http://8.138.7.223/tv/gzjs.m3u8
 广州竞赛,http://8.138.7.223/tv/gzjs.m3u8
