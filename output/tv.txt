@@ -2,7 +2,7 @@
 CCTV-1,http://69.30.245.50/live/cctv1.m3u8
 CCTV-2,http://69.30.245.50/live/cctv2.m3u8
 CCTV-3,http://69.30.245.50/live/cctv3.m3u8
-CCTV-4,https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1789599600-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-d409a43fa3104138833028aaa06b9946&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c
+CCTV-4,https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1789599600-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-b98f5ebef19858157f1b32b5624f85a1&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c
 CCTV-5,http://69.30.245.50/live/cctv5.m3u8
 CCTV-5+,http://ottproxy2.ist.ooo/livehls/MOB-U1-NO/03.m3u8
 CCTV-6,http://69.30.245.50/live/cctv6.m3u8
@@ -58,7 +58,6 @@ CGTN纪录,https://english-livebkali.cgtn.com/live/doccgtn_0.m3u8
 ☘️广西频道,#genre#
 来宾综合,http://zb.gxlbamc.com:1935/live/lbzh.stream/playlist.m3u8
 ☘️海南频道,#genre#
-海南文旅,http://nn.7x9d.cn/地方台8563/海南.php?id=wlpd
 ☘️四川频道,#genre#
 乐至综合,http://175.155.106.72:89/live1/live1.m3u8?zsicd
 ☘️贵州频道,#genre#
@@ -68,7 +67,6 @@ CGTN纪录,https://english-livebkali.cgtn.com/live/doccgtn_0.m3u8
 ☘️青海频道,#genre#
 ☘️宁夏频道,#genre#
 ☘️新疆频道,#genre#
-奎屯汉语,http://218.84.12.186:8001/hls/main/playlist.m3u8?zxinjd
 玛纳斯综合,http://218.84.127.245:1026/hls/main1/playlist.m3u8?zxinjd,
 ☘️内蒙古频道,#genre#
 ☘️山西频道,#genre#
