@@ -48562,5 +48562,41 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "71d38b8e1c05015fff7992e31e3c5dd7": {
+    "source_key": "71d38b8e1c05015fff7992e31e3c5dd7",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1790064000-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-c4d8711049a6473e6beee8c6eb131bf6&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "c9a7debf92be1481f950cf0d49ef519b": {
+    "source_key": "c9a7debf92be1481f950cf0d49ef519b",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-702cae17a28d6e4f0c0002bba021d934.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=95bad326f0f865c400dad1ad275b0d01",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "16a6028fabf75649026ca1a08f233624": {
+    "source_key": "16a6028fabf75649026ca1a08f233624",
+    "channel_name": "河北卫视",
+    "url": "http://event.pull.hebtv.com/jishi/weishi_tingyun.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
