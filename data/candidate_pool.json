@@ -48886,5 +48886,89 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "ea1074de3d9609a01db16189bd061300": {
+    "source_key": "ea1074de3d9609a01db16189bd061300",
+    "channel_name": "湖南国际频道",
+    "url": "http://phoneal.qing.mgtv.com/nn_live/nn_x64/Y2hzPSZkZWY9MSZ1aXA9MTA2LjE0LjM4LjU1JnRlcm09NSZtYWNpZD02ODZlOGNmOGM4OGU3N2VjOWEwNzkzMjg5ZjUzNDg0MmFiZWM0ZjNjJnFpZD0mcmF1dGhfZW5hYmxlPW9uJmNkbmV4X2lkPWFsX3Bob25lMyZlcz0xNzkwMjA2Nzc5JnV1aWQ9NmEwNzIxZjE5NWU2ZDU4ODBmMjIxOGZmNGE3NjI3MTgtNmEwZTI2Mzcmcz02ZWQxNWI5MTQxZDBiZWQ2N2IyNTEzMTJmN2E3MGE2MCZ1aWQ9Jm5kdj1pb3MtNi41LjAmdj0yJmFzPTAmX2NhckNvZGU9MA,,/JYKTMPP360.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "ffcc22a9daae52fb7b5d5f980f98dbff": {
+    "source_key": "ffcc22a9daae52fb7b5d5f980f98dbff",
+    "channel_name": "湖南娱乐频道",
+    "url": "http://phoneal.qing.mgtv.com/nn_live/nn_x64/Y2hzPSZkZWY9MSZ1aXA9MTA2LjE0LjM4LjU1JnRlcm09NSZtYWNpZD02ODZlOGNmOGM4OGU3N2VjOWEwNzkzMjg5ZjUzNDg0MmFiZWM0ZjNjJnFpZD0mcmF1dGhfZW5hYmxlPW9uJmNkbmV4X2lkPWFsX3Bob25lMyZlcz0xNzkwMjA2Nzc5JnV1aWQ9NmEwNzIxZjE5NWU2ZDU4ODBmMjIxOGZmNGE3NjI3MTgtNmEwZTI2Mzcmcz02ZWQxNWI5MTQxZDBiZWQ2N2IyNTEzMTJmN2E3MGE2MCZ1aWQ9Jm5kdj1pb3MtNi41LjAmdj0yJmFzPTAmX2NhckNvZGU9MA,,/JYKTMPP360.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "21304ed4e5af7ce7088de0c4f64c8912": {
+    "source_key": "21304ed4e5af7ce7088de0c4f64c8912",
+    "channel_name": "湖南爱晚",
+    "url": "http://phoneal.qing.mgtv.com/nn_live/nn_x64/Y2hzPSZkZWY9MSZ1aXA9MTA2LjE0LjM4LjU1JnRlcm09NSZtYWNpZD02ODZlOGNmOGM4OGU3N2VjOWEwNzkzMjg5ZjUzNDg0MmFiZWM0ZjNjJnFpZD0mcmF1dGhfZW5hYmxlPW9uJmNkbmV4X2lkPWFsX3Bob25lMyZlcz0xNzkwMjA2Nzc5JnV1aWQ9NmEwNzIxZjE5NWU2ZDU4ODBmMjIxOGZmNGE3NjI3MTgtNmEwZTI2Mzcmcz02ZWQxNWI5MTQxZDBiZWQ2N2IyNTEzMTJmN2E3MGE2MCZ1aWQ9Jm5kdj1pb3MtNi41LjAmdj0yJmFzPTAmX2NhckNvZGU9MA,,/JYKTMPP360.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "571a059827288427ca2c23214ff66869": {
+    "source_key": "571a059827288427ca2c23214ff66869",
+    "channel_name": "湖南都市",
+    "url": "http://phoneal.qing.mgtv.com/nn_live/nn_x64/Y2hzPSZkZWY9MSZ1aXA9MTA2LjE0LjM4LjU1JnRlcm09NSZtYWNpZD02ODZlOGNmOGM4OGU3N2VjOWEwNzkzMjg5ZjUzNDg0MmFiZWM0ZjNjJnFpZD0mcmF1dGhfZW5hYmxlPW9uJmNkbmV4X2lkPWFsX3Bob25lMyZlcz0xNzkwMjA2Nzc5JnV1aWQ9NmEwNzIxZjE5NWU2ZDU4ODBmMjIxOGZmNGE3NjI3MTgtNmEwZTI2Mzcmcz02ZWQxNWI5MTQxZDBiZWQ2N2IyNTEzMTJmN2E3MGE2MCZ1aWQ9Jm5kdj1pb3MtNi41LjAmdj0yJmFzPTAmX2NhckNvZGU9MA,,/JYKTMPP360.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "e560301dc011b8b50d44891f5ce9375f": {
+    "source_key": "e560301dc011b8b50d44891f5ce9375f",
+    "channel_name": "长沙新闻频道",
+    "url": "http://phoneal.qing.mgtv.com/nn_live/nn_x64/Y2hzPSZkZWY9MSZ1aXA9MTA2LjE0LjM4LjU1JnRlcm09NSZtYWNpZD02ODZlOGNmOGM4OGU3N2VjOWEwNzkzMjg5ZjUzNDg0MmFiZWM0ZjNjJnFpZD0mcmF1dGhfZW5hYmxlPW9uJmNkbmV4X2lkPWFsX3Bob25lMyZlcz0xNzkwMjA2Nzc5JnV1aWQ9NmEwNzIxZjE5NWU2ZDU4ODBmMjIxOGZmNGE3NjI3MTgtNmEwZTI2Mzcmcz02ZWQxNWI5MTQxZDBiZWQ2N2IyNTEzMTJmN2E3MGE2MCZ1aWQ9Jm5kdj1pb3MtNi41LjAmdj0yJmFzPTAmX2NhckNvZGU9MA,,/JYKTMPP360.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "f3ca2a0f78797a9312b6744f946cb3c9": {
+    "source_key": "f3ca2a0f78797a9312b6744f946cb3c9",
+    "channel_name": "湖南电视剧",
+    "url": "http://phoneal.qing.mgtv.com/nn_live/nn_x64/Y2hzPSZkZWY9MSZ1aXA9MTA2LjE0LjM4LjU1JnRlcm09NSZtYWNpZD02ODZlOGNmOGM4OGU3N2VjOWEwNzkzMjg5ZjUzNDg0MmFiZWM0ZjNjJnFpZD0mcmF1dGhfZW5hYmxlPW9uJmNkbmV4X2lkPWFsX3Bob25lMyZlcz0xNzkwMjA2Nzc5JnV1aWQ9NmEwNzIxZjE5NWU2ZDU4ODBmMjIxOGZmNGE3NjI3MTgtNmEwZTI2Mzcmcz02ZWQxNWI5MTQxZDBiZWQ2N2IyNTEzMTJmN2E3MGE2MCZ1aWQ9Jm5kdj1pb3MtNi41LjAmdj0yJmFzPTAmX2NhckNvZGU9MA,,/JYKTMPP360.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "8d4e79b88ccb9f4c24d521df5fd73788": {
+    "source_key": "8d4e79b88ccb9f4c24d521df5fd73788",
+    "channel_name": "湖南经视",
+    "url": "http://phoneal.qing.mgtv.com/nn_live/nn_x64/Y2hzPSZkZWY9MSZ1aXA9MTA2LjE0LjM4LjU1JnRlcm09NSZtYWNpZD02ODZlOGNmOGM4OGU3N2VjOWEwNzkzMjg5ZjUzNDg0MmFiZWM0ZjNjJnFpZD0mcmF1dGhfZW5hYmxlPW9uJmNkbmV4X2lkPWFsX3Bob25lMyZlcz0xNzkwMjA2Nzc5JnV1aWQ9NmEwNzIxZjE5NWU2ZDU4ODBmMjIxOGZmNGE3NjI3MTgtNmEwZTI2Mzcmcz02ZWQxNWI5MTQxZDBiZWQ2N2IyNTEzMTJmN2E3MGE2MCZ1aWQ9Jm5kdj1pb3MtNi41LjAmdj0yJmFzPTAmX2NhckNvZGU9MA,,/JYKTMPP360.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
