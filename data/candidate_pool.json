@@ -49078,5 +49078,77 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "0fbde5540becad035c32f386421a405a": {
+    "source_key": "0fbde5540becad035c32f386421a405a",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1790330400-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-01f4da5022672832a771f190f5fbf530&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "fcf5c5300b446af707a258450b6928e8": {
+    "source_key": "fcf5c5300b446af707a258450b6928e8",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1790330400-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-39958976577036c40bd8a15a2c2a4516&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "b122283381179469972087ba632b9309": {
+    "source_key": "b122283381179469972087ba632b9309",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-e6b1c5baf4e240fe63adbf68dda23435.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=f2bdcd8d3ace6e24fd9a20ad343adb5a",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "4350e256fdff98fd77402603689fc46a": {
+    "source_key": "4350e256fdff98fd77402603689fc46a",
+    "channel_name": "CCTV-13",
+    "url": "http://120.76.248.139/live/bfgd/4200000067.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "f4d49a556eeff55470a70329c044f89d": {
+    "source_key": "f4d49a556eeff55470a70329c044f89d",
+    "channel_name": "新疆卫视",
+    "url": "https://live.264788.xyz/channel/xinjiangweishi?streamid=4f481f56ae39ce5d24203471de9df635&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "63504eb45b88a56530e9cf4b480170ec": {
+    "source_key": "63504eb45b88a56530e9cf4b480170ec",
+    "channel_name": "甘肃卫视",
+    "url": "http://120.76.248.139/live/bfgd/4200000119.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
