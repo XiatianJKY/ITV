@@ -48994,5 +48994,89 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "80ca057865fd6d27ee3442215675044b": {
+    "source_key": "80ca057865fd6d27ee3442215675044b",
+    "channel_name": "CCTV-2",
+    "url": "http://221.13.235.108:9901/tsfile/live/0002_1.m3u8?key=txiptv&playlive=1&authid=0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "c8fa3eae164fa2b867177670594ec823": {
+    "source_key": "c8fa3eae164fa2b867177670594ec823",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1790316000-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-cf3ef28f04347d362acf48ff72f8e303&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "4ada9c7318c225a990ffb37c42f45345": {
+    "source_key": "4ada9c7318c225a990ffb37c42f45345",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1790316000-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-4615eab920c2643cf73f56191d0912fc&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "e677b72b968ebfcc59e594bf1f825c9c": {
+    "source_key": "e677b72b968ebfcc59e594bf1f825c9c",
+    "channel_name": "CCTV-6",
+    "url": "http://221.13.235.108:9901/tsfile/live/0006_1.m3u8?key=txiptv&playlive=1&authid=0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "dcadd71903afe1c53aa5f3d1e8e3164e": {
+    "source_key": "dcadd71903afe1c53aa5f3d1e8e3164e",
+    "channel_name": "CCTV-7",
+    "url": "http://221.13.235.108:9901/tsfile/live/0007_1.m3u8?key=txiptv&playlive=1&authid=0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "e05eed7903c7e405ae04289c7aa01811": {
+    "source_key": "e05eed7903c7e405ae04289c7aa01811",
+    "channel_name": "CCTV-10",
+    "url": "http://221.13.235.108:9901/tsfile/live/0010_1.m3u8?key=txiptv&playlive=1&authid=0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "342ad09e60c51f543a81db25128dfddf": {
+    "source_key": "342ad09e60c51f543a81db25128dfddf",
+    "channel_name": "CCTV-11",
+    "url": "http://221.13.235.108:9901/tsfile/live/0011_1.m3u8?key=txiptv&playlive=1&authid=0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
