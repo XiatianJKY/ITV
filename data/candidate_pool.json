@@ -48970,5 +48970,29 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "072e5c2f8989e6b4f4f4a78d67979390": {
+    "source_key": "072e5c2f8989e6b4f4f4a78d67979390",
+    "channel_name": "CCTV-4",
+    "url": "http://221.13.235.108:9901/tsfile/live/0004_1.m3u8?key=txiptv&playlive=1&authid=0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "a228fbc068fa5250fecfe97b59b361f4": {
+    "source_key": "a228fbc068fa5250fecfe97b59b361f4",
+    "channel_name": "CCTV-15",
+    "url": "http://221.13.235.108:9901/tsfile/live/0015_1.m3u8?key=txiptv&playlive=1&authid=0",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
