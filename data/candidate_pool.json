@@ -50122,5 +50122,65 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "afffdaa53b6cf3bbd470e007b29bd49b": {
+    "source_key": "afffdaa53b6cf3bbd470e007b29bd49b",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1790874000-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-e5c1f9979f87c70c49e52cb3b724e279&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "2aeb7eaca4ac2cf01774d264f6927faa": {
+    "source_key": "2aeb7eaca4ac2cf01774d264f6927faa",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1790874000-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-8fb9699355e9e498de9db12ac692cf7a&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "cf6d0dcb5abf338f348d1508fba4d97a": {
+    "source_key": "cf6d0dcb5abf338f348d1508fba4d97a",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-e6b1c5baf4e240fe63adbf68dda23435.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=d987c184679db6ab61fd9fe4d05a71f3",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "9b46190fae871e0868235b81cc73255c": {
+    "source_key": "9b46190fae871e0868235b81cc73255c",
+    "channel_name": "重庆卫视",
+    "url": "http://tmpstream.hyrtv.cn/hygg/sd/live.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "942ebc6b1151d061d821329662f9d894": {
+    "source_key": "942ebc6b1151d061d821329662f9d894",
+    "channel_name": "黑龙江卫视",
+    "url": "http://tmpstream.hyrtv.cn/hygg/sd/live.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
