@@ -51574,5 +51574,53 @@
     "last_check": null,
     "status": "observing",
     "promoted_at": null
+  },
+  "e4e964bab2606a529cb31f06654b6fd2": {
+    "source_key": "e4e964bab2606a529cb31f06654b6fd2",
+    "channel_name": "CCTV-4",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1791918000-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-1e752781abcdb5c772f4baffd4996441&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "c04e03fc93095b6872c6242519ae769f": {
+    "source_key": "c04e03fc93095b6872c6242519ae769f",
+    "channel_name": "CCTV-4K",
+    "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1791918000-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-6ad8fe90a160fedc224ba45284b5dd73&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "2e7059eea2e3af2fc9676caa4532d43c": {
+    "source_key": "2e7059eea2e3af2fc9676caa4532d43c",
+    "channel_name": "CCTV-9",
+    "url": "https://v4-702cae17a28d6e4f0c0002bba021d934.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=486aa223454728d77feeaf7cb4b2ad16",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
+  },
+  "61e8a95cf82075dd232a42e5a7e5e07f": {
+    "source_key": "61e8a95cf82075dd232a42e5a7e5e07f",
+    "channel_name": "山东新闻",
+    "url": "http://ls.qingting.fm/live/60180.m3u8",
+    "check_count": 0,
+    "success_count": 0,
+    "fail_count": 0,
+    "total_latency": 0,
+    "last_check": null,
+    "status": "observing",
+    "promoted_at": null
   }
 }
